@@ -1,0 +1,74 @@
+body {
+  background: #f4f4f4;
+}
+/* .dropdown:hover .dropdown-menu {
+   display: block !important;
+} */
+.side-links .side-link {
+  font-weight: 500;
+  padding: 10px 0;
+}
+.side-link a {
+  color: #444;
+}
+.side-link.active a {
+  font-weight: bold;
+}
+.side-link a:hover {
+  color: #1ca032;
+  text-decoration: none;
+}
+.panel {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.panel-heading {
+  border-radius: 5px 5px 0 0;
+  background: #f3f3f3;
+  padding: 5px 10px;
+}
+.panel-heading.pointer {
+  cursor: pointer;
+}
+.panel-title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.panel-body {
+  border-top: 1px solid #e5e5e5;
+  padding: 10px;
+  background: #fff;
+}
+label {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.info-card {
+  background: #d2efce;
+  font-weight: 500;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+.main-content {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+button.btn.btn-success,
+a.btn.btn-success {
+  background: #5f9048;
+  border: #5f9048;
+}
