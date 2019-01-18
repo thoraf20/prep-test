@@ -1,4 +1,4 @@
-const BASE_API = "https://prepcrm.test";
+const BASE_API = "https://api-test.prepclassng.com";
 const PUBLIC_URL = "https://admin-test.prepclassng.com";
 const PUSHER_APP_KEY = '23b7275c0bbb5e4aa24b';
 
