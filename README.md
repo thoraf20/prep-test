@@ -1,29 +1,28 @@
-# README #
+# prep client
 
-This is the Official PrepClient Repositor.
+> Prepclass client repository
 
-### What is this repository for? ###
+## Build Setup
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- Copy `config/dev.env.example.js` to `config/dev.env.js`
 
-### How do I get set up? ###
+- Copy `config/dev.prod.example.js` to `config/dev.prod.js`
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+- Modify `BASE_API` in `dev.env.js` and `prod.env.js` to the api url for the development and production api endpoints respectively
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+``` bash
+# install dependencies
+npm install
 
-### Who do I talk to? ###
+# serve with hot reload at localhost:8080
+npm run dev
 
-* Repo owner or admin
-* Other community or team contact
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
