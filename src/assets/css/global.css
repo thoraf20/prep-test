@@ -11,14 +11,24 @@ body
   margin: 0 auto;
   width: 90%;
 }
+.container-material-systems {
+  margin: 0 auto;
+  width: 90%;
+}
 @media only screen and (min-width : 601px) {
   .container-material {
+    width: 85%;
+  }
+  .container-material-systems {
     width: 85%;
   }
 }
 @media only screen and (min-width : 993px) {
   .container-material {
     width: 70%;
+  }
+  .container-material-systems {
+    width: 85%;
   }
 }
 h3.title {
@@ -491,4 +501,11 @@ a > .tab-link, .tab-link:hover
 		margin-left: 140px;
 	}
 
+}
+.hide-on-med-and-up {display: none;}
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only {
+    display: none !important;
+  }
+  .hide-on-med-and-up {display: block;}
 }
