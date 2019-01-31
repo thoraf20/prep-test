@@ -42,6 +42,7 @@
                     id="email"
                     v-model="client.email"
                     v-validate.disable="'required'"
+                    disabled
                   ></b-form-input>
                   <div
                     class="invalid-feedback"

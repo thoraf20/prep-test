@@ -188,19 +188,19 @@
         <div class="body">
           <div class="list" v-if="doneLoading">
             <div class="list--item">
-              Tutor Name: <span>{{ c.tutor && c.tutor.name }}</span>
+              Tutor Name: <span>{{ c.tutor && c.tutor.name ? c.tutor.name : 'Not Available' }}</span>
             </div>
             <div class="list--item">
-              Tutor Number: <span>{{ c.tutor && c.tutor.phone }}</span>
+              Tutor Number: <span>{{ c.tutor && c.tutor.phone ? c.tutor.phone : 'Not Available' }}</span>
             </div>
             <div class="list--item">
-              Email Address: <span>{{ c.tutor && c.tutor.email }}</span>
+              Email Address: <span>{{ c.tutor && c.tutor.email ? c.tutor.email : 'Not Available' }}</span>
             </div>
             <div class="list--item">
-              Location: <span>{{ c.tutor && c.tutor.location }}</span>
+              Location: <span>{{ c.tutor && c.tutor.location ? c.tutor.location : 'Not Available' }}</span>
             </div>
             <div class="list--item">
-              Invoice Created: <span>{{ c.tutor && c.tutor.phone }}</span>
+              Invoice Created: <span>{{ c.tutor && c.tutor.phone ? c.tutor.phone : 'Not Available' }}</span>
             </div>
           </div>
           <div v-else class="row justify-content-center">
