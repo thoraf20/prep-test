@@ -17,8 +17,8 @@
           <button type="submit" class="btn waves-effect waves-light primary white-text z-depth-0" :disabled="submitting">Login <i class="fa fa-spin fa-circle-o-notch" v-show="submitting"></i></button>
         </div>
       </form>
-      <p class="mr">Don't have an account? <router-link class="primary-text" :to="{ name: 'register' }">Sign up</router-link> <br> Forgot your Password? <router-link class="primary-text" :to="{ name: 'forgot-password' }">Click here</router-link></p>
-     <!--  <p class="mr">By clicking get started you agree to the <a href="#!" class="primary-text">terms of service</a> and <a href="#!" class="primary-text">privacy policies</a></p> -->
+      <!-- <p class="mr">Don't have an account? <router-link class="primary-text" :to="{ name: 'register' }">Sign up</router-link> <br> Forgot your Password? <router-link class="primary-text" :to="{ name: 'forgot-password' }">Click here</router-link></p> -->
+      <p class="mr">By clicking get started you agree to the <a href="#!" class="primary-text">terms of service</a> and <a href="#!" class="primary-text">privacy policies</a></p>
   </auth-index>
 </template>
 
