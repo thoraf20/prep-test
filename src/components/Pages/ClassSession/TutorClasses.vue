@@ -43,9 +43,9 @@
               <td>{{ c.tutor !== null && c.tutor.phone !== null ? c.tutor.phone : 'Not Available' }}</td>
               <td>
                 <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
-                  <button class="btn btn-sm btn-primary">View Class </button>
+                  <button class="btn btn-sm btn-sml btn-primary">View Class </button>
                 </router-link>
-                <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger">Make Complaint </button>
+                <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger btn-td">Make Complaint </button>
                 <!-- <b-dropdown variant="link" size="lg" no-caret id="dsdag">
                   <template slot="button-content">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" class=""><g><g><g><circle cx="69.545" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="306" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="542.455" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/></g></g></g> </svg>
@@ -298,9 +298,19 @@ export default {
 .btn-sm {
   height:30px;
   width: 110px;
+  box-shadow: 0 2px 2px 0 hsla(0,0%,44%,.14), 0 3px 1px -2px hsla(0,0%,44%,.12), 0 1px 5px 0 hsla(0,0%,44%,.2);
+  border-radius: 0px;
+}
+.btn-sml {
+  width: 90px;
 }
 .btn-danger {
-  background:lightcoral;
+  background:#dc3545;
+  border-color: #dc3545;
+}
+.btn-primary {
+  background: #17a2b8;
+  border-color: #17a2b8;
 }
 
 .container-material {
