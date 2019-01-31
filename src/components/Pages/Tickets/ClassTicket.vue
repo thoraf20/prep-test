@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="compose">
-            <textarea v-model="text" @focus="checker"></textarea>
+            <textarea v-model="text" class="conv-area" @focus="checker"></textarea>
             <button class="btn btn-success btn-lg submit-button" @click.prevent="send" :disabled="submitting">Send <i class="fa fa-spin fa-circle-o-notch" v-show="submitting"></i></button>
           </div>
         </div>
@@ -140,6 +140,9 @@ export default {
 .hold {
   padding: 25px 0;
   height: 100%;
+}
+.conv-area {
+  color:black !important;
 }
 
 .container-material {

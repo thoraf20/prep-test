@@ -68,8 +68,8 @@
           <thead>
             <tr>
               <td>ID</td>
-              <td>Reference Key</td>
-              <td>Amount</td>
+              <td>UIA</td>
+              <td>CIA</td>
               <td>Status</td>
               <td>Last Updated</td>
             </tr>
@@ -77,8 +77,8 @@
           <tbody>
             <tr v-for="(invoice,index) of filtered" :key="invoice.id">
               <td>{{ index + 1 }}</td>
-              <td>{{ invoice.reference }}</td>
-              <td>{{ invoice.unique_amount }}</td>
+              <td>&#8358;{{ invoice.unique_amount }}</td>
+              <td>&#8358;{{ invoice.amount }}</td>
               <td class="status">
                 <span :class="invoice.status ? invoice.status.name.toLowerCase() : 'default'"></span>
                 {{ invoice.status && invoice.status.name }}
