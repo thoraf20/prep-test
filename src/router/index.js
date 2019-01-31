@@ -94,134 +94,6 @@ export default new Router({
       component: Layout,
       children: [
         {
-          path: 'setup',
-          name: 'setup',
-          redirect: 'setup/basic',
-          component: Setup,
-          children: [
-            {
-              path: 'basic',
-              name: 'basic-setup',
-              component: BasicSetup,
-              redirect: 'basic/personal-info',
-              children: [
-                {
-                  path: 'personal-info',
-                  name: 'personal-info-setup',
-                  component: EditBasic,
-                },
-                {
-                  path: 'location-info',
-                  name: 'location-info-setup',
-                  component: EditLocation,
-                },
-                {
-                  path: 'bio',
-                  name: 'bio-setup',
-                  component: EditAbout,
-                },
-              ],
-            },
-            {
-              path: 'education',
-              name: 'education-setup',
-              component: EducationSetup,
-              redirect: 'education/educational-info',
-              children: [
-                {
-                  path: 'educational-info',
-                  name: 'educational-info-setup',
-                  component: EditEducation,
-                },
-                {
-                  path: 'teaching-info',
-                  name: 'teaching-info-setup',
-                  component: EditTeaching,
-                },
-                {
-                  path: 'work-experience',
-                  name: 'work-experience-setup',
-                  component: EditWork,
-                },
-              ],
-            },
-            {
-              path: 'verification',
-              name: 'verification-setup',
-              component: VerificationSetup,
-            },
-            {
-              path: 'academic-info',
-              name: 'academic-setup',
-              component: AcademicSetup,
-              redirect: 'academic-info/availability',
-              children: [
-                {
-                  path: 'availability',
-                  name: 'availability-info',
-                  component: DayAvailability,
-                },
-                {
-                  path: 'subjects',
-                  name: 'subject-classes',
-                  component: SubjectAbility,
-                },
-                {
-                  path: 'test',
-                  name: 'test-index',
-                  component: TestIndex,
-                  redirect: 'test/status',
-                  children: [
-                    {
-                      path: 'status',
-                      name: 'test-status',
-                      component: TestStatus,
-                    },
-                    {
-                      path: 'take/:abilitySubject',
-                      name: 'test-take',
-                      component: TakeTest,
-                      props: true,
-                    },
-                    {
-                      path: ':test',
-                      name: 'test',
-                      component: Test,
-                      props: true,
-                      children: [
-                        {
-                          path: ':question',
-                          name: 'test-question',
-                          component: TestComponent,
-                          props: true,
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  path: 'profiles',
-                  name: 'subject-profiles',
-                  component: AllSubjectProfiles,
-                  children: [
-                    {
-                      path: ':ability_subject_id',
-                      name: 'subject-profiles-edit',
-                      component: EditSubjectProfile,
-                      props: true,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              path: 'how-it-works',
-              name: 'how-it-works-setup',
-              component: HowItWorksSetup,
-            },
-          ],
-        },
-        {
           path: 'dashboard',
           name: 'dashboard',
           redirect: 'dashboard/home',
@@ -233,7 +105,7 @@ export default new Router({
               component: HomeDashboard,
             },
             {
-              path: 'earnings',
+              path: 'payouts',
               name: 'earnings-dashboard',
               component: EarningsDashboard,
             },

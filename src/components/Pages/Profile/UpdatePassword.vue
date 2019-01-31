@@ -124,6 +124,7 @@ export default {
             "success"
             ).then((value) => {
                 //this.logOut()
+                console.log(this.$route);
                 this.$router.go(0);
             })
         });
