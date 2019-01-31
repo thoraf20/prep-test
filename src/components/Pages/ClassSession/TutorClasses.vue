@@ -297,6 +297,7 @@ export default {
 
 .btn-sm {
   height:30px;
+  width: 110px;
 }
 .btn-danger {
   background:lightcoral;
