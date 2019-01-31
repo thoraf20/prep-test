@@ -32,7 +32,7 @@
           Filter
         </div>
         <div class="srch">
-          <input type="search" placeholder="Search Jobs" class="form-control" v-model="query">
+          <input type="search" placeholder="Search Earnings" class="form-control" v-model="query">
         </div>
       </div>
       <div class="input-group input-daterange">
