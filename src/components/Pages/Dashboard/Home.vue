@@ -48,7 +48,7 @@
                 <p>You have {{ tickets.length || 'no' }} ticket{{ tickets.length > 1 ? 's 🕵🏽‍♂️' : '. Good Job! 🎉🎊'}}.</p>
               </div>
               <div class="action--card--action">
-                <router-link tag="button" :to="{ name: 'earnings-dashboard' }" class="btn ">Start</router-link>
+                <router-link tag="button" :to="{ name: 'tickets-dashboard' }" class="btn ">Start</router-link>
               </div>
             </div>
           </div>
