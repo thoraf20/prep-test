@@ -39,7 +39,7 @@
             <tr v-for="c of filtered" :key="c.id">
               <td><router-link :to="{ name: 'tutor-class', params: { id: c.id }}">{{ c.tutor !== null && c.tutor.name !== null ? c.tutor.name : 'Not Available' }}</router-link></td>
               <td>{{ c.tutor !== null && c.tutor.id !== null ? c.tutor.id : 'Not Available' }}</td>
-              <td class="status"><span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Pending' : 'Active' }}</td>
+              <td class="status"><span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Launching' : 'Active' }}</td>
               <td>{{ c.tutor !== null && c.tutor.phone !== null ? c.tutor.phone : 'Not Available' }}</td>
               <td>
                 <b-dropdown variant="link" size="lg" no-caret id="dsdag">
@@ -66,7 +66,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" v-model="regarding">
-              <option value="" selected disabled>Regarding</option>
+              <option value="" selected required disabled>What is this ticket about</option>
               <option :value="category.id" v-for="category of categories" :key="category.id">{{ category.name }}</option>
             </select>
           </div>

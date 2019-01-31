@@ -48,7 +48,7 @@
                 <p>You have {{ tickets.length || 'no' }} ticket{{ tickets.length > 1 ? 's 🕵🏽‍♂️' : '. Good Job! 🎉🎊'}}.</p>
               </div>
               <div class="action--card--action">
-                <router-link tag="button" :to="{ name: 'earnings-dashboard' }" class="btn ">Start</router-link>
+                <router-link tag="button" :to="{ name: 'tickets-dashboard' }" class="btn ">Start</router-link>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default {
 * {
   box-sizing: border-box;
 }
-.hold {padding: 25px 0; height: 100%;}
+.hold {padding: 25px 0;overflow:auto}
 .container-material {
   display: block;
 }
@@ -199,6 +199,10 @@ export default {
     line-height: 22px;
     font-weight: 300;
     margin: 0 auto 10px auto;
+  }
+  .alert {
+    background: #f8d7da;
+    color:#333;
   }
   .actions {
     padding: 25px 0;

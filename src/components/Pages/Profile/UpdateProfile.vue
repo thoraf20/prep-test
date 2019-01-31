@@ -52,6 +52,25 @@
               </div>
               <div class="row mb-3">
                 <div class="col-md-3 text-md-right">
+                  <label> New Password *</label>
+                </div>
+                <div class="col" id="phone-container">
+                  <b-form-input
+                    name="email"
+                    type="password"
+                    id="email"
+                    v-model="client.password"
+                    v-validate.disable="'required'"
+
+                  ></b-form-input>
+                  <div
+                    class="invalid-feedback"
+                    v-show="errors.has('email')"
+                  >{{errors.first('email')}}</div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-3 text-md-right">
                   <label>Phone Number *</label>
                 </div>
                 <div class="col" id="phone-container">
@@ -61,6 +80,7 @@
                     id="email"
                     v-model="client.phone"
                     v-validate.disable="'required'"
+                    disabled
                   ></b-form-input>
                   <div
                     class="invalid-feedback"
@@ -133,6 +153,7 @@ export default {
         location: this.$auth.user().location.name,
         state: this.$auth.user().state.name,
         password: "",
+        old_password: "",
         confirm_password: ""
       }
     };
@@ -140,6 +161,7 @@ export default {
 
   methods: {
     submit() {
+      //check if old password is what the person entered
       this.$validator.validateAll().then(valid => {
         if (valid) {
           this.updatePassWord();
@@ -191,7 +213,8 @@ export default {
         name: this.client.name,
         email: this.client.email,
         phone: this.client.phone,
-        address: this.client.address
+        address: this.client.address,
+        password: this.password
       };
       return data;
     }
