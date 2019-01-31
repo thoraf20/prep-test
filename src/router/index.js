@@ -233,7 +233,7 @@ export default new Router({
               component: HomeDashboard,
             },
             {
-              path: 'earnings',
+              path: 'payouts',
               name: 'earnings-dashboard',
               component: EarningsDashboard,
             },
