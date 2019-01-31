@@ -42,7 +42,11 @@
               <td class="status"><span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Launching' : 'Active' }}</td>
               <td>{{ c.tutor !== null && c.tutor.phone !== null ? c.tutor.phone : 'Not Available' }}</td>
               <td>
-                <b-dropdown variant="link" size="lg" no-caret id="dsdag">
+                <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
+                  <button class="btn btn-sm btn-primary">View Class </button>
+                </router-link>
+                <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger">Make Complaint </button>
+                <!-- <b-dropdown variant="link" size="lg" no-caret id="dsdag">
                   <template slot="button-content">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" class=""><g><g><g><circle cx="69.545" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="306" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="542.455" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/></g></g></g> </svg>
                   </template>
@@ -50,8 +54,8 @@
                      View Class 
                   </b-dropdown-item>
                   <b-dropdown-item href="#" @click.prevent="showModal(c.id)">Make Complaint</b-dropdown-item>
-                  <!-- <b-dropdown-item href="#" @click.prevent="showCalendar(c.id)">Submit Lessson</b-dropdown-item> -->
-                </b-dropdown>
+                  <b-dropdown-item href="#" @click.prevent="showCalendar(c.id)">Submit Lessson</b-dropdown-item> 
+                </b-dropdown> -->
               </td>
             </tr>
           </tbody>
@@ -289,6 +293,13 @@ export default {
 .hold {
   padding: 25px 0;
   height: 100%;
+}
+
+.btn-sm {
+  height:30px;
+}
+.btn-danger {
+  background:lightcoral;
 }
 
 .container-material {
