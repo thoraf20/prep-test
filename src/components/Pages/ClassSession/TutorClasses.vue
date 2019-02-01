@@ -31,15 +31,21 @@
               <td>Tutor Name </td>
               <td>Tutor ID</td>
               <td>Status 
+                <span v-b-tooltip.hover title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        1. Active: Blah Blah Blahship
+                        2. Launching: Yada Yada Yada
+                        3. Thunder fire the evil">
                   <i id="cia" class="fal fa fa-info-circle"></i>
-                  <b-tooltip target="cia" placement="bottom">
+                </span>
+                  <!-- <i id="cia" class="fal fa fa-info-circle"></i>
+                  <b-tooltip v-b-tooltip.hover target="cia" placement="bottom">
                       <small style="text-align:left"> 
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                         1. Active: Blah Blah Blahship<br>
                         2. Launching: Yada Yada Yada<br>
                         3. Thunder fire the evil
                       </small>
-                  </b-tooltip>
+                  </b-tooltip> -->
               </td>
               <td>Tutors's Phone Number</td>
               <td>Action</td>

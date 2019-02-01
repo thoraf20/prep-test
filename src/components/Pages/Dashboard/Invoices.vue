@@ -69,20 +69,14 @@
             <tr>
               <td>ID</td>
               <td>UIA 
-                  <i id="uia" class="fal fa fa-info-circle"></i>
-                    <b-tooltip target="uia" placement="bottom">
-                      <small> 
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
-                      </small>
-                    </b-tooltip>
+                <span v-b-tooltip.hover title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when">
+                  <i id="cia" class="fal fa fa-info-circle"></i>
+                </span>
               </td>
               <td>CIA
+                <span v-b-tooltip.hover title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when">
                   <i id="cia" class="fal fa fa-info-circle"></i>
-                  <b-tooltip target="cia" placement="bottom">
-                      <small> 
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
-                      </small>
-                  </b-tooltip>
+                </span>
               </td>
               <td>Status</td>
               <td>Last Updated</td>

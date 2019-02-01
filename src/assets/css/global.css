@@ -464,7 +464,7 @@ a > .tab-link, .tab-link:hover
 	}
 
 }
-
+.tooltip { pointer-events: none !important; font-size: 10px; text-align: left; float:left }
 .tooltip-inner {
 	background: white !important;
 	color:black !important;
