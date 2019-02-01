@@ -28,13 +28,16 @@
         <table class="table">
           <thead>
             <tr>
+              <td>S/N</td>
               <td>Tutor Name </td>
               <td>Tutor ID</td>
               <td>Status 
-                <span v-b-tooltip.hover title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        1. Active: Blah Blah Blahship
-                        2. Launching: Yada Yada Yada
-                        3. Thunder fire the evil">
+                <span v-b-tooltip.hover title="Different level of class status at Prepclass.
+Launching - Class was just created and Prepclass admin is currently seeking an eligible tutor for the class
+Pending - Prepclass has found a suitable tutor for the class but the class is yet to officially start
+Active - This is an active Prepclass class with tutor and learner
+Paused - This is a formerly active class that has no been paused to start at a future date
+Ended - This is a formerly active class that has now ended">
                   <i id="cia" class="fal fa fa-info-circle"></i>
                 </span>
                   <!-- <i id="cia" class="fal fa fa-info-circle"></i>
@@ -52,7 +55,8 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="c of filtered" :key="c.id">
+            <tr v-for="(c,index) of filtered" :key="c.id">
+              <td>{{index+1}} </td>
               <td><router-link :to="{ name: 'tutor-class', params: { id: c.id }}">{{ c.tutor !== null && c.tutor.name !== null ? c.tutor.name : 'Not Available' }}</router-link></td>
               <td>{{ c.tutor !== null && c.tutor.id !== null ? c.tutor.id : 'Not Available' }}</td>
               <td class="status">

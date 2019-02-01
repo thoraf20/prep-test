@@ -173,7 +173,7 @@
                 Subjects: <span><i v-for="subj of learner.subjects">{{subj.name}}</i></span>
               </div>
                <div class="list--item">
-                Remark : <span><i> {{learner.remark }} </i></span>
+                Birthday : <span><i> {{learner.dob | bday}} </i></span>
               </div>
             </div>
           </div>
@@ -497,6 +497,11 @@ export default {
 
     this.fetchDates();
   },
+  filters: {
+    bday(value) {
+      return moment(String(value)).format('YYYY-MM-DD')
+    }
+  }
 };
 </script>
 
