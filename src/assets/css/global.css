@@ -464,7 +464,7 @@ a > .tab-link, .tab-link:hover
 	}
 
 }
-
+.tooltip { pointer-events: none !important; }
 .tooltip-inner {
 	background: white !important;
 	color:black !important;

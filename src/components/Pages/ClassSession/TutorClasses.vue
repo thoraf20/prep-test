@@ -32,7 +32,7 @@
               <td>Tutor ID</td>
               <td>Status 
                   <i id="cia" class="fal fa fa-info-circle"></i>
-                  <b-tooltip target="cia" placement="bottom">
+                  <b-tooltip v-b-tooltip.hover target="cia" placement="bottom">
                       <small style="text-align:left"> 
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                         1. Active: Blah Blah Blahship<br>
