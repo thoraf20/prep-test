@@ -161,6 +161,9 @@
                 Gender: <span>{{ learner.gender }}</span>
               </div>
               <div class="list--item">
+                School: <span>{{learner.school ? learner.school.name : ''}}</span>
+              </div>
+              <div class="list--item">
                 Class: <span>{{ learner.school_class && learner.school_class.name }}</span>
               </div>
               <div class="list--item">
@@ -168,6 +171,9 @@
               </div>
               <div class="list--item">
                 Subjects: <span><i v-for="subj of learner.subjects">{{subj.name}}</i></span>
+              </div>
+               <div class="list--item">
+                Remark : <span><i> {{learner.remark }} </i></span>
               </div>
             </div>
           </div>
