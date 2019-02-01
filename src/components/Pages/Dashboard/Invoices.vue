@@ -68,8 +68,22 @@
           <thead>
             <tr>
               <td>ID</td>
-              <td>UIA</td>
-              <td>CIA</td>
+              <td>UIA 
+                  <i id="uia" class="fal fa fa-info-circle"></i>
+                    <b-tooltip target="uia" placement="bottom">
+                      <small> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                      </small>
+                    </b-tooltip>
+              </td>
+              <td>CIA
+                  <i id="cia" class="fal fa fa-info-circle"></i>
+                  <b-tooltip target="cia" placement="bottom">
+                      <small> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                      </small>
+                  </b-tooltip>
+              </td>
               <td>Status</td>
               <td>Last Updated</td>
             </tr>
