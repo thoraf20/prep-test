@@ -166,6 +166,9 @@
               <div class="list--item">
                 Curricula: <span><i v-for="curri of learner.curricula">{{curri.name}}</i></span>
               </div>
+              <div class="list--item">
+                Subjects: <span><i v-for="subj of learner.subjects">{{subj.name}}</i></span>
+              </div>
             </div>
           </div>
           <div v-else class="row justify-content-center">
