@@ -1,5 +1,5 @@
-const BASE_API = "https://v1-api.prepclassng.com";
-const PUBLIC_URL = "https://v1-api.prepclassng.com";
+const BASE_API = "https://api.prepclass.com.ng";
+const PUBLIC_URL = "https://prepclass.com.ng";
 const PUSHER_APP_KEY = '23b7275c0bbb5e4aa24b';
 
 module.exports = {
