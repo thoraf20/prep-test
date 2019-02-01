@@ -45,7 +45,7 @@ export default {
       const { email } = this;
       this.submitting = true;
       this.$http
-        .post(BASE_API + "/v1/tutor/password/email", { email })
+        .post(BASE_API + "/v1/client/password/email", { email })
         .then(res => {
           this.success = true;
           this.successMessage = res.data.message;

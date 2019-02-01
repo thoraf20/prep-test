@@ -28,7 +28,11 @@
         <table class="table">
           <thead>
             <tr>
-              <td>Tutor Name</td>
+              <td>Tutor Name 
+                <span tooltip="Lorem Ipsum is simply dummy text of the printing and \n typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " flow="down">
+                  <i class="fal fa fa-info-circle"></i>
+                </span>
+              </td>
               <td>Tutor ID</td>
               <td>Status</td>
               <td>Tutors's Phone Number</td>
@@ -39,7 +43,9 @@
             <tr v-for="c of filtered" :key="c.id">
               <td><router-link :to="{ name: 'tutor-class', params: { id: c.id }}">{{ c.tutor !== null && c.tutor.name !== null ? c.tutor.name : 'Not Available' }}</router-link></td>
               <td>{{ c.tutor !== null && c.tutor.id !== null ? c.tutor.id : 'Not Available' }}</td>
-              <td class="status"><span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Launching' : 'Active' }}</td>
+              <td class="status">
+                <span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Launching' : c.level == 2 ? 'Pending' : 'Active' }}
+              </td>
               <td>{{ c.tutor !== null && c.tutor.phone !== null ? c.tutor.phone : 'Not Available' }}</td>
               <td>
                 <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
