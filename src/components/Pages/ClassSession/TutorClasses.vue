@@ -28,7 +28,11 @@
         <table class="table">
           <thead>
             <tr>
-              <td>Tutor Name</td>
+              <td>Tutor Name 
+                <span tooltip="Lorem Ipsum is simply dummy text of the printing and \n typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " flow="down">
+                  <i class="fal fa fa-info-circle"></i>
+                </span>
+              </td>
               <td>Tutor ID</td>
               <td>Status</td>
               <td>Tutors's Phone Number</td>
@@ -39,13 +43,25 @@
             <tr v-for="c of filtered" :key="c.id">
               <td><router-link :to="{ name: 'tutor-class', params: { id: c.id }}">{{ c.tutor !== null && c.tutor.name !== null ? c.tutor.name : 'Not Available' }}</router-link></td>
               <td>{{ c.tutor !== null && c.tutor.id !== null ? c.tutor.id : 'Not Available' }}</td>
-              <td class="status"><span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Launching' : 'Active' }}</td>
+              <td class="status">
+                <span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Launching' : c.level == 2 ? 'Pending' : 'Active' }}
+              </td>
               <td>{{ c.tutor !== null && c.tutor.phone !== null ? c.tutor.phone : 'Not Available' }}</td>
               <td>
-                <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-6">
+                     <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
+                      <button class="btn btn-sm btn-sml btn-primary">View Class </button>
+                    </router-link>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                     <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger btn-td">Make Complaint </button>
+                  </div>
+                </div>
+                <!-- <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
                   <button class="btn btn-sm btn-sml btn-primary">View Class </button>
                 </router-link>
-                <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger btn-td">Make Complaint </button>
+                <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger btn-td">Make Complaint </button> -->
                 <!-- <b-dropdown variant="link" size="lg" no-caret id="dsdag">
                   <template slot="button-content">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" class=""><g><g><g><circle cx="69.545" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="306" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="542.455" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/></g></g></g> </svg>
@@ -479,6 +495,11 @@ export default {
   }
 }
 @media only screen and (max-width: 600px) {
+  .btn-sm {
+    font-size: 10px;
+    text-align: left;
+    width:100%;
+  }
   .bottom {
     .tp {
       .sasasa {width: calc(100% - 30px)}
