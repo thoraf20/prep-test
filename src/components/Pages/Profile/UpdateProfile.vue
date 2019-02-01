@@ -80,6 +80,7 @@
                     id="email"
                     v-model="client.phone"
                     v-validate.disable="'required'"
+                    disabled
                   ></b-form-input>
                   <div
                     class="invalid-feedback"
