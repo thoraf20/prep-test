@@ -50,45 +50,23 @@
                   >{{errors.first('email')}}</div>
                 </div>
               </div>
-                            <div class="row mb-3">
-                <div class="col-md-3 text-md-right">
-                  <label>New Password *</label>
-                </div>
-                <div class="col" id="email-container">
-                  <!-- <b-form-input name="password" :class="{'is-invalid' : errors.has('password')}"  id="password" v-validate.disable="'required|password|min:6|max:35'" ref="password" data-vv-as="password"  v-model="client.password" class="form-control" type="password"></b-form-input> -->
-                  <small class="form-text text-muted">Please make sure this is a password you can remember</small>
-                  <div class="invalid-feedback" v-show="errors.has('password')">{{errors.first('password')}}</div>
-                <div :class="{'form-group': true, 'has-error': errors.has('password')}">
-                    <input v-validate="'required|min:5|confirmed:password_confirmation'" type="password" class="form-control" id="password" name="password" placeholder="New Password" v-model="client.password">
-                    <small class="help-block form-text error text-muted" v-if="errors.has('password')">{{errors.first('password')}}</small>
-                </div><!--end form group-->
-
-                </div>
-              </div>
               <div class="row mb-3">
                 <div class="col-md-3 text-md-right">
-                  <label>Confirm Password *</label>
+                  <label> New Password *</label>
                 </div>
-                <div class="col" id="email-container">
+                <div class="col" id="phone-container">
+                  <b-form-input
+                    name="email"
+                    type="password"
+                    id="email"
+                    v-model="client.password"
+                    v-validate.disable="'required'"
+
+                  ></b-form-input>
                   <div
-                    :class="{'form-group': true, 'has-error': errors.has('password_confirmation')}"
-                  >
-                    <input
-                      v-validate="'required'"
-                      type="password"
-                      class="form-control"
-                      id="password_confirmation"
-                      name="password_confirmation"
-                      placeholder="Verify password"
-                      v-model="client.confirm_password"
-                    >
-                  </div>
-                  <!-- <b-form-input name="confirm_password" :class="{'is-invalid' : errors.has('confirm_password')}"  v-model="client.confirm_password" id="confirm_password" data-vv-as="password"  v-validate.disable="'required|confirmed:$password'"    class="form-control" type="password"></b-form-input> -->
-                  <!-- <small class="form-text text-muted">Please make sure this is a password you can remember</small> -->
-                  <small
-                    class="invalid-feedback form-text text-muted"
-                    v-show="errors.has('confirm_password')"
-                  >{{errors.first('confirm_password')}}</small>
+                    class="invalid-feedback"
+                    v-show="errors.has('email')"
+                  >{{errors.first('email')}}</div>
                 </div>
               </div>
               <div class="row mb-3">
@@ -102,7 +80,6 @@
                     id="email"
                     v-model="client.phone"
                     v-validate.disable="'required'"
-                    disabled
                   ></b-form-input>
                   <div
                     class="invalid-feedback"
@@ -236,7 +213,7 @@ export default {
         email: this.client.email,
         phone: this.client.phone,
         address: this.client.address,
-        password: this.password
+        password: this.client.password
       };
       return data;
     }

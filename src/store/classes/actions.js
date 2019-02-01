@@ -5,7 +5,7 @@ const API = `${BASE_API}/v1`;
 export default {
   getClasses({ commit }) {
     return new Promise((resolve, reject) => {
-      axios.get(`${API}/client/session-classes?sort=intended_start_date%7Casc,created_at%7Cdesc&per_page=20&simple=true&with=learners.schoolClass,subjects,client,tutor,subjects,status,days`)
+      axios.get(`${API}/client/session-classes?sort=intended_start_date%7Casc,created_at%7Cdesc&per_page=20&simple=true&with=learners,learners.subjects,learners.learnerSubjects.goal,learners.learnerSubjects.subject,learners.schoolClass,client,tutor,subjects,status,days`)
         .then(({ data: { data } }) => {
           commit('SET_SESSION_CLASSES', data);
           resolve();
