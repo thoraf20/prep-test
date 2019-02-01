@@ -30,7 +30,7 @@
             <tr>
               <td>Subject</td>
               <td>Ticket ID</td>
-              <td>Client</td>
+              <td>Tutor</td>
               <td>Regarding</td>
               <td>Opened On</td>
               <td>Status</td>
@@ -41,7 +41,7 @@
             <router-link tag="tr" :to="{ name: 'class-ticket', params: { id: ticket.id } }" v-for="ticket of filtered" :key="ticket.id">
               <td>{{ ticket.title }}</td>
               <td>{{ ticket.id }}</td>
-              <td>{{ ticket.session_class && ticket.session_class.client && ticket.session_class.client.name }}</td>
+              <td>{{ ticket.session_class && ticket.session_class.tutor && ticket.session_class.tutor.name ? ticket.session_class.tutor.name : 'Not available' }}</td>
               <td>{{ ticket.category && ticket.category.name }}</td>
               <td>{{ ticket.opened_at && ticket.opened_at.carbon && moments(ticket.opened_at.carbon.date) }}</td>
               <td class="status"><span :class="ticket.status ? ticket.status.name.toLowerCase() : 'default'"></span>{{ ticket.status && ticket.status.name }}</td>
