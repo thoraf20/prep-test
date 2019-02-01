@@ -45,7 +45,7 @@ export default {
       console.log("Redirect From: " + this.$auth.redirect().from.name);
     }
     if (this.$auth.check()) {
-      this.$router.push({ name: 'login' });
+      this.$router.push({ name: 'dashboard' });
     }
   },
   created() {
