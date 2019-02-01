@@ -7,7 +7,7 @@
           Filter
         </div>
         <div class="srch">
-          <input type="search" placeholder="Search Jobs" class="form-control" v-model="query">
+          <input type="search" placeholder="Search Classes" class="form-control" v-model="query">
         </div>
       </div>
       <div class="input-group input-daterange">
@@ -28,27 +28,67 @@
         <table class="table">
           <thead>
             <tr>
-              <td>Tutor Name</td>
+              <td>S/N</td>
+              <td>Tutor Name </td>
               <td>Tutor ID</td>
-              <td>Status</td>
+              <td>Status 
+                <span v-b-tooltip.hover title="Different level of class status at Prepclass.
+Launching - Class was just created and Prepclass admin is currently seeking an eligible tutor for the class
+Pending - Prepclass has found a suitable tutor for the class but the class is yet to officially start
+Active - This is an active Prepclass class with tutor and learner
+Paused - This is a formerly active class that has no been paused to start at a future date
+Ended - This is a formerly active class that has now ended">
+                  <i id="cia" class="fal fa fa-info-circle"></i>
+                </span>
+                  <!-- <i id="cia" class="fal fa fa-info-circle"></i>
+                  <b-tooltip v-b-tooltip.hover target="cia" placement="bottom">
+                      <small style="text-align:left"> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                        1. Active: Blah Blah Blahship<br>
+                        2. Launching: Yada Yada Yada<br>
+                        3. Thunder fire the evil
+                      </small>
+                  </b-tooltip> -->
+              </td>
               <td>Tutors's Phone Number</td>
               <td>Action</td>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="c of filtered" :key="c.id">
+            <tr v-for="(c,index) of filtered" :key="c.id">
+              <td>{{index+1}} </td>
               <td><router-link :to="{ name: 'tutor-class', params: { id: c.id }}">{{ c.tutor !== null && c.tutor.name !== null ? c.tutor.name : 'Not Available' }}</router-link></td>
               <td>{{ c.tutor !== null && c.tutor.id !== null ? c.tutor.id : 'Not Available' }}</td>
-              <td class="status"><span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> {{ c.level && c.level == 1 ? 'Pending' : 'Active' }}</td>
+              <td class="status">
+                <span :class="c.status ? c.status.name.toLowerCase() : 'default'"></span> 
+                {{ c.level && c.level == 1 ? 'Launching' : c.level == 2 ? 'Pending' : 'Active' }}
+              </td>
               <td>{{ c.tutor !== null && c.tutor.phone !== null ? c.tutor.phone : 'Not Available' }}</td>
               <td>
-                <b-dropdown variant="link" size="lg" no-caret id="dsdag">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-6">
+                     <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
+                      <button class="btn btn-sm btn-sml btn-primary">View Class </button>
+                    </router-link>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                     <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger btn-td">Make Complaint </button>
+                  </div>
+                </div>
+                <!-- <router-link :to="{ name: 'tutor-class', params: { id: c.id }}">
+                  <button class="btn btn-sm btn-sml btn-primary">View Class </button>
+                </router-link>
+                <button @click.prevent="showModal(c.id)" class="btn btn-sm btn-danger btn-td">Make Complaint </button> -->
+                <!-- <b-dropdown variant="link" size="lg" no-caret id="dsdag">
                   <template slot="button-content">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" class=""><g><g><g><circle cx="69.545" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="306" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/><circle cx="542.455" cy="306" r="69.545" data-original="#000000" class="active-path" data-old_color="#000000" fill="#3B86FF"/></g></g></g> </svg>
                   </template>
+                  <b-dropdown-item :to="{ name: 'tutor-class', params: { id: c.id }}">
+                     View Class 
+                  </b-dropdown-item>
                   <b-dropdown-item href="#" @click.prevent="showModal(c.id)">Make Complaint</b-dropdown-item>
-                  <!-- <b-dropdown-item href="#" @click.prevent="showCalendar(c.id)">Submit Lessson</b-dropdown-item> -->
-                </b-dropdown>
+                  <b-dropdown-item href="#" @click.prevent="showCalendar(c.id)">Submit Lessson</b-dropdown-item> 
+                </b-dropdown> -->
               </td>
             </tr>
           </tbody>
@@ -66,7 +106,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" v-model="regarding">
-              <option value="" selected disabled>Regarding</option>
+              <option value="" selected required disabled>What is this ticket about</option>
               <option :value="category.id" v-for="category of categories" :key="category.id">{{ category.name }}</option>
             </select>
           </div>
@@ -288,6 +328,24 @@ export default {
   height: 100%;
 }
 
+.btn-sm {
+  height:30px;
+  width: 110px;
+  box-shadow: 0 2px 2px 0 hsla(0,0%,44%,.14), 0 3px 1px -2px hsla(0,0%,44%,.12), 0 1px 5px 0 hsla(0,0%,44%,.2);
+  border-radius: 0px;
+}
+.btn-sml {
+  width: 90px;
+}
+.btn-danger {
+  background:#dc3545;
+  border-color: #dc3545;
+}
+.btn-primary {
+  background: #17a2b8;
+  border-color: #17a2b8;
+}
+
 .container-material {
   display: block;
 }
@@ -454,6 +512,11 @@ export default {
   }
 }
 @media only screen and (max-width: 600px) {
+  .btn-sm {
+    font-size: 10px;
+    text-align: left;
+    width:100%;
+  }
   .bottom {
     .tp {
       .sasasa {width: calc(100% - 30px)}

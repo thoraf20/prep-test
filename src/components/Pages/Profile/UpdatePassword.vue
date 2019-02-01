@@ -123,7 +123,9 @@ export default {
             "You will be redirected back to login page. Click ok to proceed",
             "success"
             ).then((value) => {
-                this.logOut()
+                //this.logOut()
+                console.log(this.$route);
+                this.$router.go(0);
             })
         });
     },

@@ -32,7 +32,7 @@
           Filter
         </div>
         <div class="srch">
-          <input type="search" placeholder="Search Jobs" class="form-control" v-model="query">
+          <input type="search" placeholder="Search Invoices" class="form-control" v-model="query">
         </div>
       </div>
       <div class="input-group input-daterange">
@@ -68,8 +68,17 @@
           <thead>
             <tr>
               <td>ID</td>
-              <td>Reference Key</td>
-              <td>Amount</td>
+              <td>UIA 
+                <span v-b-tooltip.hover 
+                title="Unique Invoice Amount is the amount billed for a class session without including the past credit/debit details of the client. For example, if a client owed 20,000NGN in the past and his billed  another 32,000NGN for a new session. His UIA still remains 32,000NGN for that class">
+                  <i id="cia" class="fal fa fa-info-circle"></i>
+                </span>
+              </td>
+              <td>CIA
+                <span v-b-tooltip.hover title="Cumulative Invoice Amount is the amount billed for a class session plus the past credit/debit details of the client. For example, if a client owed 20,000NGN in the past and his billed  another 32,000NGN for a new session. His CIA becomes 52,000NGN for that class">
+                  <i id="cia" class="fal fa fa-info-circle"></i>
+                </span>
+              </td>
               <td>Status</td>
               <td>Last Updated</td>
             </tr>
@@ -77,8 +86,8 @@
           <tbody>
             <tr v-for="(invoice,index) of filtered" :key="invoice.id">
               <td>{{ index + 1 }}</td>
-              <td>{{ invoice.reference }}</td>
-              <td>{{ invoice.unique_amount }}</td>
+              <td>&#8358;{{ invoice.unique_amount }}</td>
+              <td>&#8358;{{ invoice.amount }}</td>
               <td class="status">
                 <span :class="invoice.status ? invoice.status.name.toLowerCase() : 'default'"></span>
                 {{ invoice.status && invoice.status.name }}
