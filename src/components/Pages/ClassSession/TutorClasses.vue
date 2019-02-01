@@ -495,6 +495,11 @@ export default {
   }
 }
 @media only screen and (max-width: 600px) {
+  .btn-sm {
+    font-size: 10px;
+    text-align: left;
+    width:100%;
+  }
   .bottom {
     .tp {
       .sasasa {width: calc(100% - 30px)}
