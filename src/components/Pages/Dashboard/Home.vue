@@ -5,10 +5,12 @@
       <span style="cursor: pointer" @click="removeNotification(notification.id)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="9px" height="9px"><g id="Close"><path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#FFFFFF"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
     </div>
     <div class="content">
-      <div class="alert alert-red" v-if="this.$auth.user().progress == 0 || this.$auth.user().progress == null"> 
-        You are yet to update your password - It is advised you do. Click 
-        <router-link :to="{path: 'update-password'}" style="color:#639440">Here</router-link>
-        to update now.
+      <div class="alert alert-red" v-if="this.$auth.user().progress == 0 || this.$auth.user().progress == null">
+        <center> 
+          You are yet to update your password - It is advised you do so. Click 
+          <router-link :to="{path: 'update-password'}" style="color:#639440">Here</router-link>
+          to update now.
+        </center>
       </div>
       <h3>Hello {{ u.name }} - Welcome to Prepclass!</h3>
       <div class="actions">
