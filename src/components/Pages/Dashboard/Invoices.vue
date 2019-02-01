@@ -69,12 +69,13 @@
             <tr>
               <td>ID</td>
               <td>UIA 
-                <span v-b-tooltip.hover title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when">
+                <span v-b-tooltip.hover 
+                title="Unique Invoice Amount is the amount billed for a class session without including the past credit/debit details of the client. For example, if a client owed 20,000NGN in the past and his billed  another 32,000NGN for a new session. His UIA still remains 32,000NGN for that class">
                   <i id="cia" class="fal fa fa-info-circle"></i>
                 </span>
               </td>
               <td>CIA
-                <span v-b-tooltip.hover title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when">
+                <span v-b-tooltip.hover title="Cumulative Invoice Amount is the amount billed for a class session plus the past credit/debit details of the client. For example, if a client owed 20,000NGN in the past and his billed  another 32,000NGN for a new session. His CIA becomes 52,000NGN for that class">
                   <i id="cia" class="fal fa fa-info-circle"></i>
                 </span>
               </td>
