@@ -19,6 +19,7 @@
       </form>
       <!-- <p class="mr">Don't have an account? <router-link class="primary-text" :to="{ name: 'register' }">Sign up</router-link> <br> Forgot your Password? <router-link class="primary-text" :to="{ name: 'forgot-password' }">Click here</router-link></p> -->
       <p class="mr">By clicking get started you agree to the <a href="#!" class="primary-text">terms of service</a> and <a href="#!" class="primary-text">privacy policies</a></p>
+      <p class="mr">Forgotten Password? Click <a href="/forgot-password" class="primary-text">Here</a> </p>
   </auth-index>
 </template>
 
