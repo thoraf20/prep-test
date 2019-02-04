@@ -100,7 +100,7 @@ export default {
             "success"
           );
           this.$auth.login({
-            redirect: { name: "profile-edit" },
+            redirect: { name: "dashboard" },
             data: { email, password }
           });
         })
