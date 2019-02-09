@@ -145,7 +145,7 @@ export default {
           return false;
         }
 
-        return t.payload;
+        return t;
       });
     }
   },
