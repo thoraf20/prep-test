@@ -224,7 +224,7 @@ header {
 
     .comments {
       width: 100%;
-      height: 350px;
+      height: 200px;
       max-height: 400px;
       overflow-y: auto;
 
@@ -309,6 +309,9 @@ header {
         }
       }
     }
+  }
+  .container-material {
+      padding: 30px;
   }
 }
 </style>
