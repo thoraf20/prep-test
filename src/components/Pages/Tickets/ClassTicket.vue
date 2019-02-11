@@ -224,7 +224,7 @@ header {
 
     .comments {
       width: 100%;
-      height: 400px;
+      height: 350px;
       max-height: 400px;
       overflow-y: auto;
 
@@ -281,7 +281,6 @@ header {
       border-top: 1px solid #f5f5f5;
       padding: 25px;
       width: 100%;
-      margin-top: -25px;
       textarea {
         width: 100%;
         max-height: 250px;
