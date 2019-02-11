@@ -310,5 +310,8 @@ header {
       }
     }
   }
+  .container-material {
+      padding: 30px;
+  }
 }
 </style>
