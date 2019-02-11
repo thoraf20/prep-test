@@ -281,6 +281,7 @@ header {
       border-top: 1px solid #f5f5f5;
       padding: 25px;
       width: 100%;
+      margin-top: 50px;
       textarea {
         width: 100%;
         max-height: 250px;
