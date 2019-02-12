@@ -32,7 +32,7 @@
           Filter
         </div>
         <div class="srch">
-          <input type="search" placeholder="Search Earnings" class="form-control" v-model="query">
+          <input type="search" placeholder="Search Payouts" class="form-control" v-model="query">
         </div>
       </div>
       <div class="input-group input-daterange">
@@ -47,7 +47,7 @@
         </div>
         <div class="col-sm-6">
           <datepicker
-            av-model="to"
+            v-model="to"
             placeholder="To"
             id="exampleInputEmail4"
             input-class="date"
