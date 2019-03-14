@@ -223,6 +223,7 @@
     </div>
     <b-modal ref="myModalRef" hide-footer size="lg" centered class="mkmodal" title="Make Complaint">
       <div class="d-block text-center">
+        <span class="pt-1 pb-1 pl-3 pr-3" style="background:#F83B54; width:100%; color:white;" v-if="errorStyle !== ''"> {{errorStyle}} - Please Fill up all Fields</span>
         <div class="form-group">
           <input type="text" placeholder="Summary" v-model="summary" class="form-control">
         </div>
@@ -265,6 +266,7 @@ export default {
       },
       API: `${BASE_API}/v1`,
       summary: '',
+      errorStyle: '',
       content: '',
       regarding: '',
       submitting: false,
@@ -359,6 +361,8 @@ export default {
     },
     hideModal() {
       this.resetModalForm();
+      this.errorStyle = '';
+      console.log('Closed');
       this.$refs.myModalRef.hide();
     },
     hideCalendar() {
@@ -368,6 +372,7 @@ export default {
       this.summary = '';
       this.content = '';
       this.regarding = '';
+      this.errorStyle = '';
     },
     itemType(val) {
       switch (val && val.name) {
@@ -405,7 +410,15 @@ export default {
           this.submitting = false;
           this.hideModal();
         })
-        .catch(error => console.error(error));
+        .catch((error) => {
+          // console.error(error)
+          this.submitting = false;
+          this.errorStyle = error.data.message;
+          const self = this;
+          setInterval(function(){
+            self.errorStyle ='';
+          },3500)
+        });
     },
     saveDates() {
       this.saving = true
