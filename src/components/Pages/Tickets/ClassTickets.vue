@@ -57,7 +57,7 @@
       <b-modal ref="myModalRef" hide-footer size="lg" centered class="mkmodal" title="Make Complaint">
         <div class="d-block text-center">
           <div class="form-group">
-            <span class="pt-1 pb-1 pl-3 pr-3" style="background:#F83B54; width:100%; color:white;" v-if="errorStyle !== ''"> {{errorStyle}} - Please Fill up all Fields</span>
+            <span class="pt-1 pb-1 pl-3 pr-3" style="background:#F83B54; width:100%; color:white;" v-if="errorStyle !== ''"> Error!! - Please Fill up all Entries.</span>
             <input type="text" placeholder="Summary" v-model="summary" class="form-control">
           </div>
           <div class="form-group">
@@ -189,7 +189,7 @@ export default {
           const self = this;
           setInterval(function(){
             self.errorStyle ='';
-          },3500)
+          },7000)
         });
     },
   },
