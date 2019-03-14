@@ -292,16 +292,17 @@ export default {
       this.$store.dispatch('makeTicket', data)
         .then(() => {
           this.submitting = false;
+          this.errorStyle = '';
           this.hideModal();
         })
         .catch((error) => {
           // console.error(error); this.submitting = false
           this.submitting = false
           this.errorStyle = error.data.message;
-          const self = this;
-          setInterval(function(){
-            self.errorStyle ='';
-          },7000)
+          // const self = this;
+          // setInterval(function(){
+          //   self.errorStyle ='';
+          // },7000)
           // alret(error.message);
         });
     },
