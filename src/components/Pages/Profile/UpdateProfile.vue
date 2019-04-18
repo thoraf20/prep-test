@@ -214,7 +214,7 @@ export default {
         email: this.client.email,
         phone: this.client.phone,
         address: this.client.address,
-        password: this.client.password
+        // password: this.client.password
       };
       return data;
     }
