@@ -17,4 +17,5 @@ export default {
   SET_CATEGORIES(state, array) {
     state.categories = array;
   },
+
 };

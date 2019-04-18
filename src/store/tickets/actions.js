@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const API = `${BASE_API}/v1`;
-
 export default {
   getTickets({ commit }) {
     return new Promise((resolve, reject) => {
@@ -48,7 +47,6 @@ export default {
       axios.post(`${API}/client/tickets`, { ...object })
         .then(({ data: { data } }) => {
           commit('ADD_TO_CLASS_TICKETS', data);
-          console.log
           resolve();
         })
         .catch(error => reject(error.response));
