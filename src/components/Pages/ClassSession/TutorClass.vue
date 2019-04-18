@@ -208,9 +208,6 @@
             <div class="list--item">
               Location: <span>{{ c.tutor && c.tutor.location ? c.tutor.location : 'Not Available' }}</span>
             </div>
-            <div class="list--item">
-              Invoice Created: <span>{{ c.tutor && c.tutor.phone ? c.tutor.phone : 'Not Available' }}</span>
-            </div>
           </div>
           <div v-else class="row justify-content-center">
             <div class="col text-center">
