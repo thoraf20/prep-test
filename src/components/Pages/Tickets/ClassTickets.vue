@@ -57,6 +57,7 @@
       <b-modal ref="myModalRef" hide-footer size="lg" centered class="mkmodal" title="Make Complaint">
         <div class="d-block text-center">
           <div class="form-group">
+            <span class="pt-1 pb-1 pl-3 pr-3" style="background:#F83B54; width:100%; color:white;" v-if="errorStyle !== ''"> Error!! - Please Fill up all Entries.</span>
             <input type="text" placeholder="Summary" v-model="summary" class="form-control">
           </div>
           <div class="form-group">
@@ -93,6 +94,7 @@ export default {
       summary: '',
       content: '',
       regarding: '',
+      errorStyle: '',
       submitting: false,
       doneLoading: false,
       toolbar: [
@@ -179,9 +181,17 @@ export default {
       this.$store.dispatch('makeTicket', data)
         .then(() => {
           this.submitting = true;
+          this.errorStyle = '';
           this.hideModal();
         })
-        .catch(error => console.error(error));
+        .catch((error) => {
+          this.submitting = false;
+          this.errorStyle = error.data.message;
+          // const self = this;
+          // setInterval(function(){
+          //   self.errorStyle ='';
+          // },7000)
+        });
     },
   },
   mounted() {

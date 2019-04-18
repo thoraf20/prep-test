@@ -101,6 +101,7 @@ Ended - This is a formerly active class that has now ended">
       </div>
       <b-modal ref="myModalRef" hide-footer size="lg" centered class="mkmodal" title="Make Complaint">
         <div class="d-block text-center">
+          <span class="pt-1 pb-1 pl-3 pr-3" style="background:#F83B54; width:100%; color:white;" v-if="errorStyle !== ''"> Error!! - Please fill up all Entries</span>
           <div class="form-group">
             <input type="text" placeholder="Summary" v-model="summary" class="form-control">
           </div>
@@ -155,6 +156,7 @@ export default {
       regarding: '',
       submitting: false,
       doneLoading: false,
+      errorStyle: '',
       toolbar: [
         [{ header: [false, 1, 2, 3, 4, 5, 6] }],
         ['bold', 'italic', 'underline', 'strike'],
@@ -253,6 +255,7 @@ export default {
     },
     hideModal() {
       this.resetModalForm();
+      this.errorStyle = '';
       this.$refs.myModalRef.hide();
     },
     hideCalendar() {
@@ -289,9 +292,19 @@ export default {
       this.$store.dispatch('makeTicket', data)
         .then(() => {
           this.submitting = false;
+          this.errorStyle = '';
           this.hideModal();
         })
-        .catch(error => console.error(error));
+        .catch((error) => {
+          // console.error(error); this.submitting = false
+          this.submitting = false
+          this.errorStyle = error.data.message;
+          // const self = this;
+          // setInterval(function(){
+          //   self.errorStyle ='';
+          // },7000)
+          // alret(error.message);
+        });
     },
     saveDates() {
       this.saving = true

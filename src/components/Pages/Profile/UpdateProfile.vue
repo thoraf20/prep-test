@@ -2,10 +2,10 @@
   <div>
     <div class="row content-section">
       <div class="col-12 mb-5">
-        <div class="panel w-100">
+        <div class="panel w-100 mt-5 mr-1 pb-5">
           <div class="panel-heading">
             <div class="panel-title">
-              <div class="row">
+              <div class="row p-4">
                 <div class="col-auto">My Profile</div>
                 <div class="d-inline-block col mr-auto"></div>
                 <div class="col-auto">ID : {{$auth.user().former_id}}</div>
@@ -50,9 +50,9 @@
                   >{{errors.first('email')}}</div>
                 </div>
               </div>
-              <div class="row mb-3">
+              <!-- <div class="row mb-3">
                 <div class="col-md-3 text-md-right">
-                  <label> New Password *</label>
+                  <label>New Password *</label>
                 </div>
                 <div class="col" id="phone-container">
                   <b-form-input
@@ -61,14 +61,13 @@
                     id="email"
                     v-model="client.password"
                     v-validate.disable="'required'"
-
                   ></b-form-input>
                   <div
                     class="invalid-feedback"
                     v-show="errors.has('email')"
                   >{{errors.first('email')}}</div>
                 </div>
-              </div>
+              </div> -->
               <div class="row mb-3">
                 <div class="col-md-3 text-md-right">
                   <label>Phone Number *</label>
@@ -97,6 +96,7 @@
                     name="email"
                     id="email"
                     v-model="client.address"
+                    placeholder="Your Address"
                     v-validate.disable="'required'"
                   ></b-form-textarea>
                   <div
@@ -115,7 +115,7 @@
                   <button
                     @click.prevent="submit"
                     :disabled="submitting"
-                    class="btn btn-success btn-lg"
+                    class="btn btn-success btn-sweet btn-lg"
                   >
                     Save
                     <i class="fa fa-circle-o-notch fa-spin" v-show="submitting"></i>
@@ -225,6 +225,32 @@ export default {
 <style scoped lang="scss">
 .content-section {
   margin-top: 40px;
+}
+input,textarea {
+  border-radius:0px;
+
+}
+textarea {
+  height:100px;
+}
+.btn-sweet {
+      width: 130px;
+    height: auto;
+    line-height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 12px;
+    vertical-align: middle;
+    background: #5f9048;
+    border: #5f9048;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(40,167,69,.14), 0 3px 1px -2px rgba(40,167,69,.12), 0 1px 5px 0 rgba(40,167,69,.2);
+}
+.panel {
+  border:0px;
+  border-radius:0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .fade {
   &-enter,
