@@ -154,6 +154,9 @@
         <div class="body">
           <div v-if="doneLoading">
             <div class="list" v-for="learner of c.learners">
+              <button v-if="currentIndex != learner.id" class="button is-small alert-success" @click="setLearner(learner.id)">Edit</button>
+              <button v-else-if="currentIndex == learner.id" class="button is-small alert-danger" @click="saveLearner(learner)">Save</button>
+              <template v-if="currentIndex != learner.id">
               <div class="list--item">
                 Learner's Name: <span>{{ learner.name }}</span>
               </div>
@@ -175,6 +178,50 @@
                <div class="list--item">
                 Birthday : <span><i> {{learner.dob | bday}} </i></span>
               </div>
+              </template>
+              <template v-else-if="currentIndex == learner.id">
+                <input class="form-control" v-model="learner.id" type="hidden">
+                <div class="form-row">
+                  Learner's Name: <input class="form-control" v-model="learner.name" type="text">
+                </div>
+                <br>
+                <div class="form-row">
+                  Gender:  <select class="form-control" v-model="learner.gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                </div>
+                <br>
+                <div class="form-row">
+                  School: <select class="form-control" v-model="learner.school.id">
+                  <option :value="sch.id" v-for="sch in schools">{{sch.name}}</option>
+                </select>
+                </div>
+                <br>
+                <div class="form-row">
+                  Class: <select class="form-control" v-model="learner.school_class.id">
+                  <option :value="sch.id" v-for="sch in classes">{{sch.name}}</option>
+                </select>
+                </div>
+                <br>
+                <div class="form-row">
+                  Curricula: <v-select small track-by="id" :options="curricula" label="name" multiple
+                                       v-model="learner.curricula" :close-on-select="false"></v-select>
+                </div>
+                <br>
+                <div class="form-row">
+                  Subjects: <v-select small track-by="id" :options="subjects" label="name" multiple
+                                      v-model="learner.subjects" :close-on-select="false"></v-select>
+                </div>
+                <br>
+                <div class="form-row">
+                  Birthday : <date-picker class="form-control" clear-button-icon="fa fa-times" input-class="input"
+                                          :clear-button="true"
+                                          placeholder="Date of Birth"
+                                          v-model="learner.dob"/>
+                </div>
+
+              </template>
             </div>
           </div>
           <div v-else class="row justify-content-center">
@@ -250,11 +297,13 @@ import moment from 'moment';
 import swal from 'sweetalert';
 import Editor from 'vue-ckeditor2';
 import Spinner from '@/components/Preloaders/Spinner';
+import DatePicker from 'vuejs-datepicker'
+import VSelect from 'vue-select'
 
 export default {
   name: 'tutor-class',
   props: ['id'],
-  components: { Spinner, Editor },
+  components: { Spinner, Editor, DatePicker, VSelect },
   data() {
     return {
       progress: {
@@ -309,6 +358,11 @@ export default {
           { name: 'tools', items: ['Maximize'] },
         ],
       },
+      schools: [],
+      classes: [],
+      curricula: [],
+      subjects: [],
+      currentIndex: undefined,
     };
   },
   computed: {
@@ -486,6 +540,65 @@ export default {
       number = splitNum.join(decPoint);
       return number;
     },
+    async fetchClasses() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/school-classes`);
+        this.classes = data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async fetchCurricula() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/curricula`);
+        this.curricula = data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async fetchSubjects() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/subjects`);
+        this.subjects = data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async fetchSchools() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/schools`);
+        this.schools = data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async saveLearner(learner) {
+      this.currentIndex = false;
+      let data = {}
+      data.name = learner.name
+      data.dob = learner.dob
+      data.gender = learner.gender
+      data.subjects = learner.subjects
+      data.curricula = learner.curricula
+      data.school_id = learner.school.id
+      data.school_class_id = learner.school_class.id
+      console.log("Data: ", JSON.stringify(data, null, 4))
+
+      try {
+        const { data } = await this.$http
+                .post(`${this.API}/client/learner/${learner.id}`, data);
+        console.log('Response: ',data)
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    setLearner(index) {
+      this.currentIndex = index
+    }
   },
   created() {
     if (!this.$store.getters.session_class_by_id(parseInt(this.id))) {
@@ -507,12 +620,16 @@ export default {
       .catch(error => console.error(error));
 
     this.fetchDates();
+    this.fetchSchools();
+    this.fetchClasses();
+    this.fetchCurricula();
+    this.fetchSubjects();
   },
   filters: {
     bday(value) {
       return moment(String(value)).format('YYYY-MM-DD')
     }
-  }
+  },
 };
 </script>
 
