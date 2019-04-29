@@ -1,7 +1,6 @@
 .DS_Store
 node_modules/
 dist/
-config/prod.env.js
 config/dev.env.js
 npm-debug.log*
 yarn-debug.log*
