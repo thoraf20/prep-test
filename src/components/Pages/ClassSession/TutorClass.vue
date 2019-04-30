@@ -193,15 +193,22 @@
                 </div>
                 <br>
                 <div class="form-row">
-                  School: <select class="form-control" v-model="learner.school.id">
+                  School: <select v-if="learner.school" class="form-control" v-model="learner.school.id">
                   <option :value="sch.id" v-for="sch in schools">{{sch.name}}</option>
                 </select>
+                  <select class="form-control" v-else v-model="learner.school_id">
+                    <option :value="sch.id" v-for="sch in schools">{{sch.name}}</option>
+                  </select>
                 </div>
                 <br>
                 <div class="form-row">
-                  Class: <select class="form-control" v-model="learner.school_class.id">
+                  Class: <select v-if="learner.school_class" class="form-control" v-model="learner.school_class.id">
                   <option :value="sch.id" v-for="sch in classes">{{sch.name}}</option>
                 </select>
+
+                  <select v-else class="form-control" v-model="learner.school_class_id">
+                    <option :value="sch.id" v-for="sch in classes">{{sch.name}}</option>
+                  </select>
                 </div>
                 <br>
                 <div class="form-row">
@@ -584,8 +591,8 @@ export default {
       data.gender = learner.gender
       data.subjects = learner.subjects
       data.curricula = learner.curricula
-      data.school_id = learner.school.id
-      data.school_class_id = learner.school_class.id
+      data.school_id = learner.school ? learner.school.id : learner.school_id
+      data.school_class_id = learner.school_class ? learner.school_class.id : learner.school_class_id
       console.log("Data: ", JSON.stringify(data, null, 4))
 
       try {
