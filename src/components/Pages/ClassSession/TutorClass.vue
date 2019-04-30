@@ -14,20 +14,20 @@
         <div class="body">
           <table class="table" v-if="progress.history">
             <thead>
-              <tr>
-                <td>S/N</td>
-                <td>Subject</td>
-                <td>Cycle</td>
-                <td>Date Created</td>
-              </tr>
+            <tr>
+              <td>S/N</td>
+              <td>Subject</td>
+              <td>Cycle</td>
+              <td>Date Created</td>
+            </tr>
             </thead>
             <tbody>
-              <tr v-for="(l,index) of cl" :key="l.id">
-                <td>{{ index + 1 }}</td>
-                <td>{{ l.title }}</td>
-                <td class="status"><span :class="statusize(l.cycle)"></span> {{ l.cycle }}</td>
-                <td>{{ c.client && c.client.phone }}</td>
-              </tr>
+            <tr v-for="(l,index) of cl" :key="l.id">
+              <td>{{ index + 1 }}</td>
+              <td>{{ l.title }}</td>
+              <td class="status"><span :class="statusize(l.cycle)"></span> {{ l.cycle }}</td>
+              <td>{{ c.client && c.client.phone }}</td>
+            </tr>
             </tbody>
           </table>
           <div v-else class="row justify-content-center">
@@ -54,22 +54,22 @@
         <div class="body">
           <table class="table" v-if="progress.ticket_history">
             <thead>
-              <tr>
-                <td>S/N</td>
-                <td>Ticket ID</td>
-                <td>Status</td>
-                <td>Opened On</td>
-                <td>Last Updated</td>
-              </tr>
+            <tr>
+              <td>S/N</td>
+              <td>Ticket ID</td>
+              <td>Status</td>
+              <td>Opened On</td>
+              <td>Last Updated</td>
+            </tr>
             </thead>
             <tbody>
-              <tr v-for="(t,index) of tickets" :key="t.id">
-                <td>{{ index + 1 }}</td>
-                <td>{{ t.id }}</td>
-                <td class="status"><span :class="t.status ? t.status.name.toLowerCase() : 'default'"></span>{{ t.status && t.status.name }}</td>
-                <td>{{ t.opened_at && t.opened_at.carbon && moments(t.opened_at.carbon.date) }}</td>
-                <td>{{ t.updated_at && t.updated_at.human }}</td>
-              </tr>
+            <tr v-for="(t,index) of tickets" :key="t.id">
+              <td>{{ index + 1 }}</td>
+              <td>{{ t.id }}</td>
+              <td class="status"><span :class="t.status ? t.status.name.toLowerCase() : 'default'"></span>{{ t.status && t.status.name }}</td>
+              <td>{{ t.opened_at && t.opened_at.carbon && moments(t.opened_at.carbon.date) }}</td>
+              <td>{{ t.updated_at && t.updated_at.human }}</td>
+            </tr>
             </tbody>
           </table>
           <div v-else class="row justify-content-center">
@@ -157,27 +157,27 @@
               <button v-if="currentIndex != learner.id" class="button is-small alert-success" @click="setLearner(learner.id)">Edit</button>
               <button v-else-if="currentIndex == learner.id" class="button is-small alert-danger" @click="saveLearner(learner)">Save</button>
               <template v-if="currentIndex != learner.id">
-              <div class="list--item">
-                Learner's Name: <span>{{ learner.name }}</span>
-              </div>
-              <div class="list--item">
-                Gender: <span>{{ learner.gender }}</span>
-              </div>
-              <div class="list--item">
-                School: <span>{{learner.school ? learner.school.name : ''}}</span>
-              </div>
-              <div class="list--item">
-                Class: <span>{{ learner.school_class && learner.school_class.name }}</span>
-              </div>
-              <div class="list--item">
-                Curricula: <span><i v-for="curri of learner.curricula">{{curri.name}}</i></span>
-              </div>
-              <div class="list--item">
-                Subjects: <span><i v-for="subj of learner.subjects">{{subj.name}}</i></span>
-              </div>
-               <div class="list--item">
-                Birthday : <span><i> {{learner.dob | bday}} </i></span>
-              </div>
+                <div class="list--item">
+                  Learner's Name: <span>{{ learner.name }}</span>
+                </div>
+                <div class="list--item">
+                  Gender: <span>{{ learner.gender }}</span>
+                </div>
+                <div class="list--item">
+                  School: <span>{{learner.school ? learner.school.name : ''}}</span>
+                </div>
+                <div class="list--item">
+                  Class: <span>{{ learner.school_class && learner.school_class.name }}</span>
+                </div>
+                <div class="list--item">
+                  Curricula: <span><i v-for="curri of learner.curricula">{{curri.name}}</i></span>
+                </div>
+                <div class="list--item">
+                  Subjects: <span><i v-for="subj of learner.subjects">{{subj.name}}</i></span>
+                </div>
+                <div class="list--item">
+                  Birthday : <span><i> {{learner.dob | bday}} </i></span>
+                </div>
               </template>
               <template v-else-if="currentIndex == learner.id">
                 <input class="form-control" v-model="learner.id" type="hidden">
@@ -193,15 +193,22 @@
                 </div>
                 <br>
                 <div class="form-row">
-                  School: <select class="form-control" v-model="learner.school.id">
+                  School: <select v-if="learner.school" class="form-control" v-model="learner.school.id">
                   <option :value="sch.id" v-for="sch in schools">{{sch.name}}</option>
                 </select>
+                  <select class="form-control" v-else v-model="learner.school_id">
+                    <option :value="sch.id" v-for="sch in schools">{{sch.name}}</option>
+                  </select>
                 </div>
                 <br>
                 <div class="form-row">
-                  Class: <select class="form-control" v-model="learner.school_class.id">
+                  Class: <select v-if="learner.school_class" class="form-control" v-model="learner.school_class.id">
                   <option :value="sch.id" v-for="sch in classes">{{sch.name}}</option>
                 </select>
+
+                  <select v-else class="form-control" v-model="learner.school_class_id">
+                    <option :value="sch.id" v-for="sch in classes">{{sch.name}}</option>
+                  </select>
                 </div>
                 <br>
                 <div class="form-row">
@@ -278,701 +285,701 @@
           </select>
         </div>
         <div class="form-group">
-            <editor v-model="content" :config="editorConfig"></editor>
+          <editor v-model="content" :config="editorConfig"></editor>
         </div>
         <button class="btn btn-success btn-lg submit-button" @click.prevent="submit" :disabled="submitting">Submit <i class="fa fa-spin fa-circle-o-notch" v-show="submitting"></i></button>
       </div>
     </b-modal>
     <b-modal ref="vcalendar" hide-footer centered class="mkmodal" title="Select your Lesson dates">
-        <div class="d-block text-center">
-          <v-date-picker mode="multiple" isInline v-model="selectedDates" :select-attribute="selectAttribute" :disabled-dates="disabledDates"></v-date-picker>
-          <button class="btn btn-success btn-lg submit-button" @click.prevent="saveDates" :disabled="saving">Submit <i class="fa fa-spin fa-circle-o-notch" v-show="submitting"></i></button>
-        </div>
-      </b-modal>
+      <div class="d-block text-center">
+        <v-date-picker mode="multiple" isInline v-model="selectedDates" :select-attribute="selectAttribute" :disabled-dates="disabledDates"></v-date-picker>
+        <button class="btn btn-success btn-lg submit-button" @click.prevent="saveDates" :disabled="saving">Submit <i class="fa fa-spin fa-circle-o-notch" v-show="submitting"></i></button>
+      </div>
+    </b-modal>
   </div>
 </template>
 
 <script>
-import moment from 'moment';
-import swal from 'sweetalert';
-import Editor from 'vue-ckeditor2';
-import Spinner from '@/components/Preloaders/Spinner';
-import DatePicker from 'vuejs-datepicker'
-import VSelect from 'vue-select'
+  import moment from 'moment';
+  import swal from 'sweetalert';
+  import Editor from 'vue-ckeditor2';
+  import Spinner from '@/components/Preloaders/Spinner';
+  import DatePicker from 'vuejs-datepicker'
+  import VSelect from 'vue-select'
 
-export default {
-  name: 'tutor-class',
-  props: ['id'],
-  components: { Spinner, Editor, DatePicker, VSelect },
-  data() {
-    return {
-      progress: {
-        history: false,
-        ticket_history: false,
-      },
-      API: `${BASE_API}/v1`,
-      summary: '',
-      errorStyle: '',
-      content: '',
-      regarding: '',
-      submitting: false,
-      doneLoading: false,
-      toolbar: [
-        [{ header: [false, 1, 2, 3, 4, 5, 6] }],
-        ['bold', 'italic', 'underline', 'strike'],
-        ['blockquote'],
-        [{ list: 'ordered' }, { list: 'bullet' }],
-        [{ indent: '-1' }, { indent: '+1' }],
-      ],
-      selectedDates: [],
-      disabledDates: [],
-      dates: [],
-      selectAttribute: {
-        highlight: {
-          backgroundColor: '#639440',
-          borderRadius: '3px',
-          width: '80%',
+  export default {
+    name: 'tutor-class',
+    props: ['id'],
+    components: { Spinner, Editor, DatePicker, VSelect },
+    data() {
+      return {
+        progress: {
+          history: false,
+          ticket_history: false,
         },
-      },
-      saving: false,
-      editorConfig: {
+        API: `${BASE_API}/v1`,
+        summary: '',
+        errorStyle: '',
+        content: '',
+        regarding: '',
+        submitting: false,
+        doneLoading: false,
         toolbar: [
-          { name: 'clipboard', items: ['Undo', 'Redo'] },
-          { name: 'styles', items: ['Styles', 'Format'] },
-          {
-            name: 'basicstyles',
-            items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat'],
-          },
-          {
-            name: 'paragraph',
-            items: [
-              'NumberedList',
-              'BulletedList',
-              '-',
-              'Outdent',
-              'Indent',
-              '-',
-              'Blockquote',
-            ],
-          },
-          { name: 'tools', items: ['Maximize'] },
+          [{ header: [false, 1, 2, 3, 4, 5, 6] }],
+          ['bold', 'italic', 'underline', 'strike'],
+          ['blockquote'],
+          [{ list: 'ordered' }, { list: 'bullet' }],
+          [{ indent: '-1' }, { indent: '+1' }],
         ],
-      },
-      schools: [],
-      classes: [],
-      curricula: [],
-      subjects: [],
-      currentIndex: undefined,
-    };
-  },
-  computed: {
-    c() {
-      return this.$store.getters.session_class_by_id(parseInt(this.id, 10));
-    },
-    cl() {
-      return this.$store.getters.cycle_logs
-        .filter(g => this.c && g.session_class && g.session_class.id === this.c.id).slice(0, 2);
-    },
-    tickets() {
-      return this.$store.getters.class_tickets.slice(0, 2);
-    },
-    categories() {
-      return this.$store.getters.ticket_categories;
-    },
-    unInvoicedDates() {
-      return this.dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
-    },
-    invoicedDates() {
-      return this.dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
-    },
-  },
-  methods: {
-    moments(val) {
-      return moment(val).format('MMM D, YYYY');
-    },
-    async fetchDates() {
-      try {
-        const { data: { data: dates } } = await this.$http
-          .get(`${this.API}/client/session-classes/${this.id}/dates`);
-        this.dates = dates;
-        this.filterDates(dates);
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    filterDates(dates) {
-      this.selectedDates = dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
-      this.disabledDates = dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
-    },
-    showModal() {
-      this.$refs.myModalRef.show();
-    },
-    showCalendar() {
-      this.$refs.vcalendar.show();
-    },
-    hideModal() {
-      this.resetModalForm();
-      this.errorStyle = '';
-      console.log('Closed');
-      this.$refs.myModalRef.hide();
-    },
-    hideCalendar() {
-      this.$refs.vcalendar.hide();
-    },
-    resetModalForm() {
-      this.summary = '';
-      this.content = '';
-      this.regarding = '';
-      this.errorStyle = '';
-    },
-    itemType(val) {
-      switch (val && val.name) {
-        case 'active':
-          return 'success';
-        case 'ended':
-          return 'fail';
-        default:
-          return 'default';
-      }
-    },
-    statusize(val) {
-      switch (val) {
-        case 0:
-          return 'ended';
-        case 1:
-          return 'paused';
-        case 2:
-          return 'active';
-        default:
-          return 'active';
-      }
-    },
-    submit() {
-      this.submitting = true;
-
-      const data = {
-        class_id: this.id,
-        title: this.summary,
-        category: this.regarding,
-        description: this.content,
+        selectedDates: [],
+        disabledDates: [],
+        dates: [],
+        selectAttribute: {
+          highlight: {
+            backgroundColor: '#639440',
+            borderRadius: '3px',
+            width: '80%',
+          },
+        },
+        saving: false,
+        editorConfig: {
+          toolbar: [
+            { name: 'clipboard', items: ['Undo', 'Redo'] },
+            { name: 'styles', items: ['Styles', 'Format'] },
+            {
+              name: 'basicstyles',
+              items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat'],
+            },
+            {
+              name: 'paragraph',
+              items: [
+                'NumberedList',
+                'BulletedList',
+                '-',
+                'Outdent',
+                'Indent',
+                '-',
+                'Blockquote',
+              ],
+            },
+            { name: 'tools', items: ['Maximize'] },
+          ],
+        },
+        schools: [],
+        classes: [],
+        curricula: [],
+        subjects: [],
+        currentIndex: undefined,
       };
-      this.$store.dispatch('makeTicket', data)
-        .then(() => {
-          this.submitting = false;
-          this.errorStyle = '';
-          this.hideModal();
-        })
-        .catch((error) => {
-          // console.error(error)
-          this.submitting = false;
-          this.errorStyle = error.data.message;
-          // const self = this;
-          // setInterval(function(){
-          //   self.errorStyle ='';
-          // },7000)
-        });
     },
-    saveDates() {
-      this.saving = true
-      this.$http.post(`${this.API}/client/session-classes/${this.id}/dates`, {
-        dates: this.selectedDates ? this.selectedDates.map(d => moment(d).format('YYYY-MM-DD')) : []
-      }).then(({ data: { data } }) => {
-        this.dates = data;
-        this.filterDates(data);
-        this.saving = false;
-        this.hideCalendar();
-      })
-        .catch((err) => {
-          console.error(err);
+    computed: {
+      c() {
+        return this.$store.getters.session_class_by_id(parseInt(this.id, 10));
+      },
+      cl() {
+        return this.$store.getters.cycle_logs
+                .filter(g => this.c && g.session_class && g.session_class.id === this.c.id).slice(0, 2);
+      },
+      tickets() {
+        return this.$store.getters.class_tickets.slice(0, 2);
+      },
+      categories() {
+        return this.$store.getters.ticket_categories;
+      },
+      unInvoicedDates() {
+        return this.dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
+      },
+      invoicedDates() {
+        return this.dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
+      },
+    },
+    methods: {
+      moments(val) {
+        return moment(val).format('MMM D, YYYY');
+      },
+      async fetchDates() {
+        try {
+          const { data: { data: dates } } = await this.$http
+                  .get(`${this.API}/client/session-classes/${this.id}/dates`);
+          this.dates = dates;
+          this.filterDates(dates);
+        } catch (e) {
+          console.error(e);
+        }
+      },
+      filterDates(dates) {
+        this.selectedDates = dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
+        this.disabledDates = dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
+      },
+      showModal() {
+        this.$refs.myModalRef.show();
+      },
+      showCalendar() {
+        this.$refs.vcalendar.show();
+      },
+      hideModal() {
+        this.resetModalForm();
+        this.errorStyle = '';
+        console.log('Closed');
+        this.$refs.myModalRef.hide();
+      },
+      hideCalendar() {
+        this.$refs.vcalendar.hide();
+      },
+      resetModalForm() {
+        this.summary = '';
+        this.content = '';
+        this.regarding = '';
+        this.errorStyle = '';
+      },
+      itemType(val) {
+        switch (val && val.name) {
+          case 'active':
+            return 'success';
+          case 'ended':
+            return 'fail';
+          default:
+            return 'default';
+        }
+      },
+      statusize(val) {
+        switch (val) {
+          case 0:
+            return 'ended';
+          case 1:
+            return 'paused';
+          case 2:
+            return 'active';
+          default:
+            return 'active';
+        }
+      },
+      submit() {
+        this.submitting = true;
+
+        const data = {
+          class_id: this.id,
+          title: this.summary,
+          category: this.regarding,
+          description: this.content,
+        };
+        this.$store.dispatch('makeTicket', data)
+                .then(() => {
+                  this.submitting = false;
+                  this.errorStyle = '';
+                  this.hideModal();
+                })
+                .catch((error) => {
+                  // console.error(error)
+                  this.submitting = false;
+                  this.errorStyle = error.data.message;
+                  // const self = this;
+                  // setInterval(function(){
+                  //   self.errorStyle ='';
+                  // },7000)
+                });
+      },
+      saveDates() {
+        this.saving = true
+        this.$http.post(`${this.API}/client/session-classes/${this.id}/dates`, {
+          dates: this.selectedDates ? this.selectedDates.map(d => moment(d).format('YYYY-MM-DD')) : []
+        }).then(({ data: { data } }) => {
+          this.dates = data;
+          this.filterDates(data);
           this.saving = false;
+          this.hideCalendar();
+        })
+                .catch((err) => {
+                  console.error(err);
+                  this.saving = false;
+                });
+      },
+      getSubjects(val) {
+        let sb = '';
+
+        if (typeof val !== 'object') {
+          return null;
+        }
+
+        val.forEach((sub) => {
+          sb += `${sub.name}, `;
         });
-    },
-    getSubjects(val) {
-      let sb = '';
 
-      if (typeof val !== 'object') {
-        return null;
-      }
+        return sb;
+      },
+      getDays(val) {
+        let ds = '';
 
-      val.forEach((sub) => {
-        sb += `${sub.name}, `;
-      });
+        if (typeof val !== 'object') {
+          return null;
+        }
 
-      return sb;
-    },
-    getDays(val) {
-      let ds = '';
+        val.forEach((day) => {
+          ds += `${day.name} (${day.time.start} - ${day.time.end}), `;
+        });
 
-      if (typeof val !== 'object') {
-        return null;
-      }
+        return ds;
+      },
+      number_format(n, decimals, decPoint, thousandPoint) {
+        let number = n;
 
-      val.forEach((day) => {
-        ds += `${day.name} (${day.time.start} - ${day.time.end}), `;
-      });
+        if (number == null || !isFinite(number)) {
+          throw new TypeError('number is not valid');
+        }
 
-      return ds;
-    },
-    number_format(n, decimals, decPoint, thousandPoint) {
-      let number = n;
+        if (!decimals) {
+          const len = number.toString().split('.').length;
+          decimals = len > 1 ? len : 0;
+        }
 
-      if (number == null || !isFinite(number)) {
-        throw new TypeError('number is not valid');
-      }
+        if (!decPoint) {
+          decPoint = '.';
+        }
 
-      if (!decimals) {
-        const len = number.toString().split('.').length;
-        decimals = len > 1 ? len : 0;
-      }
+        if (!thousandPoint) {
+          thousandPoint = ',';
+        }
 
-      if (!decPoint) {
-        decPoint = '.';
-      }
+        number = parseFloat(number).toFixed(decimals);
+        number = number.replace('.', decPoint);
+        var splitNum = number.split(decPoint);
+        splitNum[0] = splitNum[0].replace(/\B(?=(\d{3})+(?!\d))/g, thousandPoint);
+        number = splitNum.join(decPoint);
+        return number;
+      },
+      async fetchClasses() {
+        try {
+          const { data: { data} } = await this.$http
+                  .get(`${this.API}/global/school-classes`);
+          this.classes = data;
+        } catch (e) {
+          console.error(e);
+        }
+      },
+      async fetchCurricula() {
+        try {
+          const { data: { data} } = await this.$http
+                  .get(`${this.API}/global/curricula`);
+          this.curricula = data;
+        } catch (e) {
+          console.error(e);
+        }
+      },
+      async fetchSubjects() {
+        try {
+          const { data: { data} } = await this.$http
+                  .get(`${this.API}/global/subjects`);
+          this.subjects = data;
+        } catch (e) {
+          console.error(e);
+        }
+      },
+      async fetchSchools() {
+        try {
+          const { data: { data} } = await this.$http
+                  .get(`${this.API}/global/schools`);
+          this.schools = data;
+        } catch (e) {
+          console.error(e);
+        }
+      },
+      async saveLearner(learner) {
+        this.currentIndex = false;
+        let data = {}
+        data.name = learner.name
+        data.dob = learner.dob
+        data.gender = learner.gender
+        data.subjects = learner.subjects
+        data.curricula = learner.curricula
+        data.school_id = learner.school ? learner.school.id : learner.school_id
+        data.school_class_id = learner.school_class ? learner.school_class.id : learner.school_class_id
+        console.log("Data: ", JSON.stringify(data, null, 4))
 
-      if (!thousandPoint) {
-        thousandPoint = ',';
-      }
-
-      number = parseFloat(number).toFixed(decimals);
-      number = number.replace('.', decPoint);
-      var splitNum = number.split(decPoint);
-      splitNum[0] = splitNum[0].replace(/\B(?=(\d{3})+(?!\d))/g, thousandPoint);
-      number = splitNum.join(decPoint);
-      return number;
-    },
-    async fetchClasses() {
-      try {
-        const { data: { data} } = await this.$http
-                .get(`${this.API}/global/school-classes`);
-        this.classes = data;
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    async fetchCurricula() {
-      try {
-        const { data: { data} } = await this.$http
-                .get(`${this.API}/global/curricula`);
-        this.curricula = data;
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    async fetchSubjects() {
-      try {
-        const { data: { data} } = await this.$http
-                .get(`${this.API}/global/subjects`);
-        this.subjects = data;
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    async fetchSchools() {
-      try {
-        const { data: { data} } = await this.$http
-                .get(`${this.API}/global/schools`);
-        this.schools = data;
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    async saveLearner(learner) {
-      this.currentIndex = false;
-      let data = {}
-      data.name = learner.name
-      data.dob = learner.dob
-      data.gender = learner.gender
-      data.subjects = learner.subjects
-      data.curricula = learner.curricula
-      data.school_id = learner.school.id
-      data.school_class_id = learner.school_class.id
-      console.log("Data: ", JSON.stringify(data, null, 4))
-
-      try {
-        const { data } = await this.$http
-                .post(`${this.API}/client/learner/${learner.id}`, data);
-        console.log('Response: ',data)
-      } catch (e) {
-        console.error(e);
+        try {
+          const { data } = await this.$http
+                  .post(`${this.API}/client/learner/${learner.id}`, data);
+          console.log('Response: ',data)
+        } catch (e) {
+          console.error(e);
+        }
+      },
+      setLearner(index) {
+        this.currentIndex = index
       }
     },
-    setLearner(index) {
-      this.currentIndex = index
-    }
-  },
-  created() {
-    if (!this.$store.getters.session_class_by_id(parseInt(this.id))) {
-      this.$store.dispatch('getClasses')
-        .then(() => this.$store.dispatch('getCategories'))
-        .then(() => this.doneLoading = true)
-        .catch(error => swal('Something went wrong', error, 'error'));
-    } else {
-      this.doneLoading = true;
-    }
-  },
-  mounted() {
-    this.$store.dispatch('getClassTickets', this.id)
-      .then(() => this.progress.ticket_history = true)
-      .catch(error => console.error(error));
+    created() {
+      if (!this.$store.getters.session_class_by_id(parseInt(this.id))) {
+        this.$store.dispatch('getClasses')
+                .then(() => this.$store.dispatch('getCategories'))
+                .then(() => this.doneLoading = true)
+                .catch(error => swal('Something went wrong', error, 'error'));
+      } else {
+        this.doneLoading = true;
+      }
+    },
+    mounted() {
+      this.$store.dispatch('getClassTickets', this.id)
+              .then(() => this.progress.ticket_history = true)
+              .catch(error => console.error(error));
 
-    this.$store.dispatch('getCycleLogs')
-      .then(() => this.progress.history = true)
-      .catch(error => console.error(error));
+      this.$store.dispatch('getCycleLogs')
+              .then(() => this.progress.history = true)
+              .catch(error => console.error(error));
 
-    this.fetchDates();
-    this.fetchSchools();
-    this.fetchClasses();
-    this.fetchCurricula();
-    this.fetchSubjects();
-  },
-  filters: {
-    bday(value) {
-      return moment(String(value)).format('YYYY-MM-DD')
-    }
-  },
-};
+      this.fetchDates();
+      this.fetchSchools();
+      this.fetchClasses();
+      this.fetchCurricula();
+      this.fetchSubjects();
+    },
+    filters: {
+      bday(value) {
+        return moment(String(value)).format('YYYY-MM-DD')
+      }
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-.hold {
-  padding: 25px 0;
-  height: 100%;
-}
+  .hold {
+    padding: 25px 0;
+    height: 100%;
+  }
 
-.container-material {
-  display: block;
-}
+  .container-material {
+    display: block;
+  }
 
-.aro {padding: 30px 0;}
+  .aro {padding: 30px 0;}
 
-.ais {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-}
-
-.card-ish {
-  border: 1px solid rgba(224, 227, 218, .5);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-  padding: 0;
-  // margin: 0 23px;
-  .top {
-    padding: 15px 20px;
-    position: relative;
+  .ais {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    h5 {
+    align-items: stretch;
+  }
+
+  .card-ish {
+    border: 1px solid rgba(224, 227, 218, .5);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    // margin: 0 23px;
+    .top {
+      padding: 15px 20px;
+      position: relative;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      color: #576271;
-      font-size: 20px;
-      justify-content: flex-start;
-      font-weight: 500;
-      svg {margin-right: 15px;}
-    }
-    button {
-      height: 43px;
-      width: 176px;
-      border-radius: 4px;
-      font-size: 14px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    }
-    .sasasa {
-      position: absolute;
-      height: 1px;
-      width: calc(100% - 40px);
-      box-shadow: 0 3px  6px rgba(0, 0, 0, 0.16);
-      background-color: rgba(224, 227, 218, 1);
-      bottom: 0;
-    }
-  }
-  .body {
-    position: relative;
-    padding-bottom: 25px;
-    .b {position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);}
-    .list {
-      width: 90%;
-      margin-top: 25px;
-      margin-left: auto;
-      margin-right: auto;
-      .list--item {
-        width: 100%;
-        padding: 12px 0;
+      h5 {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         color: #576271;
-        border-bottom: 1px solid #E0E3DA;
-        span {font-weight: 300; text-transform: capitalize;}
+        font-size: 20px;
+        justify-content: flex-start;
+        font-weight: 500;
+        svg {margin-right: 15px;}
+      }
+      button {
+        height: 43px;
+        width: 176px;
+        border-radius: 4px;
+        font-size: 14px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      }
+      .sasasa {
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 40px);
+        box-shadow: 0 3px  6px rgba(0, 0, 0, 0.16);
+        background-color: rgba(224, 227, 218, 1);
+        bottom: 0;
       }
     }
-    .cdcol {
-      height: 100%;
-      padding: 30px;
-      .title {
-        font-weight: 600;
-        color: #4D4F5C;
-        font-size: 16px;
-      }
-      &:not(:last-child) {
-        border-right: 1px solid #E0E3DA;
-      }
-      .items {
-        ul {
-          padding: 0;
-          margin: 0;
+    .body {
+      position: relative;
+      padding-bottom: 25px;
+      .b {position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);}
+      .list {
+        width: 90%;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        .list--item {
+          width: 100%;
+          padding: 12px 0;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          flex-wrap: wrap;
-          margin-top: 15px;
-          li {
+          align-items: center;
+          color: #576271;
+          border-bottom: 1px solid #E0E3DA;
+          span {font-weight: 300; text-transform: capitalize;}
+        }
+      }
+      .cdcol {
+        height: 100%;
+        padding: 30px;
+        .title {
+          font-weight: 600;
+          color: #4D4F5C;
+          font-size: 16px;
+        }
+        &:not(:last-child) {
+          border-right: 1px solid #E0E3DA;
+        }
+        .items {
+          ul {
+            padding: 0;
+            margin: 0;
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 15px 0;
-            text-transform: capitalize;
-            svg { margin-right: 5px}
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            li {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+              margin: 15px 0;
+              text-transform: capitalize;
+              svg { margin-right: 5px}
+            }
           }
         }
       }
     }
-  }
-  &.card-50 {
-    width: 49%;
-  }
-  &.card-100 {
-    width: 100%;
-  }
-  &.class-history, &.learner-detail {
-    margin-right: 1%;
-    .top {
-      button {background-color: #109BF8; color: #ffffff;}
+    &.card-50 {
+      width: 49%;
     }
-  }
-  &.ticket-history, &.client-detail {
-    margin-left: 1%;
-    .top {
-      button {background-color: #F83B54; color: #ffffff;}
+    &.card-100 {
+      width: 100%;
     }
-  }
-}
-.table {
-  margin-top: 20px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  thead {
-    tr {
-      td {
-        border-top: none;
-        color: #576271;
-        text-transform: capitalize;
-        font-size: 16px;
-        font-weight: 300;
+    &.class-history, &.learner-detail {
+      margin-right: 1%;
+      .top {
+        button {background-color: #109BF8; color: #ffffff;}
       }
     }
-  }
-  tbody {
-    tr {
-      &:hover {background-color: #fafafa;}
-      td {
-        color: #576271;
-        text-transform: capitalize;
-        font-size: 13px;
-        padding: 20px 10px;
-        border-top: 1px solid rgba(112, 112, 112, .12);
-        a {
-          color: #576271;
-          text-transform: capitalize;
-          font-size: 13px;
-          &:hover {color: #639440; text-decoration: none;}
-        }
-        &.status {
-          span {
-            content: ' ';
-            display: inline-block;
-            margin-right: 5px;
-            height: 10px;
-            width: 10px;
-            border-radius: 100%;
-            background-color: #4D4F5C;
-            &.active, &.open {background-color: #38ADB6;}
-            &.ended {background-color: #F83B54;}
-            &.paused {background-color: #FFBB03;}
-          }
-        }
+    &.ticket-history, &.client-detail {
+      margin-left: 1%;
+      .top {
+        button {background-color: #F83B54; color: #ffffff;}
       }
     }
-  }
-}
-span.status {
-  content: ' ';
-  display: inline-block;
-  margin-right: 5px;
-  height: 10px;
-  width: 10px;
-  text-transform: capitalize;
-  border-radius: 100%;
-  background-color: #4D4F5C;
-  &.active, &.open {background-color: #38ADB6;}
-  &.ended {background-color: #F83B54;}
-  &.paused {background-color: #FFBB03;}
-}
-@media only screen and (max-width: 600px) {
-  .card-ish {
-    &.card-50 {width: 100%; margin-bottom: 15px; margin-left: 0 !important; margin-right: 0 !important;}
   }
   .table {
-    width: 100%;
-    margin-left: 0;
-    overflow-x: auto;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     thead {
       tr {
-        td {font-size: 12px;}
+        td {
+          border-top: none;
+          color: #576271;
+          text-transform: capitalize;
+          font-size: 16px;
+          font-weight: 300;
+        }
       }
     }
     tbody {
       tr {
+        &:hover {background-color: #fafafa;}
         td {
-          font-size: 10px;
-          a {font-size: 10px;}
+          color: #576271;
+          text-transform: capitalize;
+          font-size: 13px;
+          padding: 20px 10px;
+          border-top: 1px solid rgba(112, 112, 112, .12);
+          a {
+            color: #576271;
+            text-transform: capitalize;
+            font-size: 13px;
+            &:hover {color: #639440; text-decoration: none;}
+          }
+          &.status {
+            span {
+              content: ' ';
+              display: inline-block;
+              margin-right: 5px;
+              height: 10px;
+              width: 10px;
+              border-radius: 100%;
+              background-color: #4D4F5C;
+              &.active, &.open {background-color: #38ADB6;}
+              &.ended {background-color: #F83B54;}
+              &.paused {background-color: #FFBB03;}
+            }
+          }
         }
       }
     }
   }
-}
+  span.status {
+    content: ' ';
+    display: inline-block;
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+    text-transform: capitalize;
+    border-radius: 100%;
+    background-color: #4D4F5C;
+    &.active, &.open {background-color: #38ADB6;}
+    &.ended {background-color: #F83B54;}
+    &.paused {background-color: #FFBB03;}
+  }
+  @media only screen and (max-width: 600px) {
+    .card-ish {
+      &.card-50 {width: 100%; margin-bottom: 15px; margin-left: 0 !important; margin-right: 0 !important;}
+    }
+    .table {
+      width: 100%;
+      margin-left: 0;
+      overflow-x: auto;
+      thead {
+        tr {
+          td {font-size: 12px;}
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 10px;
+            a {font-size: 10px;}
+          }
+        }
+      }
+    }
+  }
 </style>
 
 <style lang="scss">
-.mkmodal {
-  .modal-backdrop {
-    opacity: 1;
-    background-color: #E2E8ED;
-    filter: blur(9px) brightness(50) opacity(50%);
-  }
-  .modal-content {
-    border: none;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-    .modal-header {
-      justify-content: center;
-      position: relative;
-      border-bottom: none;
-      .modal-title {
-        text-align: center;
-      }
-      .close {
-        float: right;
-        right: 0;
-        top: 0;
-        margin: 0;
-        position: absolute;
-      }
+  .mkmodal {
+    .modal-backdrop {
+      opacity: 1;
+      background-color: #E2E8ED;
+      filter: blur(9px) brightness(50) opacity(50%);
     }
-    .modal-body {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      .form-control {
-        border-radius: 4px;
-        border: 1px solid #E8E9EC;
-        padding: 5px 15px; 
-        color: #4D4F5C;
-        &::placeholder {color: #4D4F5C; opacity: 0.3;}
-      }
-      select.form-control {
-        option {
-          padding: 10px;
+    .modal-content {
+      border: none;
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      .modal-header {
+        justify-content: center;
+        position: relative;
+        border-bottom: none;
+        .modal-title {
+          text-align: center;
+        }
+        .close {
+          float: right;
+          right: 0;
+          top: 0;
+          margin: 0;
+          position: absolute;
         }
       }
-      .quillWrapper {
-        .ql-toolbar.ql-snow {
+      .modal-body {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .form-control {
+          border-radius: 4px;
           border: 1px solid #E8E9EC;
-          border-top-right-radius: 4px;
-          border-top-left-radius: 4px;
-          text-align: left;
-          padding: 4px 15px;
-          .ql-formats {
-            margin: 0;
-          }
-          .ql-picker-label {
-            font-size: 13px;
-          }
-          button {
-            svg {height: 16px; width: 16px}
-          }
+          padding: 5px 15px;
+          color: #4D4F5C;
+          &::placeholder {color: #4D4F5C; opacity: 0.3;}
         }
-        .ql-container.ql-snow {
-          border: 1px solid #E8E9EC;
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px;
-          border-top: none;
-        }
-
-      }
-      .btn {
-        width: 130px;
-        height: 38px;
-        line-height: 38px;
-        padding: 0 10px;
-        text-align: center;
-        border-radius: 4px;
-        font-size: 14px;
-        vertical-align: middle;
-        box-shadow: 0 2px 2px 0 rgba(40, 167, 69, 0.14), 0 3px 1px -2px rgba(40, 167, 69, 0.12), 0 1px 5px 0 rgba(40, 167, 69, 0.2);
-        &:focus {
-          outline: 0 !important;
-          box-shadow: none !important;
-          &:active {box-shadow: none !important;}
-        }
-      }
-      .c-pane-container {
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 50px;
-        border: none !important;
-        background-color: #ffffff !important;
-
-        .c-header {
-          padding: 15px 10px;
-          padding-bottom: 35px;
-          .c-arrow-layout {
+        select.form-control {
+          option {
             padding: 10px;
+          }
+        }
+        .quillWrapper {
+          .ql-toolbar.ql-snow {
             border: 1px solid #E8E9EC;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
-            border-radius: 4px;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            text-align: left;
+            padding: 4px 15px;
+            .ql-formats {
+              margin: 0;
+            }
+            .ql-picker-label {
+              font-size: 13px;
+            }
+            button {
+              svg {height: 16px; width: 16px}
+            }
           }
-          .c-title {
-            font-size: 14px;
-            color: #639440;
+          .ql-container.ql-snow {
+            border: 1px solid #E8E9EC;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-top: none;
+          }
+
+        }
+        .btn {
+          width: 130px;
+          height: 38px;
+          line-height: 38px;
+          padding: 0 10px;
+          text-align: center;
+          border-radius: 4px;
+          font-size: 14px;
+          vertical-align: middle;
+          box-shadow: 0 2px 2px 0 rgba(40, 167, 69, 0.14), 0 3px 1px -2px rgba(40, 167, 69, 0.12), 0 1px 5px 0 rgba(40, 167, 69, 0.2);
+          &:focus {
+            outline: 0 !important;
+            box-shadow: none !important;
+            &:active {box-shadow: none !important;}
           }
         }
-        .c-weekdays {
-          .c-weekday {
-            padding: 15px;
-            font-size: 12px;
-            font-weight: 600;
-            background-color: rgba(221, 232, 213, 1);
+        .c-pane-container {
+          width: 100%;
+          margin-top: 0px;
+          margin-bottom: 50px;
+          border: none !important;
+          background-color: #ffffff !important;
+
+          .c-header {
+            padding: 15px 10px;
+            padding-bottom: 35px;
+            .c-arrow-layout {
+              padding: 10px;
+              border: 1px solid #E8E9EC;
+              box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+              border-radius: 4px;
+            }
+            .c-title {
+              font-size: 14px;
+              color: #639440;
+            }
           }
-        }
-        .c-week {
-          .c-day-content {
-            padding: 15px;
-            font-size: 11px;
+          .c-weekdays {
+            .c-weekday {
+              padding: 15px;
+              font-size: 12px;
+              font-weight: 600;
+              background-color: rgba(221, 232, 213, 1);
+            }
+          }
+          .c-week {
+            .c-day-content {
+              padding: 15px;
+              font-size: 11px;
+            }
           }
         }
       }
     }
   }
-}
 </style>
