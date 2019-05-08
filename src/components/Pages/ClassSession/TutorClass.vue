@@ -193,7 +193,7 @@
                 </div>
                 <br>
                 <div class="form-row">
-                  School: <select v-if="learner.school" class="form-control" v-model="learner.school.id">
+                  School: <select v-if="learner.school" class="form-control" v-model="learner.school ? learner.school.id : learner.school_id">
                   <option :value="sch.id" v-for="sch in schools">{{sch.name}}</option>
                 </select>
                   <select class="form-control" v-else v-model="learner.school_id">
@@ -202,7 +202,7 @@
                 </div>
                 <br>
                 <div class="form-row">
-                  Class: <select v-if="learner.school_class" class="form-control" v-model="learner.school_class.id">
+                  Class: <select v-if="learner.school_class" class="form-control" v-model="learner.school_class ? learner.school_class.id : learner.school_class_id">
                   <option :value="sch.id" v-for="sch in classes">{{sch.name}}</option>
                 </select>
 
