@@ -44,6 +44,7 @@ export default {
   /*width: 90;*/
 }
 .gst {
+  min-height: 100vh;
   background-color: #fcfcfc;
 }
 </style>

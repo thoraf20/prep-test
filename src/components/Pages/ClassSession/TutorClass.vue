@@ -262,6 +262,9 @@
             <div class="list--item">
               Location: <span>{{ c.tutor && c.tutor.location ? c.tutor.location : 'Not Available' }}</span>
             </div>
+            <div style="padding: 10px 0; width: 100%; align-items: center; justify-content: center; display: flex;">
+              <router-link tag="button" :to="{ name: 'review-tutor', params: { t: c.tutor.id }}" class="btn btn-dark btn-lg submit-button">Write A Review</router-link>
+            </div>
           </div>
           <div v-else class="row justify-content-center">
             <div class="col text-center">
@@ -300,344 +303,344 @@
 </template>
 
 <script>
-  import moment from 'moment';
-  import swal from 'sweetalert';
-  import Editor from 'vue-ckeditor2';
-  import Spinner from '@/components/Preloaders/Spinner';
-  import DatePicker from 'vuejs-datepicker'
-  import VSelect from 'vue-select'
+import moment from 'moment';
+import swal from 'sweetalert';
+import Editor from 'vue-ckeditor2';
+import Spinner from '@/components/Preloaders/Spinner';
+import DatePicker from 'vuejs-datepicker'
+import VSelect from 'vue-select'
 
-  export default {
-    name: 'tutor-class',
-    props: ['id'],
-    components: { Spinner, Editor, DatePicker, VSelect },
-    data() {
-      return {
-        progress: {
-          history: false,
-          ticket_history: false,
+export default {
+  name: 'tutor-class',
+  props: ['id'],
+  components: { Spinner, Editor, DatePicker, VSelect },
+  data() {
+    return {
+      progress: {
+        history: false,
+        ticket_history: false,
+      },
+      API: `${BASE_API}/v1`,
+      summary: '',
+      errorStyle: '',
+      content: '',
+      regarding: '',
+      submitting: false,
+      doneLoading: false,
+      toolbar: [
+        [{ header: [false, 1, 2, 3, 4, 5, 6] }],
+        ['bold', 'italic', 'underline', 'strike'],
+        ['blockquote'],
+        [{ list: 'ordered' }, { list: 'bullet' }],
+        [{ indent: '-1' }, { indent: '+1' }],
+      ],
+      selectedDates: [],
+      disabledDates: [],
+      dates: [],
+      selectAttribute: {
+        highlight: {
+          backgroundColor: '#639440',
+          borderRadius: '3px',
+          width: '80%',
         },
-        API: `${BASE_API}/v1`,
-        summary: '',
-        errorStyle: '',
-        content: '',
-        regarding: '',
-        submitting: false,
-        doneLoading: false,
+      },
+      saving: false,
+      editorConfig: {
         toolbar: [
-          [{ header: [false, 1, 2, 3, 4, 5, 6] }],
-          ['bold', 'italic', 'underline', 'strike'],
-          ['blockquote'],
-          [{ list: 'ordered' }, { list: 'bullet' }],
-          [{ indent: '-1' }, { indent: '+1' }],
-        ],
-        selectedDates: [],
-        disabledDates: [],
-        dates: [],
-        selectAttribute: {
-          highlight: {
-            backgroundColor: '#639440',
-            borderRadius: '3px',
-            width: '80%',
+          { name: 'clipboard', items: ['Undo', 'Redo'] },
+          { name: 'styles', items: ['Styles', 'Format'] },
+          {
+            name: 'basicstyles',
+            items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat'],
           },
-        },
-        saving: false,
-        editorConfig: {
-          toolbar: [
-            { name: 'clipboard', items: ['Undo', 'Redo'] },
-            { name: 'styles', items: ['Styles', 'Format'] },
-            {
-              name: 'basicstyles',
-              items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat'],
-            },
-            {
-              name: 'paragraph',
-              items: [
-                'NumberedList',
-                'BulletedList',
-                '-',
-                'Outdent',
-                'Indent',
-                '-',
-                'Blockquote',
-              ],
-            },
-            { name: 'tools', items: ['Maximize'] },
-          ],
-        },
-        schools: [],
-        classes: [],
-        curricula: [],
-        subjects: [],
-        currentIndex: undefined,
+          {
+            name: 'paragraph',
+            items: [
+              'NumberedList',
+              'BulletedList',
+              '-',
+              'Outdent',
+              'Indent',
+              '-',
+              'Blockquote',
+            ],
+          },
+          { name: 'tools', items: ['Maximize'] },
+        ],
+      },
+      schools: [],
+      classes: [],
+      curricula: [],
+      subjects: [],
+      currentIndex: undefined,
+    };
+  },
+  computed: {
+    c() {
+      return this.$store.getters.session_class_by_id(parseInt(this.id, 10));
+    },
+    cl() {
+      return this.$store.getters.cycle_logs
+              .filter(g => this.c && g.session_class && g.session_class.id === this.c.id).slice(0, 2);
+    },
+    tickets() {
+      return this.$store.getters.class_tickets.slice(0, 2);
+    },
+    categories() {
+      return this.$store.getters.ticket_categories;
+    },
+    unInvoicedDates() {
+      return this.dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
+    },
+    invoicedDates() {
+      return this.dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
+    },
+  },
+  methods: {
+    moments(val) {
+      return moment(val).format('MMM D, YYYY');
+    },
+    async fetchDates() {
+      try {
+        const { data: { data: dates } } = await this.$http
+                .get(`${this.API}/client/session-classes/${this.id}/dates`);
+        this.dates = dates;
+        this.filterDates(dates);
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    filterDates(dates) {
+      this.selectedDates = dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
+      this.disabledDates = dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
+    },
+    showModal() {
+      this.$refs.myModalRef.show();
+    },
+    showCalendar() {
+      this.$refs.vcalendar.show();
+    },
+    hideModal() {
+      this.resetModalForm();
+      this.errorStyle = '';
+      console.log('Closed');
+      this.$refs.myModalRef.hide();
+    },
+    hideCalendar() {
+      this.$refs.vcalendar.hide();
+    },
+    resetModalForm() {
+      this.summary = '';
+      this.content = '';
+      this.regarding = '';
+      this.errorStyle = '';
+    },
+    itemType(val) {
+      switch (val && val.name) {
+        case 'active':
+          return 'success';
+        case 'ended':
+          return 'fail';
+        default:
+          return 'default';
+      }
+    },
+    statusize(val) {
+      switch (val) {
+        case 0:
+          return 'ended';
+        case 1:
+          return 'paused';
+        case 2:
+          return 'active';
+        default:
+          return 'active';
+      }
+    },
+    submit() {
+      this.submitting = true;
+
+      const data = {
+        class_id: this.id,
+        title: this.summary,
+        category: this.regarding,
+        description: this.content,
       };
+      this.$store.dispatch('makeTicket', data)
+              .then(() => {
+                this.submitting = false;
+                this.errorStyle = '';
+                this.hideModal();
+              })
+              .catch((error) => {
+                // console.error(error)
+                this.submitting = false;
+                this.errorStyle = error.data.message;
+                // const self = this;
+                // setInterval(function(){
+                //   self.errorStyle ='';
+                // },7000)
+              });
     },
-    computed: {
-      c() {
-        return this.$store.getters.session_class_by_id(parseInt(this.id, 10));
-      },
-      cl() {
-        return this.$store.getters.cycle_logs
-                .filter(g => this.c && g.session_class && g.session_class.id === this.c.id).slice(0, 2);
-      },
-      tickets() {
-        return this.$store.getters.class_tickets.slice(0, 2);
-      },
-      categories() {
-        return this.$store.getters.ticket_categories;
-      },
-      unInvoicedDates() {
-        return this.dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
-      },
-      invoicedDates() {
-        return this.dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
-      },
+    saveDates() {
+      this.saving = true
+      this.$http.post(`${this.API}/client/session-classes/${this.id}/dates`, {
+        dates: this.selectedDates ? this.selectedDates.map(d => moment(d).format('YYYY-MM-DD')) : []
+      }).then(({ data: { data } }) => {
+        this.dates = data;
+        this.filterDates(data);
+        this.saving = false;
+        this.hideCalendar();
+      })
+              .catch((err) => {
+                console.error(err);
+                this.saving = false;
+              });
     },
-    methods: {
-      moments(val) {
-        return moment(val).format('MMM D, YYYY');
-      },
-      async fetchDates() {
-        try {
-          const { data: { data: dates } } = await this.$http
-                  .get(`${this.API}/client/session-classes/${this.id}/dates`);
-          this.dates = dates;
-          this.filterDates(dates);
-        } catch (e) {
-          console.error(e);
-        }
-      },
-      filterDates(dates) {
-        this.selectedDates = dates.filter(d => !d.hasInvoice).map(d => new Date(d.date));
-        this.disabledDates = dates.filter(d => d.hasInvoice).map(d => new Date(d.date));
-      },
-      showModal() {
-        this.$refs.myModalRef.show();
-      },
-      showCalendar() {
-        this.$refs.vcalendar.show();
-      },
-      hideModal() {
-        this.resetModalForm();
-        this.errorStyle = '';
-        console.log('Closed');
-        this.$refs.myModalRef.hide();
-      },
-      hideCalendar() {
-        this.$refs.vcalendar.hide();
-      },
-      resetModalForm() {
-        this.summary = '';
-        this.content = '';
-        this.regarding = '';
-        this.errorStyle = '';
-      },
-      itemType(val) {
-        switch (val && val.name) {
-          case 'active':
-            return 'success';
-          case 'ended':
-            return 'fail';
-          default:
-            return 'default';
-        }
-      },
-      statusize(val) {
-        switch (val) {
-          case 0:
-            return 'ended';
-          case 1:
-            return 'paused';
-          case 2:
-            return 'active';
-          default:
-            return 'active';
-        }
-      },
-      submit() {
-        this.submitting = true;
+    getSubjects(val) {
+      let sb = '';
 
-        const data = {
-          class_id: this.id,
-          title: this.summary,
-          category: this.regarding,
-          description: this.content,
-        };
-        this.$store.dispatch('makeTicket', data)
-                .then(() => {
-                  this.submitting = false;
-                  this.errorStyle = '';
-                  this.hideModal();
-                })
-                .catch((error) => {
-                  // console.error(error)
-                  this.submitting = false;
-                  this.errorStyle = error.data.message;
-                  // const self = this;
-                  // setInterval(function(){
-                  //   self.errorStyle ='';
-                  // },7000)
-                });
-      },
-      saveDates() {
-        this.saving = true
-        this.$http.post(`${this.API}/client/session-classes/${this.id}/dates`, {
-          dates: this.selectedDates ? this.selectedDates.map(d => moment(d).format('YYYY-MM-DD')) : []
-        }).then(({ data: { data } }) => {
-          this.dates = data;
-          this.filterDates(data);
-          this.saving = false;
-          this.hideCalendar();
-        })
-                .catch((err) => {
-                  console.error(err);
-                  this.saving = false;
-                });
-      },
-      getSubjects(val) {
-        let sb = '';
+      if (typeof val !== 'object') {
+        return null;
+      }
 
-        if (typeof val !== 'object') {
-          return null;
-        }
+      val.forEach((sub) => {
+        sb += `${sub.name}, `;
+      });
 
-        val.forEach((sub) => {
-          sb += `${sub.name}, `;
-        });
+      return sb;
+    },
+    getDays(val) {
+      let ds = '';
 
-        return sb;
-      },
-      getDays(val) {
-        let ds = '';
+      if (typeof val !== 'object') {
+        return null;
+      }
 
-        if (typeof val !== 'object') {
-          return null;
-        }
+      val.forEach((day) => {
+        ds += `${day.name} (${day.time.start} - ${day.time.end}), `;
+      });
 
-        val.forEach((day) => {
-          ds += `${day.name} (${day.time.start} - ${day.time.end}), `;
-        });
+      return ds;
+    },
+    number_format(n, decimals, decPoint, thousandPoint) {
+      let number = n;
 
-        return ds;
-      },
-      number_format(n, decimals, decPoint, thousandPoint) {
-        let number = n;
+      if (number == null || !isFinite(number)) {
+        throw new TypeError('number is not valid');
+      }
 
-        if (number == null || !isFinite(number)) {
-          throw new TypeError('number is not valid');
-        }
+      if (!decimals) {
+        const len = number.toString().split('.').length;
+        decimals = len > 1 ? len : 0;
+      }
 
-        if (!decimals) {
-          const len = number.toString().split('.').length;
-          decimals = len > 1 ? len : 0;
-        }
+      if (!decPoint) {
+        decPoint = '.';
+      }
 
-        if (!decPoint) {
-          decPoint = '.';
-        }
+      if (!thousandPoint) {
+        thousandPoint = ',';
+      }
 
-        if (!thousandPoint) {
-          thousandPoint = ',';
-        }
-
-        number = parseFloat(number).toFixed(decimals);
-        number = number.replace('.', decPoint);
-        var splitNum = number.split(decPoint);
-        splitNum[0] = splitNum[0].replace(/\B(?=(\d{3})+(?!\d))/g, thousandPoint);
-        number = splitNum.join(decPoint);
-        return number;
-      },
-      async fetchClasses() {
-        try {
-          const { data: { data} } = await this.$http
-                  .get(`${this.API}/global/school-classes`);
-          this.classes = data;
-        } catch (e) {
-          console.error(e);
-        }
-      },
-      async fetchCurricula() {
-        try {
-          const { data: { data} } = await this.$http
-                  .get(`${this.API}/global/curricula`);
-          this.curricula = data;
-        } catch (e) {
-          console.error(e);
-        }
-      },
-      async fetchSubjects() {
-        try {
-          const { data: { data} } = await this.$http
-                  .get(`${this.API}/global/subjects`);
-          this.subjects = data;
-        } catch (e) {
-          console.error(e);
-        }
-      },
-      async fetchSchools() {
-        try {
-          const { data: { data} } = await this.$http
-                  .get(`${this.API}/global/schools`);
-          this.schools = data;
-        } catch (e) {
-          console.error(e);
-        }
-      },
-      async saveLearner(learner) {
-        this.currentIndex = false;
-        let data = {}
-        data.name = learner.name
-        data.dob = learner.dob
-        data.gender = learner.gender
-        data.subjects = learner.subjects
-        data.curricula = learner.curricula
-        data.school_id = learner.school ? learner.school.id : learner.school_id
-        data.school_class_id = learner.school_class ? learner.school_class.id : learner.school_class_id
-        console.log("Data: ", JSON.stringify(data, null, 4))
-
-        try {
-          const { data } = await this.$http
-                  .post(`${this.API}/client/learner/${learner.id}`, data);
-          console.log('Response: ',data)
-        } catch (e) {
-          console.error(e);
-        }
-      },
-      setLearner(index) {
-        this.currentIndex = index
+      number = parseFloat(number).toFixed(decimals);
+      number = number.replace('.', decPoint);
+      var splitNum = number.split(decPoint);
+      splitNum[0] = splitNum[0].replace(/\B(?=(\d{3})+(?!\d))/g, thousandPoint);
+      number = splitNum.join(decPoint);
+      return number;
+    },
+    async fetchClasses() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/school-classes`);
+        this.classes = data;
+      } catch (e) {
+        console.error(e);
       }
     },
-    created() {
-      if (!this.$store.getters.session_class_by_id(parseInt(this.id))) {
-        this.$store.dispatch('getClasses')
-                .then(() => this.$store.dispatch('getCategories'))
-                .then(() => this.doneLoading = true)
-                .catch(error => swal('Something went wrong', error, 'error'));
-      } else {
-        this.doneLoading = true;
+    async fetchCurricula() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/curricula`);
+        this.curricula = data;
+      } catch (e) {
+        console.error(e);
       }
     },
-    mounted() {
-      this.$store.dispatch('getClassTickets', this.id)
-              .then(() => this.progress.ticket_history = true)
-              .catch(error => console.error(error));
-
-      this.$store.dispatch('getCycleLogs')
-              .then(() => this.progress.history = true)
-              .catch(error => console.error(error));
-
-      this.fetchDates();
-      this.fetchSchools();
-      this.fetchClasses();
-      this.fetchCurricula();
-      this.fetchSubjects();
-    },
-    filters: {
-      bday(value) {
-        return moment(String(value)).format('YYYY-MM-DD')
+    async fetchSubjects() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/subjects`);
+        this.subjects = data;
+      } catch (e) {
+        console.error(e);
       }
     },
-  };
+    async fetchSchools() {
+      try {
+        const { data: { data} } = await this.$http
+                .get(`${this.API}/global/schools`);
+        this.schools = data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async saveLearner(learner) {
+      this.currentIndex = false;
+      let data = {}
+      data.name = learner.name
+      data.dob = learner.dob
+      data.gender = learner.gender
+      data.subjects = learner.subjects
+      data.curricula = learner.curricula
+      data.school_id = learner.school ? learner.school.id : learner.school_id
+      data.school_class_id = learner.school_class ? learner.school_class.id : learner.school_class_id
+      console.log("Data: ", JSON.stringify(data, null, 4))
+
+      try {
+        const { data } = await this.$http
+                .post(`${this.API}/client/learner/${learner.id}`, data);
+        console.log('Response: ',data)
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    setLearner(index) {
+      this.currentIndex = index
+    }
+  },
+  created() {
+    if (!this.$store.getters.session_class_by_id(parseInt(this.id))) {
+      this.$store.dispatch('getClasses')
+              .then(() => this.$store.dispatch('getCategories'))
+              .then(() => this.doneLoading = true)
+              .catch(error => swal('Something went wrong', error, 'error'));
+    } else {
+      this.doneLoading = true;
+    }
+  },
+  mounted() {
+    this.$store.dispatch('getClassTickets', this.id)
+            .then(() => this.progress.ticket_history = true)
+            .catch(error => console.error(error));
+
+    this.$store.dispatch('getCycleLogs')
+            .then(() => this.progress.history = true)
+            .catch(error => console.error(error));
+
+    this.fetchDates();
+    this.fetchSchools();
+    this.fetchClasses();
+    this.fetchCurricula();
+    this.fetchSubjects();
+  },
+  filters: {
+    bday(value) {
+      return moment(String(value)).format('YYYY-MM-DD')
+    }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -719,6 +722,13 @@
           color: #576271;
           border-bottom: 1px solid #E0E3DA;
           span {font-weight: 300; text-transform: capitalize;}
+        }
+        button.submit-button {
+          height: 43px;
+          width: 176px;
+          border-radius: 4px;
+          font-size: 14px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         }
       }
       .cdcol {

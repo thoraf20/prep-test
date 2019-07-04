@@ -6,6 +6,11 @@ body
 	font-family: 'Source Sans Pro' !important;
 	height: 100% !important;
 }
+.asnd {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4D565C;
+}
 .hide {display: none;}
 .container-material {
   margin: 0 auto;

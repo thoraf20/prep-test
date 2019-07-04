@@ -13,6 +13,7 @@ import Status from '@/components/Pages/Profile/Status';
 import Profile from '@/components/Pages/Profile/Index';
 import TakeTest from '@/components/Pages/Test/TakeTest';
 import BasicSetup from '@/components/Pages/Setup/Basic';
+import ReviewTutor from '@/components/Pages/Review/Tutor';
 import Dashboard from '@/components/Pages/Dashboard/Index';
 import EditWork from '@/components/Pages/Profile/EditWork';
 import EditBasic from '@/components/Pages/Profile/EditBasic';
@@ -221,6 +222,12 @@ export default new Router({
               ],
             },
           ],
+        },
+        {
+          path: 'review/:t',
+          name: 'review-tutor',
+          component: ReviewTutor,
+          props: true,
         },
       ],
     },
