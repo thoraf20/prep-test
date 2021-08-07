@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import NotFound from '@/components/404';
+import LandingPage from '@/components/LandingPage/LandingPage';
+import LandingPage2 from '@/components/LandingPage/LandingPage2';
 import Login from '@/components/Auth/Login';
 import Forgot from '@/components/Auth/Forgot';
 import Layout from '@/components/Layout/Index';
@@ -64,8 +66,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'default',
-      redirect: '/login',
+      name: 'landing-page',
+      component: LandingPage,
+    },
+    {
+      path: '/landing',
+      name: 'landing',
+      component: LandingPage2,
     },
     {
       path: '/login',
