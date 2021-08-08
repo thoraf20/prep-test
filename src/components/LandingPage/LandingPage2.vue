@@ -20,18 +20,10 @@
     <div class="header">
         <div class="imgDiv">
             <div class="imgText">
-                <h5 class="card-title">What do you want to learn?</h5>
-                <p class="card-text">Visit our centres in Lekki, Yaba, etc.</p>
-                    <form class="form">
-                            <div class="input-group flex-nowrap">
-                            <span class="input-group-text" id="basic-addon1"><img src="../../assets/images/logo.png"/></span>
-                            <input type="text" class="form-control" id="input" placeholder="Tell us what you want to learn today" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <button type="submit" class="btn btn-secondary" id="want-to-learn"><span class="fa fa-search"></span></button>
-                    </form>
-                </div>
+                <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                <button type="submit" class="btn btn-warning">Learn More</button>  
             </div>
-    </div>
+        </div>
     
 
             <div class="trust-us">
@@ -45,153 +37,113 @@
                 </div>
             </div>
 
-            <h3 class="popular">Popular Class Groups</h3>
+            <div class="container about">
+                <div class="tgi">
+                     <h2>
+                        About Prepclass<br>
+                         TGI
+                     </h2>
+                     <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
+                </div>
+                <div class="tgi-p">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    </p>
+                </div>
+            </div>
 
-            <div class="container" id="cont">
+            <h3 class="popular">Programs We Are Involved in</h3>
+
+            <div class="container">
                 <div class="card-deck">
                     <div class="card text-white" style="width: 350px;">
                         <img src="../../assets/images/popular1.png" class="card-img-top" alt="...">
                        
                         <div class="card-footer ">
-                            <p class="card-text">IELTS</p>
-                            <span><a href="#">Learn More</a>
+                            <p class="card-text">Tutor Upskilling</p>
+                        </div>
+                        <p  class="footer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                             <span><a href="#">Learn More</a>
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </span>
-                        </div>
+                        </p>
                     </div>
                   <div class="card text-white" style="width: 350px;">
                         <img src="../../assets/images/popular2.png" class="card-img-top" alt="...">
                         
                         <div class="card-footer ">
-                            <p class="card-text">GMAT</p>
-                            <span><a href="#">Learn More</a>
+                            <p class="card-text">Best Teacher in Nigeria Award</p>
+                        </div>
+                        <p  class="footer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                             <span><a href="#">Learn More</a>
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </span>
-                        </div>
+                        </p>
                   </div>
-                  <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular3.png" class="card-img-top" alt="...">
-                        
-                         <div class="card-footer ">
-                            <p class="card-text">GRE</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                   </div>
                    </div>
                    <div class="card-deck">
                     <div class="card text-white" style="width: 350px;">
                         <img src="../../assets/images/popular4.png" class="card-img-top" alt="...">
                        
                         <div class="card-footer">
-                            <p class="card-text">SAT</p>
-                            <span><a href="#">Learn More</a>
+                            <p class="card-text">Placement in Remote Foreign Jobs</p>
+                        </div>
+                        <p class="footer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                             <span><a href="#">Learn More</a>
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </span>
-                        </div>
+                        </p>
                    </div>
                     <div class="card text-white" style="width: 350px;">
                         <img src="../../assets/images/first.png" class="card-img-top" alt="...">
                         
                         <div class="card-footer ">
-                            <p class="card-text">TOEFL</p>
-                            <span><a href="#">Learn More</a>
+                            <p class="card-text">Placement in Schools and Edutech companies</p>
+                        </div>
+                        <p  class="footer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                             <span><a href="#">Learn More</a>
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </span>
-                        </div>
+                        </p>
                      </div>
-                   <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular6.png" class="card-img-top" alt="...">
-                        <div class="card-img-overlay imgClass1">
-                            <p class="card-text">View All</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="card-footer ">
-                        </div>
-                 </div>
                 </div>
             </div>
 
             <div class="get-started">
-                <h3>How to get started</h3>
                 <div class="how-to-get-started">
-                    <div class="circle">
+                    <img src="../../assets/images/wave.png" />
+                    <div class="visit">
+                        <p>
+                            Are you a tutor interested in benefiting from the above initiatives?
+                        </p>
+                        <button type="submit" class="btn btn-warning tgi-b">Apply to become a tutor</button>
                     </div>
                     <img src="../../assets/images/group.png" />
-                    <div class="visit">
-                        Hey
+                    <div class="circle">
                     </div>
-                    <img src="../../assets/images/wave.png" />
                  </div>
             </div>
-
-            <div class="reviews">
-                <h3>Some of our Class Reviews From Google</h3>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                        <img src="../../assets/images/review1.png" alt="review" />
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                        <img src="../../assets/images/review2.png" alt="review" />
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                        <img src="../../assets/images/review3.png" alt="review" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <!-- FAQ -->
-        <div class="faq">
-             <h3>Often asked questions</h3>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
-                        <h2>Q: How do you operate?</h2>
-                        <h4><b>A</b>: Three easy steps</h4>
-                        <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
-                         2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
-                         3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
-                        </p>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
-                        <h2>Q: What kind of classes do you offer?</h2>
-                        <h4><b>A</b>: We offer group online classes.</h4>
-                        <p>Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
-                            This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
-                        <h2>Q: How do you charge and what are your rates?</h2>
-                        <p><b>A</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p><b>B</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p><b>C</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
-                        <h2>Q: Why work with prepclass instead of getting an home tutor myself?</h2>
-                        <p><b>A</b>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
-                                without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
-                                such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
-                        </p>
-                        <p><b>B</b>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p><b>C</b>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
-                    </div>
-                </div>
-            </div>
-                         <div class="get-a-tutor"><a href="" target="_blank" class="btn btn-success">Get A Tutor</a></div>
-        </div>
     
+        <div class="interested">
+            <h3>Are you interested in working with Prepclass’s database of qualified tutors</h3>
+            <p>to learn more about Prepclass business</p>
+             <button type="submit" class="btn btn-warning tgi-b">Click Here</button>
+        </div>
+
         <div class="contact-us">
             <h3>Contact Us</h3>
             <p>If you have any questions you can reach out to us</p>
@@ -281,7 +233,7 @@ overflow-x: hidden;
 }
 
 .imgDiv{
-background: url("../../assets/images/image1.png");
+background: url("../../assets/images/selfie.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -350,12 +302,66 @@ font-size:18px;
 }
 }
 
+.about {
+display: flex;
+flex-direction: column;
+}
 }
 
 .form{
 display: flex;
 }
 
+.about {
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
+height: 50vh;
+width:70vw;
+background: rgba(255, 255, 255, 1);
+
+.tgi {
+width: 100vw;
+
+h2 {
+font-family: Ubuntu;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 74px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.tgi-b {
+background: rgba(255, 185, 5, 0.77);
+border-radius: 40px;
+width: 40%;
+font-family: Ubuntu;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+}
+
+.tgi-p {
+width: 100%;
+font-family: Ubuntu;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+}
 
 
 .container-fluid {
@@ -439,6 +445,18 @@ color: black;
 background: rgba(95, 144, 72, 0.69);
 }
 
+.footer-text {
+font-family: Ubuntu;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+
+}
+
 .cont{
 height: 100%;
 display: flex;
@@ -493,6 +511,24 @@ font-style: normal;
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+.visit{
+width: 30%;
+p {
+font-family: Ubuntu;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 74px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+}
+}
+button {
+background-color: #0788FF;
+border: none;color: #ffffff;
+}
 }
 
 .circle {
@@ -570,6 +606,33 @@ line-height: 30px;
 }
 }
 
+.interested{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: Ubuntu;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+text-align: center;
+background-color: #ffffff;
+margin-top: -18px;
+height: 40vh;
+
+button {
+background-color: #5F9048;
+font-family: Ubuntu;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+color: #ffffff;
+}
+}
 .contact-us{
 display: flex;
 flex-direction: column;
