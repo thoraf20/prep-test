@@ -34,15 +34,16 @@
     </div>
     
 
-            <div class="trust-us">
-                <div class="row cont">
-                    <img src="../../assets/images/forbes.png" alt="" width="250">
-                    <img src="../../assets/images/mit.png" alt="" width="250" >
-                    <img src="../../assets/images/tribune.png" alt="" width="250" >
-                    <img src="../../assets/images/fast_company.png" alt="" width="250" >
-                    <img src="../../assets/images/bella.png" alt="" width="250"">
-                    <img src="../../assets/images/humanipo.png" alt="" width="250">
+           <div class="trust-us">
+                <div class="partners">
+                    <div class="trust-img"><img src="../../assets/images/forbes.png" alt=""></div>
+                    <div class="trust-img"><img src="../../assets/images/mit.png" alt="" ></div>
+                   <div class="trust-img"> <img src="../../assets/images/tribune.png" alt="" ></div>
+                   <div class="trust-img"> <img src="../../assets/images/fast_company.png" alt="" ></div>
+                   <div class="trust-img"> <img src="../../assets/images/bella.png" alt="" ></div>
+                   <div class="trust-img"> <img src="../../assets/images/humanipo.png" alt="" ></div>
                 </div>
+                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/dot.png" alt="" ></div>
             </div>
 
             <h3 class="popular">Popular Class Groups</h3>
@@ -114,25 +115,58 @@
                  </div>
                 </div>
             </div>
-
+            
             <div class="get-started">
                 <h3>How to get started</h3>
                 <div class="how-to-get-started">
+                  <div class="getStarted">
+                    <div class="getImg">
                     <div class="circle">
                     </div>
-                    <img src="../../assets/images/group.png" />
-                    <div class="visit">
-                        Hey
+                   <div class="circle-image"> <img src="../../assets/images/group.png" /></div>
                     </div>
-                    <img src="../../assets/images/wave.png" />
+                    <div class="visit">
+                       <div class="fir">
+                       <div class="avatar">
+                       <img src="../../assets/images/MaskGroup.png" />
+                       </div>
+                       <div class="det">
+                       Visit any of our centers
+                       </div>
+                       </div>
+                       <div class="stroke"></div>
+                       <div class="fir">
+                         <div class="avatar">
+                       <img src="../../assets/images/MaskGroup1.png" />
+                       </div>
+                       <div class="det">
+                       Book a class of your choice
+                       </div>
+                       </div>
+                       <div class="stroke"></div>
+                       <div class="fir">
+                        <div class="avatar">
+                       <img src="../../assets/images/MaskGroup2.png" />
+                       </div>
+                       <div class="det">
+                       Start Learning
+                       </div>
+                       </div>
+                       </div>
+                    </div>
+                    <img class="wave-img" src="../../assets/images/wave.png" />
                  </div>
             </div>
 
             <div class="reviews">
-                <h3>Some of our Class Reviews From Google</h3>
 
-                <div class="container">
-                    <div class="row">
+                <h3>Some of our Class Reviews From Google</h3>
+                <div class="dot2">
+                     <img class="dotdot" src="../../assets/images/dotdot.png" />
+                </div>
+
+                <div class="comments-container">
+                    <div class="comments">
                         <div class="col-md-6 col-lg-4 col-xl-4">
                         <img src="../../assets/images/review1.png" alt="review" />
                         </div>
@@ -143,6 +177,12 @@
                         <img src="../../assets/images/review3.png" alt="review" />
                         </div>
                     </div>
+                    <div class="foundation-img">
+                    <img class="dotdotdot" src="../../assets/images/ggd6.png" alt="">
+                </div>
+                <div class="foundation-img1">
+                    <img src="../../assets/images/ellipse.png" alt="">
+                </div>
                 </div>
             </div>
 
@@ -313,7 +353,61 @@ font: Ubuntu;
     justify-content: center;
 }
 
+.reviews {
+position: relative;
+padding-top: 2rem;
+padding-bottom: 2rem;
+
+.dot2 {
+position: absolute;
+top: -6rem;;
+left: -9rem;
+}
+}
+
+.comments {
+width: 85%;
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+margin: 0 auto 0 auto;
+}
+
+.foundation-img {
+position: absolute;
+bottom: -9rem;
+right: -3rem;
+}
+.foundation-img1 {
+position: absolute;
+bottom: -13rem;
+right: -3rem;
+}
+
 @media only screen and (max-width: 600px) {
+
+.comments {
+display: block;
+margin-right: 4rem;
+}
+.circle {
+display: none;
+}
+
+.circle-image {
+display: none;
+}
+
+.wave-img {
+display: none;
+}
+
+.visit {
+width: 80%;
+}
+
+.avatar {
+background-color: red;
+}
 .imgText h5{
 font-size: 28px;
 }
@@ -323,6 +417,7 @@ font-size:18px;
 #input{
 width: 100%;
 }
+
 .cont{
 width: 100%;
 display: flex;
@@ -338,6 +433,7 @@ aligh-items: center;
 }
 
 #asked-question {
+
 h2 {
 font-size: 20px;
 }
@@ -356,7 +452,40 @@ font-size:18px;
 display: flex;
 }
 
+.trust-us {
+position: relative;
+height: 16rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #f5f5f5;
 
+.partners{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:96.5%;
+
+img {
+width: 80%;
+}
+
+}
+
+.trust-dot {
+    position: absolute;
+    top: -3rem;
+    right: -2rem;
+    width: 246px;
+}
+
+}
+
+.container {
+position: relative;
+
+
+}
 
 .container-fluid {
 display: flex;
@@ -475,6 +604,9 @@ margin-top: -80px;
 .get-started {
 background: #011120;
 margin-top: 40px;
+height: 110vh;
+padding-top: 20px;
+padding-bottom: 50px;
 
 h3 {
  color: #ffffff;
@@ -497,11 +629,10 @@ align-items: center;
 
 .circle {
 width: 88px;
-height: 465px;
-top: 2248px;
-left: 139px;
+height: 450px;
 border-radius: 50px;
 border: 3px solid rgba(225, 185, 5, 0.77);
+margin-right: -40px;
 }
 
 .review {
@@ -530,7 +661,6 @@ font-style: normal;
 background-color: #f5f5f5;
 align-items: center;
 justify-content: center;
-
 }
 .get-a-tutor {
 height: 63px;
@@ -600,6 +730,72 @@ margin-top: 25px;
 }
 }
 
+.avatar{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+ background: #5F9048;
+
+}
+
+.fir{
+display: flex;
+color: white;
+align-items: center;
+}
+
+.getStarted{
+display: flex;
+width: 90%;
+justify-content: space-around;
+}
+
+.getImg{
+display: flex;
+align-items: center;
+}
+
+.visit{
+display: flex;
+height: 70vh;
+flex-direction: column;
+}
+
+.det{
+margin-left: 20px;
+font-family: Ubuntu;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 41px;
+letter-spacing: 0em;
+
+}
+
+.stroke{
+height: 130px;
+width: 6px;
+border: 1px solid black;
+ background: #C4C4C4;
+ margin-left: 22px;
+;
+}
+
+
+.dotdot1{
+position:absolute;
+top: 155rem;
+left: 25rem;
+}
+
+.dot1{
+position:absolute;
+top: 185rem;
+left: 80rem;
+}
 .copyright {
 font-family: Ubuntu;
 font-size: 14px;

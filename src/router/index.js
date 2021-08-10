@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import NotFound from '@/components/404';
 import LandingPage from '@/components/LandingPage/LandingPage';
+import LandingPage1 from '@/components/LandingPage/LandingPage1';
 import LandingPage2 from '@/components/LandingPage/LandingPage2';
 import Login from '@/components/Auth/Login';
 import Forgot from '@/components/Auth/Forgot';
@@ -73,6 +74,11 @@ export default new Router({
       path: '/landing',
       name: 'landing',
       component: LandingPage2,
+    },
+    {
+      path: '/landing1',
+      name: 'landing',
+      component: LandingPage1,
     },
     {
       path: '/login',
