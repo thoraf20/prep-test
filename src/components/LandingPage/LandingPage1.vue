@@ -6,14 +6,16 @@
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto" id="custum-nav">
-                <a href="#" class="nav-item nav-link">HOME</a>
-                <a href="#" class="nav-item nav-link">ABOUT</a>
-                <a href="#" class="nav-item nav-link">SERVICES</a>
-                <a href="#" class="nav-item nav-link">FUN FACT</a>
-                <a href="#" class="nav-item nav-link">SIGN IN</a>
-                <a href="#" class="nav-item nav-link">SIGN UP</a>
+            <div class="navbar-nav ml-auto" id="stroke">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Fun Fact</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
             </div>
+                    <a href="#" class="sign-up-btn" >Sign Up</a>
         </div>
     </nav>
 
@@ -187,7 +189,7 @@
                     <img class="dotdotdot" src="../../assets/images/ggd6.png" alt="">
                 </div>
                 <div class="foundation-img1">
-                    <img src="../../assets/images/Ellipse.png" alt="">
+                    <img src="../../assets/images/ellipse.png" alt="">
                 </div>
           </div>
 
@@ -254,6 +256,88 @@
 </script>
 
 <style lang="scss" scoped>
+nav {
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #383737;
+  margin: 0 10px;
+
+font-family: Ubuntu;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #5F9048;
+}
+
+#stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+#stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: black;
+  background:  #5F9048;
+  height: 2px;
+}
+#stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.sign-up-btn {
+margin-left: 25px;
+margin-top: -7px;
+border-radius: 10px;
+padding: 6px 30px 8px 30px;
+white-space: nowrap;
+background-color: #076AFF;
+color: white;
+font-family: Ubuntu;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+text-decoration: none;
+}
+
+.navbar-toggler {
+position: absolute;
+top: 18px;
+right: 15px;
+z-index: 9998;
+border: 0;
+outline: none !important;
+transition: all 0.4s;
+cursor: pointer;
+line-height: 1;
+text-align: right;
+}
 
 
 .dotdotdot {
@@ -380,7 +464,7 @@ position: relative;
 
 .trust-us {
 position: relative;
-height: 16rem;
+height: 12rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -399,9 +483,9 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: -3rem;
+    top: -4rem;
     right: -2rem;
-    width: 246px;
+    width: 242px;
 }
 
 }
@@ -446,6 +530,10 @@ line-height: 4rem !important;
 font-size: 30px !important;
 }
 
+.partners {
+display: block;
+}
+
 .we-are {
 display: flex !important;
 flex-direction: column;
@@ -473,7 +561,7 @@ font-size: 50px !important;
 
 
 .dotdotdot {
-display: none;
+display: none !important;
 }
 .imgText h5{
 font-size: 28px;
@@ -483,13 +571,6 @@ font-size:18px;
 }
 #input{
 width: 100%;
-}
-
-.cont{
-width: 100%;
-display: flex;
-flex-direction: column;
-aligh-items: center;
 }
 
 #cont{
@@ -528,7 +609,7 @@ font-weight: 700;
 line-height: 41px;
 letter-spacing: 0em;
 text-align: center;
-margin-top: 20px;
+margin-top: 30px;
 }
 
 #want-to-learn {
@@ -620,8 +701,8 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 background-color: #f5f5f5;
-padding-top:9rem;
-padding-bottom:9rem;
+padding-top:5rem;
+padding-bottom:5rem;
 
 .dot1 {
 position: absolute;
@@ -716,8 +797,8 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 width:93%;
-padding-top: 5rem;
-padding-bottom: 5rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
 margin-left: 2rem;
 img {
 width: 80%;
@@ -760,6 +841,19 @@ font-size: 1.2rem;
 
 @media only screen and (max-width: 768px) {
 
+.recText{
+width: 20rem;
+}
+
+.big{
+font-size: 40px !important;
+line-height: 4rem !important;
+}
+.small{
+font-size: 30px !important;
+}
+
+
 .show{
 display: none;
 }
@@ -769,13 +863,16 @@ width: 100% !important;
 }
 
 .dotdotdot {
-display: none;
+display: none !important;
+}
+.get-dot{
+display: none !important;
 }
 
 .fun {
 display: block;
 margin: 0 auto 0 auto;
-width: 40%;
+width: 50%;
 
 .fir-p {
 text-align: center;

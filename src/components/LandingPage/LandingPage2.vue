@@ -6,14 +6,16 @@
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto" id="custum-nav">
-                <a href="#" class="nav-item nav-link">HOME</a>
-                <a href="#" class="nav-item nav-link">ABOUT</a>
-                <a href="#" class="nav-item nav-link">SERVICES</a>
-                <a href="#" class="nav-item nav-link">FUN FACT</a>
-                <a href="#" class="nav-item nav-link">SIGN IN</a>
-                <a href="#" class="nav-item nav-link">SIGN UP</a>
+            <div class="navbar-nav ml-auto" id="stroke">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Fun Fact</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
             </div>
+                    <a href="#" class="sign-up-btn" >Sign Up</a>
         </div>
     </nav>
 
@@ -240,7 +242,21 @@
 
 <style lang="scss" scoped>
 
-#custum-nav {
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #383737;
+  margin: 0 10px;
+
 font-family: Ubuntu;
 font-size: 20px;
 font-style: normal;
@@ -248,7 +264,63 @@ font-weight: 500;
 line-height: 23px;
 letter-spacing: 0em;
 text-align: center;
-color:#383737;
+
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #5F9048;
+}
+
+#stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+#stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: black;
+  background:  #5F9048;
+  height: 2px;
+}
+#stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.sign-up-btn {
+margin-left: 25px;
+margin-top: -7px;
+border-radius: 10px;
+padding: 6px 30px 8px 30px;
+white-space: nowrap;
+background-color: #076AFF;
+color: white;
+font-family: Ubuntu;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+text-decoration: none;
+}
+
+.navbar-toggler {
+position: absolute;
+top: 18px;
+right: 15px;
+z-index: 9998;
+border: 0;
+outline: none !important;
+transition: all 0.4s;
+cursor: pointer;
+line-height: 1;
+text-align: right;
 }
 
 .mainCont{
