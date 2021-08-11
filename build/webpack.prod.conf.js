@@ -34,12 +34,6 @@ var webpackConfig = merge(baseWebpackConfig, {
       PUBLIC_URL: config.build.PUBLIC_URL,
       PUSHER_APP_KEY: config.build.PUSHER_APP_KEY,
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      sourceMap: true
-    }),
     // extract css into its own file
     new ExtractTextPlugin({
       filename: utils.assetsPath("css/[name].[contenthash].css")
