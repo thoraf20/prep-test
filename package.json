@@ -15,7 +15,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^2.0.0-rc.9",
-    "laravel-echo": "^1.5.2",
+    "laravel-echo": "^1.11.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "popper.js": "^1.12.9",
