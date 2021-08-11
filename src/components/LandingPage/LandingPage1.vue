@@ -189,7 +189,7 @@
                     <img class="dotdotdot" src="../../assets/images/ggd6.png" alt="">
                 </div>
                 <div class="foundation-img1">
-                    <img src="../../assets/images/ellipse.png" alt="">
+                    <img src="../../assets/images/Ellipse.png" alt="">
                 </div>
           </div>
 
