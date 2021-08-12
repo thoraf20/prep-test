@@ -113,47 +113,56 @@
             <img class="popular-class-dot" src="../../assets/images/dot1.png" />
         </div>
             
-            <div class="get-started">
-                <h3>How to get started</h3>
-                <div class="how-to-get-started">
-                  <div class="getStarted">
-                    <div class="getImg">
-                    <div class="circle">
+            <!-- Get Started Section -->
+        <div class="get-started">
+            <h3 class="get-started-header">How to get started</h3>
+            <div class="get-started-body">
+                <div class="get-started-left">
+                    <img class="get-started-image" src="../../assets/images/group.png" />
+                    <div class="get-started-rectangle"></div>
+                    <img class="get-started-dot" src="../../assets/images/dotdot.png" />
+                </div>
+                <div class="get-started-right">
+                    <div class="fir">
+                        <div class="circle-avatar">
+                            <div class="circle-inner">
+                                <img class="circle-inner-img" src="../../assets/images/MaskGroup.png" />
+                            </div>
+                        </div>
+                        <div class="det">
+                        Visit any of our centers
+                        </div>
                     </div>
-                   <div class="circle-image"> <img src="../../assets/images/group.png" /></div>
+                    <div class="stroke"></div>
+                    
+                    <div class="fir">
+                        <div class="circle-avatar">
+                            <div class="circle-inner">
+                                <img class="circle-inner-img" src="../../assets/images/MaskGroup1.png" />
+                            </div>
+                        </div>
+                        <div class="det">
+                            Book a class of your choice
+                        </div>
                     </div>
-                    <div class="visit">
-                       <div class="fir">
-                       <div class="avatar">
-                       <img src="../../assets/images/MaskGroup.png" />
-                       </div>
-                       <div class="det">
-                       Visit any of our centers
-                       </div>
-                       </div>
-                       <div class="stroke"></div>
-                       <div class="fir">
-                         <div class="avatar">
-                       <img src="../../assets/images/MaskGroup1.png" />
-                       </div>
-                       <div class="det">
-                       Book a class of your choice
-                       </div>
-                       </div>
-                       <div class="stroke"></div>
-                       <div class="fir">
-                        <div class="avatar">
-                       <img src="../../assets/images/MaskGroup2.png" />
-                       </div>
-                       <div class="det">
-                       Start Learning
-                       </div>
-                       </div>
-                       </div>
+                    <div class="stroke"></div>
+                    
+                    <div class="fir">
+                        <div class="circle-avatar">
+                            <div class="circle-inner">
+                                <img class="circle-inner-img" src="../../assets/images/MaskGroup2.png" />
+                            </div>
+                        </div>
+                        <div class="det">
+                            Start Learning
+                        </div>
                     </div>
-                    <img class="wave-img" src="../../assets/images/wave.png" />
-                 </div>
+                    
+                </div>
+                <img class="get-started-wave" src="../../assets/images/wave.png" />
             </div>
+
+        </div>
 
             <div class="reviews">
 
@@ -854,43 +863,242 @@ margin-top: 40px;
 }
 /* End of card section styling */
 
-.btm{
-margin-top: -80px;
-}
 
+/* Get start section styling */
 .get-started {
-background: #011120;
-margin-top: 40px;
-height: 110vh;
-padding-top: 20px;
-padding-bottom: 50px;
-
-h3 {
- color: #ffffff;
- text-align: center;
- padding-top: 20px;
-font: Ubuntu;
-font-size: 36px;
-font-weight: 700;
-line-height: 41.36px;
-font-style: normal;
+    background: #011120;
+    position: relative;
 }
 
+.get-started-header {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    font-style: normal;
 }
 
-.how-to-get-started {
-display: flex;
-justify-content: space-between;
-align-items: center;
+.get-started-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0 8rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
 }
 
-.circle {
-width: 88px;
-height: 450px;
-border-radius: 50px;
-border: 3px solid rgba(225, 185, 5, 0.77);
-margin-right: -40px;
+.get-started-left {
+    position: relative;
 }
+
+.get-started-image {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.get-started-rectangle {
+    width: 4rem;
+    height: 100%;
+    border-radius: 3rem;
+    border: 3px solid rgba(225, 185, 5, 0.77);
+}
+
+.get-started-dot {
+    position: absolute;
+    right: -0.4rem;
+    bottom: -6.3rem;
+    width: 20rem;
+}
+
+.get-started-right {
+    display: block;
+}
+
+.get-started-wave {
+    position: absolute;
+    right: 0;
+    height: 200px;
+    top: calc(50% - 100px);
+}
+
+.fir {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.det {
+    margin-left: 1.25rem;
+    font-family: Ubuntu;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 0em;
+}
+
+.stroke {
+    height: 8rem;
+    width: 0.4rem;
+    border: 1px solid black;
+    background: #C4C4C4;
+    margin-left: 1.25rem;
+}
+
+/* avatar in circle styling */
+.circle-avatar {
+    position: relative;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #5F9048;
+    border-radius: 50%;
+}
+
+.circle-inner {
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+}
+.circle-inner-img {
+    aspect-ratio: inherit; 
+}
+/* End of avatar in circle styling */
+
+@media(max-width: 1536px) {
+    .get-started-body {
+        gap: 4rem;
+        margin: 0 4rem;
+    }
+    .get-started-image {
+        left: 5%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-dot {
+        right: -3.4rem;
+        bottom: -6.3rem;
+        width: 20rem;
+    }
+    .get-started-wave {
+        right: 0;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .det {
+        margin-left: 1.25rem;
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+}
+@media(max-width: 1024px) {
+    .get-started-body {
+        gap: 2rem;
+        margin: 0 4rem;
+        padding-bottom: 5rem;
+    }
+    .get-started-image {
+        left: 5%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-dot {
+        right: -3.4rem;
+        bottom: -6.3rem;
+        width: 20rem;
+    }
+    .get-started-wave {
+        right: 0;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .det {
+        margin-left: 1.25rem;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+}
+@media(max-width: 791px) {
+    .get-started-body {
+        display: block;
+        gap: 4rem;
+        margin: 0 4rem;
+    }
+    .get-started-image {
+        left: 5%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-rectangle {
+        width: 4rem;
+        height: 30rem;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+    .get-started-dot {
+        right: -3.4rem;
+        bottom: -6.3rem;
+        width: 20rem;
+    }
+    .get-started-wave {
+        right: 0;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .det {
+        margin-left: 1.25rem;
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .get-started-header {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .get-started-body {
+        margin: 0 1rem;
+    }
+    .get-started-image {
+        left: 5%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-rectangle {
+        width: 3.2rem;
+        height: 20rem;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+    .get-started-dot {
+        right: -3.4rem;
+        bottom: -4.3rem;
+        width: 15rem;
+    }
+    .get-started-wave {
+        right: 0;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .det {
+        margin-left: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+}
+/* End of get started styling */
 
 .review {
 display: flex;

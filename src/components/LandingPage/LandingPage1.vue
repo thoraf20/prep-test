@@ -484,9 +484,10 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: -5rem;
-    right: -2rem;
-    width: 240px;
+    top: 2em;
+    right: -3rem;
+    width: 180px;
+    height: 50vh;
 }
 
 }
