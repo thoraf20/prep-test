@@ -974,8 +974,6 @@ margin-top: -18px;
 
 .footer {
 background: #011120;
-height: 90vh;
-
 
 .list-unstyled {
 font-family: Ubuntu;
