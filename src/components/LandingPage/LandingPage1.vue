@@ -1,47 +1,47 @@
 <template>
-<div class="mainCont">
+    <div class="mainCont">
       <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
-        <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon bg-dark text-dark"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto" id="stroke">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Fun Fact</a></li>
-                    <li><a href="#">Sign In</a></li>
-                </ul>
+            <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon bg-dark text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto" id="stroke">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Fun Fact</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>
+                </div>
+                        <a href="#" class="sign-up-btn" >Sign Up</a>
             </div>
-                    <a href="#" class="sign-up-btn" >Sign Up</a>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="header">
-        <div class="header-left">
-            <img src="../../assets/images/Rectangle.png" alt=""/>
-            <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
-            <div class="recText">
-                <p  class="big">
-                    Lorem ipsum dolor
-                     sit amet
-                </p>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <div class="header">
+            <div class="header-left">
+                <img src="../../assets/images/Rectangle.png" alt=""/>
+                <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
+                <div class="recText">
+                    <p  class="big">
+                        Lorem ipsum dolor
+                        sit amet
+                    </p>
+                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
             </div>
-        </div>
-        <div class="header-right">
-            <img class="headphone" src="../../assets/images/headphone.png" alt=""/>
-            <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
-            <div class="curve">
-            <div class="imghod">
-                <img class="right-curve" src="../../assets/images/dhh.png" alt=""/>
-                <img class="left-curve" src="../../assets/images/dhh1.png" alt=""/>
+            <div class="header-right">
+                <img class="headphone" src="../../assets/images/headphone.png" alt=""/>
+                <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
+                <div class="curve">
+                <div class="imghod">
+                    <img class="right-curve" src="../../assets/images/dhh.png" alt=""/>
+                    <img class="left-curve" src="../../assets/images/dhh1.png" alt=""/>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
-    </div>
+         </div>
     
             <div class="trust-us">
                 <div class="partners">
