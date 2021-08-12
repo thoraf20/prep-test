@@ -370,12 +370,11 @@ font: Ubuntu;
 
 .trust-us {
 position: relative;
-height: 16rem;
+height: 14rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
 background-color: #f5f5f5;
-
 
 .partners{
 display: flex;
@@ -391,9 +390,9 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: -3rem;
+    top: -5rem;
     right: -2rem;
-    width: 246px;
+    width: 240px;
 }
 
 }
