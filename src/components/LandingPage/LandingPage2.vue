@@ -37,7 +37,7 @@
                    <div class="trust-img"> <img src="../../assets/images/bella.png" alt="" ></div>
                    <div class="trust-img"> <img src="../../assets/images/humanipo.png" alt="" ></div>
                 </div>
-                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/dot.png" alt="" ></div>
+                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
             </div>
 
             <div class="about">
@@ -68,76 +68,38 @@
                 </div>
             </div>
 
-            <div class="programs">
+                <!-- Programs-->
+        <div class="class-group-container">
             <h3 class="popular">Programs We Are Involved in</h3>
 
-            <div class="container">
-                <div class="card-deck">
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular1.png" class="card-img-top" alt="...">
-                       
-                        <div class="card-footer ">
-                            <p class="card-text">Tutor Upskilling</p>
-                        </div>
-                        <p  class="footer-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </p>
+            <div class="cards-container">
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-one">                    
+                    <div class="card-content">
+                        <p class="card-text">Tutor Upskilling</p>
                     </div>
-                  <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular2.png" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer ">
-                            <p class="card-text">Best Teacher in Nigeria Award</p>
-                        </div>
-                        <p  class="footer-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </p>
-                  </div>
-                   </div>
-                   <div class="card-deck">
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular4.png" class="card-img-top" alt="...">
-                       
-                        <div class="card-footer">
-                            <p class="card-text">Placement in Remote Foreign Jobs</p>
-                        </div>
-                        <p class="footer-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </p>
-                   </div>
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/first.png" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer ">
-                            <p class="card-text">Placement in Schools and Edutech companies</p>
-                        </div>
-                        <p  class="footer-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </p>
-                     </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-two">                    
+                    <div class="card-content">
+                        <p class="card-text">Best Teacher in Nigeria Award</p>
+                    </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-three">                    
+                    <div class="card-content">
+                        <p class="card-text">Placement in Remote Foreign Jobs</p>
+                    </div>
+                </div>
+                    
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-four">                    
+                    <div class="card-content">
+                        <p class="card-text">Placement in Schools and Edutech companies</p>
+                    </div>
                 </div>
             </div>
-            </div>
+        </div>
 
             <div class="get-started">
                 <div class="how-to-get-started">
@@ -241,8 +203,9 @@
 </script>
 
 <style lang="scss" scoped>
+
 nav {
-height: 8vh
+height: 8vh;
 }
 
 nav ul {
@@ -325,6 +288,16 @@ line-height: 1;
 text-align: right;
 }
 
+
+.dotdotdot {
+width:100%;
+}
+
+.mainCont{
+max-width: 100vw;
+overflow-x: hidden;
+}
+
 .mainCont{
 max-width: 100vw;
 overflow-x: hidden;
@@ -335,7 +308,7 @@ background: url("../../assets/images/selfie.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 120vh;
+height: 100vh;
 
 button {
 padding: 1rem 3rem 1rem 3rem;
@@ -390,9 +363,10 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: -5rem;
-    right: -2rem;
-    width: 240px;
+    top: 1em;
+    right: -1rem;
+    width: 180px;
+    height: 50vh;
 }
 
 }
@@ -716,21 +690,191 @@ align-items: center;
 margin-top: 40px;
 }
 
+
+/* Start of card section styling */
+.class-group-container {
+    position: relative;
+    background-color: #f5f5f5;
+}
+
 .popular {
-text-align: center;
-margin-top: 10px;
-font: Ubuntu;
-font-size: 36px;
-font-weight: 700;
-line-height: 41.36px;
-font-style: normal;
-color: black;
-
+    text-align: center;
+    margin-top: 0.8rem;
+    font: Ubuntu;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    font-style: normal;
+    color: black;
 }
 
-.btm{
-margin-top: -80px;
+.cards-container {
+    padding: 0 15rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    justify-items: center;
+    padding-left: 400px;
 }
+
+.single-card-wrapper {
+    width: 450px; 
+    height: 375px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+}
+
+.other-p {
+}
+.single-card-one {
+    background: url("../../assets/images/program1.png");
+}
+.single-card-two {
+    background: url("../../assets/images/program2.png");
+}
+.single-card-three {
+    background: url("../../assets/images/program3.png");
+}
+.single-card-four {
+    background: url("../../assets/images/program4.png");
+}
+
+.card-content {
+    width: 100%;
+    height: 20%;
+    background-color: #fff; 
+    opacity: 0.9; 
+    position: absolute; 
+    bottom: 0; 
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+    
+.card-content-odd {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.4rem;
+    color: #000000;
+    /* background-color: #f0f; */
+}
+.card-more {
+    /* background-color: #ff0; */
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+.card-more > a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+    
+.fa-long-arrow-right {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #5c5c5c;
+}
+
+.card-content:hover {
+    background-color: rgba(95, 144, 72, 0.69);
+}
+.card-content:hover .card-text {
+    color: #ffffff;
+}
+.card-content:hover .card-more > a {
+    color: #ffffff;
+}
+.card-content:hover .fa-long-arrow-right {
+    color: #ffffff;
+}
+
+.popular-class-dot {
+    position: absolute;
+    bottom: 0rem;
+    left: -1rem;
+    width: 10rem;
+}
+@media(max-width: 1536px) {
+    .popular {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    .cards-container {
+        padding: 0 10rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 9rem;
+    }
+}
+@media(max-width: 1280px) {
+    .cards-container {
+        padding: 0 7rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 8rem;
+    }
+}
+@media(max-width: 1024px) {
+    .popular {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    .cards-container {
+        padding: 0 5rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 7rem;
+    }
+}
+@media(max-width: 768px) {
+    .popular {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    .cards-container {
+        padding: 0 2rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 6rem;
+    }
+}
+@media(max-width: 400px) {
+    .popular {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .cards-container {
+        padding: 0 0.5rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 5rem;
+    }
+}
+/* End of card section styling */
 
 .get-started{
 position: relative;

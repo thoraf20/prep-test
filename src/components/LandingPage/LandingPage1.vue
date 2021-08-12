@@ -1,47 +1,47 @@
 <template>
-    <div class="mainCont">
+<div class="mainCont">
       <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
-            <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon bg-dark text-dark"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto" id="stroke">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Fun Fact</a></li>
-                        <li><a href="#">Sign In</a></li>
-                    </ul>
-                </div>
-                        <a href="#" class="sign-up-btn" >Sign Up</a>
+        <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon bg-dark text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto" id="stroke">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Fun Fact</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
             </div>
-        </nav>
+                    <a href="#" class="sign-up-btn" >Sign Up</a>
+        </div>
+    </nav>
 
-        <div class="header">
-            <div class="header-left">
-                <img src="../../assets/images/Rectangle.png" alt=""/>
-                <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
-                <div class="recText">
-                    <p  class="big">
-                        Lorem ipsum dolor
-                        sit amet
-                    </p>
-                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </div>
+    <div class="header">
+        <div class="header-left">
+            <img src="../../assets/images/Rectangle.png" alt=""/>
+            <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
+            <div class="recText">
+                <p  class="big">
+                    Lorem ipsum dolor
+                     sit amet
+                </p>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             </div>
-            <div class="header-right">
-                <img class="headphone" src="../../assets/images/headphone.png" alt=""/>
-                <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
-                <div class="curve">
-                <div class="imghod">
-                    <img class="right-curve" src="../../assets/images/dhh.png" alt=""/>
-                    <img class="left-curve" src="../../assets/images/dhh1.png" alt=""/>
-                </div>
-                </div>
+        </div>
+        <div class="header-right">
+            <img class="headphone" src="../../assets/images/headphone.png" alt=""/>
+            <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
+            <div class="curve">
+            <div class="imghod">
+                <img class="right-curve" src="../../assets/images/dhh.png" alt=""/>
+                <img class="left-curve" src="../../assets/images/dhh1.png" alt=""/>
             </div>
-         </div>
+            </div>
+        </div>
+    </div>
     
             <div class="trust-us">
                 <div class="partners">
@@ -52,7 +52,8 @@
                    <div class="trust-img"> <img src="../../assets/images/bella.png" alt="" ></div>
                    <div class="trust-img"> <img src="../../assets/images/humanipo.png" alt="" ></div>
                 </div>
-                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/dot.png" alt="" ></div>
+                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
+
             </div>
 
             <div class="about">
@@ -81,41 +82,40 @@
                 </div>
             </div>
 
+                <!-- Popular Class Group -->
+        <div class="class-group-container">
             <h3 class="popular">Services We Offer</h3>
-            <div class="container" id="cont">
-                <div class="card-deck">
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/teacher.png" class="card-img-top" alt="...">
-                       
-                        <div class="card-footer ">
-                            <p class="card-text">Academy</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
+
+            <div class="cards-container">
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-one">                    
+                    <div class="card-content">
+                        <p class="card-text">Academy</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
                     </div>
-                  <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/man.png" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer ">
-                            <p class="card-text">Tutor Marketplace</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                  </div>
-                  <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular6.png" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer ">
-                            <p class="card-text">Tutor Growth Initiatives</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                  </div>
                 </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-two">                    
+                    <div class="card-content">
+                        <p class="card-text">Tutor Marketplace</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-three">                    
+                    <div class="card-content">
+                        <p class="card-text">Tutor Grow Initiative</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>    
             </div>
+        </div>
 
             <div class="get-started">
                 <h3>Fun Facts</h3>
@@ -350,18 +350,6 @@ max-width: 100vw;
 overflow-x: hidden;
 }
 
-#custum-nav {
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-color:#383737;
-}
-
-
 .header {
 height: 900px;
 overflow: hidden;
@@ -468,7 +456,7 @@ height: 14rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-color: #f5f5f5;
+background-color: #ffffff;
 
 .partners{
 display: flex;
@@ -484,14 +472,13 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: 2em;
-    right: -3rem;
+    top: 1em;
+    right: 1rem;
     width: 180px;
     height: 50vh;
 }
 
 }
-
 .card-title {
 font: Ubuntu;
  font-weight: 700;
@@ -764,9 +751,183 @@ top: 90rem;
 }
 }
 
-.btm{
-margin-top: -80px;
+/* Start of card section styling */
+.class-group-container {
+    position: relative;
 }
+
+.popular {
+    text-align: center;
+    margin-top: 0.8rem;
+    font: Ubuntu;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    font-style: normal;
+    color: black;
+   
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 3rem;
+    padding: 2.5rem;
+    justify-items: center;
+}
+
+.single-card-wrapper {
+    width: 420px; 
+    height: 375px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+    background:black;
+}
+.single-card-one {
+    background: url("../../assets/images/service1.png");
+}
+.single-card-two {
+    background: url("../../assets/images/service2.png");
+}
+.single-card-three {
+    background: url("../../assets/images/service3.png");
+}
+
+.card-content {
+    width: 100%;
+    height: 10vh;
+    background-color: #fff; 
+    opacity: 0.9; 
+    position: absolute; 
+    bottom: 0; 
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+    
+.card-content-odd {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.4rem;
+    color: #000000;
+}
+.card-more {
+    /* background-color: #ff0; */
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+.card-more > a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+    
+.fa-long-arrow-right {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #5c5c5c;
+}
+
+.card-content:hover {
+    background-color: rgba(95, 144, 72, 0.69);
+}
+.card-content:hover .card-text {
+    color: #ffffff;
+}
+.card-content:hover .card-more > a {
+    color: #ffffff;
+}
+.card-content:hover .fa-long-arrow-right {
+    color: #ffffff;
+}
+
+.popular-class-dot {
+    position: absolute;
+    bottom: 0rem;
+    left: -1rem;
+    width: 10rem;
+}
+@media(max-width: 1536px) {
+    .popular {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    .cards-container {
+        padding: 0 10rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 9rem;
+    }
+}
+@media(max-width: 1280px) {
+    .cards-container {
+        padding: 0 7rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 8rem;
+    }
+}
+@media(max-width: 1024px) {
+    .popular {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    .cards-container {
+        padding: 0 5rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 7rem;
+    }
+}
+@media(max-width: 768px) {
+    .popular {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    .cards-container {
+        padding: 0 2rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 6rem;
+    }
+}
+@media(max-width: 400px) {
+    .popular {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .cards-container {
+        padding: 0 0.5rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 5rem;
+    }
+}
+/* End of card section styling */
 
 
 .get-started{
