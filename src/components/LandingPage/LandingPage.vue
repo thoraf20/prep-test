@@ -33,7 +33,7 @@
                     </form>
                 </div>
             </div>
-    </div>
+        </div>
     
 
            <div class="trust-us">
@@ -305,8 +305,6 @@
 </script>
 
 <style lang="scss" scoped>
-
-
 nav ul {
   list-style: none;
   text-align: center;
@@ -397,7 +395,7 @@ background: url("../../assets/images/image1.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 120vh;
+height: 100vh;
 }
 
 .card-title {
@@ -423,6 +421,7 @@ font: Ubuntu;
     flex-direction: column;
     align-items:  center;
     justify-content: center;
+    padding-top: 130px;
 }
 
 .reviews {
@@ -579,6 +578,7 @@ font: Ubuntu;
 font-style: normal;
 line-height: 20.68px;
 font-weight: 500;
+width: 50vw;
 }
 
 
