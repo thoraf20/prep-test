@@ -21,6 +21,8 @@
 
     <div class="header">
         <div class="imgDiv">
+                <img class="ggd" src="../../assets/images/ggd1.png" alt="">
+                <img class="ghsg" src="../../assets/images/ghsg1.png" alt="">
             <div class="imgText">
                 <h5 class="card-title">What do you want to learn?</h5>
                 <p class="card-text">Visit our centres in Lekki, Yaba, etc.</p>
@@ -45,78 +47,71 @@
                    <div class="trust-img"> <img src="../../assets/images/bella.png" alt="" ></div>
                    <div class="trust-img"> <img src="../../assets/images/humanipo.png" alt="" ></div>
                 </div>
-                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/dot.png" alt="" ></div>
+                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
             </div>
 
+             <!-- Popular Class Group -->
+        <div class="class-group-container">
             <h3 class="popular">Popular Class Groups</h3>
 
-            <div class="container" id="cont">
-                <div class="card-deck">
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular1.png" class="card-img-top" alt="...">
-                       
-                        <div class="card-footer ">
-                            <p class="card-text">IELTS</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
+            <div class="cards-container">
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-one">                    
+                    <div class="card-content">
+                        <p class="card-text">IELTS</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
                     </div>
-                  <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular2.png" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer ">
-                            <p class="card-text">GMAT</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                  </div>
-                  <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular3.png" class="card-img-top" alt="...">
-                        
-                         <div class="card-footer ">
-                            <p class="card-text">GRE</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                   </div>
-                   </div>
-                   <div class="card-deck">
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular4.png" class="card-img-top" alt="...">
-                       
-                        <div class="card-footer">
-                            <p class="card-text">SAT</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                   </div>
-                    <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/first.png" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer ">
-                            <p class="card-text">TOEFL</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                     </div>
-                   <div class="card text-white" style="width: 350px;">
-                        <img src="../../assets/images/popular6.png" class="card-img-top" alt="...">
-                        <div class="card-img-overlay imgClass1">
-                            <p class="card-text">View All</p>
-                            <span><a href="#">Learn More</a>
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="card-footer ">
-                        </div>
-                 </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-two">                    
+                    <div class="card-content">
+                        <p class="card-text">GMAT</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-three">                    
+                    <div class="card-content">
+                        <p class="card-text">GRE</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-four">                    
+                    <div class="card-content">
+                        <p class="card-text">SAT</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-five">                    
+                    <div class="card-content">
+                        <p class="card-text">TOEFL</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- Single card -->
+                <div class="single-card-wrapper single-card-six">                    
+                    <div class="card-content card-content-odd">
+                        <p class="card-text">View All</p>
+                        <p class="card-more"><a href="#">Learn More</a>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
                 </div>
             </div>
+            <img class="popular-class-dot" src="../../assets/images/dot1.png" />
+        </div>
             
             <div class="get-started">
                 <h3>How to get started</h3>
@@ -243,7 +238,7 @@
         </div>
 
         <div class="footer">
-            <div class="row justify-content-around mb-0 pt-5 mx-4">
+            <div class="row justify-content-around mb-0 pt-2 mx-4 mt-0">
                 <div class="col-xl-2 col-md-3 pt-4 order-1">
                     <img src="../../assets/images/logo-white.png" />
                     <p class="list-unstyled">
@@ -305,9 +300,8 @@
 </script>
 
 <style lang="scss" scoped>
-
 nav {
-height: 8vh
+height: 12vh;
 }
 
 nav ul {
@@ -401,6 +395,18 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 height: 100vh;
+position: relative;
+}
+
+.ggd {
+position: absolute;
+bottom: 12rem;
+left: -13.5rem;
+}
+.ghsg {
+position: absolute;
+bottom: -3rem;
+right: -5rem;
 }
 
 .card-title {
@@ -426,7 +432,7 @@ font: Ubuntu;
     flex-direction: column;
     align-items:  center;
     justify-content: center;
-    padding-top: 130px;
+    padding-top: 40px;
 }
 
 .reviews {
@@ -527,6 +533,7 @@ font-size:18px;
 .form{
 display: flex;
 }
+
 .trust-us {
 position: relative;
 height: 14rem;
@@ -549,9 +556,10 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: -5rem;
-    right: -2rem;
-    width: 240px;
+    top: 2em;
+    right: -3rem;
+    width: 180px;
+    height: 50vh;
 }
 
 }
@@ -661,17 +669,190 @@ align-items: center;
 margin-top: 40px;
 }
 
-.popular {
-text-align: center;
-margin-top: 10px;
-font: Ubuntu;
-font-size: 36px;
-font-weight: 700;
-line-height: 41.36px;
-font-style: normal;
-color: black;
-
+/* Start of card section styling */
+.class-group-container {
+    position: relative;
 }
+
+.popular {
+    text-align: center;
+    margin-top: 0.8rem;
+    font: Ubuntu;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    font-style: normal;
+    color: black;
+}
+
+.cards-container {
+    padding: 0 15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.single-card-wrapper {
+    width: 300px; 
+    height: 275px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+}
+.single-card-one {
+    background: url("../../assets/images/popular1.png");
+}
+.single-card-two {
+    background: url("../../assets/images/popular2.png");
+}
+.single-card-three {
+    background: url("../../assets/images/popular3.png");
+}
+.single-card-four {
+    background: url("../../assets/images/popular4.png");
+}
+.single-card-five {
+    background: url("../../assets/images/first.png");
+}
+.single-card-six {
+    background: url("../../assets/images/popular6.png");
+}
+
+.card-content {
+    width: 100%;
+    background-color: #fff; 
+    opacity: 0.9; 
+    position: absolute; 
+    bottom: 0; 
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+    
+.card-content-odd {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.4rem;
+    color: #5c5c5c;
+    /* background-color: #f0f; */
+}
+.card-more {
+    /* background-color: #ff0; */
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+.card-more > a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+    
+.fa-long-arrow-right {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #5c5c5c;
+}
+
+.card-content:hover {
+    background-color: rgba(95, 144, 72, 0.69);
+}
+.card-content:hover .card-text {
+    color: #ffffff;
+}
+.card-content:hover .card-more > a {
+    color: #ffffff;
+}
+.card-content:hover .fa-long-arrow-right {
+    color: #ffffff;
+}
+
+.popular-class-dot {
+    position: absolute;
+    bottom: 0rem;
+    left: -1rem;
+    width: 10rem;
+}
+@media(max-width: 1536px) {
+    .popular {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    .cards-container {
+        padding: 0 10rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 9rem;
+    }
+}
+@media(max-width: 1280px) {
+    .cards-container {
+        padding: 0 7rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 8rem;
+    }
+}
+@media(max-width: 1024px) {
+    .popular {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    .cards-container {
+        padding: 0 5rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 7rem;
+    }
+}
+@media(max-width: 768px) {
+    .popular {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    .cards-container {
+        padding: 0 2rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 6rem;
+    }
+}
+@media(max-width: 400px) {
+    .popular {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .cards-container {
+        padding: 0 0.5rem;
+    }
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 5rem;
+    }
+}
+/* End of card section styling */
 
 .btm{
 margin-top: -80px;
@@ -793,6 +974,9 @@ margin-top: -18px;
 
 .footer {
 background: #011120;
+height: 90vh;
+
+
 .list-unstyled {
 font-family: Ubuntu;
 font-size: 18px;
