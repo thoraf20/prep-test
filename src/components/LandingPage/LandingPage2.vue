@@ -1,4 +1,4 @@
-<template>
+<template> <!-- start of template -->
 <div class="mainCont">
       <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
