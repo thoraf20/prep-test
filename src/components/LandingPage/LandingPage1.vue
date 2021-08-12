@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-                <!-- Popular Class Group -->
+                <!-- Service We Offer -->
         <div class="class-group-container">
             <h3 class="popular">Services We Offer</h3>
 
@@ -690,8 +690,8 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 background-color: #f5f5f5;
-padding-top:5rem;
-padding-bottom:5rem;
+padding-top:3rem;
+padding-bottom:3rem;
 
 .dot1 {
 position: absolute;
@@ -769,21 +769,22 @@ top: 90rem;
 }
 
 .cards-container {
+    padding: 0 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 3rem;
-    padding: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: .5rem;
     justify-items: center;
 }
 
 .single-card-wrapper {
-    width: 420px; 
-    height: 375px; 
+    width: 400px; 
+    height: 300px; 
     background-size: cover;
     background-repeat: no-repeat; 
     position: relative; 
     border-radius: 0.5rem;
-    background:black;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .single-card-one {
     background: url("../../assets/images/service1.png");
@@ -867,7 +868,7 @@ top: 90rem;
         line-height: 2.25rem;
     }
     .cards-container {
-        padding: 0 10rem;
+        padding: 0 5rem;
     }
     .popular-class-dot {
         bottom: 0rem;
@@ -877,7 +878,8 @@ top: 90rem;
 }
 @media(max-width: 1280px) {
     .cards-container {
-        padding: 0 7rem;
+        padding: 0 5rem;
+        
     }
     .popular-class-dot {
         bottom: 0rem;
@@ -906,7 +908,13 @@ top: 90rem;
     }
     .cards-container {
         padding: 0 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
+
+.single-card-wrapper {
+    width: 450px;   
+}
+   
     .popular-class-dot {
         bottom: 0rem;
         left: -1rem;
