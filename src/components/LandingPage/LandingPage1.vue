@@ -257,6 +257,7 @@
 
 <style lang="scss" scoped>
 nav {
+height: 8vh;
 }
 
 nav ul {

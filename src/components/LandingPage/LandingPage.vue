@@ -305,6 +305,11 @@
 </script>
 
 <style lang="scss" scoped>
+
+nav {
+height: 8vh
+}
+
 nav ul {
   list-style: none;
   text-align: center;
