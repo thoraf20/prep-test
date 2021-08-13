@@ -908,11 +908,11 @@ top: 90rem;
     }
     .cards-container {
         padding: 0 2rem;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
 .single-card-wrapper {
-    width: 450px;   
+    width: 300px;   
 }
    
     .popular-class-dot {

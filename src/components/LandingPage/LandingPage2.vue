@@ -1,4 +1,4 @@
-<template> <!-- start of template -->
+<template>
 <div class="mainCont">
       <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
@@ -40,31 +40,21 @@
                     <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
             </div>
 
-            <div class="about">
-                <div class="dot1">
-                    <img class="dotdotdot" src="../../assets/images/dot1.png" >
-                </div>
-                <div class="we-are">
-                <div class="who">
-                     <p class="show">
-                        About Prepclass<br>
-                         TGI
+            <div class="about-wrapper">
+                <img class="about-image" src="../../assets/images/dot1.png" >
+                <div class="about-left">
+                     <p class="about-left-header">
+                        About Prepclass TGI
                      </p>
-                     <p class="hide"> About Prepclass TGI</p>
-                     <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
+                     <button type="submit" class="about-button">Learn More</button>
                 </div>
-                <div class="who-p">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                <div class="about-right">
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     </p>
-                    <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
-                </div>
-
-                </div>
-                 <div class="wave1">
-                    <img src="../../assets/images/wave1.png" >
+                    <button type="submit" class="about-button-small">Learn More</button>
                 </div>
             </div>
 
@@ -74,62 +64,97 @@
 
             <div class="cards-container">
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-one">                    
-                    <div class="card-content">
-                        <p class="card-text">Tutor Upskilling</p>
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-one">                    
+                        <div class="card-content">
+                            <p class="card-text">Tutor Upskilling</p>
+                        </div>
                     </div>
+                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo 
+                         <span>Learn More</span>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-two">                    
-                    <div class="card-content">
-                        <p class="card-text">Best Teacher in Nigeria Award</p>
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-two">                    
+                        <div class="card-content">
+                            <p class="card-text">Best Teacher in Nigeria Award</p>
+                        </div>
                     </div>
+                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo 
+                         <span>Learn More</span>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-three">                    
-                    <div class="card-content">
-                        <p class="card-text">Placement in Remote Foreign Jobs</p>
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-three">                    
+                        <div class="card-content">
+                            <p class="card-text">Placement in Remote Foreign Jobs</p>
+                        </div>
                     </div>
+                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo 
+                         <span>Learn More</span>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
                 </div>
                     
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-four">                    
-                    <div class="card-content">
-                        <p class="card-text">Placement in Schools and Edutech companies</p>
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-four">                    
+                        <div class="card-content">
+                            <p class="card-text">Placement in Schools and Edutech companies</p>
+                        </div>
                     </div>
+                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo 
+                         <span>Learn More</span>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
                 </div>
             </div>
         </div>
 
-            <div class="get-started">
-                <div class="how-to-get-started">
-                    <img src="../../assets/images/wave.png" />
-                    <div class="visit">
-                        <p>
+        <!-- Get Started Section -->
+        <div class="get-started">
+            <div class="get-started-body">
+             <img class="get-started-wave" src="../../assets/images/wave.png" />
+                <div class="get-started-right">
+                    <div class="get-started-visit">
+                        <p class="get-started-right-text">
                             Are you a tutor interested in benefiting from the above initiatives?
                         </p>
-                        <button type="submit" class="btn btn-warning tgi-b">Apply to become a tutor</button>
+                        <button type="submit" class="get-started-button">Apply to become a tutor</button>
                     </div>
-                    <div class="imgCirc">
-                    <div>
-                    <img src="../../assets/images/male.png" />
-                    </div>
-                    <div class="circle">
-                    </div>
-                    </div>
-                 </div>
-            </div>
-
-        <div class="biz">
-             <div class="biz-text">                
-                <h3>Are you interested in working with Prepclass’s database of qualified tutors</h3>
-                <p>to learn more about Prepclass business</p>
-                <p> Click on the button below.</p>
-                <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
-              </div>
-                <div class="biz-img">
-                    <img class="dotdotdot" src="../../assets/images/ggd5.png" alt="">
                 </div>
+
+                <div class="get-started-left">
+                    <img class="get-started-image" src="../../assets/images/male.png" />
+                    <div class="get-started-rectangle"></div>
+                    <img class="get-started-dot" src="../../assets/images/dotdot.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="interest-wrapper">
+             <div class="interest-content">                
+                <h3 class="interest-header">Are you interested in working with Prepclass’s database of qualified tutors</h3>
+                <p class="interest-text">to learn more about Prepclass business</p>
+                <button type="submit" class="interest-button">Click Here</button>
+              </div>
+                <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
              </div>
 
         <div class="contact-us">
@@ -324,14 +349,6 @@ font: Ubuntu;
  color: #ffffff;
 }
 
-.card-text {
-font: Ubuntu;
- font-weight: 500;
- font-size: 24px;
- line-height: 27.98px;
- color: #ffffff;
-}
-
 .imgText{
     height: 100%;
     width: 100%;
@@ -369,6 +386,77 @@ width: 80%;
     height: 50vh;
 }
 
+}
+
+
+
+.form{
+display: flex;
+}
+
+.about {
+position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #ffffff;
+padding: 9rem;
+
+.dot1 {
+position: absolute;
+left: 0;
+top: 6rem;
+}
+
+.we-are {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.hide{
+display: none;
+}
+
+.who {
+width: 40%;
+font-family: Ubuntu;
+font-size: 4.025rem;
+font-style: normal;
+font-weight: 700;
+line-height: 4.7rem;
+letter-spacing: 0em;
+text-align: center;
+
+button {
+padding: 1rem 3rem 1rem 3rem;
+margin-bottom: 1.2rem;
+left: 135px;
+top: 1486px;
+border-radius: 40px;
+font-family: Ubuntu;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+
+}
+
+.who-p {
+width: 50%;
+font-size: 23px;
+font-weight: 700;
+}
+
+.wave1 {
+position: absolute;
+right: 0;
+top: 90rem;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -481,77 +569,6 @@ font-size:18px;
 }
 }
 
-}
-
-.form{
-display: flex;
-}
-
-.about {
-position: relative;
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: #ffffff;
-padding-top:9rem;
-padding-bottom:9rem;
-
-.dot1 {
-position: absolute;
-left: 0;
-top: 6rem;
-}
-
-.we-are {
-display: flex;
-justify-content: space-around;
-align-items: center;
-width:70%;
-}
-
-.hide{
-display: none;
-}
-
-.who {
-width: 40%;
-font-family: Ubuntu;
-font-size: 4.025rem;
-font-style: normal;
-font-weight: 700;
-line-height: 4.7rem;
-letter-spacing: 0em;
-text-align: center;
-
-button {
-padding: 1rem 3rem 1rem 3rem;
-margin-bottom: 1.2rem;
-left: 135px;
-top: 1486px;
-border-radius: 40px;
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: center;
-}
-
-
-}
-
-.who-p {
-width: 50%;
-font-size: 23px;
-font-weight: 700;
-}
-
-.wave1 {
-position: absolute;
-right: 0;
-top: 90rem;
-}
 }
 
 .programs {
@@ -711,10 +728,14 @@ margin-top: 40px;
 .cards-container {
     padding: 0 15rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 4rem;
     justify-items: center;
     padding-left: 400px;
+}
+
+.card-with-text {
+    width: 450px;
 }
 
 .single-card-wrapper {
@@ -742,15 +763,16 @@ margin-top: 40px;
 }
 
 .card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 20%;
     background-color: #fff; 
     opacity: 0.9; 
     position: absolute; 
     bottom: 0; 
-    text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -761,9 +783,11 @@ margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .card-text {
+    vertical-align: middle;
     font-family: Ubuntu;
     font-weight: 700;
     font-size: 1.5rem;
@@ -853,7 +877,20 @@ margin-top: 40px;
     }
     .cards-container {
         padding: 0 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+    .card-with-text {
+        width: 300px;
+    }
+    .single-card-wrapper {
+        width: 300px; 
+        height: 225px;
+    }
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.15rem;
+    }
+
     .popular-class-dot {
         bottom: 0rem;
         left: -1rem;
@@ -876,59 +913,366 @@ margin-top: 40px;
 }
 /* End of card section styling */
 
-.get-started{
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
-background: #011120;
-padding-top: 2rem;
-padding-bottom: 2rem;
-
-h3 {
- color: #ffffff;
- text-align: center;
- padding-top: 20px;
-font: Ubuntu;
-font-size: 36px;
-font-weight: 700;
-line-height: 41.36px;
-font-style: normal;
+/* Get start section styling */
+.get-started {
+    background: #011120;
+    position: relative;
 }
 
+.get-started-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
-.how-to-get-started {
-display: flex;
-justify-content: space-between;
-height: 100%;
-align-items: center;
-
-.visit{
-width: 30%;
-p {
-font-family: Ubuntu;
-font-size: 4rem;
-font-style: normal;
-font-weight: 700;
-line-height: 4.625rem;
-letter-spacing: 0em;
-text-align: center;
-color: #ffffff;
-}
-}
-button {
-background-color: #0788FF;
-border: none;color: #ffffff;
-}
+.get-started-left {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.circle {
-width: 88px;
-height: 465px;
-border-radius: 50px;
-border: 3px solid rgba(225, 185, 5, 0.77);
+.get-started-image {
+    position: absolute;
+    right: 2.5%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
 }
+
+.get-started-rectangle {
+    width: 4rem;
+    height: 30rem;
+    border-radius: 3rem;
+    border: 3px solid rgba(225, 185, 5, 0.77);
+}
+
+.get-started-dot {
+    position: absolute;
+    left: 1.9rem;
+    bottom: -6rem;
+    width: 20rem;
+}
+
+.get-started-right {
+    display: block;
+}
+
+.get-started-wave {
+    position: absolute;
+    left: -3.5rem;
+    height: 200px;
+    top: calc(50% - 100px);
+}
+.get-started-visit {
+    width: 50%;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+.get-started-right-text {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.25rem;
+}
+.get-started-button {
+    background-color: #0788FF;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.5rem 1.2rem;
+    outline: none;
+    border: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+
+/* avatar in circle styling */
+.circle-avatar {
+    position: relative;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #5F9048;
+    border-radius: 50%;
+}
+
+.circle-inner {
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+}
+.circle-inner-img {
+    aspect-ratio: inherit; 
+}
+/* End of avatar in circle styling */
+
+@media(max-width: 1536px) {
+    .get-started-body {
+        gap: 4rem;
+        margin: 0 4rem;
+    }
+    .get-started-visit {
+        width: 100%;
+    }
+    .get-started-image {
+         right: 5%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-dot {
+        left: -4.4rem;
+        bottom: -6.3rem;
+        width: 20rem;
+    }
+    .get-started-wave {
+        left: -3.5rem;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+}
+@media(max-width: 1024px) {
+    .get-started-body {
+        gap: 2rem;
+        margin: 0 4rem;
+        padding-bottom: 2rem;
+    }
+    .get-started-right-text {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    .get-started-rectangle {
+        width: 3rem;
+        height: 20rem;
+        border-radius: 1.5rem;
+    }
+    .get-started-image {
+        right: 5%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-dot {
+        left: -2.2rem;
+        bottom: -3.5rem;
+        width: 12rem;
+    }
+    .get-started-wave {
+        left: -3.5rem;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .det {
+        margin-left: 1.25rem;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+}
+@media(max-width: 791px) {
+    .get-started-body {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 4rem;
+        padding-bottom: 6rem;
+    }
+    .get-started-image {
+         right: 5%;
+        top: 7%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-rectangle {
+        width: 4rem;
+        height: 30rem;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+    .get-started-dot {
+        left: -4.4rem;
+        bottom: -5.7rem;
+        width: 20rem;
+    }
+    .get-started-wave {
+        left: -3.5rem;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .get-started-right-text {
+        margin-right: 4rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .get-started-button {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .get-started-header {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .get-started-body {
+        margin: 0 1rem;
+    }
+    .get-started-image {
+        right: 5%;
+        top: 6%;
+        width: 80%;
+        height: 80%;
+    }
+    .get-started-rectangle {
+        width: 3rem;
+        height: 20rem;
+        border-radius: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .get-started-dot {
+        right: -3.4rem;
+        bottom: -4.3rem;
+        width: 15rem;
+    }
+    .get-started-wave {
+        right: 0;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    .det {
+        margin-left: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+}
+/* End of get started styling */
+
+/* Start of contact us styling */
+.interest-wrapper {
+    position: relative;
+    text-align: center;
+    padding: 6rem 20% 6rem 20%;
+}
+.interest-header {
+    color: #000000;
+    padding: 0;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-style: normal;
+}
+.interest-text {
+    font-weight: bold;
+}
+.interest-button {
+    background-color: #5f9048;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+.interest-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 10rem;
+}
+@media(max-width: 791px) {
+    .interest-wrapper {
+        padding: 6rem 10% 6rem 10%;
+    }
+    .interest-header {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    .interest-image {
+        width: 6rem;
+        bottom: 2rem;
+    }
+}
+/* End of get started styling */
+
+
+
+/* Start of about styling */
+.about-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5rem 10%;
+    gap: 3rem;
+    background-color: #ffffff;
+    color: #000000;
+}
+.about-image {
+    position: absolute;
+    left: 0;
+    bottom: -3rem;
+    width: 10rem;
+}
+
+.about-left {
+    width: 300px;
+}
+.about-left-header {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+.about-button {
+    background-color: #ffb905;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.5rem 2rem;
+}
+.about-button-small {
+    display: none;
+    background-color: #ffb905;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.5rem 2rem;
+}
+.about-right {
+    flex: 1;
+}
+.about-text {
+    font-weight: bold;
+}
+
+@media(max-width: 1024px) {
+    .about-image {
+        left: 0;
+        bottom: 1rem;
+        width: 7rem;
+    }
+}
+@media(max-width: 725px) {
+   .about-wrapper {
+        display: block;
+   }
+   .about-left {
+        width: 100%;
+    }
+   .about-left-header {
+        text-align: center;
+    }
+   .about-button {
+    display: none;
+   }
+   .about-button-small {
+    display: block;
+   }
+}
+/* End of about styling */
+
+
 
 .review {
 display: flex;

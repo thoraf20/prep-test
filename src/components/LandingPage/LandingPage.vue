@@ -161,7 +161,6 @@
                 </div>
                 <img class="get-started-wave" src="../../assets/images/wave.png" />
             </div>
-
         </div>
 
             <div class="reviews">
@@ -172,15 +171,15 @@
                 </div>
 
                 <div class="comments-container">
-                    <div class="comments">
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                        <img src="../../assets/images/review1.png" alt="review" />
+                    <div class="review-grid">
+                        <div class="single-review">
+                        <img class="single-review-image" src="../../assets/images/review1.png" alt="review" />
                         </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                        <img src="../../assets/images/review2.png" alt="review" />
+                        <div class="single-review">
+                        <img class="single-review-image" src="../../assets/images/review2.png" alt="review" />
                         </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                        <img src="../../assets/images/review3.png" alt="review" />
+                        <div class="single-review">
+                        <img class="single-review-image" src="../../assets/images/review3.png" alt="review" />
                         </div>
                     </div>
                     <div class="foundation-img">
@@ -449,11 +448,13 @@ position: relative;
 padding-top: 2rem;
 padding-bottom: 2rem;
 
-.dot2 {
-position: absolute;
-top: -6rem;;
-left: -9rem;
 }
+
+.dotdot {
+position: absolute;
+top: -2rem;
+left: -9rem;
+width: 25rem;
 }
 
 .comments {
@@ -695,7 +696,7 @@ margin-top: 40px;
 }
 
 .cards-container {
-    padding: 0 15rem;
+    padding: 0 25rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
@@ -1271,6 +1272,30 @@ line-height: 27px;
 letter-spacing: 0em;
 text-align: center;
 color: #ffffff;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.single-review-image {
+    width: 100%;
+}
+
+@media(max-width: 1024px) {
+    .review-grid {
+        display: block;
+    }
+    .dotdot {
+        display: none;
+    }
+    .foundation-img {
+        display: none;
+    }
+    .foundation-img1 {
+        display: none;
+    }
 }
 
 </style>
