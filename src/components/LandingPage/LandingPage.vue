@@ -452,9 +452,9 @@ padding-bottom: 2rem;
 
 .dotdot {
 position: absolute;
-top: -2rem;
+top: -3rem;
 left: -9rem;
-width: 25rem;
+width: 18rem;
 }
 
 .comments {
@@ -1277,6 +1277,7 @@ color: #ffffff;
 .review-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    z-index: 99;
 }
 
 .single-review-image {
