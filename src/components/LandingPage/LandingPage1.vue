@@ -1,6 +1,6 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
+      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark" id="navbar_top">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
@@ -65,10 +65,9 @@
                      <button type="submit" class="about-button">Learn More</button>
                 </div>
                   <div class="about-right">
-                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    <p class="about-text">PrepClass is an education technology company poised with the mandate connecting learners
+                        and tutors in the smartest ways. As a social enterprise, our primary focus is to improve the outcomes for all category
+                        learners while improving the quality of lives of tutors. Since over X years of founding, Prepclass has achieved, A, B, C.
                     </p>
                     <button type="submit" class="about-button-small">Learn More</button>
                 </div>
@@ -80,32 +79,57 @@
 
             <div class="cards-container">
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-one">                    
-                    <div class="card-content">
-                        <p class="card-text">Academy</p>
-                        <p class="card-more"><a href="#">Learn More</a>
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </p>
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-one">                    
+                        <div class="card-content">
+                            <p class="card-text">Academy</p>
+                            <p class="card-more"><a href="#">Learn More</a>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
                     </div>
+                <p  class="">
+                    With 3 physical learning centers in Lagos Nigeria, Prepclass
+                     Academy helps learners prepare for standardized tests and exams.
+                     Learners can easily walk into any of our centers for exams like 
+                     IELTS, GMAT, GRE, SAT, TOEFL, etc.
+                    </p>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-two">                    
-                    <div class="card-content">
-                        <p class="card-text">Tutor Marketplace</p>
-                        <p class="card-more"><a href="#">Learn More</a>
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </p>
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-two">                    
+                        <div class="card-content">
+                            <p class="card-text">Tutor Marketplace</p>
+                            <p class="card-more"><a href="#">Learn More</a>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
                     </div>
+                    <p  class="">
+                        Prepclass Tutor market place is a platform that allows learners 
+                        to easily hire the services of a home tutor. Dubbed as the Uber
+                         for tutoring in Africa, learners can easily request tutoring 
+                         services from our database of over 50,000 tutors.
+                    </p>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-three">                    
-                    <div class="card-content">
-                        <p class="card-text">Tutor Grow Initiative</p>
-                        <p class="card-more"><a href="#">Learn More</a>
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </p>
-                    </div>
-                </div>    
+                <div class="card-with-text">
+                    <div class="single-card-wrapper single-card-three">                    
+                        <div class="card-content">
+                            <p class="card-text">Tutor Grow Initiative</p>
+                            <p class="card-more"><a href="#">Learn More</a>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>    
+                    <p  class="">
+                        With our vast reach of tutors and learners, Prepclass has invested 
+                        im several programs that improve the quality of lives of tutors as 
+                        well as the outcomes for learners. Projects we are involved in include:
+                         tutor training and placement in foreign gigs, free coding classes for teens, 
+                         free language learning classes for adults etc.
+                    </p>
+              </div>
             </div>
         </div>
 
@@ -160,28 +184,13 @@
               <div class="interest-wrapper">
               <h3>PrepClass Business</h3>
              <div class="interest-content">                
-                <p>Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
+                <p class="interest-text">Do you want to do Business <br>leveraging from our vast <br>database of Quality Tutor?</p>
                 <p class="interest-text">Click on the button below.</p>
                 <button type="submit" class="interest-button">Learn More</button>
               </div>
                 <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
-             </div>
-    
-           <div class="foundation">
-            <div class="foundation-text">
-                <h3 class="font-text">Prepclass Foundation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
-                </div>
-                <div class="foundation-img">
-                    <img class="dotdotdot" src="../../assets/images/ggd6.png" alt="">
-                </div>
-                <div class="foundation-img1">
-                    <img src="../../assets/images/Ellipse.png" alt="">
-                </div>
-          </div>
+             </div>                
+                
 
         <div class="footer">
             <div class="row justify-content-around mb-0 pt-5 mx-4">
@@ -242,12 +251,23 @@
 </template>
 
 <script>
-
+    document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } 
+  });
+}); 
+// DOMContentLoaded  end
 </script>
 
 <style lang="scss" scoped>
 nav {
 height: 12vh;
+background: white;
 }
 
 nav ul {
@@ -446,6 +466,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 background-color: #ffffff;
+height: 8vh;
 
 .partners{
 display: flex;
@@ -461,8 +482,8 @@ width: 80%;
 
 .trust-dot {
     position: absolute;
-    top: 1em;
-    right: 1rem;
+    top: -6em;
+    right: -1rem;
     width: 180px;
     height: 50vh;
 }
@@ -652,7 +673,7 @@ margin-top: 40px;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 5rem 10%;
+    padding: 1rem 5%;
     gap: 3rem;
     background-color: #f5f5f5;
     color: #000000;
@@ -660,8 +681,8 @@ margin-top: 40px;
 
 .about-image {
     position: absolute;
-    left: 0;
-    bottom: -3rem;
+    left: -2rem;
+    bottom: -7rem;
     width: 10rem;
 }
 
@@ -695,7 +716,9 @@ margin-top: 40px;
     flex: 1;
 }
 .about-text {
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: black;
 }
 
 @media(max-width: 1024px) {

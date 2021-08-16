@@ -1,6 +1,6 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
+      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark" id="navbar_top">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
@@ -11,8 +11,6 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Fun Fact</a></li>
-                    <li><a href="#">Sign In</a></li>
                 </ul>
             </div>
                     <a href="#" class="sign-up-btn" >Sign Up</a>
@@ -44,15 +42,15 @@
                 <img class="about-image" src="../../assets/images/dot1.png" >
                 <div class="about-left">
                      <p class="about-left-header">
-                        About Prepclass TGI
+                        About Prepclass LTU
                      </p>
                      <button type="submit" class="about-button">Learn More</button>
                 </div>
                 <div class="about-right">
-                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    <p class="about-text">
+                             Prepclass Learner Tutor Upliftment is a social initiative aimed at improving the 
+                             quality of lives of tutors as well as the outcomes of learners. Unlike other services,
+                             Prepclass LTU is targeted at marginalized youth .
                     </p>
                     <button type="submit" class="about-button-small">Learn More</button>
                 </div>
@@ -67,7 +65,7 @@
                 <div class="card-with-text">
                     <div class="single-card-wrapper single-card-one">                    
                         <div class="card-content">
-                            <p class="card-text">Tutor Upskilling</p>
+                            <p class="card-text">Tutor Training</p>
                         </div>
                     </div>
                     <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -82,7 +80,7 @@
                 <div class="card-with-text">
                     <div class="single-card-wrapper single-card-two">                    
                         <div class="card-content">
-                            <p class="card-text">Best Teacher in Nigeria Award</p>
+                            <p class="card-text">Teen Code</p>
                         </div>
                     </div>
                     <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -97,7 +95,7 @@
                 <div class="card-with-text">
                     <div class="single-card-wrapper single-card-three">                    
                         <div class="card-content">
-                            <p class="card-text">Placement in Remote Foreign Jobs</p>
+                            <p class="card-text">Tutor Placement</p>
                         </div>
                     </div>
                     <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -113,7 +111,7 @@
                 <div class="card-with-text">
                     <div class="single-card-wrapper single-card-four">                    
                         <div class="card-content">
-                            <p class="card-text">Placement in Schools and Edutech companies</p>
+                            <p class="card-text">Language Adult Learning</p>
                         </div>
                     </div>
                     <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -224,13 +222,24 @@
 </template>
 
 <script>
-
+    document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } 
+  });
+}); 
+// DOMContentLoaded  end
 </script>
 
 <style lang="scss" scoped>
 
 nav {
 height: 12vh;
+background: white;
 }
 
 nav ul {
@@ -333,7 +342,8 @@ background: url("../../assets/images/selfie.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 100vh;
+background-size: 100vw 100vh;
+height: 80vh;
 
 button {
 padding: 1rem 3rem 1rem 3rem;
@@ -360,7 +370,7 @@ font: Ubuntu;
 
 .trust-us {
 position: relative;
-height: 14rem;
+height: 8vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -1206,12 +1216,13 @@ margin-top: 40px;
     gap: 3rem;
     background-color: #ffffff;
     color: #000000;
+    height: 18vh;
 }
 .about-image {
     position: absolute;
     left: 0;
-    bottom: -3rem;
-    width: 10rem;
+    bottom: -6rem;
+    width: 8rem;
 }
 
 .about-left {
@@ -1243,7 +1254,8 @@ margin-top: 40px;
     flex: 1;
 }
 .about-text {
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 1.2rem;
 }
 
 @media(max-width: 1024px) {

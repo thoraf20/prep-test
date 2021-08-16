@@ -1,6 +1,6 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark">
+      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark" id="navbar_top">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
@@ -8,11 +8,11 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ml-auto" id="stroke">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Fun Fact</a></li>
-                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">IELTS</a></li>
+                    <li><a href="#">GMAT</a></li>
+                    <li><a href="#">GRE</a></li>
+                    <li><a href="#">SAT</a></li>
+                    <li><a href="#">TOEFL</a></li>
                 </ul>
             </div>
                     <a href="#" class="sign-up-btn" >Sign Up</a>
@@ -24,15 +24,8 @@
                 <img class="ggd" src="../../assets/images/ggd1.png" alt="">
                 <img class="ghsg" src="../../assets/images/ghsg1.png" alt="">
             <div class="imgText">
-                <h5 class="card-title">What do you want to learn?</h5>
+                <h5 class="card-title">Visit any of our learning centres</h5>
                 <p class="card-text">Visit our centres in Lekki, Yaba, etc.</p>
-                    <form class="form">
-                            <div class="input-group flex-nowrap">
-                            <span class="input-group-text" id="basic-addon1"><img src="../../assets/images/logo.png"/></span>
-                            <input type="text" class="form-control" id="input" placeholder="Tell us what you want to learn today" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <button type="submit" class="btn btn-secondary" id="want-to-learn"><span class="fa fa-search"></span></button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -195,9 +188,9 @@
         <div class="faq">
              <h3>Often asked questions</h3>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
+            <div id="faq-container">
+                <div class="row justify-content-between" id="row-data">
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h2>Q: How do you operate?</h2>
                         <h4><b>A</b>: Three easy steps</h4>
                         <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
@@ -206,14 +199,14 @@
                         </p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h2>Q: What kind of classes do you offer?</h2>
                         <h4><b>A</b>: We offer group online classes.</h4>
                         <p>Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
                             This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h2>Q: How do you charge and what are your rates?</h2>
                         <p><b>A</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
@@ -223,7 +216,7 @@
                          It has a maximum of ten learners in a group.</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-6" id="asked-question">
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h2>Q: Why work with prepclass instead of getting an home tutor myself?</h2>
                         <p><b>A</b>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
                                 without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
@@ -304,12 +297,23 @@
 </template>
 
 <script>
-
+    document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      }
+  });
+}); 
+// DOMContentLoaded  end
 </script>
 
 <style lang="scss" scoped>
 nav {
 height: 12vh;
+background: white;
 }
 
 nav ul {
@@ -402,7 +406,8 @@ background: url("../../assets/images/image1.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 100vh;
+background-size: 100vw 100vh;
+height: 80vh;
 position: relative;
 }
 
@@ -546,7 +551,7 @@ display: flex;
 
 .trust-us {
 position: relative;
-height: 14rem;
+height: 4rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -1127,42 +1132,49 @@ font-style: normal;
 background-color: #f5f5f5;
 align-items: center;
 justify-content: center;
+
+#faq-container {
+width: 100vw;
+padding: 2px 8px 2px 8px;
+
 }
+
+
+#asked-question {
+width: 50%;
+}
+
+#row-data {
+padding: 2px 2px 2px 10px;
+}
+}
+
 .get-a-tutor {
-height: 63px;
-width: 100%;
 border-radius: 10px;
 justify-content: center;
 text-align: center;
 color: #ffffff;
-font: Ubuntu;
 font-size: 20px;
 font-weight: 600;
 line-height: 41.36px;
 font-style: normal;
-
-a {
-width: 10%;
-height: 65%;
-}
+margin-bottom: 20px;
 }
 
 
 .row {
 h2 {
-font:"Ubuntu";
-font-weight: 700;
+font-weight: 400;
 font-style: normal;
-font-size: 24px;
-line-height: 30px;
+font-size: 1.3rem;
+line-height: 24px;
 }
 
 p{
-font:"Ubuntu";
-font-weight: 500;
+font-weight: 200;
 font-style: normal;
-font-size: 24px;
-line-height: 30px;
+font-size: 1.3rem;
+line-height: 24px;
 }
 }
 
