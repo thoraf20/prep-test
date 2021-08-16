@@ -56,29 +56,21 @@
 
             </div>
 
-            <div class="about">
-                <div class="dot1">
-                    <img class="dotdotdot" src="../../assets/images/dot1.png" >
-                </div>
-                <div class="we-are">
-                <div class="who">
-                     <p class="show">
-                        Who<br>
-                         We Are
+            <div class="about-wrapper">
+                     <img class="about-image" src="../../assets/images/dot1.png" >
+                <div class="about-left">
+                     <p class="about-left-header">
+                        Who We Are
                      </p>
-                     <p class="hide">Who we are</p>
-                     <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
+                     <button type="submit" class="about-button">Learn More</button>
                 </div>
-                <div class="who-p">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                  <div class="about-right">
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     </p>
-                </div>
-                </div>
-                 <div class="wave1">
-                    <img src="../../assets/images/wave1.png" >
+                    <button type="submit" class="about-button-small">Learn More</button>
                 </div>
             </div>
 
@@ -165,21 +157,19 @@
                     </div>
             </div>
 
-           <div class="biz">
-             <div class="biz-text">                
-                <h3>Prepclass Business</h3>
+              <div class="interest-wrapper">
+              <h3>PrepClass Business</h3>
+             <div class="interest-content">                
                 <p>Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
-                <p> Click on the button below.</p>
-                <button type="submit" class="btn btn-warning tgi-b">Learn More</button>
+                <p class="interest-text">Click on the button below.</p>
+                <button type="submit" class="interest-button">Learn More</button>
               </div>
-                <div class="biz-img">
-                    <img class="dotdotdot" src="../../assets/images/ggd5.png" alt="">
-                </div>
+                <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
              </div>
     
            <div class="foundation">
             <div class="foundation-text">
-                <h3>Prepclass Foundation</h3>
+                <h3 class="font-text">Prepclass Foundation</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                 </p>
@@ -205,39 +195,39 @@
                     <ul class="list-unstyled mt-md-3 mt-5">
                         <li>Social Media</li>
                         <li class="social">
-                        <span> <i class="fa fa-facebook" aria-hidden="true"></i></span>
-                        <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
-                        <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
-                        <span> <i class="fa fa-linkedin" aria-hidden="true"></i> </span>
-                        <span> <i class="fa fa-youtube" aria-hidden="true"></i> </span>
+                        <span> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                        <span> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a></span>
+                        <span> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a></span>
+                        <span> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></span>
+                        <span> <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-3 pt-4 order-1">
                     <ul class="list-unstyled">
-                        <li class="mt-md-0 mt-4">Blog</li>
-                        <li>Tutor Jobs </li>
-                        <li>About Us</li>
-                        <li>Frequently Asked Questions</li>
-                        <li>Join Our IELTS Classes</li>
-                        <li>Join SAT Classes</li>
-                        <li>Join Our TOEFL Classes</li>
-                        <li>Join Our GMAT Classes</li>
-                        <li>Join Our GRE Classes</li>
+                        <li class="mt-md-0 mt-4"><a href="#">Blog</a></li>
+                        <li><a href="#">Tutor Jobs</a> </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Join Our IELTS Classes</a></li>
+                        <li><a href="#">Join SAT Classes</a></li>
+                        <li><a href="#">Join Our TOEFL Classes</a></li>
+                        <li><a href="#">Join Our GMAT Classes</a></li>
+                        <li><a href="#">Join Our GRE Classes</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-3 pt-4 order-2">
                     <ul class="list-unstyled">
-                        <li class="mt-md-0 mt-4">Get A Home Tutor</li>
-                        <li>Become A PrepClass Tutor </li>
-                        <li>Become A Scout Partner</li>
-                        <li>PrepClass Business</li>
-                        <li>JAMB Preparation App</li>
-                        <li>Privacy Policy </li>
-                        <li>Chat Us on Whatsapp</li>
-                        <li>Send Us A Mail</li>
-                        <li>Call 012913970 or</li>
-                        <li>09035321117</li>
+                        <li class="mt-md-0 mt-4"><a href="#">Get A Home Tutor</a></li>
+                        <li><a href="#">Become A PrepClass Tutor</a> </li>
+                        <li><a href="#">Become A Scout Partner</a></li>
+                        <li><a href="#">PrepClass Business</a></li>
+                        <li><a href="#"> JAMB Preparation App</a></li>
+                        <li><a href="#">Privacy Policy </a></li>
+                        <li><a href="#">Chat Us on Whatsapp</a></li>
+                        <li><a href="#">Send Us A Mail</a></li>
+                        <li><a href="#">Call 012913970 or</a></li>
+                        <li><a href="#">09035321117</a></li>
                     </ul>
                 </div>
             </div>
@@ -257,7 +247,7 @@
 
 <style lang="scss" scoped>
 nav {
-height: 8vh;
+height: 12vh;
 }
 
 nav ul {
@@ -452,7 +442,6 @@ position: relative;
 
 .trust-us {
 position: relative;
-height: 14rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -479,6 +468,7 @@ width: 80%;
 }
 
 }
+
 .card-title {
 font: Ubuntu;
  font-weight: 700;
@@ -523,35 +513,9 @@ font-size: 30px !important;
 display: block;
 }
 
-.we-are {
-display: flex !important;
-flex-direction: column;
-width: 100vw !important;
-align-items: center;
-justify-content: center;
-padding: 15px;
-}
-.who-p{
-width: 100% !important;
-}
-.show{
-display: none;
-}
-.hide{
-display: block !important;
-width: 100% !important;
-}
-
-.who {
-width: 100% !important;
-font-family: Ubuntu;
-font-size: 50px !important;
-}
 
 
-.dotdotdot {
-display: none !important;
-}
+
 .imgText h5{
 font-size: 28px;
 }
@@ -684,72 +648,93 @@ align-items: center;
 margin-top: 40px;
 }
 
-.about {
-position: relative;
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: #f5f5f5;
-padding-top:3rem;
-padding-bottom:3rem;
-
-.dot1 {
-position: absolute;
-left: 0;
-top: 6rem;
+.about-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5rem 10%;
+    gap: 3rem;
+    background-color: #f5f5f5;
+    color: #000000;
 }
 
-.we-are {
-display: flex;
-justify-content: space-around;
-align-items: center;
-width:70%;
+.about-image {
+    position: absolute;
+    left: 0;
+    bottom: -3rem;
+    width: 10rem;
 }
 
-.hide{
-display: none;
+.about-left {
+    width: 300px;
+}
+.about-left-header {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+.about-button {
+    background-color: #ffb905;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.5rem 2rem;
+}
+.about-button-small {
+    display: none;
+    background-color: #ffb905;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.5rem 2rem;
 }
 
-.who {
-width: 40%;
-font-family: Ubuntu;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 74px;
-letter-spacing: 0em;
-text-align: center;
-
-button {
-padding: 1rem 3rem 1rem 3rem;
-margin-bottom: 1.2rem;
-left: 135px;
-top: 1486px;
-border-radius: 40px;
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: center;
+.about-right {
+    flex: 1;
+}
+.about-text {
+    font-weight: bold;
 }
 
+@media(max-width: 1024px) {
+    .about-image {
+        left: 0;
+        bottom: 1rem;
+        width: 7rem;
+    }
+}
+@media(max-width: 725px) {
+   .about-wrapper {
+        display: block;
+            padding: 3rem 10%;
 
-}
+   }
 
-.who-p {
-width: 50%;
-font-size: 23px;
-font-weight: 700;
-}
+   .about-image {
+   display: none;
+   }
+   .about-left {
+        width: 100%;
+    }
+   .about-left-header {
+        text-align: center;
+        font-size: 1.7rem;
+    }
 
-.wave1 {
-position: absolute;
-right: 0;
-top: 90rem;
+    .about-text {
+    font-size: 1rem;
+    }
+   .about-button {
+    display: none;
+   }
+   .about-button-small {
+    display: block;
+   }
 }
-}
+/* End of about styling */
+
 
 /* Start of card section styling */
 .class-group-container {
@@ -1010,6 +995,7 @@ margin-bottom: 2rem;
 font-size: 1.2rem;
 }
 
+
 @media only screen and (max-width: 768px) {
 
 .recText{
@@ -1025,14 +1011,6 @@ font-size: 30px !important;
 }
 
 
-.show{
-display: none;
-}
-.hide{
-display: block !important;
-width: 100% !important;
-}
-
 .dotdotdot {
 display: none !important;
 }
@@ -1047,14 +1025,17 @@ width: 50%;
 
 .fir-p {
 text-align: center;
+font-size: 2rem;
 }
 
 .sec-p {
 text-align: center;
+font-size: 2rem;
+
 }
 
 .enrol {
-margin-top: 2rem;
+margin-top: .5rem;
 margin-bottom: 2rem;
 }
 
@@ -1066,7 +1047,6 @@ transform: translateX(35%);
 }
 }
 }
-
 
 
 .row {
@@ -1087,65 +1067,71 @@ line-height: 30px;
 }
 }
 
-.biz{
-position: relative;
-height: 25rem;
-display: flex;
-flex-direction: column;
-justify-content: center;
+/* Start of contact us styling */
+.interest-wrapper {
+    position: relative;
+    text-align: center;
+    padding: 6rem 20% 6rem 20%;
 
-.biz-img {
-position: absolute;
-top: 2rem;
-left: 0;
+    p {
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    }
 }
+.interest-header {
+    color: #000000;
+    padding: 0;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-style: normal;
+}
+.interest-text {
+    font-weight: bold;
+}
+.interest-button {
+    background-color: #5f9048;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+.interest-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 10rem;
+}
+@media(max-width: 791px) {
+    .interest-wrapper {
+        padding: 1rem 10% 3rem 10%;
 
-.biz-text {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-width:93%;
-font-family: Ubuntu;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
+        h3 {
+        font-size: 25px;
+        }
 
-
-h3 {
-font-family: Ubuntu;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 41px;
-letter-spacing: 0em;
-text-align: left;
-color: #000000;
+        p {
+        font-size: 16px;
+        }
+    }
+    .interest-header {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    .interest-image {
+        width: 6rem;
+        bottom: 2rem;
+    }
 }
-
-button {
-background-color: #5F9048;
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-color: #ffffff;
-border: none;
-border-radius: 10px;
-padding: 1rem;
-}
-}
-}
+/* End of get started styling */
 
 .foundation{
 position: relative;
-height: 25rem;
+padding: 6rem 20% 6rem 20%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -1204,6 +1190,29 @@ padding: 1rem;
 }
 }
 
+@media screen and (max-width: 768px) {
+.foundation {
+padding: 1rem 10% 3rem 10%;
+
+}
+.foundation-img{
+display: none;
+}
+.foundation-img1{
+display: none;
+}
+
+.foundation-text  p{
+font-size: 20px;
+text-align: center;
+}
+
+.font-text {
+font-size: 25px !important;
+}
+
+}
+
 .contact-us{
 display: flex;
 flex-direction: column;
@@ -1231,6 +1240,10 @@ letter-spacing: 0em;
 text-align: left;
 color: #FFFFFF;
 margin-top: 25px;
+}
+
+a {
+color: #ffffff;
 }
 }
 

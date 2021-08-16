@@ -174,42 +174,42 @@
                          potential learners with skilled tutors. Our interest is to break from the norm of formal 
                          education by providing tutors for basically anything a client may wish to learn.
                     </p>
-                    <ul class="list-unstyled mt-md-3 mt-5">
+                     <ul class="list-unstyled mt-md-3 mt-5">
                         <li>Social Media</li>
                         <li class="social">
-                        <span> <i class="fa fa-facebook" aria-hidden="true"></i></span>
-                        <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
-                        <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
-                        <span> <i class="fa fa-linkedin" aria-hidden="true"></i> </span>
-                        <span> <i class="fa fa-youtube" aria-hidden="true"></i> </span>
+                        <span> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                        <span> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a></span>
+                        <span> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a></span>
+                        <span> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></span>
+                        <span> <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-3 pt-4 order-1">
                     <ul class="list-unstyled">
-                        <li class="mt-md-0 mt-4">Blog</li>
-                        <li>Tutor Jobs </li>
-                        <li>About Us</li>
-                        <li>Frequently Asked Questions</li>
-                        <li>Join Our IELTS Classes</li>
-                        <li>Join SAT Classes</li>
-                        <li>Join Our TOEFL Classes</li>
-                        <li>Join Our GMAT Classes</li>
-                        <li>Join Our GRE Classes</li>
+                        <li class="mt-md-0 mt-4"><a href="#">Blog</a></li>
+                        <li><a href="#">Tutor Jobs</a> </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Join Our IELTS Classes</a></li>
+                        <li><a href="#">Join SAT Classes</a></li>
+                        <li><a href="#">Join Our TOEFL Classes</a></li>
+                        <li><a href="#">Join Our GMAT Classes</a></li>
+                        <li><a href="#">Join Our GRE Classes</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-3 pt-4 order-2">
                     <ul class="list-unstyled">
-                        <li class="mt-md-0 mt-4">Get A Home Tutor</li>
-                        <li>Become A PrepClass Tutor </li>
-                        <li>Become A Scout Partner</li>
-                        <li>PrepClass Business</li>
-                        <li>JAMB Preparation App</li>
-                        <li>Privacy Policy </li>
-                        <li>Chat Us on Whatsapp</li>
-                        <li>Send Us A Mail</li>
-                        <li>Call 012913970 or</li>
-                        <li>09035321117</li>
+                        <li class="mt-md-0 mt-4"><a href="#">Get A Home Tutor</a></li>
+                        <li><a href="#">Become A PrepClass Tutor</a> </li>
+                        <li><a href="#">Become A Scout Partner</a></li>
+                        <li><a href="#">PrepClass Business</a></li>
+                        <li><a href="#"> JAMB Preparation App</a></li>
+                        <li><a href="#">Privacy Policy </a></li>
+                        <li><a href="#">Chat Us on Whatsapp</a></li>
+                        <li><a href="#">Send Us A Mail</a></li>
+                        <li><a href="#">Call 012913970 or</a></li>
+                        <li><a href="#">09035321117</a></li>
                     </ul>
                 </div>
             </div>
@@ -230,7 +230,7 @@
 <style lang="scss" scoped>
 
 nav {
-height: 8vh;
+height: 12vh;
 }
 
 nav ul {
@@ -1435,6 +1435,10 @@ letter-spacing: 0em;
 text-align: left;
 color: #FFFFFF;
 margin-top: 25px;
+}
+
+a {
+color: #ffffff;
 }
 }
 
