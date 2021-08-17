@@ -1131,7 +1131,7 @@ margin-top: 40px;
     }
      .get-started-right-text {
         margin-right: 4rem;
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 3.5rem;
     }
     .get-started-image {
@@ -1199,7 +1199,7 @@ margin-top: 40px;
         padding: 6rem 10% 6rem 10%;
     }
     .interest-header {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
         line-height: 2rem;
     }
     .interest-image {
@@ -1431,6 +1431,15 @@ background-color: #e5e5e5;
 margin-top: -18px;
 }
 
+@media(max-width: 725px) {
+.contact-us {
+font-size: 1rem;
+
+a{
+font-size: 1rem;
+}
+}
+}
 .imgCirc{
 display: flex;
 height: 100%;
