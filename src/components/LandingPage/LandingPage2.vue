@@ -13,7 +13,6 @@
                     <li><a href="#">Services</a></li>
                 </ul>
             </div>
-                    <a href="#" class="sign-up-btn" >Sign Up</a>
         </div>
     </nav>
 
@@ -21,7 +20,7 @@
         <div class="imgDiv">
             <div class="imgText">
                 <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                <button type="submit" class="btn btn-warning">Learn More</button>  
+                <a href="#" type="submit" class="btn btn-warning">Learn More</a>  
             </div>
         </div>
     
@@ -134,7 +133,7 @@
                         <p class="get-started-right-text">
                             Are you a tutor interested in benefiting from the above initiatives?
                         </p>
-                        <button type="submit" class="get-started-button">Apply to become a tutor</button>
+                        <a href="#" type="submit" class="get-started-button">Apply to become a tutor</a>
                     </div>
                 </div>
 
@@ -155,12 +154,12 @@
                 <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
              </div>
 
-        <div class="contact-us">
+       <div class="contact-us">
             <h3>Contact Us</h3>
             <p>If you have any questions you can reach out to us</p>
-            <p>09035321117</p>
-            <p>info@prepclass.com.ng</p>
-            <p>Chat on whatsapp</p>
+            <p><a href="#">09035321117</a></p>
+            <p><a href="#"> info@prepclass.com.ng</a></p>
+            <p><a href="#">Chat on whatsapp</a></p>
         </div>
 
         <div class="footer">
@@ -256,9 +255,8 @@ nav ul li a {
   color: #383737;
   margin: 0 10px;
 
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
+font-family: sans-serif !important;
+font-size: 1.25rem;
 font-weight: 500;
 line-height: 23px;
 letter-spacing: 0em;
@@ -352,9 +350,9 @@ border-radius: 50px;
 }
 
 .card-title {
-font: Ubuntu;
- font-weight: 700;
- font-size: 48px;
+font-family: sans-serif !important;
+ font-weight: bold;
+ font-size: 2.5rem;
  line-height: 55.15px;
  color: #ffffff;
 }
@@ -727,11 +725,10 @@ margin-top: 40px;
 .popular {
     text-align: center;
     margin-top: 0.8rem;
-    font: Ubuntu;
+    font-family: sans-serif !important;
     font-size: 2.25rem;
-    font-weight: 550;
+    font-weight: 500;
     line-height: 2.5rem;
-    font-family: Ubuntu;
     color: black;
 }
 
@@ -798,13 +795,12 @@ margin-top: 40px;
 
 .card-text {
     vertical-align: middle;
-    font-family: Ubuntu;
-    font-weight: 700;
+    font-family: sans-serif !important;
+    font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 0.4rem;
     color: #000000;
-    /* background-color: #f0f; */
 }
 .card-more {
     /* background-color: #ff0; */
@@ -983,9 +979,10 @@ margin-top: 40px;
 }
 .get-started-right-text {
     color: #ffffff;
-    font-weight: 600;
-    font-size: 4rem;
+    font-weight: 550;
+    font-size: 2.5rem;
     line-height: 4.25rem;
+    font-family: sans-serif !important;
 }
 .get-started-button {
     background-color: #0788FF;
@@ -996,6 +993,8 @@ margin-top: 40px;
     border: none;
     margin-left: 1rem;
     margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -1118,6 +1117,7 @@ margin-top: 40px;
     }
     .get-started-button {
         font-size: 1.2rem;
+        cursor: pointer;
     }
 }
 
@@ -1168,18 +1168,17 @@ margin-top: 40px;
 .interest-wrapper {
     position: relative;
     text-align: center;
-    padding: 6rem 20% 6rem 20%;
+    padding: 4rem 20% 4rem 20%;
 }
 .interest-header {
     color: #000000;
     padding: 0;
-    font-size: 2.25rem;
-    font-weight: 700;
+    font-size: 1.6rem;
     line-height: 2.4rem;
-    font-style: normal;
+    font-family: sans-serif !important;
 }
 .interest-text {
-    font-weight: bold;
+    font-family: sans-serif !important;
 }
 .interest-button {
     background-color: #5f9048;
@@ -1233,18 +1232,18 @@ margin-top: 40px;
     width: 300px;
 }
 .about-left-header {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3.5rem;
-    font-weight: 550;
-    font-family: Ubuntu;
+    font-weight: 500;
+    font-family: sans-serif !important;
 }
 .about-button {
     background-color: #ffb905;
     color: #000000;
-    font-weight: bold;
     border: none;
     border-radius: 1.2rem;
     padding: 0.5rem 2rem;
+    cursor: pointer;
 }
 .about-button-small {
     display: none;
@@ -1261,6 +1260,7 @@ margin-top: 40px;
 .about-text {
     font-weight: normal;
     font-size: 1.2rem;
+    font-family: sans-serif !important;
 }
 
 @media(max-width: 1024px) {
@@ -1310,11 +1310,10 @@ h3 {
  text-align: center;
  padding-top: 30px;
  padding-bottom: 30px;
-font: Ubuntu;
-font-size: 36px;
-font-weight: 700;
+font: sans-serif !important;
+font-size: 2.1rem;
+font-weight: 500;
 line-height: 41.36px;
-font-style: normal;
 }
 
 .faq {
@@ -1391,10 +1390,10 @@ text-align: center;
 
 
 h3 {
-font-family: Ubuntu;
-font-size: 36px;
+font-family: sans-serif !important;
+font-size: 2.1rem;
 font-style: normal;
-font-weight: 700;
+font-weight: 550;
 line-height: 41px;
 letter-spacing: 0em;
 text-align: left;
@@ -1423,10 +1422,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-font-family: Ubuntu;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
+font-family: sans-serif !important;
+font-size: 1.5rem;
+font-weight: 500;
 line-height: 30px;
 text-align: center;
 background-color: #e5e5e5;
