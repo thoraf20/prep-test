@@ -729,9 +729,9 @@ margin-top: 40px;
     margin-top: 0.8rem;
     font: Ubuntu;
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: 550;
     line-height: 2.5rem;
-    font-style: normal;
+    font-family: Ubuntu;
     color: black;
 }
 
@@ -1129,6 +1129,11 @@ margin-top: 40px;
     .get-started-body {
         margin: 0 1rem;
     }
+     .get-started-right-text {
+        margin-right: 4rem;
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
     .get-started-image {
         right: 5%;
         top: 6%;
@@ -1230,7 +1235,8 @@ margin-top: 40px;
 .about-left-header {
     font-size: 3rem;
     line-height: 3.5rem;
-    font-weight: 700;
+    font-weight: 550;
+    font-family: Ubuntu;
 }
 .about-button {
     background-color: #ffb905;
@@ -1268,11 +1274,15 @@ margin-top: 40px;
    .about-wrapper {
         display: block;
    }
+    .about-image {
+    display: none;
+    }
    .about-left {
         width: 100%;
     }
    .about-left-header {
         text-align: center;
+        font-size: 1.5rem;
     }
    .about-button {
     display: none;

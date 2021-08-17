@@ -690,7 +690,8 @@ margin-top: 40px;
 .about-left-header {
     font-size: 3rem;
     line-height: 3.5rem;
-    font-weight: 700;
+    font-weight: 550;
+    font-family: Ubuntu;
 }
 .about-button {
     background-color: #ffb905;
