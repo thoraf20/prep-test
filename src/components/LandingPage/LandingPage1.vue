@@ -12,10 +12,8 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Fun Fact</a></li>
-                    <li><a href="#">Sign In</a></li>
                 </ul>
             </div>
-                    <a href="#" class="sign-up-btn" >Sign Up</a>
         </div>
     </nav>
 
@@ -88,11 +86,11 @@
                             </p>
                         </div>
                     </div>
-                <p  class="">
-                    With 3 physical learning centers in Lagos Nigeria, Prepclass
-                     Academy helps learners prepare for standardized tests and exams.
-                     Learners can easily walk into any of our centers for exams like 
-                     IELTS, GMAT, GRE, SAT, TOEFL, etc.
+                    <p  class="">
+                        With 3 physical learning centers in Lagos Nigeria, Prepclass
+                        Academy helps learners prepare for standardized tests and 
+                        exams. Learners can easily walk into any of our centers for 
+                        exams like IELTS, GMAT, GRE, SAT, TOEFL, etc.
                     </p>
                 </div>
                 <!-- Single card -->
@@ -106,10 +104,11 @@
                         </div>
                     </div>
                     <p  class="">
-                        Prepclass Tutor market place is a platform that allows learners 
-                        to easily hire the services of a home tutor. Dubbed as the Uber
-                         for tutoring in Africa, learners can easily request tutoring 
-                         services from our database of over 50,000 tutors.
+                        Prepclass Tutor market place is a platform that allows 
+                        learners to easily hire the services of a home tutor. 
+                        Dubbed as the Uber for tutoring in Africa, learners can 
+                        easily request tutoring services from our database of 
+                        over 50,000 tutors.
                     </p>
                 </div>
                 <!-- Single card -->
@@ -122,13 +121,13 @@
                             </p>
                         </div>
                     </div>    
-                    <p  class="">
-                        With our vast reach of tutors and learners, Prepclass has invested 
-                        im several programs that improve the quality of lives of tutors as 
-                        well as the outcomes for learners. Projects we are involved in include:
-                         tutor training and placement in foreign gigs, free coding classes for teens, 
-                         free language learning classes for adults etc.
-                    </p>
+                        <p  class="">
+                            With our vast reach of tutors and learners, Prepclass has invested 
+                            im several programs that improve the quality of lives of tutors as 
+                            well as the outcomes for learners. Projects we are involved in include:
+                            tutor training and placement in foreign gigs, free coding classes for teens, 
+                            free language learning classes for adults etc.
+                        </p>
               </div>
             </div>
         </div>
@@ -185,7 +184,7 @@
               <h3>PrepClass Business</h3>
              <div class="interest-content">                
                 <p class="interest-text">Do you want to do Business <br>leveraging from our vast <br>database of Quality Tutor?</p>
-                <p class="interest-text">Click on the button below.</p>
+                <p class="interest-text1">Click on the button below.</p>
                 <button type="submit" class="interest-button">Learn More</button>
               </div>
                 <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
@@ -283,10 +282,9 @@ nav ul li a {
   text-decoration: none;
   color: #383737;
   margin: 0 10px;
+  font-family: sans-serif !important;
 
-font-family: Ubuntu;
 font-size: 20px;
-font-style: normal;
 font-weight: 500;
 line-height: 23px;
 letter-spacing: 0em;
@@ -361,7 +359,7 @@ overflow-x: hidden;
 }
 
 .header {
-height: 900px;
+height: 650px;
 overflow: hidden;
 position: relative;
 background: #f7f7f7;
@@ -369,7 +367,7 @@ background: #f7f7f7;
 
 .recText {
 position: absolute;
-top: 30%;
+top: 20%;
 left: 10%;
 width: 36rem;
 .big {
@@ -411,16 +409,16 @@ top: 55%;
 
 .headphone {
 position: absolute;
-top: 3rem;
+top: 0.7rem;
 right: 0;
-width: 70%;
+width: 60%;
 z-index: 9;
 }
 
 .dotdot {
 width: 25rem;
 position: absolute;
-top: -2rem;
+top: -4rem;
 right: 10rem;
 z-index: 1;
 }
@@ -688,27 +686,27 @@ margin-top: 40px;
     width: 300px;
 }
 .about-left-header {
-    font-size: 3rem;
+    font-size: 2.4rem;
     line-height: 3.5rem;
-    font-weight: 550;
-    font-family: Ubuntu;
+    font-weight: 400;
+    font-family: sans-serif !important;
 }
 .about-button {
     background-color: #ffb905;
     color: #000000;
-    font-weight: bold;
     border: none;
     border-radius: 1.2rem;
     padding: 0.5rem 2rem;
+    cursor: pointer;
 }
 .about-button-small {
     display: none;
     background-color: #ffb905;
     color: #000000;
-    font-weight: bold;
     border: none;
     border-radius: 1.2rem;
     padding: 0.5rem 2rem;
+    cursor: pointer;
 }
 
 .about-right {
@@ -766,13 +764,12 @@ margin-top: 40px;
 .popular {
     text-align: center;
     margin-top: 0.8rem;
-    font: Ubuntu;
-    font-size: 2.25rem;
-    font-weight: 700;
+    font-family: sans-serif !important;
+    font-size: 2rem;
+    font-weight: 400;
     line-height: 2.5rem;
-    font-style: normal;
     color: black;
-   
+
 }
 
 .cards-container {
@@ -826,8 +823,8 @@ margin-top: 40px;
 }
 
 .card-text {
-    font-family: Ubuntu;
-    font-weight: 700;
+    font-family: sans-serif !important;
+    font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 0.4rem;
@@ -956,11 +953,10 @@ padding-bottom: 2rem;
 h3 {
  color: #ffffff;
  text-align: center;
-font: Ubuntu;
+font-family: sans-serif !important;
 font-size: 2.5rem;
-font-weight: 700;
+font-weight: 500;
 line-height: 2.75rem;
-font-style: normal;
 }
 
 .get-dot {
@@ -986,7 +982,7 @@ width: 80%;
 
 
 .fir-p {
-font-family: Ubuntu;
+font-family: sans-serif !important;
 font-size: 4rem;
 font-style: normal;
 font-weight: 700;
@@ -997,10 +993,10 @@ color: #5F9048;
 }
 
 .sec-p {
-font-family: Ubuntu;
+font-family: sans-serif !important;
 font-size: 2.5rem;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 2.7rem;
 letter-spacing: 0em;
 text-align: left;
@@ -1093,11 +1089,11 @@ line-height: 30px;
 .interest-wrapper {
     position: relative;
     text-align: center;
-    padding: 6rem 20% 6rem 20%;
+    padding: 1rem 10% 1rem 10%;
 
-    p {
-    font-family: Ubuntu;
-    font-size: 24px;
+     h3 {
+    font-family: sans-serif !important;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
@@ -1112,7 +1108,15 @@ line-height: 30px;
     font-style: normal;
 }
 .interest-text {
-    font-weight: bold;
+    font-weight: 500;
+    font-family: sans-serif !important;
+    font-size: 1.3rem !important;
+}
+
+.interest-text1 {
+    font-weight: 200;
+    font-family: sans-serif !important;
+    font-size: 1rem !important;
 }
 .interest-button {
     background-color: #5f9048;
