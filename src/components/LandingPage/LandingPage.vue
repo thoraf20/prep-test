@@ -15,7 +15,6 @@
                     <li><a href="#">TOEFL</a></li>
                 </ul>
             </div>
-                    <a href="#" class="sign-up-btn" >Sign Up</a>
         </div>
     </nav>
 
@@ -25,7 +24,6 @@
                 <img class="ghsg" src="../../assets/images/ghsg1.png" alt="">
             <div class="imgText">
                 <h5 class="card-title">Visit any of our learning centres</h5>
-                <p class="card-text">Visit our centres in Lekki, Yaba, etc.</p>
                 </div>
             </div>
         </div>
@@ -157,14 +155,13 @@
         </div>
 
             <div class="reviews">
-
                 <h3>Some of our Class Reviews From Google</h3>
                 <div class="dot2">
                      <img class="dotdot" src="../../assets/images/dotdot.png" />
                 </div>
 
                 <div class="comments-container">
-                    <div class="review-grid">
+                    <div class="container" id="review-grid">
                         <div class="single-review">
                         <img class="single-review-image" src="../../assets/images/review1.png" alt="review" />
                         </div>
@@ -189,6 +186,7 @@
              <h3>Often asked questions</h3>
 
             <div id="faq-container">
+                <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h2>Q: How do you operate?</h2>
@@ -226,6 +224,7 @@
                         <p><b>C</b>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
+                </div>
             </div>
                          <div class="get-a-tutor"><a href="" target="_blank" class="btn btn-success">Get A Tutor</a></div>
         </div>
@@ -233,9 +232,9 @@
         <div class="contact-us">
             <h3>Contact Us</h3>
             <p>If you have any questions you can reach out to us</p>
-            <p>09035321117</p>
-            <p>info@prepclass.com.ng</p>
-            <p>Chat on whatsapp</p>
+            <p><a href="#">09035321117</a></p>
+            <p><a href="#"> info@prepclass.com.ng</a></p>
+            <p><a href="#">Chat on whatsapp</a></p>
         </div>
 
         <div class="footer">
@@ -330,9 +329,8 @@ nav ul li a {
   color: #383737;
   margin: 0 10px;
 
-font-family: Ubuntu;
+font-family: sans-serif !important;
 font-size: 20px;
-font-style: normal;
 font-weight: 500;
 line-height: 23px;
 letter-spacing: 0em;
@@ -368,21 +366,6 @@ nav.fill ul li a {
   width: 100%;
 }
 
-.sign-up-btn {
-margin-left: 25px;
-margin-top: -7px;
-border-radius: 10px;
-padding: 6px 30px 8px 30px;
-white-space: nowrap;
-background-color: #076AFF;
-color: white;
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-text-decoration: none;
-}
-
 .navbar-toggler {
 position: absolute;
 top: 18px;
@@ -399,6 +382,7 @@ text-align: right;
 .mainCont{
 max-width: 100vw;
 overflow-x: hidden;
+font-family: ubuntu,sans-serif;
 }
 
 .imgDiv{
@@ -423,17 +407,17 @@ right: -5rem;
 }
 
 .card-title {
-font: Ubuntu;
- font-weight: 700;
- font-size: 48px;
- line-height: 55.15px;
+font: sans-serif !important;
+ font-weight: bold;
+ font-size: 2.3rem;
  color: #ffffff;
+ margin-bottom: 2px;
 }
 
 .card-text {
-font: Ubuntu;
+font: sans-serif !important;
  font-weight: 500;
- font-size: 24px;
+ font-size: 1.5rem;
  line-height: 27.98px;
  color: #ffffff;
 }
@@ -478,6 +462,26 @@ right: -3rem;
 position: absolute;
 bottom: -13rem;
 right: -3rem;
+}
+
+#asked-question {
+
+h2 {
+font-size: 1.3rem !important;
+font-weight: 500;
+font-family: sans-serif !important;
+}
+ h4 {
+font-size: 1.1rem !important;
+font-weight: 200;
+font-family: sans-serif !important;
+
+}
+p {
+font-size: 1rem !important;
+font-family: sans-serif !important;
+
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -532,7 +536,8 @@ aligh-items: center;
 #asked-question {
 
 h2 {
-font-size: 20px;
+font-size: 1rem !important;
+font-weight: bold !important;
 }
 h4 {
 font-size:18px;
@@ -692,9 +697,8 @@ margin-top: 40px;
 .popular {
     text-align: center;
     margin-top: 0.8rem;
-    font: Ubuntu;
-    font-size: 2.25rem;
-    font-weight: 700;
+    font: sans-serif;
+    font-size: 2.5rem;
     line-height: 2.5rem;
     font-style: normal;
     color: black;
@@ -757,13 +761,11 @@ margin-top: 40px;
 }
 
 .card-text {
-    font-family: Ubuntu;
-    font-weight: 700;
+    font-family: sans-serif !important;
+    font-weight: 400;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     margin-bottom: 0.4rem;
     color: #5c5c5c;
-    /* background-color: #f0f; */
 }
 .card-more {
     /* background-color: #ff0; */
@@ -880,11 +882,9 @@ margin-top: 40px;
     color: #ffffff;
     text-align: center;
     padding-top: 4rem;
-    font-family: Ubuntu;
+    font-family: sans-serif !important;
     font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 2.75rem;
-    font-style: normal;
+    font-weight: 400;
 }
 
 .get-started-body {
@@ -1121,11 +1121,9 @@ h3 {
  text-align: center;
  padding-top: 30px;
  padding-bottom: 30px;
-font: Ubuntu;
-font-size: 36px;
-font-weight: 700;
-line-height: 41.36px;
-font-style: normal;
+font: sans-serif !important;
+font-size: 2rem;
+
 }
 
 .faq {
@@ -1158,7 +1156,8 @@ font-size: 20px;
 font-weight: 600;
 line-height: 41.36px;
 font-style: normal;
-margin-bottom: 20px;
+padding-bottom: 40px;
+
 }
 
 
@@ -1183,14 +1182,18 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-font-family: Ubuntu;
+font-family: sans-serif !important;
 font-size: 24px;
-font-style: normal;
 font-weight: 700;
 line-height: 30px;
 text-align: center;
 background-color: #e5e5e5;
 margin-top: -18px;
+
+p {
+font-weight: 100;
+font-family: sans-serif !important;
+}
 }
 
 .footer {
@@ -1249,11 +1252,9 @@ flex-direction: column;
 
 .det{
 margin-left: 20px;
-font-family: Ubuntu;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 41px;
+font-family: sans-serif !important;
+font-size: 1.5rem !important;
+font-weight: 400;
 letter-spacing: 0em;
 }
 
@@ -1289,7 +1290,7 @@ text-align: center;
 color: #ffffff;
 }
 
-.review-grid {
+#review-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     z-index: 99;
@@ -1300,7 +1301,7 @@ color: #ffffff;
 }
 
 @media(max-width: 1024px) {
-    .review-grid {
+    #review-grid {
         display: block;
     }
     .dotdot {
