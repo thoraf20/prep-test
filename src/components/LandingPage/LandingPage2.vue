@@ -1212,11 +1212,10 @@ margin-top: 40px;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 5rem 10%;
+    padding: 2rem 10%;
     gap: 3rem;
     background-color: #ffffff;
     color: #000000;
-    height: 18vh;
 }
 .about-image {
     position: absolute;

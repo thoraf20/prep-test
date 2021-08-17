@@ -530,11 +530,9 @@ line-height: 4rem !important;
 font-size: 30px !important;
 }
 
-.partners {
-display: block;
+.trust-dot {
+display: none !important;
 }
-
-
 
 
 .imgText h5{
