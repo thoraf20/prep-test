@@ -1,6 +1,6 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark" id="navbar_top">
+      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark bg-white" id="navbar_top">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
@@ -147,7 +147,7 @@
 
         <div class="interest-wrapper">
              <div class="interest-content">                
-                <h3 class="interest-header">Are you interested in working with Prepclass’s database of qualified tutors</h3>
+                <h3 class="interest-header">Are you interested in working with Prepclass’s database of qualified tutors?</h3>
                 <p class="interest-text">to learn more about Prepclass business</p>
                 <button type="submit" class="interest-button">Click Here</button>
               </div>
@@ -237,8 +237,7 @@
 <style lang="scss" scoped>
 
 nav {
-height: 12vh;
-background: white;
+height: 8vh;
 }
 
 nav ul {
@@ -921,7 +920,7 @@ margin-top: 40px;
 
 /* Get start section styling */
 .get-started {
-    background: #011120;
+    background: rgb(30,30,30);
     position: relative;
 }
 
@@ -979,8 +978,8 @@ margin-top: 40px;
 }
 .get-started-right-text {
     color: #ffffff;
-    font-weight: 550;
-    font-size: 2.5rem;
+    font-weight: 450;
+    font-size: 2rem;
     line-height: 4.25rem;
     font-family: sans-serif !important;
 }
@@ -1169,6 +1168,7 @@ margin-top: 40px;
     position: relative;
     text-align: center;
     padding: 4rem 20% 4rem 20%;
+    background-color: #f7f7f7;
 }
 .interest-header {
     color: #000000;
@@ -1429,6 +1429,16 @@ line-height: 30px;
 text-align: center;
 background-color: #e5e5e5;
 margin-top: -18px;
+
+p {
+font-weight: 100;
+font-family: sans-serif !important;
+font-size: 1.2rem;
+}
+a {
+text-decoration: none !important;
+font-size: 1rem;
+}
 }
 
 @media(max-width: 725px) {
@@ -1467,6 +1477,7 @@ margin-top: 25px;
 
 a {
 color: #ffffff;
+text-decoration: none !important;
 }
 }
 
