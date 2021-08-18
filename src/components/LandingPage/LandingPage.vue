@@ -189,8 +189,8 @@
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h2>Q: How do you operate?</h2>
-                        <h4><b>A</b>: Three easy steps</h4>
+                        <h6><strong>Q:</strong> How do you operate?</h6>
+                        <h4><strong style="color:#5e9047">A</strong>: Three easy steps</h4>
                         <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
                          2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
                          3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
@@ -198,30 +198,30 @@
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h2>Q: What kind of classes do you offer?</h2>
-                        <h4><b>A</b>: We offer group online classes.</h4>
-                        <p>Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
+                        <h4><strong style="color:#5e9047">A</strong>: We offer group online classes.</h4>
+                        <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
                             This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h2>Q: How do you charge and what are your rates?</h2>
-                        <p><b>A</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
-                        <p><b>B</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                        <p class="text-center text-md-left"><strong style="color:#5e9047">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
-                        <p><b>C</b>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                        <p class="text-center text-md-left"><strong style="color:#5e9047">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h2>Q: Why work with prepclass instead of getting an home tutor myself?</h2>
-                        <p><b>A</b>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
+                        <p class="text-center text-md-left"><b style="color:green">A</b>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
                                 without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
                                 such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
                         </p>
-                        <p><b>B</b>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p><b>C</b>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                        <p class="text-center text-md-left"><b style="color:green">B</b>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><b style="color:green">C</b>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
                 </div>
@@ -1140,6 +1140,17 @@ padding: 2px 8px 2px 8px;
 
 #asked-question {
 width: 50%;
+h2 {
+font-weight: 700;
+font-size: 1rem !important;
+font-family: sans-serif !important;
+}
+p{
+font-weight: 200;
+font-style: normal;
+font-size: 1rem !important;
+font-family: sans-serif !important;
+}
 }
 
 #row-data {
@@ -1162,19 +1173,7 @@ padding-bottom: 40px;
 
 
 .row {
-h2 {
-font-weight: 400;
-font-style: normal;
-font-size: 1.3rem;
-line-height: 24px;
-}
 
-p{
-font-weight: 200;
-font-style: normal;
-font-size: 1.3rem;
-line-height: 24px;
-}
 }
 
 .contact-us{
@@ -1183,7 +1182,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 font-family: sans-serif !important;
-font-size: 24px;
+font-size: 1.5rem;
 font-weight: 700;
 line-height: 30px;
 text-align: center;
@@ -1193,6 +1192,11 @@ margin-top: -18px;
 p {
 font-weight: 100;
 font-family: sans-serif !important;
+font-size: 1.2rem;
+}
+a {
+text-decoration: none !important;
+font-size: 1rem;
 }
 }
 
