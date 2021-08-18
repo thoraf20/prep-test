@@ -9,9 +9,9 @@
             <div class="navbar-nav ml-auto" id="stroke">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Fun Fact</a></li>
+                    <li><a href="#about_section">About</a></li>
+                    <li><a href="#service_section">Services</a></li>
+                    <li><a href="#fact_section">Fun Fact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,6 +54,7 @@
 
             </div>
 
+             <a id="about_section">
             <div class="about-wrapper">
                      <img class="about-image" src="../../assets/images/dot1.png" >
                 <div class="about-left">
@@ -70,8 +71,10 @@
                     <button type="submit" class="about-button-small">Learn More</button>
                 </div>
             </div>
+            </a>
 
                 <!-- Service We Offer -->
+        <a id="service_section">
         <div class="class-group-container">
             <h3 class="popular">Services We Offer</h3>
 
@@ -131,54 +134,57 @@
               </div>
             </div>
         </div>
+        </a>
 
-            <div class="get-started">
-                <h3>Fun Facts</h3>
-                <div class="fun">
-                    <div class="enrol">
-                        <p class="fir-p">
-                            100k  
-                        </p>
-                        <p class="sec-p">
-                            Teachers<br> Enrolled
-                        </p>
-                    </div>
-                    <div class="enrol">
-                        <p class="fir-p">
-                            9000H  
-                        </p>
-                        <p class="sec-p">
-                            Tutoring Hours<br> Taught
-                        </p>
-                    </div>
-                    <div class="enrol">
-                        <p class="fir-p">
-                            50B 
-                        </p>
-                        <p class="sec-p">
-                            Income<br> Generated
-                        </p>
-                    </div>
-                    <div class="enrol">
-                        <p class="fir-p">
-                            900k  
-                        </p>
-                        <p class="sec-p">
-                            Total<br> 
-                            Leaners
-                        </p>
-                    </div>
-                    <div class="enrol">
-                        <button>Click Here</button>
-                        <p class="sec-p">
-                            Impact<br> Assesment
-                        </p>
-                    </div>
+        <a id="fact_section">
+        <div class="get-started">
+            <h3>Fun Facts</h3>
+            <div class="fun">
+                <div class="enrol">
+                    <p class="fir-p">
+                        100k  
+                    </p>
+                    <p class="sec-p">
+                        Teachers<br> Enrolled
+                    </p>
                 </div>
-                    <div class="get-dot">
-                        <img class="dotdotdot" src="../../assets/images/dot.png" >
-                    </div>
+                <div class="enrol">
+                    <p class="fir-p">
+                        9000H  
+                    </p>
+                    <p class="sec-p">
+                        Tutoring Hours<br> Taught
+                    </p>
+                </div>
+                <div class="enrol">
+                    <p class="fir-p">
+                        50B 
+                    </p>
+                    <p class="sec-p">
+                        Income<br> Generated
+                    </p>
+                </div>
+                <div class="enrol">
+                    <p class="fir-p">
+                        900k  
+                    </p>
+                    <p class="sec-p">
+                        Total<br> 
+                        Leaners
+                    </p>
+                </div>
+                <div class="enrol">
+                    <button>Click Here</button>
+                    <p class="sec-p">
+                        Impact<br> Assesment
+                    </p>
+                </div>
             </div>
+                <div class="get-dot">
+                    <img class="dotdotdot" src="../../assets/images/dot.png" >
+                </div>
+        </div>
+        </a>
 
               <div class="interest-wrapper">
               <h3>PrepClass Business</h3>
