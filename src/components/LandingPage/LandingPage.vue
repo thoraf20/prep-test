@@ -1,6 +1,6 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark" id="navbar_top">
+      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark fixed-top scroll bg-white" id="navbar_top">
         <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon bg-dark text-dark"></span>
@@ -311,8 +311,7 @@
 
 <style lang="scss" scoped>
 nav {
-height: 12vh;
-background: white;
+height: 8vh;
 }
 
 nav ul {
@@ -874,7 +873,7 @@ margin-top: 40px;
 
 /* Get start section styling */
 .get-started {
-    background: #011120;
+    background-color: rgb(30, 30, 30);
     position: relative;
 }
 
@@ -1127,7 +1126,7 @@ font-size: 2rem;
 }
 
 .faq {
-background-color: #f5f5f5;
+background-color: #f8f9fa !important;;
 align-items: center;
 justify-content: center;
 
