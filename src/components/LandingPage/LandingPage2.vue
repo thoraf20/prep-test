@@ -9,8 +9,8 @@
             <div class="navbar-nav ml-auto" id="stroke">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#about_section">About</a></li>
+                    <li><a href="#service_section">Services</a></li>
                 </ul>
             </div>
         </div>
@@ -37,6 +37,7 @@
                     <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
             </div>
 
+            <a id="about_section">
             <div class="about-wrapper">
                 <img class="about-image" src="../../assets/images/dot1.png" >
                 <div class="about-left">
@@ -54,8 +55,10 @@
                     <button type="submit" class="about-button-small">Learn More</button>
                 </div>
             </div>
+            </a>
 
-                <!-- Programs-->
+        <a id="service_section">
+        <!-- Programs-->
         <div class="class-group-container">
             <h3 class="popular">Programs We Are Involved in</h3>
 
@@ -123,6 +126,7 @@
                 </div>
             </div>
         </div>
+        </a>
 
         <!-- Get Started Section -->
         <div class="get-started">
