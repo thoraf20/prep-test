@@ -21,7 +21,7 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Fun</a>
+                        <a class="nav-link" href="#">Fun Fact</a>
                     </li>
                 </ul>
             </div>
