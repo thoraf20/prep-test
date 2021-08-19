@@ -197,60 +197,89 @@
              </div>                
                 
 
-        <div class="footer">
-            <div class="row justify-content-around mb-0 pt-5 mx-4">
-                <div class="col-xl-2 col-md-3 pt-4 order-1">
-                    <img src="../../assets/images/logo-white.png" />
-                    <p class="list-unstyled">
-                        Prepclass is an edtech (educational technology) company that focuses on connecting
-                         potential learners with skilled tutors. Our interest is to break from the norm of formal 
-                         education by providing tutors for basically anything a client may wish to learn.
-                    </p>
-                    <ul class="list-unstyled mt-md-3 mt-5">
-                        <li>Social Media</li>
-                        <li class="social">
-                        <span> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
-                        <span> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a></span>
-                        <span> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a></span>
-                        <span> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></span>
-                        <span> <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-md-3 pt-4 order-1">
-                    <ul class="list-unstyled">
-                        <li class="mt-md-0 mt-4"><a href="#">Blog</a></li>
-                        <li><a href="#">Tutor Jobs</a> </li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Frequently Asked Questions</a></li>
-                        <li><a href="#">Join Our IELTS Classes</a></li>
-                        <li><a href="#">Join SAT Classes</a></li>
-                        <li><a href="#">Join Our TOEFL Classes</a></li>
-                        <li><a href="#">Join Our GMAT Classes</a></li>
-                        <li><a href="#">Join Our GRE Classes</a></li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-md-3 pt-4 order-2">
-                    <ul class="list-unstyled">
-                        <li class="mt-md-0 mt-4"><a href="#">Get A Home Tutor</a></li>
-                        <li><a href="#">Become A PrepClass Tutor</a> </li>
-                        <li><a href="#">Become A Scout Partner</a></li>
-                        <li><a href="#">PrepClass Business</a></li>
-                        <li><a href="#"> JAMB Preparation App</a></li>
-                        <li><a href="#">Privacy Policy </a></li>
-                        <li><a href="#">Chat Us on Whatsapp</a></li>
-                        <li><a href="#">Send Us A Mail</a></li>
-                        <li><a href="#">Call 012913970 or</a></li>
-                        <li><a href="#">09035321117</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row justify-content-center px-3 py-3 pt-5">
-                <div class="col text-center">
-                    <p class="copyright">Prepclass © 2021. All Rights Reserved</p>
+        <section style="background:#CAE9F0" class="pt-5 footer3">
+            <ul class="ulx">
+                <a href="/about"><li>ABOUT PREPCLASS</li></a>
+                <a href="/privacy-policy"><li>PRIVACY POLICY </li></a>
+                <a href="/contact-us"><li>CONTACT US </li></a>
+            </ul>
+            <div class="foot pt-2 pb-5" style="height:100%">
+                <div class="container">
+                    <div class="row pt-5 pb-1">
+                        <div class="col-sm-12 col-lg-6 mt-5 pt-5">
+                        <img src="../../assets/images/logo-white.png" style="width:200px"/>
+                         <p class="pt-3" style="color:white">
+                            Prepclass is an edtech (educational technology) company that focuses on connecting potential learners with skilled tutors. Our interest is to break from the norm of formal education by providing tutors for basically anything a client may wish to learn. From English language and grammar structuring to phonetics, sounds and pronunciation, learners from the age of 4 can be easily signed up by their parents or wards online for sessions that will take place physically at the child/learner/tutee’s comfortable home and time.
+                            <a href="/about" style="color:white"><b>Read more </b></a>
+                        </p>
+                    </div>
+
+                <div class="col-sm-12 col-lg-6 pt-5">
+                    <div class="row pt-5">
+                        <div class="col-sm-12 col-lg-4">
+                            <ul class="menux">
+                                <a href="/blog"><li class="pt-2">Blog </li></a>
+                                <a href="/tutoring-jobs"><li class="pt-2">Tutor Jobs </li></a>
+                                <a href=""><li class="pt-2">About Us </li></a>
+                                <a href=""><li class="pt-2">Frequently Asked Questions </li></a>
+                                <a href="" target="_blank"><li class="pt-2">Join Our IELTS Classes </li></a>
+                                <a href="" target="_blank"><li class="pt-2">Join Our SAT Classes </li></a>
+                                <a href=""><li class="pt-2">Join Our TOEFL BDT classes</li></a>
+                                <a href=""><li class="pt-2">Join Our GMAT classes</li></a>
+                                <a href=""><li class="pt-2">Join Our GRE classes</li></a>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4" style="border-left:1px solid lightgray">
+                                <ul class="menux">
+                                    <a href=""><li class="pt-2">Get A Home Tutor </li></a>
+                                    <a href=""><li class="pt-2">Become A PrepClass Tutor </li></a>
+                                    <a href=""><li class="pt-2">Become A Scout Partner </li></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.prepclasspreptest"><li class="pt-2">JAMB Preparation App </li></a>
+                                    <a href="https://prepclass.com.ng/tutor-calculator"><li class="pt-2">Tutor Price Calculator</li></a>
+                                    
+                                </ul>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4">
+                                <ul class="menux">
+                                    <a href=""><li class="pt-2">Privacy Policy </li></a>
+                                    <a href="https://api.whatsapp.com/send?phone=2349035321117"><li class="pt-2">Chat Us on Whatsapp </li></a>
+                                    <a href="mailto:info@prepclass.com.ng"><li class="pt-2">Send Us A Mail </li></a>
+                                    <a href="#"><li class="pt-2">Call 012913970 or 09035321117 </li></a>
+                                </ul>
+                        </div> 
+                    </div>
+
+                    <div class="row mt-3 ml-2">
+                        <div class="col-sm-12 col-lg-12">
+                                <span style="color:white; font-weight:600" class="success-msg"></span>
+                                <span style="color:black; font-weight:600" class="error-msg"></span>
+                        </div>
+                        <div class="col-sm-12 col-lg-11">
+                            <div class="">
+                                <form name="subForm">
+                                    <input type="text"  class="form-control pl-3 pt-3 pb-3 btn-xx" name="email" id="email" placeholder="Subscribe to our Newsletter"/>
+                                    <button class="float-right btx pt-2 mt-2 pb-2 pl-2  pr-3 mr-1 sub-btn">Subscribe <div class="spinner-border spinner-border-sm" ></div></button>
+                                </form>
+                                <small style="color:white ">We promise not to spam you. </small>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mt-1 col-lg-9">
+                            <center>
+                                <a href="https://facebook.com/prepclass.com.ng"><button class="social"><i class="zmdi zmdi-facebook"></i></button></a>
+                                <a href="https://twitter.com/PrepclassNG"><button class="social"><i class="zmdi zmdi-twitter"></i></button></a>
+                                <a href="https://www.instagram.com/prepclassng/"><button class="social"><i class="zmdi zmdi-instagram"></i></button></a>
+                                <a href="https://ng.linkedin.com/company/prepclass-com-ng"><button class="social"><i class="zmdi zmdi-linkedin"></i></button></a>
+                                 <a href="https://youtube.com/prepclassng"><button class="social"><i class="zmdi zmdi-youtube"></i></button></a>
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    </section>
        </div>
        </div>
 </template>
@@ -1244,60 +1273,68 @@ font-size: 25px !important;
 
 }
 
-.contact-us{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: Ubuntu;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-text-align: center;
-background-color: #e5e5e5;
-margin-top: -18px;
-
-p {
-font-weight: 100;
-font-family: sans-serif !important;
-font-size: 1.2rem;
-}
-a {
-text-decoration: none !important;
-font-size: 1rem;
-}
-}
-
-.footer {
-background: #011120;
-.list-unstyled {
-font-family: Ubuntu;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
-margin-top: 25px;
-}
-
-a {
-color: #ffffff;
-text-decoration: none !important;
-}
-}
-
-.copyright {
-font-family: Ubuntu;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: center;
-color: #ffffff;
-}
+.ulx {
+        list-style-type:none;
+        display:inline-flex;
+    }
+    .ulx > a > li {
+        padding-left:30px;
+        font-weight: 600;
+        color: green;
+        text-decoration: none;
+    }
+    button.social {
+        height:40px;
+        width:40px;
+        border-radius: 40px;
+        background:white;
+        border:0px;
+        margin-top: 20px;
+        margin-right:5px;
+        cursor: pointer;
+    }
+    .social:hover {
+        background:black;
+        color:white;
+        transition: background .2s ease-in;
+    }
+    .btx {
+        position: absolute;
+    right: 20px;
+    top: 0;
+    margin-top: 5px;
+    margin-left: -20px;
+    background:#194867;
+    color:white;
+    border:0px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(40,167,69,.14), 0 3px 1px -2px rgba(40,167,69,.12), 0 1px 5px 0 rgba(40,167,69,.2);
+    }
+    .menux {
+        color:white;
+        list-style-type: none;
+        font-size: 14px;
+        /* text-transform: uppercase; */
+    }
+    .menux > a {
+        color:white;
+    }
+    .main-content {
+        padding-bottom: 50px !important;
+    }
+    .menux > a:hover {
+        font-weight: bold;
+        transition: font-weight .5s ease-out;
+    }
+    .btn-xx {
+        border-radius: 0px;
+        
+    }
+    .foot {
+        background: url("../../assets/images/footer_bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+   }
 
 </style>
