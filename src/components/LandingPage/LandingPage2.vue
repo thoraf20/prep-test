@@ -1,18 +1,28 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark bg-white" id="navbar_top">
-        <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon bg-dark text-dark"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+     <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark fixed-top scroll bg-white" id="navbar_top">
+      <div class="container">
+       <a class="navbar-brand" href="" onclick="window.location.reload();return false">
+                    <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="topMenu">
             <div class="navbar-nav ml-auto" id="stroke">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about_section">About</a></li>
-                    <li><a href="#service_section">Services</a></li>
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
                 </ul>
             </div>
+        </div>
         </div>
     </nav>
 
@@ -270,7 +280,7 @@
 <style lang="scss" scoped>
 
 nav {
-height: 8vh;
+height: 11vh;
 }
 
 nav ul {
@@ -1317,6 +1327,9 @@ margin-top: 40px;
         text-align: center;
         font-size: 1.5rem;
     }
+    .about-text {
+    font-size: 1rem;
+}
    .about-button {
     display: none;
    }

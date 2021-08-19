@@ -1,20 +1,34 @@
 <template>
 <div class="mainCont">
       <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark fixed-top scroll bg-white" id="navbar_top">
-        <img src="../../assets/images/small-logo.png" href="#" class="navbar-brand mr-3">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon bg-dark text-dark"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="container">
+       <a class="navbar-brand" href="" onclick="window.location.reload();return false">
+                    <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="topMenu">
             <div class="navbar-nav ml-auto" id="stroke">
-                <ul>
-                    <li><a href="#">IELTS</a></li>
-                    <li><a href="#">GMAT</a></li>
-                    <li><a href="#">GRE</a></li>
-                    <li><a href="#">SAT</a></li>
-                    <li><a href="#">TOEFL</a></li>
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a class="nav-link" href="#">IELTS</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">GMAT</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">GRE</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">SAT</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">TOEFL</a>
+                    </li>
                 </ul>
             </div>
+        </div>
         </div>
     </nav>
 
@@ -27,7 +41,7 @@
                 </div>
             </div>
         </div>
-    
+
 
            <div class="trust-us">
                 <div class="partners">
@@ -341,7 +355,7 @@
 
 <style lang="scss" scoped>
 nav {
-height: 8vh;
+height: 11vh;
 }
 
 nav ul {
@@ -375,10 +389,12 @@ nav ul li a:hover {
   color: #5F9048;
 }
 
+
 #stroke ul li a,
 nav.fill ul li a {
   position: relative;
 }
+
 #stroke ul li a:after {
   position: absolute;
   bottom: 0;
@@ -389,7 +405,7 @@ nav.fill ul li a {
   content: '.';
   color: black;
   background:  #5F9048;
-  height: 2px;
+  height: 1.5px;
 }
 #stroke ul li a:hover:after {
   width: 100%;
