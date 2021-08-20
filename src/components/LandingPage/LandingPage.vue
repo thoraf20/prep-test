@@ -1,8 +1,8 @@
 <template>
 <div class="mainCont">
 
-       <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-        <div class="container">
+         <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+     <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
                 <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
             </a>
@@ -11,25 +11,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">IELTS <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">GMAT</a>
-            <a class="nav-item nav-link" href="#">GRE</a>
-            <a class="nav-item nav-link" href="#">SAT</a>
-            <a class="nav-item nav-link" href="#">TOEFL</a>
+            <a class="nav-item nav-link" href="#">HOME</a>
+            <a class="nav-item nav-link" href="#">ABOUT</a>
+            <a class="nav-item nav-link" href="#">SERVICE</a>
+            <a class="nav-item nav-link" href="#">FUN FACT</a>
             </div>
         </div>
         </div>
     </nav>
 
-     <div class="w-100"
-       style='background-size:cover; background-size: cover;background-position: center;'>
-    <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100 brandon"
-         style='background-color: rgba(0, 0, 0, 0.2); min-height: 600px;'>
+     <div class="w-100">
+    <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100 brandon">
       <h2 class="font-weight-bold text-center mb-2">Visit any of our learning centres</h2>
     </div>
 
     
-
            <div class="trust-us">
                 <div class="partners">
                     <div class="trust-img"><img src="../../assets/images/forbes.png" alt=""></div>
@@ -350,11 +346,11 @@
 
 .navbar-dark {
   background-color: rgba(0, 0, 0, 0.8) !important;
-  color: #ffffff !important;
+  color: #5f9048 !important;
 }
 
 .navbar-collapse, .navbar-nav, .nav-item {
-  color: #5f9048 !important;
+  color: inherit !important;
 }
 
 nav {
@@ -372,7 +368,7 @@ background: url("../../assets/images/teacher-in-blue.svg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 60vh;
+height: 90vh;
 position: relative;
 }
 

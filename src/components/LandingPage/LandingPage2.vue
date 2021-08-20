@@ -282,16 +282,16 @@ document.onreadystatechange = function() {
 
 .navbar-dark {
   background-color: rgba(0, 0, 0, 0.8) !important;
-  color: #ffffff !important;
+  color: #5f9048 !important;
+}
+
+.navbar-collapse, .navbar-nav, .nav-item {
+  color: inherit !important;
 }
 
 
 .navbar-nav .nav-item nav-link:hover {
   color: #5F9048;
-}
-
-.navbar-collapse, .navbar-nav, .nav-item {
-  color: #5f9048 !important;
 }
 
 nav {
