@@ -1,47 +1,34 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark fixed-top scroll bg-white" id="navbar_top">
-      <div class="container">
-       <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                    <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-dark"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="topMenu">
-            <div class="navbar-nav ml-auto" id="stroke">
-                <ul class="navbar-nav mr-auto">
-                    <li>
-                        <a class="nav-link" href="#">IELTS</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">GMAT</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">GRE</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">SAT</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">TOEFL</a>
-                    </li>
-                </ul>
+
+       <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+         <a class="navbar-brand" href="" onclick="window.location.reload();return false">
+                <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#">IELTS <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">GMAT</a>
+            <a class="nav-item nav-link" href="#">GRE</a>
+            <a class="nav-item nav-link" href="#">SAT</a>
+            <a class="nav-item nav-link" href="#">TOEFL</a>
             </div>
         </div>
         </div>
     </nav>
 
-    <div class="header">
-        <div class="imgDiv">
-                <img class="ggd" src="../../assets/images/ggd1.png" alt="">
-                <img class="ghsg" src="../../assets/images/ghsg1.png" alt="">
-            <div class="imgText">
-                <h5 class="card-title">Visit any of our learning centres</h5>
-                </div>
-            </div>
-        </div>
+     <div class="w-100"
+       style='background-size:cover; background-size: cover;background-position: center;'>
+    <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100 brandon"
+         style='background-color: rgba(0, 0, 0, 0.2); min-height: 600px;'>
+      <h2 class="font-weight-bold text-center mb-2">Visit any of our learning centres</h2>
+    </div>
 
+    
 
            <div class="trust-us">
                 <div class="partners">
@@ -57,8 +44,7 @@
 
              <!-- Popular Class Group -->
         <div class="class-group-container">
-            <h3 class="popular">Popular Class Groups</h3>
-
+            <h2 class="font-weight-500 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Popular Class Groups</h2>
             <div class="cards-container">
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-one">                    
@@ -120,7 +106,7 @@
             
             <!-- Get Started Section -->
         <div class="get-started">
-            <h3 class="get-started-header">How to get started</h3>
+            <h2 class="get-started-header font-weight-500 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">How to get started</h2>
             <div class="get-started-body">
                 <div class="get-started-left">
                     <img class="get-started-image" src="../../assets/images/group.png" />
@@ -203,7 +189,7 @@
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6><strong>Q:</strong> How do you operate?</h6>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
                         <h4><strong style="color:#5e9047">A</strong>: Three easy steps</h4>
                         <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
                          2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
@@ -262,7 +248,7 @@
                     <div class="row pt-5 pb-1">
                         <div class="col-sm-12 col-lg-6 mt-5 pt-5">
                         <img src="../../assets/images/logo-white.png" style="width:200px"/>
-                         <p class="pt-3" style="color:white">
+                         <p class="pt-3" style="color:white; font-size:1.2rem">
                             Prepclass is an edtech (educational technology) company that focuses on connecting potential learners with skilled tutors. Our interest is to break from the norm of formal education by providing tutors for basically anything a client may wish to learn. From English language and grammar structuring to phonetics, sounds and pronunciation, learners from the age of 4 can be easily signed up by their parents or wards online for sessions that will take place physically at the child/learner/tutee’s comfortable home and time.
                             <a href="/about" style="color:white"><b>Read more </b></a>
                         </p>
@@ -340,103 +326,53 @@
 </template>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
-        document.getElementById('navbar_top').classList.add('fixed-top');
-        // add padding top to show content behind navbar
-        navbar_height = document.querySelector('.navbar').offsetHeight;
-        document.body.style.paddingTop = navbar_height + 'px';
-      }
+     document.onreadystatechange = function() {
+  let lastScrollPosition = 0;
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', function(e) {
+    lastScrollPosition = window.scrollY;
+    
+    if (lastScrollPosition > 100)
+      navbar.classList.add('navbar-dark');
+    else
+      navbar.classList.remove('navbar-dark');
   });
-}); 
-// DOMContentLoaded  end
+}
 </script>
-
+   
 <style lang="scss" scoped>
+.navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-function: ease-in-out;
+}
+
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+}
+
+.navbar-collapse, .navbar-nav, .nav-item {
+  color: #5f9048 !important;
+}
+
 nav {
-height: 11vh;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: #383737;
-  margin: 0 10px;
-
-font-family: sans-serif !important;
-font-size: 20px;
-font-weight: 500;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-
-}
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #5F9048;
-}
-
-
-#stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-
-#stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: black;
-  background:  #5F9048;
-  height: 1.5px;
-}
-#stroke ul li a:hover:after {
-  width: 100%;
-}
-
-.navbar-toggler {
-position: absolute;
-top: 18px;
-right: 15px;
-z-index: 9998;
-border: 0;
-outline: none !important;
-transition: all 0.4s;
-cursor: pointer;
-line-height: 1;
-text-align: right;
+height: 8vh;
 }
 
 .mainCont{
 max-width: 100vw;
 overflow-x: hidden;
-font-family: ubuntu,sans-serif;
+font-family: sans-serif;
 }
 
-.imgDiv{
-background: url("../../assets/images/image1.png");
+.w-100{
+background: url("../../assets/images/teacher-in-blue.svg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-background-size: 100vw 100vh;
-height: 80vh;
+height: 60vh;
 position: relative;
 }
 
@@ -640,24 +576,6 @@ display: flex;
 justify-content: space-between;
 width: 50%;
 }
-
-#want-to-learn {
-margin-left: 10px;
-background: #5F9048;
-color: #FFFFFF;
-font-size: 28px;
-
-}
-
-#input {
-font-size: 18px;
-font: Ubuntu;
-font-style: normal;
-line-height: 20.68px;
-font-weight: 500;
-width: 50vw;
-}
-
 
 
 .wrapp {
@@ -926,10 +844,10 @@ margin-top: 40px;
 .get-started-header {
     color: #ffffff;
     text-align: center;
-    padding-top: 4rem;
-    font-family: sans-serif !important;
+    padding-top: 2rem;
+    font-family: inherit !important;
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: normal !important;
 }
 
 .get-started-body {
@@ -938,19 +856,22 @@ margin-top: 40px;
     gap: 4rem;
     margin: 0 8rem;
     padding-top: 2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
 }
 
 .get-started-left {
     position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .get-started-image {
     position: absolute;
     left: 5%;
     top: 10%;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 40%;
+    border-radius: 10px;
 }
 
 .get-started-rectangle {
@@ -982,16 +903,18 @@ margin-top: 40px;
     display: flex;
     color: white;
     align-items: center;
+    height: 5px;
 }
 
 .det {
     margin-left: 1.25rem;
-    font-family: Ubuntu;
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
     letter-spacing: 0em;
+    color: white;
+    font-family: sans-serif;
 }
 
 .stroke {
@@ -1231,7 +1154,7 @@ font-size: 1.5rem;
 font-weight: 700;
 line-height: 30px;
 text-align: center;
-background-color: #e5e5e5;
+background-color: #f2f2f2;
 margin-top: -18px;
 
 p {

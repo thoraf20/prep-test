@@ -1,29 +1,20 @@
 <template>
 <div class="mainCont">
-      <nav class="navbar py-4 mx-3 navbar-expand-md navbar-dark fixed-top scroll bg-white" id="navbar_top">
-      <div class="container">
-       <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                    <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-dark"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="topMenu">
-            <div class="navbar-nav ml-auto" id="stroke">
-                <ul class="navbar-nav mr-auto">
-                    <li>
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Fun Fact</a>
-                    </li>
-                </ul>
+
+     <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+     <div class="container">
+         <a class="navbar-brand" href="" onclick="window.location.reload();return false">
+                <img class="logo" width="150" src="//prepclass.com.ng/img/logo-white.png">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto" id="nav">
+            <a class="nav-item nav-link" href="#">HOME</a>
+            <a class="nav-item nav-link" href="#">ABOUT</a>
+            <a class="nav-item nav-link" href="#">SERVICE</a>
+            <a class="nav-item nav-link" href="#">FUN FACT</a>
             </div>
         </div>
         </div>
@@ -42,7 +33,7 @@
             </div>
         </div>
         <div class="header-right">
-            <img class="headphone" src="../../assets/images/headphone.png" alt=""/>
+            <img class="headphone" src="../../assets/images/two-students.svg" alt=""/>
             <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
             <div class="curve">
             <div class="imghod">
@@ -76,9 +67,10 @@
                      <button type="submit" class="about-button">Learn More</button>
                 </div>
                   <div class="about-right">
-                    <p class="about-text">PrepClass is an education technology company poised with the mandate connecting learners
-                        and tutors in the smartest ways. As a social enterprise, our primary focus is to improve the outcomes for all category
-                        learners while improving the quality of lives of tutors. Since over X years of founding, Prepclass has achieved, A, B, C.
+                    <p class="about-text">PrepClass is an indigenous EdTech company in Nigeria established in 2014 that operates across Africa.
+                     We provide learning and academic alternatives and offer a tailored learning program both physically and  online. As an educational 
+                     technology business, our primary focus is linking learners with qualified tutors. Our goal is to break the formal education norm by 
+                     offering -to our clients- tutors, who can effectively communicate and impact our clients/learners with what they want to have knowledge of.
                     </p>
                     <button type="submit" class="about-button-small">Learn More</button>
                 </div>
@@ -201,7 +193,7 @@
               <div class="interest-wrapper">
               <h3>PrepClass Business</h3>
              <div class="interest-content">                
-                <p class="interest-text">Do you want to do Business <br>leveraging from our vast <br>database of Quality Tutor?</p>
+                <p class="interest-text">Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
                 <p class="interest-text1">Click on the button below.</p>
                 <button type="submit" class="interest-button">Learn More</button>
               </div>
@@ -220,7 +212,7 @@
                     <div class="row pt-5 pb-1">
                         <div class="col-sm-12 col-lg-6 mt-5 pt-5">
                         <img src="../../assets/images/logo-white.png" style="width:200px"/>
-                         <p class="pt-3" style="color:white">
+                         <p class="pt-3" style="color:white; font-size:1.2rem">
                             Prepclass is an edtech (educational technology) company that focuses on connecting potential learners with skilled tutors. Our interest is to break from the norm of formal education by providing tutors for basically anything a client may wish to learn. From English language and grammar structuring to phonetics, sounds and pronunciation, learners from the age of 4 can be easily signed up by their parents or wards online for sessions that will take place physically at the child/learner/tutee’s comfortable home and time.
                             <a href="/about" style="color:white"><b>Read more </b></a>
                         </p>
@@ -297,102 +289,52 @@
 </template>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
-        document.getElementById('navbar_top').classList.add('fixed-top');
-        // add padding top to show content behind navbar
-        navbar_height = document.querySelector('.navbar').offsetHeight;
-        document.body.style.paddingTop = navbar_height + 'px';
-      } 
+   document.onreadystatechange = function() {
+  let lastScrollPosition = 0;
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', function(e) {
+    lastScrollPosition = window.scrollY;
+    
+    if (lastScrollPosition > 100)
+      navbar.classList.add('navbar-dark');
+    else
+      navbar.classList.remove('navbar-dark');
   });
-}); 
-// DOMContentLoaded  end
+}
 </script>
 
 <style lang="scss" scoped>
-nav {
-height: 11vh;
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-function: ease-in-out;
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
 }
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: #383737;
-  margin: 0 10px;
-  font-family: sans-serif !important;
 
-font-size: 20px;
-font-weight: 500;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-
-}
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+.navbar-nav .nav-item nav-link,
+.navbar-nav .nav-item nav-link:after,
+.navbar-nav .nav-item nav-link:before {
   transition: all .5s;
 }
-nav ul li a:hover {
+
+.navbar-nav .nav-item nav-link:hover {
   color: #5F9048;
 }
 
-#stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-#stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: black;
-  background:  #5F9048;
-  height: 2px;
-}
-#stroke ul li a:hover:after {
-  width: 100%;
+.navbar-collapse, .navbar-nav, .nav-item {
+  color: #5f9048 !important;
 }
 
-.sign-up-btn {
-margin-left: 25px;
-margin-top: -7px;
-border-radius: 10px;
-padding: 6px 30px 8px 30px;
-white-space: nowrap;
-background-color: #076AFF;
-color: white;
-font-family: Ubuntu;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-text-decoration: none;
+nav {
+height: 8vh;
 }
 
-.navbar-toggler {
-position: absolute;
-top: 18px;
-right: 15px;
-z-index: 9998;
-border: 0;
-outline: none !important;
-transition: all 0.4s;
-cursor: pointer;
-line-height: 1;
-text-align: right;
-}
 
 
 .dotdotdot {
@@ -405,7 +347,7 @@ overflow-x: hidden;
 }
 
 .header {
-height: 650px;
+height: 750px;
 overflow: hidden;
 position: relative;
 background: #f7f7f7;
@@ -443,6 +385,7 @@ color: #ffffff;
 position: absolute;
 left: 0;
 top: 0;
+wisth:70%;
 
 .white-wave {
 position: absolute;
@@ -453,19 +396,20 @@ top: 55%;
 
 .header-right {
 
+width: 30%;
 .headphone {
 position: absolute;
-top: 0.7rem;
+top: -3rem;
 right: 0;
 width: 60%;
 z-index: 9;
 }
 
 .dotdot {
-width: 25rem;
+width: 20rem;
 position: absolute;
-top: -4rem;
-right: 10rem;
+top: -1rem;
+right: 8rem;
 z-index: 1;
 }
 
@@ -564,6 +508,7 @@ font: Ubuntu;
 
 .recText{
 width: 20rem;
+top: 30rem;
 }
 
 .big{
@@ -572,6 +517,25 @@ line-height: 4rem !important;
 }
 .small{
 font-size: 30px !important;
+}
+
+.header-right {
+
+width: 30%;
+.headphone {
+position: absolute;
+top: 5rem;
+right: 2rem;
+width: 90%;
+z-index: 9;
+}
+}
+
+.right-curve {
+display: none;
+}
+.left-curve {
+display: none;
 }
 
 .trust-dot {
@@ -837,13 +801,13 @@ margin-top: 40px;
     margin-bottom: 30px;
 }
 .single-card-one {
-    background: url("../../assets/images/service1.png");
+    background: url("../../assets/images/Group.svg");
 }
 .single-card-two {
-    background: url("../../assets/images/service2.png");
+    background: url("../../assets/images/tutor-market.svg");
 }
 .single-card-three {
-    background: url("../../assets/images/service3.png");
+    background: url("../../assets/images/tutor-growth.svg");
 }
 
 .card-content {
@@ -1007,9 +971,9 @@ line-height: 2.75rem;
 
 .get-dot {
     position: absolute;
-    top: 5rem;
+    top: 3rem;
     right: -1rem;
-    width: 246px;
+    width: 220px;
 }
 
 .fun{
@@ -1017,8 +981,8 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 width:93%;
-padding-top: 3rem;
-padding-bottom: 3rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
 margin-left: 2rem;
 img {
 width: 80%;
@@ -1029,10 +993,10 @@ width: 80%;
 
 .fir-p {
 font-family: sans-serif !important;
-font-size: 4rem;
+font-size: 3rem;
 font-style: normal;
 font-weight: 700;
-line-height: 4.6rem;
+line-height: 3.7rem;
 letter-spacing: 0em;
 text-align: left;
 color: #5F9048;
@@ -1040,10 +1004,10 @@ color: #5F9048;
 
 .sec-p {
 font-family: sans-serif !important;
-font-size: 2.5rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 500;
-line-height: 2.7rem;
+line-height: 2.4rem;
 letter-spacing: 0em;
 text-align: left;
 color: #ffffff;
@@ -1089,12 +1053,15 @@ width: 50%;
 
 .fir-p {
 text-align: center;
-font-size: 2rem;
+font-size: 1rem;
+line-height: 2.4rem;
+
 }
 
 .sec-p {
 text-align: center;
-font-size: 2rem;
+font-size: 1rem;
+line-height: 1.7rem;
 
 }
 
@@ -1115,7 +1082,6 @@ transform: translateX(35%);
 
 .row {
 h2 {
-font:"Ubuntu";
 font-weight: 700;
 font-style: normal;
 font-size: 24px;
@@ -1123,7 +1089,6 @@ line-height: 30px;
 }
 
 p{
-font:"Ubuntu";
 font-weight: 500;
 font-style: normal;
 font-size: 24px;
