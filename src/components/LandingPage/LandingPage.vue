@@ -393,7 +393,7 @@ background: url("../../assets/images/teacher-in-blue.svg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 90vh;
+height: 650px;
 }
 
 .ggd {

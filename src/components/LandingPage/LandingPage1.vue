@@ -318,7 +318,7 @@
 }
 
 .navbar-collapse, .navbar-nav, .nav-item {
-  color: inherit !important;
+  color: #5f9048!important;
 }
 
 nav {
@@ -337,7 +337,7 @@ overflow-x: hidden;
 }
 
 .header {
-height: 750px;
+height: 700px;
 overflow: hidden;
 position: relative;
 background: #f7f7f7;

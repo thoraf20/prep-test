@@ -338,7 +338,7 @@ background: url("../../assets/images/adult-bg.svg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 90vh;
+height: 650px;
 
 button {
 padding: 1rem 3rem 1rem 3rem;
