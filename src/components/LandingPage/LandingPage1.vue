@@ -10,7 +10,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto" id="nav">
+            <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#">HOME</a>
             <a class="nav-item nav-link" href="#">ABOUT</a>
             <a class="nav-item nav-link" href="#">SERVICE</a>
@@ -91,14 +91,14 @@
                             <p class="card-more"><a href="#">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
+                            <p  class="">
+                                With 3 physical learning centers in Lagos Nigeria, Prepclass
+                                Academy helps learners prepare for standardized tests and 
+                                exams. Learners can easily walk into any of our centers for 
+                                exams like IELTS, GMAT, GRE, SAT, TOEFL, etc.
+                            </p>
                         </div>
                     </div>
-                    <p  class="">
-                        With 3 physical learning centers in Lagos Nigeria, Prepclass
-                        Academy helps learners prepare for standardized tests and 
-                        exams. Learners can easily walk into any of our centers for 
-                        exams like IELTS, GMAT, GRE, SAT, TOEFL, etc.
-                    </p>
                 </div>
                 <!-- Single card -->
                 <div class="card-with-text">
@@ -108,15 +108,15 @@
                             <p class="card-more"><a href="#">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
+                            <p  class="">
+                                Prepclass Tutor market place is a platform that allows 
+                                learners to easily hire the services of a home tutor. 
+                                Dubbed as the Uber for tutoring in Africa, learners can 
+                                easily request tutoring services from our database of 
+                                over 50,000 tutors.
+                            </p>
                         </div>
                     </div>
-                    <p  class="">
-                        Prepclass Tutor market place is a platform that allows 
-                        learners to easily hire the services of a home tutor. 
-                        Dubbed as the Uber for tutoring in Africa, learners can 
-                        easily request tutoring services from our database of 
-                        over 50,000 tutors.
-                    </p>
                 </div>
                 <!-- Single card -->
                 <div class="card-with-text">
@@ -126,15 +126,15 @@
                             <p class="card-more"><a href="#">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
+                            <p  class="">
+                                With our vast reach of tutors and learners, Prepclass has invested 
+                                im several programs that improve the quality of lives of tutors as 
+                                well as the outcomes for learners. Projects we are involved in include:
+                                tutor training and placement in foreign gigs, free coding classes for teens, 
+                                free language learning classes for adults etc.
+                            </p>
                         </div>
                     </div>    
-                        <p  class="">
-                            With our vast reach of tutors and learners, Prepclass has invested 
-                            im several programs that improve the quality of lives of tutors as 
-                            well as the outcomes for learners. Projects we are involved in include:
-                            tutor training and placement in foreign gigs, free coding classes for teens, 
-                            free language learning classes for adults etc.
-                        </p>
               </div>
             </div>
         </div>
@@ -776,7 +776,7 @@ margin-top: 40px;
     padding: 0 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: .5rem;
+    gap: .2rem;
     justify-items: center;
 }
 
@@ -788,7 +788,7 @@ margin-top: 40px;
     position: relative; 
     border-radius: 0.5rem;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 150px;
 }
 .single-card-one {
     background: url("../../assets/images/Group.svg");
@@ -834,7 +834,7 @@ margin-top: 40px;
     /* background-color: #ff0; */
     font-size: 1rem;
     line-height: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 .card-more > a {
     text-decoration: none;
@@ -896,9 +896,28 @@ margin-top: 40px;
         font-size: 1.75rem;
         line-height: 2rem;
     }
+ 
     .cards-container {
-        padding: 0 5rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: .2rem;
+    justify-items: center;
     }
+
+    .single-card-wrapper {
+    width: 300px; 
+    height: 300px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+    margin-top: 20px;
+    margin-bottom: 190px;
+}
+.card-content{
+height: 7vh;
+}
     .popular-class-dot {
         bottom: 0rem;
         left: -1rem;
@@ -916,7 +935,10 @@ margin-top: 40px;
     }
 
 .single-card-wrapper {
-    width: 300px;   
+    width: 300px; 
+    margin-top: 10px;
+    margin-bottom: 190px;
+  
 }
    
     .popular-class-dot {
@@ -933,6 +955,16 @@ margin-top: 40px;
     .cards-container {
         padding: 0 0.5rem;
     }
+     .single-card-wrapper {
+    width: 300px; 
+    height: 300px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 170px;
+}
     .popular-class-dot {
         bottom: 0rem;
         left: -1rem;
@@ -1063,7 +1095,7 @@ margin-bottom: 2rem;
 }
 
 button {
-transform: translateX(35%);
+transform: translateX(121%);
 
 }
 }
