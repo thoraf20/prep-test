@@ -11,9 +11,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#">HOME</a>
-            <a class="nav-item nav-link" href="#">ABOUT</a>
-            <a class="nav-item nav-link" href="#">SERVICE</a>
-            <a class="nav-item nav-link" href="#">FUN FACT</a>
+            <a class="nav-item nav-link" href="#about_section">ABOUT</a>
+            <a class="nav-item nav-link" href="#about_section">SERVICE</a>
+            <a class="nav-item nav-link" href="#interest">FUN FACT</a>
             </div>
         </div>
         </div>
