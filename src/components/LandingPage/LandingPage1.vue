@@ -10,7 +10,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-         <div class="collapse navbar-collapse navContainer" id="navbarNavAltMarkup">
+         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto" style="width: 90%; justify-content: space-between">
             <a class="nav-item nav-link override-nav" href="#">HOME</a>
             <a class="nav-item nav-link override-nav" href="#about_section">ABOUT</a>
@@ -336,13 +336,6 @@ font-family: Ubuntu;
 
 nav {
 height: 8vh;
-}
-
-.navContainer{
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    width: 100%;
 }
 
 .dotdotdot {

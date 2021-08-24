@@ -2,14 +2,14 @@
 <div class="mainCont">
 
      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-     <div class="container">
+     <div class="container" >
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
                 <img class="logo" width="150" src="../../assets/images/small-logo.png">
          </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse navContainer" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto" style="width: 90%; justify-content: space-between">
                 <a class="nav-item nav-link override-nav" href="#">IGCSE</a>
                 <a class="nav-item nav-link override-nav" href="#">GMAT</a>
@@ -397,12 +397,12 @@ font-family: Ubuntu;
 
 }
 
-.navContainer{
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    width: 100%;
-}
+// .navContainer{
+//     display: flex;
+//     justify-content: space-around;
+//     flex: 1;
+//     width: 100%;
+// }
 
 .mainCont{
 max-width: 100vw;
