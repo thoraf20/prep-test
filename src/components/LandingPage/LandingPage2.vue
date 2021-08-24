@@ -3,17 +3,17 @@
      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
+                <img class="logo" width="150" src="../../assets/images/small-logo.png">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">HOME</a>
-            <a class="nav-item nav-link" href="#about_section">ABOUT</a>
-            <a class="nav-item nav-link" href="#about_section">SERVICE</a>
-            <a class="nav-item nav-link" href="#interest">FUN FACT</a>
+            <a class="nav-item nav-link override-nav" href="#">HOME</a>
+            <a class="nav-item nav-link override-nav" href="#about_section">ABOUT</a>
+            <a class="nav-item nav-link override-nav" href="#about_section">SERVICE</a>
+            <a class="nav-item nav-link override-nav" href="#interest">FUN FACT</a>
             </div>
         </div>
         </div>
@@ -131,6 +131,7 @@
         </div>
         </a>
 
+        <a id="interest">
         <!-- Get Started Section -->
         <div class="get-started">
             <div class="get-started-body">
@@ -153,13 +154,15 @@
         </div>
 
         <div class="interest-wrapper">
-             <div class="interest-content">                
-                <h3 class="interest-header">Are you interested in working with Prepclass’s database of qualified tutors?</h3>
+            <h3 class="">Prepclass Business</h3>
+                <div class="interest-content">                
+                <h4 class="interest-header">Are you interested in working with Prepclass’s database of qualified tutors?</h4>
                 <p class="interest-text">to learn more about Prepclass business</p>
                 <button type="submit" class="interest-button">Click Here</button>
               </div>
                 <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
         </div>
+        </a>
 
         <div class="contact-us">
             <h3>Contact Us</h3>
@@ -302,21 +305,25 @@ document.onreadystatechange = function() {
 }
 
 .navbar-dark {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  color: #5f9048 !important;
+  background-color: rgba(256, 256, 256, 256) !important;
 }
 
 .navbar-collapse, .navbar-nav, .nav-item {
-  color: inherit !important;
+  // color: black !important;
 }
 
 
 .navbar-nav .nav-item nav-link:hover {
-  color: #5F9048;
+  color: black !important;
 }
 
 nav {
 height: 8vh;
+}
+
+.override-nav {
+color: #000000 !important;
+opacity: 1 !important;
 }
 
 .dotdotdot {
@@ -347,11 +354,14 @@ border-radius: 50px;
 }
 
 .card-title {
-font-family: sans-serif !important;
- font-weight: bold;
- font-size: 2.5rem;
- line-height: 55.15px;
- color: #ffffff;
+text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: white;
 }
 
 .imgText{
@@ -656,7 +666,7 @@ font-weight: 700;
 line-height: 25px;
 letter-spacing: 0em;
 text-align: left;
-color: #011120;
+ color: #011120;
 }
 
 i{
@@ -686,7 +696,6 @@ font-style: normal;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
-color: #5C5C5C;
 
 }
 
@@ -717,15 +726,17 @@ margin-top: 40px;
 .class-group-container {
     position: relative;
     background-color: #f5f5f5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .popular {
     text-align: center;
-    margin-top: 0.8rem;
-    font-family: sans-serif !important;
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
     color: black;
 }
 
@@ -791,16 +802,18 @@ margin-top: 40px;
 }
 
 .card-text {
-    vertical-align: middle;
-    font-family: sans-serif !important;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    text-align: center;
     margin-bottom: 0.4rem;
-    color: #000000;
+    font-family: Ubuntu;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: black;
 }
 .card-more {
     /* background-color: #ff0; */
+    font-family: Ubuntu;
     font-size: 1rem;
     line-height: 1rem;
     margin-bottom: 0;
@@ -865,7 +878,7 @@ margin-top: 40px;
         line-height: 2rem;
     }
     .cards-container {
-        padding: 0 5rem;
+        padding: 0 4rem;
     }
     .popular-class-dot {
         bottom: 0rem;
@@ -979,7 +992,7 @@ margin-top: 40px;
     font-weight: 450;
     font-size: 2rem;
     line-height: 4.25rem;
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
 }
 .get-started-button {
     background-color: #0788FF;
@@ -992,6 +1005,7 @@ margin-top: 40px;
     margin-top: 1rem;
     text-decoration: none;
     cursor: pointer;
+    font-family: Ubuntu;
 }
 
 
@@ -1165,26 +1179,36 @@ margin-top: 40px;
 .interest-wrapper {
     position: relative;
     text-align: center;
-    padding: 4rem 20% 4rem 20%;
+    padding: 2rem 20% 4rem 20%;
     background-color: #f7f7f7;
+
+    h3 {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 2.5rem;
+    }
 }
 .interest-header {
     color: #000000;
     padding: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
+    font-weight: 350;
 }
 .interest-text {
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
 }
 .interest-button {
     background-color: #5f9048;
     color: #ffffff;
     text-transform: capitalize;
-    padding: 0.5rem 1.2rem;
+    padding: 0.8rem 10rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-weight: bold;
 }
 .interest-image {
     position: absolute;
@@ -1194,15 +1218,24 @@ margin-top: 40px;
 }
 @media(max-width: 791px) {
     .interest-wrapper {
-        padding: 6rem 10% 6rem 10%;
+        padding: 3rem 10% 3rem 10%;
+
+         h3 {
+            font-family: Ubuntu;
+            font-weight: 400;
+            font-size: 1.5rem;
+    }
     }
     .interest-header {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 2rem;
     }
     .interest-image {
         width: 6rem;
         bottom: 2rem;
+    }
+    .interest-button {
+          padding: 0.5rem 5rem;
     }
 }
 /* End of get started styling */
@@ -1230,10 +1263,12 @@ margin-top: 40px;
     width: 300px;
 }
 .about-left-header {
-    font-size: 2rem;
-    line-height: 3.5rem;
-    font-weight: 500;
-    font-family: Arial !important;
+    margin-bottom: 0.5rem;
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: black;
 }
 .about-button {
     background-color: #ffb905;
@@ -1258,7 +1293,7 @@ margin-top: 40px;
 .about-text {
     font-weight: normal;
     font-size: 1.2rem;
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
 }
 
 @media(max-width: 1024px) {
@@ -1405,7 +1440,6 @@ button {
 background-color: #5F9048;
 font-family: Ubuntu;
 font-size: 20px;
-font-style: normal;
 font-weight: 500;
 line-height: 23px;
 letter-spacing: 0em;
@@ -1423,21 +1457,28 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 font-size: 1.5rem;
-font-weight: 500;
+font-weight: 300;
 line-height: 30px;
 text-align: center;
 background-color: #e5e5e5;
+padding: 2rem 20% 2rem 20%;
 margin-top: -18px;
+
+h3 {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
 
 p {
 font-weight: 100;
-font-family: sans-serif !important;
-font-size: 1.2rem;
+font-family: Ubuntu;
+font-size: 1.4rem;
 }
 a {
-text-decoration: none !important;
+text-decoration: none;
 font-size: 1rem;
 font-weight: bold;
 color: green;
@@ -1448,8 +1489,21 @@ color: green;
 .contact-us {
 font-size: 1rem;
 
+
+h3 {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+p {
+font-weight: 100;
+font-family: Ubuntu;
+font-size: 1.1rem;
+}
+
 a{
-font-size: 1rem;
+font-size: .8rem;
 }
 }
 }
@@ -1463,16 +1517,16 @@ margin-right: -20px;
 }
 }
 
-
 .ulx {
         list-style-type:none;
         display:inline-flex;
     }
     .ulx > a > li {
-        padding-left:30px;
-        font-weight: 600;
+        padding-left:20px;
+        font-weight: 500;
         color: green;
         text-decoration: none;
+        font-family: Ubuntu;
     }
     button.social {
         height:40px;
