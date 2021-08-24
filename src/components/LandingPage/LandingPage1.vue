@@ -4,17 +4,18 @@
      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <img class="logo" width="150" src="//prepclass.com.ng/img/logo-white.png">
+                <img  class="logo" src="../../assets/images/small-logo.png">
+                <img  class="logo-white" src="../../assets/images/logo-white.png">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-             <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">HOME</a>
-            <a class="nav-item nav-link" href="#about_section">ABOUT</a>
-            <a class="nav-item nav-link" href="#about_section">SERVICE</a>
-            <a class="nav-item nav-link" href="#fact_section">FUN FACT</a>
+            <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link override-nav" href="#">HOME</a>
+            <a class="nav-item nav-link override-nav" href="#about_section">ABOUT</a>
+            <a class="nav-item nav-link override-nav" href="#about_section">SERVICE</a>
+            <a class="nav-item nav-link override-nav" href="#fact_section">FUN FACT</a>
             </div>
         </div>
         </div>
@@ -285,10 +286,10 @@
     </div>
     </section>
        </div>
-       </div>
 </template>
 
 <script>
+
    document.onreadystatechange = function() {
   let lastScrollPosition = 0;
   const navbar = document.querySelector('.navbar');
@@ -297,6 +298,7 @@
     
     if (lastScrollPosition > 100)
       navbar.classList.add('navbar-dark');
+
     else
       navbar.classList.remove('navbar-dark');
   });
@@ -305,6 +307,9 @@
 
 <style lang="scss" scoped>
 
+.logo-white {
+    display: none;
+}
 .navbar {
   background-color: rgba(0, 0, 0, 0) !important;
   transition-property: background-color, color;
@@ -313,19 +318,22 @@
 }
 
 .navbar-dark {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  color: #5f9048 !important;
+  background-color: rgba(256, 256, 256, 256) !important;
+  color: #5f9048!important;
+
+  .navbar-toggler {
+    background-color:#000000;
+}
 }
 
-.navbar-collapse, .navbar-nav, .nav-item {
-  color: #5f9048!important;
+.override-nav {
+color: #000000 !important;
+opacity: 1 !important;
 }
 
 nav {
 height: 8vh;
 }
-
-
 
 .dotdotdot {
 width:100%;
@@ -375,7 +383,7 @@ color: #ffffff;
 position: absolute;
 left: 0;
 top: 0;
-wisth:70%;
+width:70%;
 
 .white-wave {
 position: absolute;
@@ -493,6 +501,11 @@ font: Ubuntu;
     justify-content: center;
 }
 
+@media only screen and (max-width: 768px){
+    .header-right{
+        display:  none;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -510,7 +523,6 @@ font-size: 30px !important;
 }
 
 .header-right {
-
 width: 30%;
 .headphone {
 position: absolute;
@@ -689,7 +701,7 @@ margin-top: 40px;
     font-size: 2.4rem;
     line-height: 3.5rem;
     font-weight: 400;
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
 }
 .about-button {
     background-color: #ffb905;
@@ -711,6 +723,7 @@ margin-top: 40px;
 
 .about-right {
     flex: 1;
+    font-family: Ubuntu;
 }
 .about-text {
     font-weight: normal;
@@ -759,25 +772,25 @@ margin-top: 40px;
 /* Start of card section styling */
 .class-group-container {
     position: relative;
+    padding-bottom: 2rem;
 }
 
 .popular {
     text-align: center;
     margin-top: 0.8rem;
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.5rem;
     color: black;
-
 }
 
 .cards-container {
-    padding: 0 5rem;
+    padding: 0 15rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: .2rem;
-    justify-items: center;
+    justify-items: space-between;
 }
 
 .single-card-wrapper {
@@ -823,7 +836,7 @@ margin-top: 40px;
 }
 
 .card-text {
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -835,6 +848,7 @@ margin-top: 40px;
     font-size: 1rem;
     line-height: 1rem;
     margin-bottom: 1rem;
+    font-family: Ubuntu;
 }
 .card-more > a {
     text-decoration: none;
@@ -985,9 +999,9 @@ padding-bottom: 2rem;
 h3 {
  color: #ffffff;
  text-align: center;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 font-size: 2.5rem;
-font-weight: 500;
+font-weight: 400;
 line-height: 2.75rem;
 }
 
@@ -1014,10 +1028,9 @@ width: 80%;
 
 
 .fir-p {
-font-family: sans-serif !important;
-font-size: 3rem;
-font-style: normal;
-font-weight: 700;
+font-family: Ubuntu;
+font-size: 2.5rem;
+font-weight: 600;
 line-height: 3.7rem;
 letter-spacing: 0em;
 text-align: left;
@@ -1025,10 +1038,9 @@ color: #5F9048;
 }
 
 .sec-p {
-font-family: sans-serif !important;
+font-family: Ubuntu;
 font-size: 1.5rem;
-font-style: normal;
-font-weight: 500;
+font-weight: 400;
 line-height: 2.4rem;
 letter-spacing: 0em;
 text-align: left;
@@ -1043,6 +1055,8 @@ color: #ffffff;
 padding: 1rem 1rem 1rem 1rem;
 margin-bottom: 2rem;
 font-size: 1.2rem;
+font-family: Ubuntu;
+cursor: pointer;
 }
 
 
@@ -1053,7 +1067,7 @@ width: 20rem;
 }
 
 .big{
-font-size: 40px !important;
+font-size: 2rem;
 line-height: 4rem !important;
 }
 .small{
@@ -1075,7 +1089,7 @@ width: 50%;
 
 .fir-p {
 text-align: center;
-font-size: 1rem;
+font-size: 1.5rem;
 line-height: 2.4rem;
 
 }
@@ -1095,7 +1109,7 @@ margin-bottom: 2rem;
 }
 
 button {
-transform: translateX(121%);
+transform: translateX(99%);
 
 }
 }
@@ -1122,13 +1136,13 @@ line-height: 30px;
 .interest-wrapper {
     position: relative;
     text-align: center;
-    padding: 1rem 10% 1rem 10%;
+    padding: 2rem 10% 4rem 10%;
 
      h3 {
-    font-family: sans-serif !important;
+    font-family: Ubuntu;
     font-size: 2rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 28px;
     }
 }
@@ -1136,28 +1150,30 @@ line-height: 30px;
     color: #000000;
     padding: 0;
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 2.4rem;
-    font-style: normal;
 }
 .interest-text {
-    font-weight: 500;
-    font-family: sans-serif !important;
-    font-size: 1.3rem !important;
+    font-weight: 300;
+    font-family: Ubuntu;
+    font-size: 1.3rem;
 }
 
 .interest-text1 {
     font-weight: 200;
-    font-family: sans-serif !important;
-    font-size: 1rem !important;
+    font-family: Ubuntu;
+    font-size: 1rem;
 }
 .interest-button {
     background-color: #5f9048;
     color: #ffffff;
     text-transform: capitalize;
-    padding: 0.5rem 1.2rem;
+    padding: 0.8rem 10rem;
     border: none;
     border-radius: 5px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    cursor: pointer;
 }
 .interest-image {
     position: absolute;
@@ -1181,6 +1197,17 @@ line-height: 30px;
         font-size: 1.75rem;
         line-height: 2rem;
     }
+
+    .interest-button {
+    background-color: #5f9048;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0.4rem 5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: Ubuntu;
+    cursor: pointer;
+}
     .interest-image {
         width: 6rem;
         bottom: 2rem;

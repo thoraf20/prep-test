@@ -4,18 +4,18 @@
          <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <img class="logo" width="150" src="//prepclass.com.ng/img/logo.png">
-            </a>
+                <img class="logo" width="150" src="../../assets/images/small-logo.png">
+         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">IGCSE</a>
-            <a class="nav-item nav-link" href="#">GMAT</a>
-            <a class="nav-item nav-link" href="#">GRE</a>
-            <a class="nav-item nav-link" href="#">SAT</a>
-            <a class="nav-item nav-link" href="#">TOEFL</a>
+            <a class="nav-item nav-link override-nav" href="#">IGCSE</a>
+            <a class="nav-item nav-link override-nav" href="#">GMAT</a>
+            <a class="nav-item nav-link override-nav" href="#">GRE</a>
+            <a class="nav-item nav-link override-nav" href="#">SAT</a>
+            <a class="nav-item nav-link override-nav" href="#">TOEFL</a>
             </div>
         </div>
         </div>
@@ -189,47 +189,47 @@
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
-                        <h4><strong style="color:#5e9047">A</strong>: Three easy steps</h4>
+                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h4>
                         <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
-                         2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
-                         3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
+                                2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
+                                3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
                         </p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
-                        <h4><strong style="color:#5e9047">A</strong>: We offer group online classes.</h4>
+                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h4>
                         <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
                             This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                          <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
                          It has a maximum of ten learners in a group.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                          <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><b style="color:green">A</b>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
                                 without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
                                 such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
                         </p>
-                        <p class="text-center text-md-left"><b style="color:green">B</b>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><b style="color:green">C</b>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
                 </div>
+                 <div class="tutor"> <button type="submit" class="get-a-tutor">Get A Tutor</button></div>
             </div>
-                     <div class="get-a-tutor"><a href="" target="_blank" class="btn btn-success">Get A Tutor</a></div>
         </div>
     
         <div class="contact-us">
-            <h3>Contact Us</h3>
+            <h3>Do you have any Question?</h3>
             <p>If you have any questions you can reach out to us</p>
             <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -370,22 +370,31 @@
 }
 
 .navbar-dark {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  color: white !important;
+  background-color: rgba(256, 256, 256, 256) !important;
+
+  .override-nav {
+color: #000000 !important;
+opacity: 1 !important;
 }
 
-.navbar-collapse, .navbar-nav, .nav-item {
-  color: #5f9048 !important;
+.navbar-toggler {
+    background-color:#000000;
+}
 }
 
 nav {
-height: 8vh;
+    height: 8vh;
+}
+
+.override-nav {
+color: #ffffff !important;
+opacity: 1 !important;
 }
 
 .mainCont{
 max-width: 100vw;
 overflow-x: hidden;
-font-family: sans-serif;
+font-family: Ubuntu;
 }
 
 .w-100{
@@ -408,7 +417,7 @@ right: -5rem;
 }
 
 .card-title {
-font: sans-serif !important;
+font-family: Ubuntu ;
  font-weight: bold;
  font-size: 2.3rem;
  color: #ffffff;
@@ -416,8 +425,8 @@ font: sans-serif !important;
 }
 
 .card-text {
-font: sans-serif !important;
- font-weight: 500;
+font-family: Ubuntu ;
+ font-weight: 400;
  font-size: 1.5rem;
  line-height: 27.98px;
  color: #ffffff;
@@ -468,19 +477,20 @@ right: -3rem;
 #asked-question {
 
 h2 {
-font-size: 1.3rem !important;
+font-size: 1.3rem;
 font-weight: 500;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 }
  h4 {
-font-size: 1.1rem !important;
-font-weight: 200;
-font-family: sans-serif !important;
+font-size: 1.1rem;
+font-weight: 400;
+font-family: Ubuntu;
 
 }
 p {
-font-size: 1rem !important;
-font-family: sans-serif !important;
+font-size: 1rem;
+font-family: Ubuntu;
+font-weight: 300;
 
 }
 }
@@ -539,13 +549,16 @@ aligh-items: center;
 h2 {
 font-size: 1rem !important;
 font-weight: bold !important;
+font-family: Ubuntu;
 }
 h4 {
 font-size:18px;
 font-weight:bold;
+font-family: Ubuntu;
 }
 p{
 font-size:18px;
+font-family: Ubuntu;
 }
 }
 
@@ -744,7 +757,7 @@ margin-top: 40px;
 }
 
 .card-text {
-    font-family: sans-serif !important;
+    font-family: Ubuntu ;
     font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 0.4rem;
@@ -1109,19 +1122,37 @@ h3 {
  text-align: center;
  padding-top: 30px;
  padding-bottom: 30px;
-font: sans-serif !important;
+font-family: Ubuntu;
 font-size: 2rem;
 
 }
 
 .faq {
-background-color: #f8f9fa !important;;
+background-color: #f8f9fa !important;
 align-items: center;
 justify-content: center;
+font-size: Ubuntu;
 
 #faq-container {
 width: 100vw;
-padding: 2px 8px 2px 8px;
+padding: 2px 8px 2rem 8px;
+
+.tutor{
+    display: flex;
+    align-items: center;
+    button {
+    background-color: #5f9048;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0.8rem 10rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-weight: bold;
+     justify-content: center;
+    }
+}
 
 }
 
@@ -1131,13 +1162,13 @@ width: 50%;
 h2 {
 font-weight: 700;
 font-size: 1rem !important;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 }
 p{
 font-weight: 200;
 font-style: normal;
 font-size: 1rem !important;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 }
 }
 
@@ -1146,44 +1177,30 @@ padding: 2px 2px 2px 10px;
 }
 }
 
-.get-a-tutor {
-border-radius: 10px;
-justify-content: center;
-text-align: center;
-color: #ffffff;
-font-size: 20px;
-font-weight: 600;
-line-height: 41.36px;
-font-style: normal;
-padding-bottom: 40px;
-
+.tutor{
+    justify-content: center;
 }
 
-
-.row {
-
-}
 
 .contact-us{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-font-family: sans-serif !important;
-font-size: 1.5rem;
+font-family: Ubuntu;
+font-size: 2.5rem;
 font-weight: 700;
 line-height: 30px;
 text-align: center;
 background-color: #f2f2f2;
-margin-top: -18px;
 
 p {
 font-weight: 100;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 font-size: 1.2rem;
 }
 a {
-text-decoration: none !important;
+text-decoration: none;
 font-size: 1rem;
 font-weight: bold;
 color: green;
@@ -1226,7 +1243,7 @@ flex-direction: column;
 
 .det{
 margin-left: 20px;
-font-family: sans-serif !important;
+font-family: Ubuntu;
 font-size: 1.5rem !important;
 font-weight: 400;
 letter-spacing: 0em;

@@ -306,12 +306,15 @@ document.onreadystatechange = function() {
 
 .navbar-dark {
   background-color: rgba(256, 256, 256, 256) !important;
-}
 
-.navbar-collapse, .navbar-nav, .nav-item {
-  // color: black !important;
+ .override-nav {
+color: black !important;
+opacity: 1 !important;
 }
-
+  .navbar-toggler {
+    background-color:#000000;
+}
+}
 
 .navbar-nav .nav-item nav-link:hover {
   color: black !important;
@@ -561,7 +564,7 @@ width: 100%;
 width: 100vh;
 display: flex;
 flex-direction: column;
-aligh-items: center;
+align-items: center;
 }
 
 #cont{
