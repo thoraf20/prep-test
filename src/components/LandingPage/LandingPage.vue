@@ -1,7 +1,7 @@
 <template>
 <div class="mainCont">
 
-         <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+     <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
                 <img class="logo" width="150" src="../../assets/images/small-logo.png">
@@ -9,13 +9,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link override-nav" href="#">IGCSE</a>
-            <a class="nav-item nav-link override-nav" href="#">GMAT</a>
-            <a class="nav-item nav-link override-nav" href="#">GRE</a>
-            <a class="nav-item nav-link override-nav" href="#">SAT</a>
-            <a class="nav-item nav-link override-nav" href="#">TOEFL</a>
+        <div class="collapse navbar-collapse navContainer" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto" style="width: 90%; justify-content: space-between">
+                <a class="nav-item nav-link override-nav" href="#">IGCSE</a>
+                <a class="nav-item nav-link override-nav" href="#">GMAT</a>
+                <a class="nav-item nav-link override-nav" href="#">GRE</a>
+                <a class="nav-item nav-link override-nav" href="#">SAT</a>
+                <a class="nav-item nav-link override-nav" href="#">TOEFL</a>
             </div>
         </div>
         </div>
@@ -374,6 +374,8 @@
 
   .override-nav {
 color: #000000 !important;
+font-weight: bold;
+font-size: 10pt;
 opacity: 1 !important;
 }
 
@@ -388,7 +390,18 @@ nav {
 
 .override-nav {
 color: #ffffff !important;
+font-weight: bold;
+font-size: 10pt;
 opacity: 1 !important;
+font-family: Ubuntu;
+
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    width: 100%;
 }
 
 .mainCont{
@@ -600,8 +613,6 @@ width: 80%;
 
 .container {
 position: relative;
-
-
 }
 
 .container-fluid {
@@ -1193,6 +1204,7 @@ font-weight: 700;
 line-height: 30px;
 text-align: center;
 background-color: #f2f2f2;
+padding-bottom: 2rem;
 
 p {
 font-weight: 100;

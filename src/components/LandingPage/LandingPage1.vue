@@ -1,7 +1,7 @@
 <template>
 <div class="mainCont">
 
-     <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
                 <img  class="logo" src="../../assets/images/small-logo.png">
@@ -10,8 +10,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
+         <div class="collapse navbar-collapse navContainer" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto" style="width: 90%; justify-content: space-between">
             <a class="nav-item nav-link override-nav" href="#">HOME</a>
             <a class="nav-item nav-link override-nav" href="#about_section">ABOUT</a>
             <a class="nav-item nav-link override-nav" href="#about_section">SERVICE</a>
@@ -92,14 +92,14 @@
                             <p class="card-more"><a href="#">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
-                            <p  class="">
+                        </div>
+                    </div>
+                            <p  class="single-text">
                                 With 3 physical learning centers in Lagos Nigeria, Prepclass
                                 Academy helps learners prepare for standardized tests and 
                                 exams. Learners can easily walk into any of our centers for 
                                 exams like IELTS, GMAT, GRE, SAT, TOEFL, etc.
                             </p>
-                        </div>
-                    </div>
                 </div>
                 <!-- Single card -->
                 <div class="card-with-text">
@@ -109,15 +109,15 @@
                             <p class="card-more"><a href="#">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
-                            <p  class="">
+                        </div>
+                    </div>
+                            <p  class="single-text">
                                 Prepclass Tutor market place is a platform that allows 
                                 learners to easily hire the services of a home tutor. 
                                 Dubbed as the Uber for tutoring in Africa, learners can 
                                 easily request tutoring services from our database of 
                                 over 50,000 tutors.
                             </p>
-                        </div>
-                    </div>
                 </div>
                 <!-- Single card -->
                 <div class="card-with-text">
@@ -127,15 +127,15 @@
                             <p class="card-more"><a href="#">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
-                            <p  class="">
+                        </div>
+                    </div>    
+                            <p  class="single-text">
                                 With our vast reach of tutors and learners, Prepclass has invested 
                                 im several programs that improve the quality of lives of tutors as 
                                 well as the outcomes for learners. Projects we are involved in include:
                                 tutor training and placement in foreign gigs, free coding classes for teens, 
                                 free language learning classes for adults etc.
                             </p>
-                        </div>
-                    </div>    
               </div>
             </div>
         </div>
@@ -328,11 +328,21 @@
 
 .override-nav {
 color: #000000 !important;
+font-weight: bold;
+font-size: 10pt;
 opacity: 1 !important;
+font-family: Ubuntu;
 }
 
 nav {
 height: 8vh;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    width: 100%;
 }
 
 .dotdotdot {
@@ -364,7 +374,6 @@ font-weight: 700;
 line-height: 6.125rem;
 letter-spacing: 0em;
 text-align: left;
-color: #ffffff;
 }
 
 .small {
@@ -375,7 +384,7 @@ font-weight: 500;
 line-height: 2rem;
 letter-spacing: 0em;
 text-align: left;
-color: #ffffff;
+color: white;
 }
 }
 
@@ -502,8 +511,33 @@ font: Ubuntu;
 }
 
 @media only screen and (max-width: 768px){
+    .recText{
+width: 20rem;
+top: 10rem;
+
+ .big{
+        font-size: 30px !important;
+        line-height: 2rem !important;
+        // display:none;
+        }
+
+    .small{
+    font-size: 20px !important;
+    color: red;
+    }
+}
+    .header {
+        height: 400px;
+        background-color: green;
+    }
     .header-right{
         display:  none;
+    }
+    .header-left {
+        display: block;
+        img {
+            display:none;
+        }
     }
 }
 
@@ -511,25 +545,36 @@ font: Ubuntu;
 
 .recText{
 width: 20rem;
-top: 30rem;
+top: 10rem;
+
+ .big{
+        font-size: 40px !important;
+        line-height: 4rem !important;
+        display:none;
+        }
+
+    .small{
+    font-size: 30px !important;
+    color: red;
+    }
 }
 
-.big{
-font-size: 40px !important;
-line-height: 4rem !important;
-}
-.small{
-font-size: 30px !important;
-}
+
 
 .header-right {
+display: none;
 width: 30%;
+
 .headphone {
 position: absolute;
 top: 5rem;
 right: 2rem;
 width: 90%;
 z-index: 9;
+}
+
+.header-left {
+    display: none;
 }
 }
 
@@ -789,8 +834,12 @@ margin-top: 40px;
     padding: 0 15rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: .2rem;
+    gap: 2rem;
     justify-items: space-between;
+}
+
+.card-with-text {
+    width: 400px;
 }
 
 .single-card-wrapper {
@@ -801,7 +850,10 @@ margin-top: 40px;
     position: relative; 
     border-radius: 0.5rem;
     margin-top: 30px;
-    margin-bottom: 150px;
+}
+
+.single-text{
+    margin-top: 1.5rem;
 }
 .single-card-one {
     background: url("../../assets/images/Group.svg");
@@ -915,7 +967,7 @@ margin-top: 40px;
     padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: .2rem;
+    gap: 2rem;
     justify-items: center;
     }
 
@@ -927,7 +979,9 @@ margin-top: 40px;
     position: relative; 
     border-radius: 0.5rem;
     margin-top: 20px;
-    margin-bottom: 190px;
+}
+.card-with-text {
+    width: 300px;
 }
 .card-content{
 height: 7vh;
@@ -951,8 +1005,10 @@ height: 7vh;
 .single-card-wrapper {
     width: 300px; 
     margin-top: 10px;
-    margin-bottom: 190px;
-  
+}
+
+.card-with-text {
+    width: 300px;
 }
    
     .popular-class-dot {
@@ -977,7 +1033,6 @@ height: 7vh;
     position: relative; 
     border-radius: 0.5rem;
     margin-top: 10px;
-    margin-bottom: 170px;
 }
     .popular-class-dot {
         bottom: 0rem;
@@ -1019,7 +1074,6 @@ align-items: center;
 width:93%;
 padding-top: 1rem;
 padding-bottom: 1rem;
-margin-left: 2rem;
 img {
 width: 80%;
 }
@@ -1083,9 +1137,9 @@ display: none !important;
 }
 
 .fun {
-display: block;
-margin: 0 auto 0 auto;
-width: 50%;
+display: flex;
+flex-direction:column;
+justify-content: center;
 
 .fir-p {
 text-align: center;
@@ -1109,7 +1163,8 @@ margin-bottom: 2rem;
 }
 
 button {
-transform: translateX(99%);
+    text-align: center;
+// transform: translateX(99%);
 
 }
 }
