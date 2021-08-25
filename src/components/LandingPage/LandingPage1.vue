@@ -4,7 +4,7 @@
      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <img  class="logo" src="../../assets/images/small-logo.png">
+                <!-- <img  class="logo" src="../../assets/images/small-logo.png"> -->
                 <img  class="logo-white" src="../../assets/images/logo-white.png">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@
             <a class="nav-item nav-link override-nav" href="#">HOME</a>
             <a class="nav-item nav-link override-nav" href="#about_section">ABOUT</a>
             <a class="nav-item nav-link override-nav" href="#about_section">SERVICE</a>
-            <a class="nav-item nav-link override-nav" href="#fact_section">FUN FACT</a>
+            <a class="nav-item nav-link override-nav" href="#impact_section">FUN FACT</a>
             </div>
         </div>
         </div>
@@ -58,25 +58,17 @@
 
             </div>
 
-             <a id="about_section">
-            <div class="about-wrapper">
-                     <img class="about-image" src="../../assets/images/dot1.png" >
-                <div class="about-left">
-                     <p class="about-left-header">
-                        Who We Are
-                     </p>
-                     <button type="submit" class="about-button">Learn More</button>
-                </div>
-                  <div class="about-right">
+            <div class="about1">
+                <h3 class="about-left-header">Who We Are </h3>
+                <div class="container">
                     <p class="about-text">PrepClass is an indigenous EdTech company in Nigeria established in 2014 that operates across Africa.
                      We provide learning and academic alternatives and offer a tailored learning program both physically and  online. As an educational 
                      technology business, our primary focus is linking learners with qualified tutors. Our goal is to break the formal education norm by 
                      offering -to our clients- tutors, who can effectively communicate and impact our clients/learners with what they want to have knowledge of.
                     </p>
-                    <button type="submit" class="about-button-small">Learn More</button>
                 </div>
+                    <!-- <button type="submit" class="about-button">Learn More</button> -->
             </div>
-            </a>
 
                 <!-- Service We Offer -->
         <a id="service_section">
@@ -141,9 +133,9 @@
         </div>
         </a>
 
-        <a id="fact_section">
+        <a id="impact_section">
         <div class="get-started">
-            <h3>Fun Facts</h3>
+            <h3>Impacts</h3>
             <div class="fun">
                 <div class="enrol">
                     <p class="fir-p">
@@ -191,15 +183,94 @@
         </div>
         </a>
 
-              <div class="interest-wrapper">
-              <h3>PrepClass Business</h3>
-             <div class="interest-content">                
-                <p class="interest-text">Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
-                <p class="interest-text1">Click on the button below.</p>
-                <button type="submit" class="interest-button">Learn More</button>
-              </div>
-                <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
-             </div>                
+        <!-- FAQ -->
+       <a>
+        <div class="faq">
+             <h3>Often asked questions</h3>
+
+            <div id="faq-container">
+                <div class="container">
+                <div class="row justify-content-between" id="row-data">
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
+                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h4>
+                        <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
+                                2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
+                                3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
+                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h4>
+                        <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
+                            This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         It has a maximum of ten learners in a group.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         It has a maximum of ten learners in a group.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         It has a maximum of ten learners in a group.</p>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                                without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
+                                such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
+                        </p>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                    </div>
+                </div>
+                </div>
+                 <div class="tutor"> <button type="submit" class="get-a-tutor">Get A Tutor</button></div>
+            </div>
+        </div>
+        </a>
+
+        <div class="interest-wrapper">
+            <h3>PrepClass Business</h3>
+            <div class="interest-content">                
+            <p class="interest-text">Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
+            <p class="interest-text1">Click on the button below.</p>
+            <button type="submit" class="interest-button">Learn More</button>
+            </div>
+            <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
+        </div>        
+
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>If you have any questions you can reach out to us</p>
+            <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            <a href="#">
+                 09035321117
+            </a>
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg>
+            <a href="mailto:info@prepclass.com.ng"> 
+                 info@prepclass.com.ng
+            </a>
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+            <a class="" href="https://api.whatsapp.com/send?phone=2349035321117">
+                Chat on Whatsapp
+              </a>
+              </span>
+        </div>        
                 
 
         <section style="background:#CAE9F0" class="pt-5 footer3">
@@ -298,18 +369,18 @@
     
     if (lastScrollPosition > 100)
       navbar.classList.add('navbar-dark');
-
     else
       navbar.classList.remove('navbar-dark');
+    //   navbar.classList.add('logo-white');
   });
 }
 </script>
 
 <style lang="scss" scoped>
 
-.logo-white {
-    display: none;
-}
+// .logo-white {
+//     display: none;
+// }
 .navbar {
   background-color: rgba(0, 0, 0, 0) !important;
   transition-property: background-color, color;
@@ -715,43 +786,17 @@ align-items: center;
 margin-top: 40px;
 }
 
-.about-wrapper {
+.about1 {
     position: relative;
-    display: flex;
     align-items: center;
     padding: 1rem 5%;
     gap: 3rem;
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
     color: #000000;
 }
 
-.about-image {
-    position: absolute;
-    left: -2rem;
-    bottom: -7rem;
-    width: 10rem;
-}
-
-.about-left {
-    width: 300px;
-}
-.about-left-header {
-    font-size: 2.4rem;
-    line-height: 3.5rem;
-    font-weight: 400;
-    font-family: Ubuntu;
-}
 .about-button {
-    background-color: #ffb905;
-    color: #000000;
-    border: none;
-    border-radius: 1.2rem;
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-}
-.about-button-small {
-    display: none;
-    background-color: #ffb905;
+    background-color: #5F9048;
     color: #000000;
     border: none;
     border-radius: 1.2rem;
@@ -759,49 +804,36 @@ margin-top: 40px;
     cursor: pointer;
 }
 
-.about-right {
-    flex: 1;
+.about-left-header {
+    text-align: center;
+    margin-top: 0.8rem;
     font-family: Ubuntu;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: black;
 }
+
 .about-text {
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
 }
 
 @media(max-width: 1024px) {
-    .about-image {
-        left: 0;
-        bottom: 1rem;
-        width: 7rem;
-    }
+   
 }
 @media(max-width: 725px) {
-   .about-wrapper {
+   .about1 {
         display: block;
             padding: 3rem 10%;
-
    }
-
-   .about-image {
-   display: none;
-   }
-   .about-left {
-        width: 100%;
-    }
-   .about-left-header {
-        text-align: center;
-        font-size: 1.7rem;
-    }
 
     .about-text {
     font-size: 1rem;
     }
    .about-button {
     display: none;
-   }
-   .about-button-small {
-    display: block;
    }
 }
 /* End of about styling */
@@ -866,7 +898,7 @@ margin-top: 40px;
     position: absolute; 
     bottom: 0; 
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -1061,7 +1093,7 @@ height: 14vh;
 }
 
 .card-content{
-height: 14vh;
+height: 7vh;
 }
    
     .popular-class-dot {
@@ -1070,7 +1102,7 @@ height: 14vh;
         width: 6rem;
     }
 }
-@media(max-width: 400px) {
+@media(max-width: 414px) {
     .popular {
         font-size: 1.5rem;
         line-height: 1.8rem;
@@ -1089,7 +1121,7 @@ height: 14vh;
 }
 
 .card-content{
-height: 10vh;
+height: 8vh;
 }
     .popular-class-dot {
         bottom: 0rem;
@@ -1106,8 +1138,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 background-color: rgb(30, 30, 30);
-padding-top: 2rem;
-padding-bottom: 2rem;
+
 h3 {
  color: #ffffff;
  text-align: center;
@@ -1130,7 +1161,7 @@ justify-content: space-around;
 align-items: center;
 width:93%;
 padding-top: 1rem;
-padding-bottom: 1rem;
+padding-bottom: 2rem;
 img {
 width: 80%;
 }
@@ -1160,7 +1191,7 @@ color: #ffffff;
 
 button {
 border-radius: 10px;
-background: #0788FF;
+background: #ffb905;
 border: none;
 color: #ffffff;
 padding: 1rem 1rem 1rem 1rem;
@@ -1221,8 +1252,6 @@ margin-bottom: 2rem;
 
 button {
     text-align: center;
-// transform: translateX(99%);
-
 }
 }
 }
@@ -1243,6 +1272,58 @@ font-size: 24px;
 line-height: 30px;
 }
 }
+
+/* Get start section styling */
+.faq {
+background-color: #f8f9fa !important;
+align-items: center;
+justify-content: center;
+font-size: Ubuntu;
+
+#faq-container {
+width: 100vw;
+padding: 2px 8px 2rem 8px;
+
+.tutor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+    background-color: #5f9048;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0.8rem 10rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-weight: bold;
+     justify-content: center;
+    }
+}
+
+}
+
+#asked-question {
+width: 50%;
+h2 {
+font-weight: 700;
+font-size: 1rem !important;
+font-family: Ubuntu;
+}
+p{
+font-weight: 200;
+font-style: normal;
+font-size: 1rem !important;
+font-family: Ubuntu;
+}
+}
+
+#row-data {
+padding: 2px 2px 2px 10px;
+}
+}
+/* End of get started styling */
 
 /* Start of contact us styling */
 .interest-wrapper {
@@ -1326,6 +1407,39 @@ line-height: 30px;
     }
 }
 /* End of get started styling */
+
+.contact-us{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: Ubuntu;
+font-size: 1.5rem;
+font-weight: 300;
+line-height: 30px;
+text-align: center;
+background-color: #e5e5e5;
+padding: 2rem 20% 2rem 20%;
+margin-top: -18px;
+
+h3 {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+p {
+font-weight: 100;
+font-family: Ubuntu;
+font-size: 1.4rem;
+}
+a {
+text-decoration: none;
+font-size: 1rem;
+font-weight: bold;
+color: green;
+}
+}
 
 .foundation{
 position: relative;
