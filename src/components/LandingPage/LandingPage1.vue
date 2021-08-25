@@ -1588,5 +1588,4 @@ font-size: 25px !important;
         background-repeat: no-repeat;
         background-position: center;
    }
-
 </style>
