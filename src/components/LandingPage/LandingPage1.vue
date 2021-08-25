@@ -192,8 +192,8 @@
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
-                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h4>
+                        <h4 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h4>
+                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h2>
                         <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
                                 2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
                                 3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
@@ -202,7 +202,7 @@
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
-                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h4>
+                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h2>
                         <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
                             This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
                     </div>
@@ -676,7 +676,7 @@ h2 {
 font-size: 20px;
 }
 h4 {
-font-size:18px;
+font-size:1rem;
 font-weight:bold;
 }
 p{
@@ -1278,7 +1278,7 @@ line-height: 30px;
 background-color: #f8f9fa !important;
 align-items: center;
 justify-content: center;
-font-size: Ubuntu;
+font-family: Ubuntu;
 
 #faq-container {
 width: 100vw;
@@ -1307,8 +1307,8 @@ padding: 2px 8px 2rem 8px;
 #asked-question {
 width: 50%;
 h2 {
-font-weight: 700;
-font-size: 1rem !important;
+font-weight: 500;
+font-size: 1rem ;
 font-family: Ubuntu;
 }
 p{

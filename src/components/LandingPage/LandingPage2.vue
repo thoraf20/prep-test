@@ -23,7 +23,6 @@
         <div class="imgDiv">
             <div class="imgText">
                 <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                <a href="#" type="submit" class="btn btn-warning">Learn More</a>  
             </div>
         </div>
     
@@ -41,22 +40,15 @@
             </div>
 
             <a id="about_section">
-            <div class="about-wrapper">
-                <img class="about-image" src="../../assets/images/dot1.png" >
-                <div class="about-left">
-                     <p class="about-left-header">
-                        About Prepclass LTU
-                     </p>
-                     <button type="submit" class="about-button">Learn More</button>
-                </div>
-                <div class="about-right">
-                    <p class="about-text">
-                             Prepclass Learner Tutor Upliftment is a social initiative aimed at improving the 
+            <div class="about1">
+                <h3 class="about-left-header"> About Prepclass LTU </h3>
+                <div class="container">
+                    <p class="about-text"> Prepclass Learner Tutor Upliftment is a social initiative aimed at improving the 
                              quality of lives of tutors as well as the outcomes of learners. Unlike other services,
                              Prepclass LTU is targeted at marginalized youth .
                     </p>
-                    <button type="submit" class="about-button-small">Learn More</button>
                 </div>
+                    <!-- <button type="submit" class="about-button">Learn More</button> -->
             </div>
             </a>
 
@@ -131,25 +123,52 @@
         </div>
         </a>
 
-        <a id="interest">
-        <!-- Get Started Section -->
-        <div class="get-started">
-            <div class="get-started-body">
-             <img class="get-started-wave" src="../../assets/images/wave.png" />
-                <div class="get-started-right">
-                    <div class="get-started-visit">
-                        <p class="get-started-right-text">
-                            Are you a tutor interested in benefiting from the above initiatives?
+       <!-- FAQ -->
+       <a>
+        <div class="faq">
+             <h3>Often asked questions</h3>
+
+            <div id="faq-container">
+                <div class="container">
+                <div class="row justify-content-between" id="row-data">
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
+                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h2>
+                        <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
+                                2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
+                                3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
                         </p>
-                        <a href="#" type="submit" class="get-started-button">Apply to become a tutor</a>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
+                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h2>
+                        <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
+                            This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         It has a maximum of ten learners in a group.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         It has a maximum of ten learners in a group.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
+                         It has a maximum of ten learners in a group.</p>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                                without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
+                                such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
+                        </p>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
-
-                <div class="get-started-left">
-                    <img class="get-started-image" src="../../assets/images/male.png" />
-                    <div class="get-started-rectangle"></div>
-                    <img class="get-started-dot" src="../../assets/images/dotdot.png" />
                 </div>
+                 <div class="tutor"> <button type="submit" class="get-a-tutor">Get A Tutor</button></div>
             </div>
         </div>
 
@@ -771,8 +790,6 @@ margin-top: 40px;
     border-radius: 0.5rem;
 }
 
-.other-p {
-}
 .single-card-one {
     background: url("../../assets/images/tutor-training.svg");
 }
@@ -939,249 +956,57 @@ margin-top: 40px;
 /* End of card section styling */
 
 /* Get start section styling */
-.get-started {
-    background: rgb(30,30,30);
-    position: relative;
-}
+.faq {
+background-color: #f8f9fa !important;
+align-items: center;
+justify-content: center;
+font-family: Ubuntu;
 
-.get-started-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin: 0 8rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+#faq-container {
+width: 100vw;
+padding: 2px 8px 2rem 8px;
 
-.get-started-left {
-    position: relative;
+.tutor{
     display: flex;
-    justify-content: flex-end;
-}
-
-.get-started-image {
-    position: absolute;
-    right: 2.5%;
-    top: 10%;
-    width: 80%;
-    height: 40%;
-}
-
-.get-started-rectangle {
-    width: 4rem;
-    height: 20rem;
-    border-radius: 3rem;
-    border: 3px solid rgba(225, 185, 5, 0.77);
-}
-
-.get-started-dot {
-    position: absolute;
-    left: 1.9rem;
-    bottom: -6rem;
-    width: 20rem;
-}
-
-.get-started-right {
-    display: block;
-}
-
-.get-started-wave {
-    position: absolute;
-    left: -3.5rem;
-    height: 200px;
-    top: calc(50% - 100px);
-}
-.get-started-visit {
-    width: 50%;
-    margin-left: 4rem;
-    margin-top: 4rem;
-}
-.get-started-right-text {
+    align-items: center;
+    justify-content: center;
+    button {
+    background-color: #5f9048;
     color: #ffffff;
-    font-weight: 450;
-    font-size: 2rem;
-    line-height: 4.25rem;
-    font-family: Ubuntu;
-}
-.get-started-button {
-    background-color: #0788FF;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 0.5rem 1.2rem;
-    outline: none;
+    text-transform: capitalize;
+    padding: 0.8rem 10rem;
     border: none;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    text-decoration: none;
+    border-radius: 4px;
     cursor: pointer;
     font-family: Ubuntu;
-}
-
-
-/* avatar in circle styling */
-.circle-avatar {
-    position: relative;
-    width: 3.2rem;
-    height: 3.2rem;
-    background-color: #5F9048;
-    border-radius: 50%;
-}
-
-.circle-inner {
-    position: absolute;
-    top: calc(50% - 1rem);
-    left: calc(50% - 1rem);
-    width: 2rem;
-    height: 2rem;
-}
-.circle-inner-img {
-    aspect-ratio: inherit; 
-}
-/* End of avatar in circle styling */
-
-@media(max-width: 1536px) {
-    .get-started-body {
-        gap: 4rem;
-        margin: 0 4rem;
-    }
-    .get-started-visit {
-        width: 100%;
-    }
-    .get-started-image {
-         right: 5%;
-        top: 10%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-dot {
-        left: -4.4rem;
-        bottom: -6.3rem;
-        width: 20rem;
-    }
-    .get-started-wave {
-        left: -3.5rem;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-}
-@media(max-width: 1024px) {
-    .get-started-body {
-        gap: 2rem;
-        margin: 0 4rem;
-        padding-bottom: 2rem;
-    }
-    .get-started-right-text {
-        font-size: 2rem;
-        line-height: 2.25rem;
-    }
-    .get-started-rectangle {
-        width: 3rem;
-        height: 20rem;
-        border-radius: 1.5rem;
-    }
-    .get-started-image {
-        right: 5%;
-        top: 10%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-dot {
-        left: -2.2rem;
-        bottom: -3.5rem;
-        width: 12rem;
-    }
-    .get-started-wave {
-        left: -3.5rem;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .det {
-        margin-left: 1.25rem;
-        font-size: 1.5rem;
-        line-height: 1.6rem;
-    }
-}
-@media(max-width: 791px) {
-    .get-started-body {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0 4rem;
-        padding-bottom: 6rem;
-    }
-    .get-started-image {
-         right: 5%;
-        top: 7%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-rectangle {
-        width: 4rem;
-        height: 30rem;
-        border-radius: 3rem;
-        margin-bottom: 2rem;
-    }
-    .get-started-dot {
-        left: -4.4rem;
-        bottom: -5.7rem;
-        width: 20rem;
-    }
-    .get-started-wave {
-        left: -3.5rem;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .get-started-right-text {
-        margin-right: 4rem;
-        font-size: 3rem;
-        line-height: 3.5rem;
-    }
-    .get-started-button {
-        font-size: 1.2rem;
-        cursor: pointer;
+    font-weight: bold;
+     justify-content: center;
     }
 }
 
-@media(max-width: 500px) {
-    .get-started-header {
-        font-size: 1.5rem;
-        line-height: 1.7rem;
-    }
-    .get-started-body {
-        margin: 0 1rem;
-    }
-     .get-started-right-text {
-        margin-right: 4rem;
-        font-size: 1rem;
-        line-height: 3.5rem;
-    }
-    .get-started-image {
-        right: 5%;
-        top: 6%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-rectangle {
-        width: 3rem;
-        height: 20rem;
-        border-radius: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    .get-started-dot {
-        right: -3.4rem;
-        bottom: -4.3rem;
-        width: 15rem;
-    }
-    .get-started-wave {
-        right: 0;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .det {
-        margin-left: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4rem;
-    }
 }
+
+
+#asked-question {
+width: 50%;
+h2 {
+font-weight: 500;
+font-size: 1rem !important;
+font-family: Ubuntu;
+}
+p{
+font-weight: 200;
+font-style: normal;
+font-size: 1rem !important;
+font-family: Ubuntu;
+}
+}
+
+#row-data {
+padding: 2px 2px 2px 10px;
+}
+}
+
 /* End of get started styling */
 
 /* Start of contact us styling */
@@ -1249,96 +1074,44 @@ margin-top: 40px;
 }
 /* End of get started styling */
 
-
-
 /* Start of about styling */
-.about-wrapper {
+.about1 {
     position: relative;
-    display: flex;
     align-items: center;
-    padding: 2rem 10%;
-    gap: 3rem;
-    background-color: #ffffff;
+    padding: 1rem 5%;
+    background-color: #f8f9fa;
     color: #000000;
 }
-.about-image {
-    position: absolute;
-    left: 0;
-    bottom: -6rem;
-    width: 8rem;
-}
 
-.about-left {
-    width: 300px;
-}
 .about-left-header {
-    margin-bottom: 0.5rem;
+    text-align: center;
     font-family: Ubuntu;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 2.5rem;
     color: black;
 }
-.about-button {
-    background-color: #ffb905;
-    color: #000000;
-    border: none;
-    border-radius: 1.2rem;
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-}
-.about-button-small {
-    display: none;
-    background-color: #ffb905;
-    color: #000000;
-    font-weight: bold;
-    border: none;
-    border-radius: 1.2rem;
-    padding: 0.5rem 2rem;
-}
-.about-right {
-    flex: 1;
-}
+
 .about-text {
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: Ubuntu;
 }
 
 @media(max-width: 1024px) {
-    .about-image {
-        left: 0;
-        bottom: 1rem;
-        width: 7rem;
-    }
+    
 }
 @media(max-width: 725px) {
-   .about-wrapper {
+   .about1 {
         display: block;
    }
-    .about-image {
-    display: none;
-    }
-   .about-left {
-        width: 100%;
-    }
-   .about-left-header {
-        text-align: center;
-        font-size: 1.5rem;
-    }
+   
     .about-text {
     font-size: 1rem;
 }
-   .about-button {
-    display: none;
-   }
-   .about-button-small {
-    display: block;
-   }
+
 }
 /* End of about styling */
-
-
 
 .review {
 display: flex;
@@ -1359,31 +1132,6 @@ font: sans-serif !important;
 font-size: 2.1rem;
 font-weight: 500;
 line-height: 41.36px;
-}
-
-.faq {
-background-color: #f5f5f5;
-align-items: center;
-justify-content: center;
-
-}
-.get-a-tutor {
-height: 63px;
-width: 100%;
-border-radius: 10px;
-justify-content: center;
-text-align: center;
-color: #ffffff;
-font: Ubuntu;
-font-size: 20px;
-font-weight: 600;
-line-height: 41.36px;
-font-style: normal;
-
-a {
-width: 10%;
-height: 65%;
-}
 }
 
 
