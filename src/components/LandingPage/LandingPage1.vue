@@ -933,17 +933,73 @@ margin-top: 40px;
     .cards-container {
         padding: 0 5rem;
     }
+
+    .card-content{
+        height: 14vh;
+    }
     .popular-class-dot {
         bottom: 0rem;
         left: -1rem;
         width: 9rem;
     }
 }
+
+@media(max-width: 1430px) {
+     .cards-container {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    }
+
+    .single-card-wrapper {
+    width: 400px; 
+    height: 300px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+    margin-top: 20px;
+}
+.card-with-text {
+    width: 400px;
+}
+.card-content{
+height: 14vh;
+}
+
+    .popular-class-dot {
+        bottom: 0rem;
+        left: -1rem;
+        width: 8rem;
+    }
+}
 @media(max-width: 1280px) {
     .cards-container {
-        padding: 0 5rem;
-        
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
     }
+
+    .single-card-wrapper {
+    width: 300px; 
+    height: 300px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    border-radius: 0.5rem;
+    margin-top: 20px;
+}
+.card-with-text {
+    width: 350px;
+}
+.card-content{
+height: 14vh;
+}
+
     .popular-class-dot {
         bottom: 0rem;
         left: -1rem;
@@ -977,7 +1033,7 @@ margin-top: 40px;
     width: 300px;
 }
 .card-content{
-height: 7vh;
+height: 14vh;
 }
     .popular-class-dot {
         bottom: 0rem;
@@ -1003,6 +1059,10 @@ height: 7vh;
 .card-with-text {
     width: 300px;
 }
+
+.card-content{
+height: 14vh;
+}
    
     .popular-class-dot {
         bottom: 0rem;
@@ -1026,6 +1086,10 @@ height: 7vh;
     position: relative; 
     border-radius: 0.5rem;
     margin-top: 10px;
+}
+
+.card-content{
+height: 10vh;
 }
     .popular-class-dot {
         bottom: 0rem;
