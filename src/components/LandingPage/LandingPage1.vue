@@ -816,7 +816,7 @@ margin-top: 40px;
     color: #ffffff;
     border: none;
     font-family: Ubuntu;
-    border-radius: 1.2rem;
+    border-radius: .3rem;
     padding: 0.1rem 1rem;
     cursor: pointer;
 }
@@ -1616,4 +1616,4 @@ font-size: 25px !important;
         background-position: center;
    }
 
-</style>
+</style>adjust button radius
