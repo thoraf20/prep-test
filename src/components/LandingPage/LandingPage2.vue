@@ -962,6 +962,15 @@ align-items: center;
 justify-content: center;
 font-family: Ubuntu;
 
+h3 {
+font-family: Ubuntu;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: center;
+}
+
 #faq-container {
 width: 100vw;
 padding: 2px 8px 2rem 8px;

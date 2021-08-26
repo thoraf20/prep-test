@@ -65,9 +65,10 @@
                      We provide learning and academic alternatives and offer a tailored learning program both physically and  online. As an educational 
                      technology business, our primary focus is linking learners with qualified tutors. Our goal is to break the formal education norm by 
                      offering -to our clients- tutors, who can effectively communicate and impact our clients/learners with what they want to have knowledge of.
+                     <span><button type="submit" class="about-button">Learn More</button></span>
                     </p>
+                    
                 </div>
-                    <!-- <button type="submit" class="about-button">Learn More</button> -->
             </div>
 
                 <!-- Service We Offer -->
@@ -135,36 +136,32 @@
 
         <a id="impact_section">
         <div class="get-started">
-            <h3>Impacts</h3>
+            <h3>Impact</h3>
             <div class="fun">
                 <div class="enrol">
-                    <p class="fir-p">
-                        100k  
-                    </p>
+                  <span id="count1" class="fir-p"></span>
+                  <span class="fir-p">K</span>
                     <p class="sec-p">
                         Teachers<br> Enrolled
                     </p>
                 </div>
                 <div class="enrol">
-                    <p class="fir-p">
-                        9000H  
-                    </p>
+                    <span id="count2" class="fir-p"></span>
+                    <span class="fir-p">H</span>
                     <p class="sec-p">
                         Tutoring Hours<br> Taught
                     </p>
                 </div>
                 <div class="enrol">
-                    <p class="fir-p">
-                        50B 
-                    </p>
+                     <span id="count3" class="fir-p"></span>
+                    <span class="fir-p">B</span>
                     <p class="sec-p">
                         Income<br> Generated
                     </p>
                 </div>
                 <div class="enrol">
-                    <p class="fir-p">
-                        900k  
-                    </p>
+                     <span id="count4" class="fir-p"></span>
+                    <span class="fir-p">K</span>
                     <p class="sec-p">
                         Total<br> 
                         Leaners
@@ -187,12 +184,11 @@
        <a>
         <div class="faq">
              <h3>Often asked questions</h3>
-
             <div id="faq-container">
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h4 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h4>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
                         <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h2>
                         <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
                                 2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
@@ -233,16 +229,6 @@
         </div>
         </a>
 
-        <div class="interest-wrapper">
-            <h3>PrepClass Business</h3>
-            <div class="interest-content">                
-            <p class="interest-text">Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
-            <p class="interest-text1">Click on the button below.</p>
-            <button type="submit" class="interest-button">Learn More</button>
-            </div>
-            <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
-        </div>        
-
         <div class="contact-us">
             <h3>Contact Us</h3>
             <p>If you have any questions you can reach out to us</p>
@@ -272,6 +258,15 @@
               </span>
         </div>        
                 
+        <div class="interest-wrapper">
+            <h3>PrepClass Business</h3>
+            <div class="interest-content">                
+            <p class="interest-text">Do you want to do Business leveraging from our vast database of Quality Tutor?</p>
+            <p class="interest-text1">Click on the button below.</p>
+            <button type="submit" class="interest-button">Learn More</button>
+            </div>
+            <img class="interest-image" src="../../assets/images/ggd5.png" alt="">
+        </div>        
 
         <section style="background:#CAE9F0" class="pt-5 footer3">
             <ul class="ulx">
@@ -374,6 +369,27 @@
     //   navbar.classList.add('logo-white');
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    function counter(id, start, end, duration) {
+        let obj = document.getElementById(id),
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+            current += increment;
+            obj.textContent = current;
+            if(current == end) {
+                clearInterval(timer);
+            }
+        }, step);
+    }
+    counter("count1", 0, 100, 20000);
+    counter("count2", 0, 9000, 20000);
+    counter("count3", 0, 50, 20000);
+    counter("count4", 0, 900, 20000);
+});
 </script>
 
 <style lang="scss" scoped>
@@ -797,10 +813,11 @@ margin-top: 40px;
 
 .about-button {
     background-color: #5F9048;
-    color: #000000;
+    color: #ffffff;
     border: none;
+    font-family: Ubuntu;
     border-radius: 1.2rem;
-    padding: 0.5rem 2rem;
+    padding: 0.1rem 1rem;
     cursor: pointer;
 }
 
@@ -1150,9 +1167,9 @@ line-height: 2.75rem;
 
 .get-dot {
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     right: -1rem;
-    width: 220px;
+    width: 200px;
 }
 
 .fun{
@@ -1160,8 +1177,8 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 width:93%;
-padding-top: 1rem;
-padding-bottom: 2rem;
+// padding-top: 1rem;
+// padding-bottom: 2rem;
 img {
 width: 80%;
 }
@@ -1279,6 +1296,16 @@ background-color: #f8f9fa !important;
 align-items: center;
 justify-content: center;
 font-family: Ubuntu;
+
+h3 {
+    color: #000000;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Ubuntu;
+    font-size: 2rem;
+    font-weight: 400;
+}
 
 #faq-container {
 width: 100vw;
@@ -1588,4 +1615,5 @@ font-size: 25px !important;
         background-repeat: no-repeat;
         background-position: center;
    }
+
 </style>

@@ -43,7 +43,7 @@
 
              <!-- Popular Class Group -->
         <div class="class-group-container">
-            <h2 class="font-weight-500 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Popular Class Groups</h2>
+            <h2 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Popular Class Groups</h2>
             <div class="cards-container">
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-one">                    
@@ -104,57 +104,56 @@
         </div>
             
             <!-- Get Started Section -->
-        <div class="get-started">
-            <h2 class="get-started-header font-weight-500 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">How to get started</h2>
-            <div class="get-started-body">
-                <div class="get-started-left">
-                    <img class="get-started-image" src="../../assets/images/group.png" />
-                    <div class="get-started-rectangle"></div>
-                    <img class="get-started-dot" src="../../assets/images/dotdot.png" />
-                </div>
-                <div class="get-started-right">
-                    <div class="fir">
-                        <div class="circle-avatar">
-                            <div class="circle-inner">
-                                <img class="circle-inner-img" src="../../assets/images/MaskGroup.png" />
+            <section class="bg-light">
+                <div class="container bg-light">
+                    <div class="container py-5">
+                        <div class="text-center mb-5">
+                            <h1 class="section-title" style="font-weight: 400; font-size: 2.5rem">
+                                Getting a Professional Home tutor is easier than you think
+                            </h1>
+                        </div>
+                        <div class="green-line mb-4"></div>
+                        <div class="row">
+                            <div class="col-md-4 position-relative px-3 px-md-5 mt-4 mt-md-0">
+                                <div class="d-flex justify-content-center">
+                                    <div class="square">
+                                        <h3 class="m-auto">1</h3>
+                                    </div>
+                                </div>
+                                    <h5 class="my-3 font-weight-300 text-center black">Tell us where you need help.</h5>
+                                    <p class="text-center">Connect with professional in all subjects and skills you might want to learn.</p>
+                                    <img data-cfsrc="https://prepclass.com.ng/img/arrow.png" class="mx-5 d-none d-md-block" data-cfstyle="max-width: 50px; position: absolute; top: 30px;
+                                     right: -70px;" style="max-width: 50px; position: absolute; top: 30px; right: -70px;" src="../../assets/images/arrow.png">
+                            </div>
+
+                            <div class="col-md-4 position-relative px-3 px-md-5 align-items-center flex-column my-4 my-md-0">
+                                <div class="d-flex justify-content-center">
+                                    <div class="square">
+                                        <h3 class="m-auto">2</h3>
+                                    </div>
+                                </div>
+                                    <h5 class="my-3 font-weight-300 text-center black">Tutor Matching.</h5>
+                                    <p class="text-center">We offer you the perfect tutor to work with your qualifications and requirements.</p>
+                                    <img data-cfsrc="https://prepclass.com.ng/img/arrow.png" class="mx-5 d-none d-md-block" data-cfstyle="max-width: 50px; position: absolute; top: 30px;
+                                     right: -70px;" style="max-width: 50px; position: absolute; top: 30px; right: -70px;" src="../../assets/images/arrow.png">
+                            </div>
+
+                            <div class="col-md-4 position-relative px-3 px-md-5 align-items-center flex-column my-4 my-md-0">
+                                <div class="d-flex justify-content-center">
+                                    <div class=" square">
+                                        <h3 class="m-auto">3</h3>
+                                    </div>
+                                </div>
+                                 <h5 class="my-3 font-weight-300 text-center black">Mett Your Tutor</h5>
+                                <p class="text-center">Take a convinient time to meet your tutor and start your lessons.</p>
                             </div>
                         </div>
-                        <div class="det">
-                        Visit any of our centers
                         </div>
                     </div>
-                    <div class="stroke"></div>
-                    
-                    <div class="fir">
-                        <div class="circle-avatar">
-                            <div class="circle-inner">
-                                <img class="circle-inner-img" src="../../assets/images/MaskGroup1.png" />
-                            </div>
-                        </div>
-                        <div class="det">
-                            Book a class of your choice
-                        </div>
-                    </div>
-                    <div class="stroke"></div>
-                    
-                    <div class="fir">
-                        <div class="circle-avatar">
-                            <div class="circle-inner">
-                                <img class="circle-inner-img" src="../../assets/images/MaskGroup2.png" />
-                            </div>
-                        </div>
-                        <div class="det">
-                            Start Learning
-                        </div>
-                    </div>
-                    
-                </div>
-                <img class="get-started-wave" src="../../assets/images/wave.png" />
-            </div>
-        </div>
+            </section>
 
             <div class="reviews">
-                <h3>Some of our Class Reviews From Google</h3>
+                <h3 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Some of our Class Reviews From Google</h3>
                 <div class="dot2">
                      <img class="dotdot" src="../../assets/images/dotdot.png" />
                 </div>
@@ -178,11 +177,12 @@
                     <img src="../../assets/images/Ellipse.png" alt="">
                 </div>
                 </div>
+                    <div class="more"> <button type="submit" class="more-reviews">see more reviews</button></div>
             </div>
 
         <!-- FAQ -->
         <div class="faq">
-             <h3>Often asked questions</h3>
+             <h3 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Often asked questions</h3>
 
             <div id="faq-container">
                 <div class="container">
@@ -229,7 +229,7 @@
         </div>
     
         <div class="contact-us">
-            <h3>Do you have any Question?</h3>
+            <h3 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Do you have any Question?</h3>
             <p>If you have any questions you can reach out to us</p>
             <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -880,242 +880,43 @@ margin-top: 40px;
 
 
 /* Get start section styling */
-.get-started {
-    background-color: rgb(30, 30, 30);
-    position: relative;
-}
-
-.get-started-header {
-    color: #ffffff;
-    text-align: center;
-    padding-top: 2rem;
-    font-family: inherit !important;
-    font-size: 2.5rem;
-    font-weight: normal !important;
-}
-
-.get-started-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin: 0 8rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.get-started-left {
-    position: relative;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.get-started-image {
-    position: absolute;
-    left: 5%;
-    top: 10%;
-    width: 60%;
-    height: 40%;
-    border-radius: 10px;
-}
-
-.get-started-rectangle {
-    width: 4rem;
-    height: 100%;
-    border-radius: 3rem;
-    border: 3px solid rgba(225, 185, 5, 0.77);
-}
-
-.get-started-dot {
-    position: absolute;
-    right: -0.4rem;
-    bottom: -6.3rem;
-    width: 20rem;
-}
-
-.get-started-right {
-    display: block;
-}
-
-.get-started-wave {
-    position: absolute;
-    right: 0;
-    height: 200px;
-    top: calc(50% - 100px);
-}
-
-.fir {
+.square {
     display: flex;
-    color: white;
-    align-items: center;
-    height: 5px;
-}
-
-.det {
-    margin-left: 1.25rem;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.5rem;
-    letter-spacing: 0em;
-    color: white;
-    font-family: sans-serif;
-}
-
-.stroke {
-    height: 8rem;
-    width: 0.4rem;
-    border: 1px solid black;
-    background: #C4C4C4;
-    margin-left: 1.25rem;
-}
-
-/* avatar in circle styling */
-.circle-avatar {
+    width:75px;
+    height: 75px;
     position: relative;
-    width: 3.2rem;
-    height: 3.2rem;
-    background-color: #5F9048;
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgb(95, 144, 72 );
+    border-image: initial;
     border-radius: 50%;
+    color: rgb(95, 144, 72 );
+    font-family: Ubuntu !important;
 }
 
-.circle-inner {
-    position: absolute;
-    top: calc(50% - 1rem);
-    left: calc(50% - 1rem);
-    width: 2rem;
-    height: 2rem;
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+    background-color: #5f9048;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0.8rem 5rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-weight: bold;
+     justify-content: center;
+    }
 }
-.circle-inner-img {
-    aspect-ratio: inherit; 
-}
+
 /* End of avatar in circle styling */
 
-@media(max-width: 1536px) {
-    .get-started-body {
-        gap: 4rem;
-        margin: 0 4rem;
-    }
-    .get-started-image {
-        left: 5%;
-        top: 10%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-dot {
-        right: -3.4rem;
-        bottom: -6.3rem;
-        width: 20rem;
-    }
-    .get-started-wave {
-        right: 0;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .det {
-        margin-left: 1.25rem;
-        font-size: 1.75rem !important;
-        line-height: 1.9rem;
-    }
-}
-@media(max-width: 1024px) {
-    .get-started-body {
-        gap: 2rem;
-        margin: 0 4rem;
-        padding-bottom: 5rem;
-    }
-    .get-started-image {
-        left: 5%;
-        top: 10%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-dot {
-        right: -3.4rem;
-        bottom: -6.3rem;
-        width: 20rem;
-    }
-    .get-started-wave {
-        right: 0;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .det {
-        margin-left: 1.25rem;
-        font-size: 1.5rem !important;
-        line-height: 1.6rem;
-    }
-}
-@media(max-width: 791px) {
-    .get-started-body {
-        display: block;
-        gap: 4rem;
-        margin: 0 4rem;
-    }
-    .get-started-image {
-        left: 5%;
-        top: 10%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-rectangle {
-        width: 4rem;
-        height: 30rem;
-        border-radius: 3rem;
-        margin-bottom: 2rem;
-    }
-    .get-started-dot {
-        right: -3.4rem;
-        bottom: -6.3rem;
-        width: 20rem;
-    }
-    .get-started-wave {
-        right: 0;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .det {
-        margin-left: 1.25rem;
-        font-size: 1.5rem !important;
-        line-height: 1.9rem;
-    }
-}
 
-@media(max-width: 500px) {
-    .get-started-header {
-        font-size: 1.5rem;
-        line-height: 1.7rem;
-    }
-    .get-started-body {
-        margin: 0 1rem;
-    }
-    .get-started-image {
-        left: 5%;
-        top: 10%;
-        width: 80%;
-        height: 80%;
-    }
-    .get-started-rectangle {
-        width: 3.2rem;
-        height: 20rem;
-        border-radius: 2rem;
-        margin-bottom: 2rem;
-    }
-    .get-started-dot {
-        right: -3.4rem;
-        bottom: -4.3rem;
-        width: 15rem;
-    }
-    .get-started-wave {
-        right: 0;
-        height: 200px;
-        top: calc(50% - 100px);
-    }
-    .det {
-        margin-left: 1.25rem;
-        font-size: 1.25rem !important;
-        line-height: 1.4rem;
-    }
-}
+    
+       
 /* End of get started styling */
 
 .review {
@@ -1128,15 +929,6 @@ width: 90%;
 justify-content: center;
 }
 
-h3 {
- color: #000000;
- text-align: center;
- padding-top: 30px;
- padding-bottom: 30px;
-font-family: Ubuntu;
-font-size: 2rem;
-
-}
 
 .faq {
 background-color: #f8f9fa !important;
@@ -1155,7 +947,7 @@ padding: 2px 8px 2rem 8px;
     background-color: #5f9048;
     color: #ffffff;
     text-transform: capitalize;
-    padding: 0.8rem 10rem;
+    padding: 0.8rem 8rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
