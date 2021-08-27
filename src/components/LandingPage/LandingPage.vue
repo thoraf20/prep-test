@@ -11,11 +11,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto" style="width: 90%; justify-content: space-between">
-                <a class="nav-item nav-link override-nav" href="#">IGCSE</a>
-                <a class="nav-item nav-link override-nav" href="#">GMAT</a>
-                <a class="nav-item nav-link override-nav" href="#">GRE</a>
-                <a class="nav-item nav-link override-nav" href="#">SAT</a>
-                <a class="nav-item nav-link override-nav" href="#">TOEFL</a>
+                <a class="nav-item nav-link override-nav" href="#">HOME</a>
+                <a class="nav-item nav-link override-nav" href="#popular">POPULAR CLASS GROUPS</a>
+                <a class="nav-item nav-link override-nav" href="#get-tutor">GET A TUTOR</a>
+                <a class="nav-item nav-link override-nav" href="#class-reviews">CLASS REVIEWS</a>
+                <a class="nav-item nav-link override-nav" href="#faq-section">FAQ</a>
             </div>
         </div>
         </div>
@@ -42,11 +42,13 @@
             </div>
 
              <!-- Popular Class Group -->
+        <a id="popular">
         <div class="class-group-container">
             <h2 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Popular Class Groups</h2>
             <div class="cards-container">
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-one">                    
+                <div class="single-card-wrapper single-card-one">     
+                    <img class="ielts-img" src="../../assets/images/ielts_logo.png" alt="ielts">                
                     <div class="card-content">
                         <p class="card-text">IELTS</p>
                         <p class="card-more"><a href="#">Learn More</a>
@@ -55,7 +57,8 @@
                     </div>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-two">                    
+                <div class="single-card-wrapper single-card-two">   
+                     <img class="ielts-img" src="../../assets/images/gmat_logo.png" alt="ielts">                
                     <div class="card-content">
                         <p class="card-text">GMAT</p>
                         <p class="card-more"><a href="#">Learn More</a>
@@ -64,7 +67,8 @@
                     </div>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-three">                    
+                <div class="single-card-wrapper single-card-three">
+                    <img class="ielts-img" src="../../assets/images/gre.png" alt="ielts">                
                     <div class="card-content">
                         <p class="card-text">GRE</p>
                         <p class="card-more"><a href="#">Learn More</a>
@@ -73,7 +77,8 @@
                     </div>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-four">                    
+                <div class="single-card-wrapper single-card-four">  
+                     <img class="ielts-img" src="../../assets/images/sat.png" alt="ielts">                
                     <div class="card-content">
                         <p class="card-text">SAT</p>
                         <p class="card-more"><a href="#">Learn More</a>
@@ -82,18 +87,10 @@
                     </div>
                 </div>
                 <!-- Single card -->
-                <div class="single-card-wrapper single-card-five">                    
+                <div class="single-card-wrapper single-card-five">         
+                    <img class="ielts-img" src="../../assets/images/toefl.png" alt="ielts">                
                     <div class="card-content">
                         <p class="card-text">TOEFL</p>
-                        <p class="card-more"><a href="#">Learn More</a>
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </p>
-                    </div>
-                </div>
-                <!-- Single card -->
-                <div class="single-card-wrapper single-card-six">                    
-                    <div class="card-content card-content-odd">
-                        <p class="card-text">View All</p>
                         <p class="card-more"><a href="#">Learn More</a>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </p>
@@ -102,8 +99,10 @@
             </div>
             <img class="popular-class-dot" src="../../assets/images/dot1.png" />
         </div>
+        </a>
             
             <!-- Get Started Section -->
+            <a id="get-tutor">
             <section class="bg-light">
                 <div class="container bg-light">
                     <div class="container py-5">
@@ -151,7 +150,9 @@
                         </div>
                     </div>
             </section>
+            </a>
 
+            <a id="class-reviews">
             <div class="reviews">
                 <h3 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Some of our Class Reviews From Google</h3>
                 <div class="dot2">
@@ -179,8 +180,10 @@
                 </div>
                     <div class="more"> <button type="submit" class="more-reviews">see more reviews</button></div>
             </div>
+            </a>
 
         <!-- FAQ -->
+        <a id="faq-section">
         <div class="faq">
              <h3 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Often asked questions</h3>
 
@@ -214,19 +217,19 @@
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong >Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
                                 without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
                                 such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
                         </p>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
                 </div>
-                 <div class="tutor"> <button type="submit" class="get-a-tutor">Get A Tutor</button></div>
             </div>
         </div>
+        </a>
     
         <div class="contact-us">
             <h3 class="font-weight-400 font-size: 2.5rem line-height:1.2 text-center mb-2 pt-5 pb-3">Do you have any Question?</h3>
@@ -727,23 +730,12 @@ margin-top: 40px;
     position: relative; 
     border-radius: 0.5rem;
 }
-.single-card-one {
-    background: url("../../assets/images/popular1.png");
+.single-card-one, .single-card-two, .single-card-three, .single-card-five{
+    padding-top: 5rem;
 }
-.single-card-two {
-    background: url("../../assets/images/popular2.png");
-}
-.single-card-three {
-    background: url("../../assets/images/popular3.png");
-}
-.single-card-four {
-    background: url("../../assets/images/popular4.png");
-}
-.single-card-five {
-    background: url("../../assets/images/first.png");
-}
+
 .single-card-six {
-    background: url("../../assets/images/popular6.png");
+    // background: url("../../assets/images/popular6.png");
 }
 
 .card-content {
@@ -940,23 +932,6 @@ font-size: Ubuntu;
 width: 100vw;
 padding: 2px 8px 2rem 8px;
 
-.tutor{
-    display: flex;
-    align-items: center;
-    button {
-    background-color: #5f9048;
-    color: #ffffff;
-    text-transform: capitalize;
-    padding: 0.8rem 8rem;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-family: Ubuntu;
-    font-weight: bold;
-     justify-content: center;
-    }
-}
-
 }
 
 
@@ -1007,7 +982,7 @@ a {
 text-decoration: none;
 font-size: 1rem;
 font-weight: bold;
-color: green;
+color: #5e9047;
 }
 }
 

@@ -12,8 +12,8 @@
              <div class="navbar-nav ml-auto" style="width: 90%; justify-content: space-between">
                 <a class="nav-item nav-link override-nav" href="#">HOME</a>
                 <a class="nav-item nav-link override-nav" href="#about_section">ABOUT</a>
-                <a class="nav-item nav-link override-nav" href="#about_section">SERVICE</a>
-                <a class="nav-item nav-link override-nav" href="#interest">FUN FACT</a>
+                <a class="nav-item nav-link override-nav" href="#about_section">PROGRAMS</a>
+                <a class="nav-item nav-link override-nav" href="#faq-section">FAQ</a>
             </div>
         </div>
         </div>
@@ -124,7 +124,7 @@
         </a>
 
        <!-- FAQ -->
-       <a>
+       <a id="faq-section">
         <div class="faq">
              <h3>Often asked questions</h3>
 
@@ -159,16 +159,15 @@
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                          <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
                                 without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
                                 such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
                         </p>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
                 </div>
-                 <div class="tutor"> <button type="submit" class="get-a-tutor">Get A Tutor</button></div>
             </div>
         </div>
 
@@ -1247,7 +1246,7 @@ a {
 text-decoration: none;
 font-size: 1rem;
 font-weight: bold;
-color: green;
+color: #5e9047;
 }
 }
 
