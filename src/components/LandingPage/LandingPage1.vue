@@ -5,7 +5,7 @@
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
                 <!-- <img  class="logo" src="../../assets/images/small-logo.png"> -->
-                <img  class="logo-white" src="../../assets/images/logo-white.png">
+                <!-- <img  class="logo-white" src="../../assets/images/logo-white.png"> -->
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,10 +65,9 @@
                      We provide learning and academic alternatives and offer a tailored learning program both physically and  online. As an educational 
                      technology business, our primary focus is linking learners with qualified tutors. Our goal is to break the formal education norm by 
                      offering -to our clients- tutors, who can effectively communicate and impact our clients/learners with what they want to have knowledge of.
-                     <span><button type="submit" class="about-button">Learn More</button></span>
                     </p>
-                    
                 </div>
+                   <div class="abt-btn-div"> <button type="submit" class="about-button">Learn More</button></div>
             </div>
 
                 <!-- Service We Offer -->
@@ -215,12 +214,12 @@
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                          <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
                                 without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
                                 such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
                         </p>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><strong style="color:green; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
                 </div>
@@ -369,6 +368,17 @@
     //   navbar.classList.add('logo-white');
   });
 }
+
+$(function () {
+    $(window).scroll(function () {
+        if($(this).scrollTop() > 100) {
+            $('.navbar img').attr('src', 'prepclass.com.ng/imgsmall-logo.png');
+        }
+        if($(this).scrollTop() < 100) {
+            $('.navbar img').attr('src', 'prepclass.com.ng/img/logo-white.png');
+        }
+    })
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     function counter(id, start, end, duration) {
@@ -608,7 +618,7 @@ top: 10rem;
 }
     .header {
         height: 400px;
-        background-color: green;
+        background-color:#5f9048;
     }
     .header-right{
         display:  none;
@@ -635,11 +645,9 @@ top: 10rem;
 
     .small{
     font-size: 30px !important;
-    color: red;
+    color: #ffffff;
     }
 }
-
-
 
 .header-right {
 display: none;
@@ -802,6 +810,13 @@ align-items: center;
 margin-top: 40px;
 }
 
+.abt-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
 .about1 {
     position: relative;
     align-items: center;
@@ -817,7 +832,7 @@ margin-top: 40px;
     border: none;
     font-family: Ubuntu;
     border-radius: .3rem;
-    padding: 0.1rem 1rem;
+    padding: 0.8rem 10rem;
     cursor: pointer;
 }
 
@@ -909,7 +924,7 @@ margin-top: 40px;
 
 .card-content {
     width: 100%;
-    height: 10vh;
+    height: 6vh;
     background-color: #fff; 
     opacity: 0.9; 
     position: absolute; 
@@ -1309,7 +1324,7 @@ h3 {
 
 #faq-container {
 width: 100vw;
-padding: 2px 8px 2rem 8px;
+padding: 4px 8px 4rem 8px;
 
 .tutor{
     display: flex;
@@ -1464,7 +1479,7 @@ a {
 text-decoration: none;
 font-size: 1rem;
 font-weight: bold;
-color: green;
+color: #5e9047;
 }
 }
 
@@ -1616,4 +1631,4 @@ font-size: 25px !important;
         background-position: center;
    }
 
-</style>adjust button radius
+</style>
