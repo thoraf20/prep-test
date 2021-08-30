@@ -143,19 +143,19 @@
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How does a teacher benefit from the above mentioned initiative?</h6>
-                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: Teachers or tutors interested in benefiting from the above initiatives should apply to be a Prepclass tutor by clicking
+                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: Teachers or tutors interested in benefiting from the above initiatives should apply to be a Prepclass tutor by clicking
                          <a href="http://prepclass.com.ng/become-a-tutor" style="font-weight:bold; color:#5e9047">here</a>
                          </p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How can I sign up for adult language learning?</h6>
-                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</p>
+                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: We offer group online classes.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How can I sign up for teen code?</h6>
-                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</p>
+                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: We offer group online classes.</p>
                     </div>
                 </div>
                 </div>
@@ -978,22 +978,26 @@ margin-top: 40px;
 
 .single-card-one {
     background: url("../../assets/images/tutor_training.svg");
+    background-repeat: no-repeat;
     height: 21rem;
 }
 .single-card-two {
     background: url("../../assets/images/tutor_placement.svg");
+    background-repeat: no-repeat;
     width: 350px;
     height: 21rem;
 
 }
 .single-card-three {
     background: url("../../assets/images/teen_code.svg");
+    background-repeat: no-repeat;
     width: 300px;
     height: 21rem;
 
 }
 .single-card-four {
     background: url("../../assets/images/Adult.svg");
+     background-repeat: no-repeat;
     width:300px;
     height: 21rem;
 
