@@ -917,10 +917,10 @@ margin-top: 40px;
 .single-card-one {
     background: url("../../assets/images/academy2.svg");
     background-repeat: no-repeat;
-    // width: 400px;
 }
 .single-card-two {
     background: url("../../assets/images/marketplace.svg");
+    background-repeat: no-repeat;
 }
 .single-card-three {
     background: url("../../assets/images/growth.svg");
@@ -929,7 +929,7 @@ margin-top: 40px;
 
 .card-content {
     width: 100%;
-    height: 6vh;
+    height: 4vh;
     background-color: #fff; 
     opacity: 0.9; 
     position: absolute; 

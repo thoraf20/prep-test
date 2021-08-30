@@ -66,17 +66,17 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/academy',
       name: 'landing-page',
       component: LandingPage,
     },
     {
-      path: '/landing',
+      path: '/ltu',
       name: 'landing',
       component: LandingPage2,
     },
     {
-      path: '/landing1',
+      path: '/tmp',
       name: 'landing',
       component: LandingPage1,
     },
