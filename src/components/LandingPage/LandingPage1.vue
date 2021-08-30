@@ -917,6 +917,7 @@ margin-top: 40px;
 .single-card-one {
     background: url("../../assets/images/academy2.svg");
     background-repeat: no-repeat;
+    // width: 400px;
 }
 .single-card-two {
     background: url("../../assets/images/marketplace.svg");
@@ -1130,7 +1131,7 @@ height: 14vh;
 }
 
 .card-content{
-height: 7vh;
+height: 10vh;
 }
    
     .popular-class-dot {
@@ -1139,7 +1140,7 @@ height: 7vh;
         width: 6rem;
     }
 }
-@media(max-width: 414px) {
+@media(max-width:425px) {
     .popular {
         font-size: 1.5rem;
         line-height: 1.8rem;
@@ -1158,7 +1159,7 @@ height: 7vh;
 }
 
 .card-content{
-height: 8vh;
+height: 25vh;
 }
     .popular-class-dot {
         bottom: 0rem;
