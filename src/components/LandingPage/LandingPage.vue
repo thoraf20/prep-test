@@ -4,7 +4,7 @@
      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
      <div class="container" >
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <img class="logo" width="150" src="../../assets/images/small-logo.png">
+                <img class="logo" width="150" src="../../assets/images/logo-white.png">
          </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,13 +21,38 @@
         </div>
     </nav>
 
-    <div class="header">
-        <div class="w-100">
-            <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100 brandon">
-            <h2 class="font-weight-bold text-center mb-2">Visit any of our learning centres</h2>
+        <div class="header">
+        <div class="header-left">
+            <img src="../../assets/images/Rectangle.png" alt=""/>
+            <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
+            <div class="recText">
+                <p  class="big">Get 100% in your Exam Prep</p>
+                <p class="small">Prepclass academy helps learners prepare for standardised exams like GMAT, GRE. </p>
+                <!-- <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><img src="../../assets/images/logo.png" alt="logo"></span>
+                </div> -->
+                <!-- <input type="text" class="form-control" placeholder="Tell us what you want to learn today" aria-label="Learn" aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1" style="background: #F99746;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                </input> -->
+            <!-- </div> -->
             </div>
         </div>
-
+        <div class="header-right">
+            <img class="headphone" src="../../assets/images/Academy1.svg" alt=""/>
+            <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
+            <div class="curve">
+            <div class="imghod">
+                <img class="right-curve" src="../../assets/images/dhh.png" alt=""/>
+                <img class="left-curve" src="../../assets/images/dhh1.png" alt=""/>
+            </div>
+            </div>
+        </div>
+    </div>
     
            <div class="trust-us">
                 <div class="partners">
@@ -51,47 +76,47 @@
                     <img class="ielts-img" src="../../assets/images/ielts_logo.png" alt="ielts">                
                     <div class="card-content">
                         <p class="card-text">IELTS</p>
-                        <p class="card-more"><a href="#">Learn More</a>
+                        <p class="card-more"><a href=" https://prepclass.com.ng/ielts">Learn More</a>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </p>
                     </div>
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-two">   
-                     <img class="ielts-img" src="../../assets/images/gmat_logo.png" alt="ielts">                
+                     <img class="ielts-img" src="../../assets/images/gmat_logo.png" alt="GMAT">                
                     <div class="card-content">
                         <p class="card-text">GMAT</p>
-                        <p class="card-more"><a href="#">Learn More</a>
+                        <p class="card-more"><a href=" https://prepclass.com.ng/gmat">Learn More</a>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </p>
                     </div>
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-three">
-                    <img class="ielts-img" src="../../assets/images/gre.png" alt="ielts">                
+                    <img class="ielts-img" src="../../assets/images/gre.png" alt="GRE">                
                     <div class="card-content">
                         <p class="card-text">GRE</p>
-                        <p class="card-more"><a href="#">Learn More</a>
+                        <p class="card-more"><a href=" https://prepclass.com.ng/gre">Learn More</a>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </p>
                     </div>
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-four">  
-                     <img class="ielts-img" src="../../assets/images/sat.png" alt="ielts">                
+                     <img class="ielts-img" src="../../assets/images/sat.png" alt="SAT">                
                     <div class="card-content">
                         <p class="card-text">SAT</p>
-                        <p class="card-more"><a href="#">Learn More</a>
+                        <p class="card-more"><a href=" https://prepclass.com.ng/sat">Learn More</a>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </p>
                     </div>
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-five">         
-                    <img class="ielts-img" src="../../assets/images/toefl.png" alt="ielts">                
+                    <img class="ielts-img" src="../../assets/images/toefl.png" alt="TOEFL">                
                     <div class="card-content">
                         <p class="card-text">TOEFL</p>
-                        <p class="card-more"><a href="#">Learn More</a>
+                        <p class="card-more"><a href=" https://prepclass.com.ng/toefl">Learn More</a>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </p>
                     </div>
@@ -108,7 +133,7 @@
                     <div class="container py-5">
                         <div class="text-center mb-5">
                             <h1 class="section-title" style="font-weight: 400; font-size: 2.5rem">
-                                Getting a Professional Home tutor is easier than you think
+                                Preparing for your exam is easier than you think
                             </h1>
                         </div>
                         <div class="green-line mb-4"></div>
@@ -119,8 +144,8 @@
                                         <h3 class="m-auto">1</h3>
                                     </div>
                                 </div>
-                                    <h5 class="my-3 font-weight-300 text-center black">Tell us where you need help.</h5>
-                                    <p class="text-center">Connect with professional in all subjects and skills you might want to learn.</p>
+                                    <h5 class="my-3 font-weight-300 text-center black">Walk into any of our centers </h5>
+                                    <p class="text-center">Visit any of our learning centers in Lekki, Yaba or Maryland.</p>
                                     <img data-cfsrc="https://prepclass.com.ng/img/arrow.png" class="mx-5 d-none d-md-block" data-cfstyle="max-width: 50px; position: absolute; top: 30px;
                                      right: -70px;" style="max-width: 50px; position: absolute; top: 30px; right: -70px;" src="../../assets/images/arrow.png">
                             </div>
@@ -131,8 +156,8 @@
                                         <h3 class="m-auto">2</h3>
                                     </div>
                                 </div>
-                                    <h5 class="my-3 font-weight-300 text-center black">Tutor Matching.</h5>
-                                    <p class="text-center">We offer you the perfect tutor to work with your qualifications and requirements.</p>
+                                    <h5 class="my-3 font-weight-300 text-center black">Write your diagnostic.</h5>
+                                    <p class="text-center">Each prospective exam candidate writes a diagnostic test to determine his areas of weakness and strength.</p>
                                     <img data-cfsrc="https://prepclass.com.ng/img/arrow.png" class="mx-5 d-none d-md-block" data-cfstyle="max-width: 50px; position: absolute; top: 30px;
                                      right: -70px;" style="max-width: 50px; position: absolute; top: 30px; right: -70px;" src="../../assets/images/arrow.png">
                             </div>
@@ -143,8 +168,8 @@
                                         <h3 class="m-auto">3</h3>
                                     </div>
                                 </div>
-                                 <h5 class="my-3 font-weight-300 text-center black">Mett Your Tutor</h5>
-                                <p class="text-center">Take a convinient time to meet your tutor and start your lessons.</p>
+                                 <h5 class="my-3 font-weight-300 text-center black">Start receiving lectures</h5>
+                                <p class="text-center">Using the outcome of the diagnostic test, a lesson plan is tailored to meet the learners needs and achieve desired test score.</p>
                             </div>
                         </div>
                         </div>
@@ -178,7 +203,7 @@
                     <img src="../../assets/images/Ellipse.png" alt="">
                 </div>
                 </div>
-                    <div class="more"> <button type="submit" class="more-reviews">see more reviews</button></div>
+                    <div class="more"> <button type="submit" class="more-reviews"><a style="color: #ffffff; text-decoration:none" href="https://www.google.com/search?q=prepclass+reviews&oq=prepclass+revi&aqs=chrome.0.69i59j69i57j69i59j69i61j69i60j69i61.6563j0j4&sourceid=chrome&ie=UTF-8#lrd=0x103b8c884b4be38d:0x9a56b9d179680c3,1">see more reviews</a></button></div>
             </div>
             </a>
 
@@ -191,39 +216,34 @@
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
-                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h4>
-                        <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
-                                2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
-                                3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong>What is the address of Prepclass academy centers ?</h6>
+                        <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: We have 3 centers in different parts of Lagos.</h4>
+
+                        <p>1. Lekki Address - No. 71A Prince Ademola Eletu Way, Osapa London Estate, Along carnal west road( circle mall /Shoprite road)Jakande Bus Stop Lekki lagos<br>
+                                2. Ikeja - Eagles Hub - No 21 Olatunbosun street,off abiola close,shonibare estate, Maryland.
+                                3. Yaba - 13 Hughes Avenue, Alagomeji, Yaba.
                         </p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What is the cost of learning at a Prepclass center?</h6>
                         <h4><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h4>
-                        <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
-                            This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
+                        <p class="text-center text-md-left">Exam preparation costs vary from center to center. On average Please contact each center IElTS Training cost N50k, SAT- N50k , Gre/GMaths (verbal and Quant)- 100k, Checkpoint- N2k per hour, IGSCE- 2.5kper hour, Common Entrance(Math/English)- 1.5k per hour. Loyola Jesuit Entrance Training- 2.5K per hour. </p>
+                        <p class="text-center text-md-left">Please contact the center manager to find out the cost of your preferred center. </p>
+                        <p class="text-center text-md-left">Maryland Centre:  Jane - <a href="#"  style="color: #5e9047; font-weight:bold">08091088879</a></p>
+                        <p class="text-center text-md-left">Lekki Centre:  Nkechi - <a href="#"  style="color: #5e9047; font-weight:bold">09056999392</a></p>
+                        <p class="text-center text-md-left">Yaba Centre:  Lanre - <a href="#" style="color: #5e9047; font-weight:bold">09023247268</a></p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong>What are the benefits of learning at a Prepclass center?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Prepclass center promises an exciting time learning in groups in a comfortable state of the art serene classroom with experience and qualified tutors.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong >Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
-                                without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
-                                such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong >Q:</strong> What is the benefit and cost of writing an exam diagnostic at a Prepclass center?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:Diagnostic tests are a good way to test candidates' exam readiness. Learners use the outcome of the exam diagnostic to identify their areas of strength and weakness. Diagnostics tests done by Prepclass are free if administered online while we charge N5,000 for physical tests. 
                         </p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
                     </div>
                 </div>
                 </div>
@@ -345,7 +365,6 @@
     </section>
 
        </div>
-       </div>
 </template>
 
 <script>
@@ -374,13 +393,9 @@
 
 .navbar-dark {
   background-color: rgba(256, 256, 256, 256) !important;
-
-  .override-nav {
-color: #000000 !important;
-font-weight: bold;
-font-size: 10pt;
-opacity: 1 !important;
-}
+  .navbar-brand img{
+        content: url('../../assets/images/small-logo.png');
+  }
 
 .navbar-toggler {
     background-color:#000000;
@@ -392,7 +407,7 @@ nav {
 }
 
 .override-nav {
-color: #ffffff !important;
+color: #000000 !important;
 font-weight: bold;
 font-size: 10pt;
 opacity: 1 !important;
@@ -400,12 +415,6 @@ font-family: Ubuntu;
 
 }
 
-// .navContainer{
-//     display: flex;
-//     justify-content: space-around;
-//     flex: 1;
-//     width: 100%;
-// }
 
 .mainCont{
 max-width: 100vw;
@@ -413,13 +422,235 @@ overflow-x: hidden;
 font-family: Ubuntu;
 }
 
-.w-100{
-background: url("../../assets/images/teacher-in-blue.svg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-height: 650px;
+
+.header {
+height: 700px;
+overflow: hidden;
+position: relative;
+background: #f7f7f7;
 }
+
+.recText {
+position: absolute;
+top: 20%;
+left: 10%;
+width: 36rem;
+.big {
+font-family: Ubuntu;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 6.125rem;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+
+.small {
+font-family: Ubuntu;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: 2rem;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+}
+
+.header-left {
+position: absolute;
+left: 0;
+top: 0;
+width:70%;
+
+.white-wave {
+position: absolute;
+left: 0;
+top: 55%;
+}
+}
+
+.header-right {
+
+width: 30%;
+.headphone {
+position: absolute;
+top: -2rem;
+right: -12rem;
+width: 90%;
+z-index: 9;
+}
+
+.dotdot {
+width: 20rem;
+position: absolute;
+top: -1rem;
+right: 8rem;
+z-index: 1;
+}
+
+.curve {
+display: flex;
+ position: absolute;
+ right: 48.6%;
+ top: 0;
+
+.imghod {
+position: relative;
+
+.left-curve {
+    position: absolute;
+
+    width: 172px;
+    height: 172.98px;
+    right: 0;
+    mix-blend-mode: color-dodge;
+    transform: rotate(180deg);  
+     z-index: 99;
+
+ }
+
+.right-curve {
+    position: absolute;
+
+    width: 172.98px;
+    height: 172.98px;
+    right: -3rem;
+    mix-blend-mode: difference;
+    transform: rotate(180deg);
+    z-index: 99;
+}
+}
+}
+}
+
+@media only screen and (max-width: 768px){
+    .recText{
+width: 20rem;
+top: 10rem;
+
+ .big{
+        font-size: 30px !important;
+        line-height: 2rem !important;
+        top: -2rem;
+        right: -12rem;
+        // display:none;
+        }
+
+    .small{
+    font-size: 20px !important;
+    color: white;
+    }
+}
+    .header {
+        height: 400px;
+        background-color:#5f9048;
+    }
+    .header-right{
+        width: 30%;
+.headphone {
+    position: absolute;
+    top: 4rem;
+    right: -8rem;
+    width: 70%;
+        // display:  none;
+    }
+}
+
+.right-curve {
+    display: none;
+}
+.left-curve {
+    display: none;
+}
+    .header-left {
+        display: block;
+        img {
+            display:none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+.recText{
+width: 20rem;
+top: 5rem;
+
+ .big{
+        font-size: 2rem !important;
+        line-height: 2rem !important;
+        // display:none;
+        }
+
+    .small{
+    font-size: 30px !important;
+    color: #ffffff;
+    }
+}
+
+.header-right {
+display: none;
+width: 30%;
+
+.headphone {
+position: absolute;
+top: 5rem;
+right: 2rem;
+width: 90%;
+z-index: 9;
+}
+
+.header-left {
+    display: none;
+}
+}
+
+.right-curve {
+display: none;
+}
+.left-curve {
+display: none;
+}
+
+.trust-dot {
+display: none !important;
+}
+
+
+.imgText h5{
+font-size: 28px;
+}
+.imgText p{
+font-size:18px;
+}
+#input{
+width: 100%;
+}
+
+#cont{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#asked-question {
+h2 {
+font-size: 20px;
+}
+h4 {
+font-size:1rem;
+font-weight:bold;
+}
+p{
+font-size:18px;
+}
+}
+
+}
+
 
 .ggd {
 position: absolute;

@@ -3,7 +3,7 @@
      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <img class="logo" width="150" src="../../assets/images/small-logo.png">
+                <img class="logo" width="150" src="../../assets/images/logo-white.png">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,12 +19,26 @@
         </div>
     </nav>
 
-    <div class="header">
-        <div class="imgDiv">
-            <div class="imgText">
-                <h5 class="card-title">Lorem ipsum dolor sit</h5>
+          <div class="header">
+        <div class="header-left">
+            <img src="../../assets/images/Rectangle.png" alt=""/>
+            <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
+            <div class="recText">
+                <p  class="big">Learn Anything</p>
+                <p class="small">Prepclass is a social enterprise that helps learners easily hire the services of qualified tutors.</p>
             </div>
         </div>
+        <div class="header-right">
+            <img class="headphone" src="../../assets/images/TGI.svg" alt=""/>
+            <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
+            <div class="curve">
+            <div class="imghod">
+                <img class="right-curve" src="../../assets/images/dhh.png" alt=""/>
+                <img class="left-curve" src="../../assets/images/dhh1.png" alt=""/>
+            </div>
+            </div>
+        </div>
+    </div>
     
 
            <div class="trust-us">
@@ -41,21 +55,20 @@
 
             <a id="about_section">
             <div class="about1">
-                <h3 class="about-left-header"> About Prepclass LTU </h3>
+                <h3 class="about-left-header"> About Prepclass Learner Tutor Upliftment </h3>
                 <div class="container">
-                    <p class="about-text"> Prepclass Learner Tutor Upliftment is a social initiative aimed at improving the 
-                             quality of lives of tutors as well as the outcomes of learners. Unlike other services,
-                             Prepclass LTU is targeted at marginalized youth .
+                    <p class="about-text">Prepclass LTU is a social initiative aimed at improving the welfare of tutors as well as the outcome of learners. 
+                        Prepclass LTU is <b>committed</b> to expanding opportunities for 100 million people by 2030 by developing job skills, improving educational outcomes, 
+                        and providing opportunities for individuals from under-represented and marginalized groups around Nigeria to realize success. 
                     </p>
                 </div>
-                    <!-- <button type="submit" class="about-button">Learn More</button> -->
             </div>
             </a>
 
         <a id="service_section">
         <!-- Programs-->
         <div class="class-group-container">
-            <h3 class="popular">Programs We Are Involved in</h3>
+            <h3 class="popular">Services We Offer</h3>
 
             <div class="cards-container">
                 <!-- Single card -->
@@ -65,10 +78,10 @@
                             <p class="card-text">Tutor Training</p>
                         </div>
                     </div>
-                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo 
+                    <p  class="">We train tutors using the best pedagogic approach to learning. 
+                        Prepclass tutors are equipped and trained with the right entrepreneurial mindset
+                         to set up classes with learners and charge them a desirable charge. Prepclass tutors
+                          are trained on soft, social, and subject mastery skills. 
                          <span>Learn More</span>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </p>
@@ -80,10 +93,9 @@
                             <p class="card-text">Tutor Placement</p>
                         </div>
                     </div>
-                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo 
+                    <p  class="">Prepclass tutors are placed with local and foregin edtech companies or
+                         education institutions after rigorous training. Other tutors are also given access to 
+                         our huge plethora of jobs on the prepclass platform. 
                          <span>Learn More</span>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </p>
@@ -95,10 +107,9 @@
                             <p class="card-text">Teen Code</p>
                         </div>
                     </div>
-                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo 
+                    <p  class="">Teen code is a social prepclass initiative aimed at teaching teenagers the
+                         fundamentals basics of software and web development. In partnership with Educode, 
+                         teen code teaches computer science animated videos and interactive exercises 
                          <span>Learn More</span>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </p>
@@ -111,10 +122,9 @@
                             <p class="card-text">Language Adult Learning</p>
                         </div>
                     </div>
-                    <p  class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo 
+                    <p  class="">Adult language learning is another prepclass social initiative aimed at 
+                        teaching adults English language for free. This initiative prepares adults intenteding to 
+                        join our IELTS class for free.
                          <span>Learn More</span>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </p>
@@ -132,39 +142,20 @@
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
-                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h2>
-                        <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
-                                2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
-                                3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
-                        </p>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How does a teacher benefit from the above mentioned initiative?</h6>
+                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: Teachers or tutors interested in benefiting from the above initiatives should apply to be a Prepclass tutor by clicking
+                         <a href="http://prepclass.com.ng/become-a-tutor" style="font-weight:bold; color:#5e9047">here</a>
+                         </p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
-                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h2>
-                        <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
-                            This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How can I sign up for adult language learning?</h6>
+                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                    </div>
-
-                    <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
-                                without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
-                                such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
-                        </p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How can I sign up for teen code?</h6>
+                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</p>
                     </div>
                 </div>
                 </div>
@@ -295,7 +286,6 @@
     </div>
     </section>
        </div>
-       </div>
 </template>
 
 <script>
@@ -325,6 +315,10 @@ document.onreadystatechange = function() {
 .navbar-dark {
   background-color: rgba(256, 256, 256, 256) !important;
 
+    .navbar-brand img{
+        content: url('../../assets/images/small-logo.png');
+  }
+
  .override-nav {
 color: black !important;
 font-weight: bold;
@@ -345,7 +339,7 @@ height: 8vh;
 }
 
 .override-nav {
-color: #ffffff !important;
+color: #000000!important;
 font-weight: bold;
 font-size: 10pt;
 opacity: 1 !important;
@@ -367,37 +361,230 @@ max-width: 100vw;
 overflow-x: hidden;
 }
 
-.imgDiv{
-background: url("../../assets/images/adult-bg.svg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-height: 650px;
 
-button {
-padding: 1rem 3rem 1rem 3rem;
-border-radius: 50px;
-}
+.header {
+height: 700px;
+overflow: hidden;
+position: relative;
+background: #f7f7f7;
 }
 
-.card-title {
+.recText {
+position: absolute;
+top: 20%;
+left: 10%;
+width: 36rem;
+.big {
+font-family: Ubuntu;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 6.125rem;
+letter-spacing: 0em;
 text-align: center;
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
-    font-family: Ubuntu;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 1.2;
-    color: white;
+color: #ffffff;
 }
 
-.imgText{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
-    justify-content: center;
+.small {
+font-family: Ubuntu;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2rem;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+}
+
+.header-left {
+position: absolute;
+left: 0;
+top: 0;
+width:80%;
+
+.white-wave {
+position: absolute;
+left: 0;
+top: 55%;
+}
+}
+
+.header-right {
+
+width: 20%;
+.headphone {
+position: absolute;
+top: 2rem;
+right: -25rem;
+width: 100%;
+z-index: 9;
+}
+
+.dotdot {
+width: 20rem;
+position: absolute;
+top: -1rem;
+right: 8rem;
+z-index: 1;
+}
+
+.curve {
+display: flex;
+ position: absolute;
+ right: 48.6%;
+ top: 0;
+
+.imghod {
+position: relative;
+
+.left-curve {
+    position: absolute;
+
+    width: 172px;
+    height: 172.98px;
+    right: 0;
+    mix-blend-mode: color-dodge;
+    transform: rotate(180deg);  
+     z-index: 99;
+
+ }
+
+.right-curve {
+    position: absolute;
+
+    width: 172.98px;
+    height: 172.98px;
+    right: -3rem;
+    mix-blend-mode: difference;
+    transform: rotate(180deg);
+    z-index: 99;
+}
+}
+}
+}
+
+@media only screen and (max-width: 768px){
+    .recText{
+width: 20rem;
+top: 10rem;
+
+ .big{
+        font-size: 30px !important;
+        line-height: 2rem !important;
+        // display:none;
+        }
+
+    .small{
+    font-size: 20px !important;
+    color: white;
+    }
+}
+    .header {
+        height: 400px;
+        background-color:#5f9048;
+    }
+    .header-right{
+        .headphone {
+position: absolute;
+top: 5rem;
+right: -6rem;
+width: 70%;
+z-index: 9;
+    }
+}
+
+.right-curve {
+    display: none;
+}
+.left-curve {
+    display: none;
+}
+    .header-left {
+        display: block;
+        img {
+            display:none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+.recText{
+width: 20rem;
+top: 5rem;
+
+ .big{
+        font-size: 2rem !important;
+        line-height: 4rem !important;
+        // display:none;
+        }
+
+    .small{
+    font-size: 30px !important;
+    color: #ffffff;
+    }
+}
+
+.header-right {
+display: none;
+width: 30%;
+
+.headphone {
+position: absolute;
+top: 5rem;
+right: 2rem;
+width: 90%;
+z-index: 9;
+}
+
+.header-left {
+    display: none;
+}
+}
+
+.right-curve {
+display: none;
+}
+.left-curve {
+display: none;
+}
+
+.trust-dot {
+display: none !important;
+}
+
+
+.imgText h5{
+font-size: 28px;
+}
+.imgText p{
+font-size:18px;
+}
+#input{
+width: 100%;
+}
+
+#cont{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#asked-question {
+h2 {
+font-size: 20px;
+}
+h4 {
+font-size:1rem;
+font-weight:bold;
+}
+p{
+font-size:18px;
+}
+}
+
 }
 
 .trust-us {
@@ -781,7 +968,7 @@ margin-top: 40px;
 }
 
 .single-card-wrapper {
-    width: 450px; 
+    width: 400px; 
     height: 375px; 
     background-size: cover;
     background-repeat: no-repeat; 
@@ -790,16 +977,26 @@ margin-top: 40px;
 }
 
 .single-card-one {
-    background: url("../../assets/images/tutor-training.svg");
+    background: url("../../assets/images/tutor_training.svg");
+    height: 21rem;
 }
 .single-card-two {
-    background: url("../../assets/images/tutor-placement.svg");
+    background: url("../../assets/images/tutor_placement.svg");
+    width: 350px;
+    height: 21rem;
+
 }
 .single-card-three {
-    background: url("../../assets/images/teen-code.svg");
+    background: url("../../assets/images/teen_code.svg");
+    width: 300px;
+    height: 21rem;
+
 }
 .single-card-four {
-    background: url("../../assets/images/adult-learning.png");
+    background: url("../../assets/images/Adult.svg");
+    width:300px;
+    height: 21rem;
+
 }
 
 .card-content {
@@ -994,7 +1191,6 @@ padding: 2px 8px 2rem 8px;
 
 }
 
-
 #asked-question {
 width: 50%;
 h2 {
@@ -1013,6 +1209,14 @@ font-family: Ubuntu;
 #row-data {
 padding: 2px 2px 2px 10px;
 }
+}
+
+@media(max-width: 725px) {
+    .faq{
+        h3{
+            font-size: 1.5rem;
+        }
+    }
 }
 
 /* End of get started styling */
@@ -1112,6 +1316,10 @@ padding: 2px 2px 2px 10px;
 @media(max-width: 725px) {
    .about1 {
         display: block;
+   }
+
+   .about-left-header {
+       font-size: 1.5rem;
    }
    
     .about-text {

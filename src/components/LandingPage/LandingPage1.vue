@@ -4,8 +4,7 @@
      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
      <div class="container">
          <a class="navbar-brand" href="" onclick="window.location.reload();return false">
-                <!-- <img  class="logo" src="../../assets/images/small-logo.png"> -->
-                <!-- <img  class="logo-white" src="../../assets/images/logo-white.png"> -->
+                <img  class="logo" src="../../assets/images/logo-white.png">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,18 +23,15 @@
 
     <div class="header">
         <div class="header-left">
-            <img src="../../assets/images/Rectangle.png" alt=""/>
+            <img src="../../assets/images/Rectangle.png" alt="" style="width: 120%"/>
             <img class="white-wave" src="../../assets/images/ghsg1.png" alt=""/>
             <div class="recText">
-                <p  class="big">
-                    Lorem ipsum dolor
-                     sit amet
-                </p>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <p  class="big">Learn Anything</p>
+                <p class="small">Prepclass is a social enterprise that helps learners easily hire the services of qualified tutors.</p>
             </div>
         </div>
         <div class="header-right">
-            <img class="headphone" src="../../assets/images/two-students.svg" alt=""/>
+            <img class="headphone" src="../../assets/images/MainPage.svg" alt=""/>
             <img class="dotdot" src="../../assets/images/dotdot.png" alt=""/>
             <div class="curve">
             <div class="imghod">
@@ -55,21 +51,22 @@
                    <div class="trust-img"> <img src="../../assets/images/bella.png" alt="" ></div>
                    <div class="trust-img"> <img src="../../assets/images/humanipo.png" alt="" ></div>
                 </div>
-                    <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
-
+                <div class="trust-dot"><img class="dotdotdot" src="../../assets/images/ggd2.png" alt="" ></div>
             </div>
 
             <a id="about_section">
             <div class="about1">
                 <h3 class="about-left-header">Who We Are </h3>
                 <div class="container">
-                    <p class="about-text">PrepClass is an indigenous EdTech company in Nigeria established in 2014 that operates across Africa.
-                     We provide learning and academic alternatives and offer a tailored learning program both physically and  online. As an educational 
-                     technology business, our primary focus is linking learners with qualified tutors. Our goal is to break the formal education norm by 
-                     offering -to our clients- tutors, who can effectively communicate and impact our clients/learners with what they want to have knowledge of.
+                    <p class="about-text">
+                         Prepclass is a social enterprise that uses technology to make education accessible, interactive and engaging for all categories of learners.
+                         As an educational technology business, our primary focus is aggregating professional tutors and connecting them with learners that need academic support or 
+                         bespoke learning programs that are specifically crafted to help the learners achieve their goals.
                     </p>
                 </div>
-                   <div class="abt-btn-div"> <button type="submit" class="about-button">Learn More</button></div>
+                   <div class="abt-btn-div">
+                        <button type="submit" class="about-button"><a href="https://prepclass.com.ng/about" style="color:#ffffff">Learn More</a></button>
+                    </div>
             </div>
             </a>
 
@@ -84,7 +81,7 @@
                     <div class="single-card-wrapper single-card-one">                    
                         <div class="card-content">
                             <p class="card-text">Academy</p>
-                            <p class="card-more"><a href="#">Learn More</a>
+                            <p class="card-more"><a href="https://prepclass.com.ng/academy">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
                         </div>
@@ -101,7 +98,7 @@
                     <div class="single-card-wrapper single-card-two">                    
                         <div class="card-content">
                             <p class="card-text">Tutor Marketplace</p>
-                            <p class="card-more"><a href="#">Learn More</a>
+                            <p class="card-more"><a href="https://prepclass.com.ng/tmp">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
                         </div>
@@ -119,7 +116,7 @@
                     <div class="single-card-wrapper single-card-three">                    
                         <div class="card-content">
                             <p class="card-text">Tutor Grow Initiative</p>
-                            <p class="card-more"><a href="#">Learn More</a>
+                            <p class="card-more"><a href="https://prepclass.com.ng/ltu">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
                         </div>
@@ -190,39 +187,37 @@
                 <div class="container">
                 <div class="row justify-content-between" id="row-data">
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you operate?</h6>
-                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: Three easy steps</h2>
-                        <p>1. The client/parent is required to fill our online form which helps us collect all the important information about the student and their learning needs.<br>
-                                2. Depending on the type of tutoring the client is interested in, we engage the client in either our online classes or physical one on one tutoring with our experience professional tutors.<br>
-                                3. We manage the client's experience including payments, dispute resolution, tutor performance tracking as well as creating learner's progress reports.
-                        </p>
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> When was Prepclass founded?</h6>
+                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: Prepclass was founded in 2012 by 2 former classmates. </p>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3" id="asked-question">
+                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Is Prepclass a not for profit?</h6>
+                        <p><strong style="color:#5e9047; font-weight:bold">A</strong>: Prepclass is a profit driven social enterprise.</p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                        <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> What kind of classes do you offer?</h6>
-                        <h2><strong style="color:#5e9047; font-weight:bold">A</strong>: We offer group online classes.</h2>
-                        <p class="text-center text-md-left">Comprehensive online classes which are one-on-one online interactive sessions for students between Primary 3 - SS 3 for maths, English and science and Custom classes which maybe one-on-one physical interactive sessions.
-                            This is an effort on our part to put safety first in the home while affording the opportunity to get a quality learning experience.</p>
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do I benefit from LTU as a tutor?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  
+                           Prepclass LTU trains Prepclass tutors the necessary skills required for them to effectively administer Prepclass classes. Using a pedagogic
+                            approach to learning, Prepclass trains tutors on communication, social skills and subject proficiency. After training, Prepclass tutors can access 
+                            the plethora of job opportunities available on the platform
+                         </p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do you charge and what are your rates?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>:  Our online group classes run for 3 times a week at 1.30 hours per session and it covers Mathematics and English. We will also provide you with materials & lesson notes at just N12,000 per learner. All learners must be within Primary/Basic 3- SS 3.
-                         It has a maximum of ten learners in a group.</p>
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How does prepclass Academy work?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  
+                           Prepclass Academy helps learners prepare for popular standardized exams like IELTS, GMAT, GRE, etc. A learner can walk into
+                            any of our centers, take a diagnostics test to ascertain exam readiness before lectures in accordance to our curriculum tailored lesson
+                             plans required to get the candidates desired exam score.
+                         </p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
-                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> Why work with prepclass instead of getting an home tutor myself?</h6>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>: We have access to over 40000 Home tutors in different specialities and locations across Nigeria. This makes it possible for us to match your ward with the very best tutors 
-                                without any stress for you. We work with your budget and make the entire process as flexible as possible. We can also help in situations where you need to make a drastic change,
-                                such as changing location, changing tutor (for whatever reason) or changing the subjects being taught by the tutor.
-                        </p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">B</strong>: We can help guarantee the safety of your learner and your home whether the classes are online or physical learning sessions.</p>
-                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">C</strong>: We can provide performance reports and track learner progress, we also ensure quality assurance for the classes held.</p>
+                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How do I get tutor for my kids?</h6>
+                        <p class="text-center text-md-left"><strong style="color:#5e9047; font-weight:bold">A</strong>:  
+                          Parents can visit this <a href="http://prepclass.com.ng/get-a-tutor">link</a>, tell us all the learners' goals. A class manager would reach out to the parent to discuss all the home tutoring options available for the goal. 
+                         </p>
                     </div>
                 </div>
                 </div>
@@ -367,20 +362,8 @@
       navbar.classList.add('navbar-dark');
     else
       navbar.classList.remove('navbar-dark');
-    //   navbar.classList.add('logo-white');
   });
 }
-
-$(function () {
-    $(window).scroll(function () {
-        if($(this).scrollTop() > 100) {
-            $('.navbar img').attr('src', 'prepclass.com.ng/imgsmall-logo.png');
-        }
-        if($(this).scrollTop() < 100) {
-            $('.navbar img').attr('src', 'prepclass.com.ng/img/logo-white.png');
-        }
-    })
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     function counter(id, start, end, duration) {
@@ -419,6 +402,10 @@ document.addEventListener("DOMContentLoaded", () => {
 .navbar-dark {
   background-color: rgba(256, 256, 256, 256) !important;
   color: #5f9048!important;
+
+    .navbar-brand img{
+        content: url('../../assets/images/small-logo.png');
+  }
 
   .navbar-toggler {
     background-color:#000000;
@@ -460,22 +447,23 @@ left: 10%;
 width: 36rem;
 .big {
 font-family: Ubuntu;
-font-size: 5.3rem;
+font-size: 2.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: 6.125rem;
 letter-spacing: 0em;
-text-align: left;
+text-align: center;
+color: #ffffff;
 }
 
 .small {
 font-family: Ubuntu;
-font-size: 1.8rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 500;
 line-height: 2rem;
 letter-spacing: 0em;
-text-align: left;
+text-align: center;
 color: white;
 }
 }
@@ -484,7 +472,7 @@ color: white;
 position: absolute;
 left: 0;
 top: 0;
-width:70%;
+width:50%;
 
 .white-wave {
 position: absolute;
@@ -495,12 +483,13 @@ top: 55%;
 
 .header-right {
 
-width: 30%;
+width: 50%;
 .headphone {
 position: absolute;
-top: -3rem;
-right: 0;
-width: 60%;
+top: 5rem;
+right: -10rem;
+width: 70%;
+height: 100%;
 z-index: 9;
 }
 
@@ -538,7 +527,7 @@ position: relative;
 
     width: 172.98px;
     height: 172.98px;
-    right: -3rem;
+    right: -2.4rem;
     mix-blend-mode: difference;
     transform: rotate(180deg);
     z-index: 99;
@@ -605,17 +594,16 @@ font: Ubuntu;
 @media only screen and (max-width: 768px){
     .recText{
 width: 20rem;
-top: 10rem;
+top: 7rem;
 
  .big{
         font-size: 30px !important;
         line-height: 2rem !important;
-        // display:none;
         }
 
     .small{
     font-size: 20px !important;
-    color: red;
+    color: white;
     }
 }
     .header {
@@ -623,8 +611,18 @@ top: 10rem;
         background-color:#5f9048;
     }
     .header-right{
-        display:  none;
+        top: 5rem;
+        right: -5rem;
     }
+
+    .left-curve {
+        display:none;
+    }
+
+    .right-curve {
+        display:none;
+    }
+
     .header-left {
         display: block;
         img {
@@ -637,17 +635,18 @@ top: 10rem;
 
 .recText{
 width: 20rem;
-top: 10rem;
+top: 5rem;
 
  .big{
-        font-size: 40px !important;
+        font-size: 2rem !important;
         line-height: 4rem !important;
-        display:none;
+        text-align: center;
         }
 
     .small{
-    font-size: 30px !important;
+    font-size: 1.5rem !important;
     color: #ffffff;
+    text-align: center;
     }
 }
 
@@ -916,13 +915,16 @@ margin-top: 40px;
     margin-top: 1.5rem;
 }
 .single-card-one {
-    background: url("../../assets/images/Group.svg");
+    background: url("../../assets/images/academy2.svg");
+    background-repeat: no-repeat;
+    // width: 400px;
 }
 .single-card-two {
     background: url("../../assets/images/marketplace.svg");
 }
 .single-card-three {
-    background: url("../../assets/images/tutor-growth.svg");
+    background: url("../../assets/images/growth.svg");
+    background-repeat: no-repeat;
 }
 
 .card-content {
