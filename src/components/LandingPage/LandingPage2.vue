@@ -150,12 +150,12 @@
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How can I sign up for adult language learning?</h6>
-                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: We offer group online classes.</p>
+                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: Learners interested in benefiting from our free language learning can also <a href="https://docs.google.com/forms/d/e/1FAIpQLScNF4DRqr7B-5ALJBsFzH_RjBHkkXmyU7cQTZBcHOkqJdI0UA/viewform">click here.</a></p>
                     </div>
 
                     <div class="col-12 col-md-5 mb-3" id="asked-question">
                         <h6 class="font-weight-bold text-black text-center text-md-left"><strong>Q:</strong> How can I sign up for teen code?</h6>
-                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: We offer group online classes.</p>
+                        <p><strong style="color:#5e9047; font-weight:bold; text-align:center">A</strong>: Learners interested in joining our teen code program should please contact this number</p>
                     </div>
                 </div>
                 </div>
