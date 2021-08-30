@@ -964,11 +964,11 @@ margin-top: 40px;
 }
 
 .card-with-text {
-    width: 450px;
+    width: 400px;
 }
 
 .single-card-wrapper {
-    width: 400px; 
+    width: 100%; 
     height: 375px; 
     background-size: cover;
     background-repeat: no-repeat; 
@@ -979,27 +979,27 @@ margin-top: 40px;
 .single-card-one {
     background: url("../../assets/images/tutor_training.svg");
     background-repeat: no-repeat;
-    height: 21rem;
+    // height: 21rem;
 }
 .single-card-two {
     background: url("../../assets/images/tutor_placement.svg");
     background-repeat: no-repeat;
-    width: 350px;
-    height: 21rem;
+    // width: 350px;
+    // height: 21rem;
 
 }
 .single-card-three {
     background: url("../../assets/images/teen_code.svg");
     background-repeat: no-repeat;
-    width: 300px;
-    height: 21rem;
+    // width: 300px;
+    // height: 21rem;
 
 }
 .single-card-four {
     background: url("../../assets/images/Adult.svg");
      background-repeat: no-repeat;
-    width:300px;
-    height: 21rem;
+    // width:300px;
+    // height: 21rem;
 
 }
 
@@ -1550,6 +1550,7 @@ margin-right: -20px;
     }
     .btn-xx {
         border-radius: 0px;
+        
     }
     .foot {
         background: url("../../assets/images/footer_bg.png");
