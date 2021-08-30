@@ -78,7 +78,7 @@
             <div class="cards-container">
                 <!-- Single card -->
                 <div class="card-with-text">
-                    <div class="single-card-wrapper single-card-one">                    
+                    <a href="https://prepclass.com.ng/academy"><div class="single-card-wrapper single-card-one">               
                         <div class="card-content">
                             <p class="card-text">Academy</p>
                             <p class="card-more"><a href="https://prepclass.com.ng/academy">Learn More</a>
@@ -86,6 +86,7 @@
                             </p>
                         </div>
                     </div>
+                    </a>
                             <p  class="single-text">
                                 With 3 physical learning centers in Lagos Nigeria, Prepclass
                                 Academy helps learners prepare for standardized tests and 
@@ -95,7 +96,7 @@
                 </div>
                 <!-- Single card -->
                 <div class="card-with-text">
-                    <div class="single-card-wrapper single-card-two">                    
+                    <a href="https://prepclass.com.ng/tmp"><div class="single-card-wrapper single-card-two">                    
                         <div class="card-content">
                             <p class="card-text">Tutor Marketplace</p>
                             <p class="card-more"><a href="https://prepclass.com.ng/tmp">Learn More</a>
@@ -103,6 +104,7 @@
                             </p>
                         </div>
                     </div>
+                    </a>
                             <p  class="single-text">
                                 Prepclass Tutor market place is a platform that allows 
                                 learners to easily hire the services of a home tutor. 
@@ -113,14 +115,15 @@
                 </div>
                 <!-- Single card -->
                 <div class="card-with-text">
-                    <div class="single-card-wrapper single-card-three">                    
+                    <a href="https://prepclass.com.ng/ltu"><div class="single-card-wrapper single-card-three">                    
                         <div class="card-content">
                             <p class="card-text">Tutor Grow Initiative</p>
                             <p class="card-more"><a href="https://prepclass.com.ng/ltu">Learn More</a>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </p>
                         </div>
-                    </div>    
+                    </div> 
+                    </a>   
                             <p  class="single-text">
                                 With our vast reach of tutors and learners, Prepclass has invested 
                                 im several programs that improve the quality of lives of tutors as 

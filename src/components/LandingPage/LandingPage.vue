@@ -73,7 +73,7 @@
             <div class="cards-container">
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-one">     
-                    <img class="ielts-img" src="../../assets/images/ielts_logo.png" alt="ielts">                
+                   <a href=" https://prepclass.com.ng/ielts"> <img class="ielts-img" src="../../assets/images/ielts_logo.png" alt="ielts"></a>                
                     <div class="card-content">
                         <p class="card-text">IELTS</p>
                         <p class="card-more"><a href=" https://prepclass.com.ng/ielts">Learn More</a>
@@ -83,7 +83,7 @@
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-two">   
-                     <img class="ielts-img" src="../../assets/images/gmat_logo.png" alt="GMAT">                
+                     <a href=" https://prepclass.com.ng/gmat"><img class="ielts-img" src="../../assets/images/gmat_logo.png" alt="GMAT"></a>                
                     <div class="card-content">
                         <p class="card-text">GMAT</p>
                         <p class="card-more"><a href=" https://prepclass.com.ng/gmat">Learn More</a>
@@ -93,7 +93,7 @@
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-three">
-                    <img class="ielts-img" src="../../assets/images/gre.png" alt="GRE">                
+                    <a href=" https://prepclass.com.ng/gre"><img class="ielts-img" src="../../assets/images/gre.png" alt="GRE"></a>                
                     <div class="card-content">
                         <p class="card-text">GRE</p>
                         <p class="card-more"><a href=" https://prepclass.com.ng/gre">Learn More</a>
@@ -103,7 +103,7 @@
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-four">  
-                     <img class="ielts-img" src="../../assets/images/sat.png" alt="SAT">                
+                    <a href=" https://prepclass.com.ng/sat"> <img class="ielts-img" src="../../assets/images/sat.png" alt="SAT"></a>                
                     <div class="card-content">
                         <p class="card-text">SAT</p>
                         <p class="card-more"><a href=" https://prepclass.com.ng/sat">Learn More</a>
@@ -113,7 +113,7 @@
                 </div>
                 <!-- Single card -->
                 <div class="single-card-wrapper single-card-five">         
-                    <img class="ielts-img" src="../../assets/images/toefl.png" alt="TOEFL">                
+                    <a href=" https://prepclass.com.ng/toefl"><img class="ielts-img" src="../../assets/images/toefl.png" alt="TOEFL"></a>               
                     <div class="card-content">
                         <p class="card-text">TOEFL</p>
                         <p class="card-more"><a href=" https://prepclass.com.ng/toefl">Learn More</a>
