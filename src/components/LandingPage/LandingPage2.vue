@@ -1550,7 +1550,6 @@ margin-right: -20px;
     }
     .btn-xx {
         border-radius: 0px;
-        
     }
     .foot {
         background: url("../../assets/images/footer_bg.png");
